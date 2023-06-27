@@ -1,18 +1,210 @@
-body { padding-top: 56px; }
-.left-aligned { margin-left: auto; }
-.bg-dark { background-color: #343a40 !important; }
-.bg-hero { background-color: #45b06cff; }
-
-/* CALLOUT */
-.bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
-.bd-callout h4 { margin-bottom:.25rem }
-.bd-callout p:last-child { margin-bottom:0 }
-.bd-callout code { border-radius:.25rem }
-.bd-callout+.bd-callout { margin-top:-.25rem }
-.bd-callout-info { border-left-color:#5bc0de }
-.bd-callout-warning { border-left-color:#f0ad4e }
-.bd-callout-danger { border-left-color:#d9534f }
-
-/* footer */
-footer a { color: white; font-weight: bold; text-decoration: none; }
-footer a:hover { color: white; text-decoration: underline; }
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  
+  html{
+    scroll-snap-type: y mandatory;
+  }
+  
+  section{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding: 0;
+    margin: 0;
+  }
+  
+  div{
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  section:nth-of-type(1) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(2) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(3) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(4) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(5) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(6) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(7) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(8) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(9) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(10) {
+    background-color: black;
+  }
+  
+  section:nth-of-type(10) {
+    background-color: black;
+  }
+  
+  h1{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 120px;
+    color : #87CEEB;
+  }
+  
+  p:nth-of-type(1){
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px;
+    color: #87CEEB;
+  }
+  
+  p:nth-of-type(2){
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px;
+    color: #87CEEB;
+  }
+  
+  p:nth-of-type(3){
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 150px;
+    color: #87CEEB;
+  }
+  
+  p:nth-of-type(4){
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 150px;
+  }
+  
+  p:nth-of-type(5){
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 150px;
+  }
+  
+  p:nth-of-type(6){
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 150px;
+  }
+  
+  p:nth-of-type(7){
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    margin-top: 500px;
+  }
+  
+  p:nth-of-type(8){
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    margin-top: 500px;
+  }
+  
+  .img_1{
+    float:right;
+    margin-top: 175px;
+    margin-right: 200px;
+    width:400px;
+    height: 400px;
+  }
+  
+  .img_2{
+    margin-top: 175px;
+    margin-right: 200px;
+    margin-left: 60px;
+    width:400px;
+    height: 400px;
+    float: left;
+  }
+  
+  .img_3{
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 60px;
+    width:200px;
+    height: 200px;
+    float: left;
+  }
+  
+  .img_4{
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 120px;
+    width:200px;
+    height: 200px;
+    float: right;
+  }
+  
+  .img_5{
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 120px;
+    float: left;
+  }
+  
+  .img_6{
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    float: right;
+  }
+  
+  .img_7{
+    margin-top: 200px;
+    margin-right: 150px;
+    margin-left: 150px;
+    float: left;
+    height:350px;
+    width: 350px;
+  }
+  
+  .img_8{
+    margin-top: 200px;
+    margin-right: 150px;
+    margin-left: 150px;
+    float: right;
+    height: 339px;
+    width: 500px;
+  }
+  
+  .main-wrapper{
+    display:flex;
+  }
+  
+  footer {
+    height:50px;
+    background-color: #36454F;
+    color: #fff;
+  }
