@@ -27,46 +27,57 @@
   
   section:nth-of-type(1) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(2) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(3) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(4) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(5) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(6) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(7) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(8) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(9) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(10) {
     background-color: black;
+    max-width: 100%;
   }
   
   section:nth-of-type(10) {
     background-color: black;
+    max-width: 100%;
   }
   
   h1{
@@ -136,16 +147,16 @@
     float:right;
     margin-top: 175px;
     margin-right: 200px;
-    width:400px;
-    height: 400px;
+    width:27.7%;
+    height:auto;
   }
   
   .img_2{
     margin-top: 175px;
     margin-right: 200px;
     margin-left: 60px;
-    width:400px;
-    height: 400px;
+    width:27.7%;
+    height:27.7%;
     float: left;
   }
   
@@ -153,17 +164,18 @@
     margin-top: 100px;
     margin-right: 200px;
     margin-left: 60px;
-    width:200px;
-    height: 200px;
+    width:13.8%;
+    height:13.8%;
     float: left;
+  
   }
   
   .img_4{
     margin-top: 100px;
     margin-right: 200px;
     margin-left: 120px;
-    width:200px;
-    height: 200px;
+    width:13.8%;
+    height:13.8%;
     float: right;
   }
   
@@ -172,6 +184,8 @@
     margin-right: 200px;
     margin-left: 120px;
     float: left;
+    width: 23.1%;
+    height:34.7%;
   }
   
   .img_6{
@@ -179,6 +193,8 @@
     margin-right: 200px;
     margin-left: 200px;
     float: right;
+    width:20.8%;
+    height:19%;
   }
   
   .img_7{
@@ -186,8 +202,8 @@
     margin-right: 150px;
     margin-left: 150px;
     float: left;
-    height:350px;
-    width: 350px;
+    width: 24.3%;
+    height:24.3%;
   }
   
   .img_8{
@@ -195,12 +211,13 @@
     margin-right: 150px;
     margin-left: 150px;
     float: right;
-    height: 339px;
-    width: 500px;
+    width: 34.7%;
+    height:23.5%;
   }
   
   .main-wrapper{
     display:flex;
+    max-width:100%;
   }
   
   footer {
