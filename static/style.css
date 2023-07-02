@@ -93,9 +93,7 @@
   p{
     font-family: 'Trebuchet MS', sans-serif;
   }
-  
-  
-  
+
   
   .main-wrapper{
     display:flex;
@@ -105,5 +103,5 @@
   footer {
     height:7%;
     background-color: #36454F;
-    color: #fff;
+    color: white;
   }
