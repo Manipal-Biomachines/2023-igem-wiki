@@ -26,194 +26,76 @@
   
   
   section:nth-of-type(1) {
-    background-color: black;
     max-width: 100%;
   }
   
+  
+  
   section:nth-of-type(2) {
-    background-color: black;
     max-width: 100%;
   }
   
   section:nth-of-type(3) {
-    background-color: black;
+  
     max-width: 100%;
   }
   
   section:nth-of-type(4) {
-    background-color: black;
     max-width: 100%;
+    background-image: url(https://static.igem.wiki/teams/4641/wiki/fishtest.jpeg);
+    background-size: cover;
+    overflow: hidden;
   }
   
   section:nth-of-type(5) {
-    background-color: black;
+  
     max-width: 100%;
+    background-image: url(https://static.igem.wiki/teams/4641/wiki/agriculture.gif);
+    background-size: cover;
+    overflow: hidden;
   }
   
   section:nth-of-type(6) {
-    background-color: black;
     max-width: 100%;
   }
   
   section:nth-of-type(7) {
-    background-color: black;
     max-width: 100%;
+    background-image: url(https://static.igem.wiki/teams/4641/wiki/image1test.jpg);
+    background-size: cover;
+    overflow: hidden;
   }
   
   section:nth-of-type(8) {
-    background-color: black;
     max-width: 100%;
+    background-image:  url(https://static.igem.wiki/teams/4641/wiki/bg-test.jpg);
+    background-size: cover;
+    overflow: hidden;
   }
   
   section:nth-of-type(9) {
-    background-color: black;
+  
     max-width: 100%;
+   
   }
   
   section:nth-of-type(10) {
-    background-color: black;
-    max-width: 100%;
-  }
   
-  section:nth-of-type(10) {
-    background-color: black;
     max-width: 100%;
   }
   
   h1{
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 120px;
-    color : #87CEEB;
+    font-size: 750%;
+    color:#6495ED;
   }
   
-  p:nth-of-type(1){
+  p{
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 156.25%;
-    width: 50%;
-    margin-left: 3.2%;
-    color: #87CEEB;
   }
   
-  p:nth-of-type(2){
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 156.25%;
-    width: 50%;
-    margin-left: 3.2%;
-    color: #87CEEB;
-  }
   
-  p:nth-of-type(3){
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 156.25%;
-    margin-left: 0.6%;
-    margin-top: 9.7%;
-    color: #87CEEB;
-  }
   
-  p:nth-of-type(4){
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 156.25%;
-    margin-right: 0.6%;
-    margin-top: 9.7%;
-  }
-  
-  p:nth-of-type(5){
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 156.25%;
-    margin-left: 0.6%;
-    margin-top: 9.7%;
-  }
-  
-  p:nth-of-type(6){
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 156.25%;
-    margin-left: 0.6%;
-    margin-top: 9.7%;
-  }
-  
-  p:nth-of-type(7){
-    font-family: 'Trebuchet MS', sans-serif;
-    margin-left: 0.6%;
-    margin-top: 32.5%;
-  }
-  
-  p:nth-of-type(8){
-    font-family: 'Trebuchet MS', sans-serif;
-    margin-left: 0.6%;
-    margin-top: 32.5%;
-  }
-  
-  .img_1{
-    float:right;
-    margin-top: 11.39%;
-    margin-right: 13%;
-    width:27.7%;
-    height:auto;
-  }
-  
-  .img_2{
-    margin-top: 11.39%;
-    margin-right: 13%;
-    margin-left: 3.9%;
-    width:27.7%;
-    height:27.7%;
-    float: left;
-  }
-  
-  .img_3{
-    margin-top: 6.5%;
-    margin-right: 13%;
-    margin-left: 3.9%;
-    width:13.8%;
-    height:13.8%;
-    float: left;
-  
-  }
-  
-  .img_4{
-    margin-top: 6.5%;
-    margin-right: 13%;
-    margin-left: 7.8%;
-    width:13.8%;
-    height:13.8%;
-    float: right;
-  }
-  
-  .img_5{
-    margin-top: 6.5%;
-    margin-right: 13%;
-    margin-left: 7.8%;
-    float: left;
-    width: 23.1%;
-    height:34.7%;
-  }
-  
-  .img_6{
-    margin-top: 6.5%;
-    margin-right: 13%;
-    margin-left: 13%;
-    float: right;
-    width:20.8%;
-    height:19%;
-  }
-  
-  .img_7{
-    margin-top: 13%;
-    margin-right: 9.76%;
-    margin-left: 9.76%;
-    float: left;
-    width: 24.3%;
-    height:24.3%;
-  }
-  
-  .img_8{
-    margin-top: 13%;
-    margin-right: 9.76%;
-    margin-left: 9.76%;
-    float: right;
-    width: 34.7%;
-    height:23.5%;
-  }
   
   .main-wrapper{
     display:flex;
