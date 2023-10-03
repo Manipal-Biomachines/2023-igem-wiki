@@ -38,8 +38,10 @@
             <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='project-implementation') }}">Implementation</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='project-parts') }}">Parts</a></li>
           </ul>
         </li>
 
@@ -51,6 +53,17 @@
         <!---- HUMAN PRACTICES ---->
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        </li>
+
+        <!---- COLLOABORATION ---->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
+          <a class="nav-link" href="{{ url_for('pages', page='engagement-communityengagement') }}">Community Engagement</a>
+          <a class="nav-link" href="{{ url_for('pages', page='education') }}">Education</a>
+          <a class="nav-link" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
+          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+          <a class="nav-link" href="{{ url_for('pages', page='engagement-partnership') }}">Partnership</a>
+          <a class="nav-link" href="{{ url_for('pages', page='engagement-sciencecommunication') }}">Science Communication</a>
         </li>
 
         <!---- AWARDS ---->
