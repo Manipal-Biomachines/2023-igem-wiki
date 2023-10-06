@@ -79,3 +79,26 @@ section p {
   line-height: 2em;
   letter-spacing: 0.5px;
 }
+
+.sidebar {
+  width: 200px;
+  background-color: #ccf2fc; /* Bootstrap background color */
+  padding: 5px;
+  height: 100%;
+  transition: top 0.3s; 
+}
+
+.content {
+  margin-left: 100px; /* Adjust margin to accommodate the sidebar width */
+  padding: 20px;
+}
+
+.whole-thing{
+  display:flex;
+  margin:0;
+}
+
+.content{
+  flex:1;
+  padding:1px;
+}
