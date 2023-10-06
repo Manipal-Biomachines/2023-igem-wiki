@@ -1,111 +1,7 @@
-<html>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-    <!-- CSS Files -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="{{ url_for('static', filename='common-waves.css') }}">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <body style="background: linear-gradient(180deg, #4BD9E8 6%, #108EAF 57%, #005C74 96%);">
-        <div class="bar">  
-          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4BD9E8;">
-              <a class="navbar-brand" href="#">MIT-MAHE</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link" href="{{ url_for('pages', page='home') }}">
-                        Home
-                      </a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Team
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                        <a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Meet the Team</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Project
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                        <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contributions</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-design') }}">Design</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-implementation') }}">Implementation</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-parts') }}">Parts</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Engagement
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-communityengagement') }}">Community Engagement</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-partnership') }}">Partnership</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-sciencecommunication') }}">Science Communication</a>
-                      
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Awards
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-part') }}">Part</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-model') }}">Model</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-inclusivity') }}">Inclusivity</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-education') }}">Education</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+{% extends "layout.html" %}
+{% block page_content %}
 
-          </div>
-
-          <div class="banner">
-            <header>
-              <img src= "https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
-              <h1>Collaborations</h1>
-            </header>
-          </div>
-          
-          <div class="whole-thing">
-          <div class="sidebar">
-              <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section1" onclick="scrollToSection('section1')">1. iGEM ABOA</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section2" onclick="scrollToSection('section2')">2. Maastricht iGEM</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section3" onclick="scrollToSection('section3')">3. Penn State iGEM</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section4" onclick="scrollToSection('section4')">4. iGEM McGill</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section5" onclick="scrollToSection('section5')">5. iGEM IISER Bhopal</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section6" onclick="scrollToSection('section6')">6. iGEM NTHU</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section7" onclick="scrollToSection('section7')">7. OUC-China</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section8" onclick="scrollToSection('section8')">8. iGEM IIT-Delhi</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section9" onclick="scrollToSection('section9')">9. iGEM Dusseldorf</a></li>
-              </ul>
-          </div>
-            <!-- Content-->
-          <div class="content">
+<div class="content">
           <div class="m-4 mb-16">
               <p class="mt-5" style="font-family: 'Montserrat', sans-serif; font-size: 27px;" id="section1">1. iGEM ABOA, Turku, Finland (May 2023)<br></p>
               <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">iGEM season ropes in several important days that have contributed towards the well- being of our planet. World Environment Day (June 5) is a good day to be reminded of what the Earth is enduring and to always be showing our support. MIT-MAHE participated in a collaborative mission, initiated by ABOA where we fashioned a “Let us Save Our Planet From TCC” poster which portrayed our mission while aligning with the Environment Day spirit. </p>
@@ -115,7 +11,7 @@
               <img src="https://static.igem.wiki/teams/4641/wiki/collaboration-images/collaboration-images/maastricht.jpg" class="img-fluid rounded mx-auto d-block mt-4">
               <p class="mt-3" style="font-family: 'Montserrat', sans-serif; font-size: 27px;" id="section3">3. Penn State iGEM, Pennsylvania State University, Pennsylvania, USA (July 2023)<br></p>
               <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The iGEM team from Penn State involved creating a diverse puzzle and gave us a platform to show off our creativity and identity. MIT-MAHE contributed to this global puzzle by sending in the project logo curated by our Graphics team which highlights our creative thinking and resembles our mission. It brings together diverse teams from all over the globe who aim at achieving one common goal- application of synthetic biology to find sustainable solutions to various problems around the world.</p>
-              <img src="https://static.igem.wiki/teams/4641/wiki/collaboration-images/collaboration-images/carbanel-logo.png" class="img-fluid rounded mx-auto d-block mt-4">
+              <img src="https://static.igem.wiki/teams/4641/wiki/collaboration-images/collaboration-images/penn-state.jpg" class="img-fluid rounded mx-auto d-block mt-4">
               <p class="mt-3" style="font-family: 'Montserrat', sans-serif; font-size: 27px;" id="section4">4. iGEM McGill, McGill University, Montreal, Quebec, Canada- Biome Book (July 2023)<br></p>
               <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The McGill iGEM team came up with the idea of a Biome Book to document and showcase different proteins that were special to different teams. MIT-MAHE took part in this collaboration and sent in our novel amidase from Ochrobactrum sp tccA, which is our special protein. This interesting collaboration gave us the opportunity to broaden our horizons to the proteins that different teams are engineering and to recite to other teams our protein and its story!</p>
               <img src="https://static.igem.wiki/teams/4641/wiki/collaboration-images/collaboration-images/mcgill.jpg" class="img-responsive rounded mx-auto d-block mt-4">
@@ -133,7 +29,7 @@
               </div>
               <p class="mt-3" style="font-family: 'Montserrat', sans-serif; font-size: 27px;" id="section6">6. iGEM NTHU, NTHU, Taiwan- map (August 2023)<br></p>
               <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> The iGEM map collaboration initiated by NTHU Taiwan allowed the personification of our projects- a unique perspective that draws the parallel between the various components that can be viewed as imperative characters in our story- our project. MIT-MAHE chose to present CarbanEl, our main solution enzyme as the character for the map- the hero of our story. The map lets the teams find out about other teams’ projects while telling a story about their own projects- using the logos and other parts as metaphors. </p>
-              <img src="https://static.igem.wiki/teams/4641/wiki/collaboration-images/collaboration-images/carbanel-logo.png" class="img-responsive rounded mx-auto d-block mt-4">
+              <img src="https://static.igem.wiki/teams/4641/wiki/collaboration-images/collaboration-images/penn-state.jpg" class="img-responsive rounded mx-auto d-block mt-4">
               <p class="mt-3" style="font-family: 'Montserrat', sans-serif; font-size: 27px;" id="section7">7. OUC-China, Ocean University of China, China- picture book (August 2023)<br></p>
               <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> It is always important to be more inclusive towards the society and contribute towards this cause- the collaboration opportunity instituted by OUC China gave us the chance to help incorporate the spark of our project within the hearts of autistic children by compiling coloring sheets related to the projects of different teams</p>
               <div class="embed-responsive embed-responsive-16by9">
@@ -201,41 +97,4 @@
           </div>
         </div>
       </div>
-
-      </body>
-            <!-- Footer -->
-  <footer class="text-center text-white" style="background-color: #000000; bottom: 0; width: 100%;">
-    <!-- Grid container -->
-    <div class="container p-2">
-
-      <!-- Section: Social media -->
-      <section class="mb-2">
-    
-        <!-- Google -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="bi bi-envelope"></i></a>
-
-        <!-- Instagram -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/manipalbiomachines/" role="button"><i class="bi bi-instagram"></i></a>
-
-        <!-- Linkedin -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/company/manipal-biomachines/" role="button"><i class="bi bi-linkedin"></i></a>
-        <!-- Github -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://gitlab.igem.org/2023/mit-mahe/-/blob/main/wiki/pages/engagement-collaborations.html?ref_type=heads" role="button"><i class="bi bi-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 - Content on this site is licensed under a Creative Commons Attribution 4.0 International license.
-    </div>
-    <!-- Copyright -->
-
-</footer>
-
-  <!-- Footer -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </html>
+{% endblock %}
