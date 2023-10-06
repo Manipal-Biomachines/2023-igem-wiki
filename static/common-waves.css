@@ -102,3 +102,18 @@ section p {
   flex:1;
   padding:1px;
 }
+
+p.MAIN-STUFF {
+    font-family: 'Montserrat', sans-serif; /* Replace 'Your Main Font' with your preferred font */
+    font-size: 27px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Set the font weight */
+    color: #333; /* Optional: Set the text color */
+}
+
+/* CSS Styles for paragraphs with class "sub-stuff" */
+p.sub-stuff {
+    font-family: 'Poppins', sans-serif; /* Replace 'Your Sub Font' with your preferred font */
+    font-size: 20px; /* Adjust the font size as needed */
+    font-style: italic; /* Optional: Set the font style */
+    color: #666; /* Optional: Set the text color */
+}
