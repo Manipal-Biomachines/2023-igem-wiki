@@ -9,7 +9,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <body style="background: #FFFFFF;">
-        <div class="bar">  
+        <!-- Navbar -->
           <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4BD9E8;">
               <a class="navbar-brand" href="#">MIT-MAHE</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,9 +77,57 @@
               </div>
             </nav>
 
-          </div>
+          <!-- Sidebar -->
 
-          <div class="banner">
+        <div class="content-container" style="display:flex;">
+        <div class="sidebar">
+            <div class="d-flex flex-column flex-shrink-0 p-1 bg-light" id="saveme" style="width: 200px; height: 100vh; overflow-y: auto;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              <span class="fs-4">Sidebar</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                  Orders
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                  Products
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                  Customers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        </div>
+
+
+
+
+          <div class="banner flex-grow-1" style="flex:1">
             <header>
               <img src= "https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
               <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
@@ -89,21 +137,7 @@
               <h1>Collaborations</h1>
             </header>
           </div>
-          
-          <div class="whole-thing">
-          <div class="sidebar">
-              <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section1" onclick="scrollToSection('section1')">1. iGEM ABOA</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section2" onclick="scrollToSection('section2')">2. Maastricht iGEM</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section3" onclick="scrollToSection('section3')">3. Penn State iGEM</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section4" onclick="scrollToSection('section4')">4. iGEM McGill</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section5" onclick="scrollToSection('section5')">5. iGEM IISER Bhopal</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section6" onclick="scrollToSection('section6')">6. iGEM NTHU</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section7" onclick="scrollToSection('section7')">7. OUC-China</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section8" onclick="scrollToSection('section8')">8. iGEM IIT-Delhi</a></li>
-                  <li class="nav-item"><a class="nav-link" style="font-family: 'Montserrat', sans-serif; font-size: 19px; color:#000000" href="#section9" onclick="scrollToSection('section9')">9. iGEM Dusseldorf</a></li>
-              </ul>
-          </div>
+  
             <!-- Content-->
           {% block page_content %}{% endblock %}
 
