@@ -103,7 +103,7 @@ p.MAIN-STUFF {
     font-size: 27px; /* Adjust the font size as needed */
     font-weight: bold; /* Optional: Set the font weight */
     color: #333; /* Optional: Set the text color */
-    background: -webkit-linear-gradient(#eee, #333);
+    background: -webkit-linear-gradient(#8bedbb, #005c74);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
