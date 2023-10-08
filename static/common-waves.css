@@ -112,6 +112,5 @@ p.MAIN-STUFF {
 p.sub-stuff {
     font-family: 'Poppins', sans-serif; /* Replace 'Your Sub Font' with your preferred font */
     font-size: 20px; /* Adjust the font size as needed */
-    font-style: italic; /* Optional: Set the font style */
     color: #666; /* Optional: Set the text color */
 }
