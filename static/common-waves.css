@@ -71,14 +71,7 @@ header h1 {
   margin-left: 20px;
   color: #000000;
 }
-section p {
-  font-family: "Poppins", sans-serif;
-  padding: 30px 35px;
-  margin-top: 50px;
-  text-align: justify;
-  line-height: 2em;
-  letter-spacing: 0.5px;
-}
+
 
 .sidebar {
   width: 200px;
@@ -108,6 +101,9 @@ p.MAIN-STUFF {
     font-size: 27px; /* Adjust the font size as needed */
     font-weight: bold; /* Optional: Set the font weight */
     color: #333; /* Optional: Set the text color */
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* CSS Styles for paragraphs with class "sub-stuff" */
