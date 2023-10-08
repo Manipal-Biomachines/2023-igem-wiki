@@ -72,6 +72,10 @@ header h1 {
   color: #000000;
 }
 
+.sidebar {
+  height:100%;
+}
+
 
 
 .content {
