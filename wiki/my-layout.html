@@ -71,68 +71,8 @@
 
           <!-- Sidebar -->
 
-        <div class="content-container" style="display:flex;">
-        <div class="sidebar">
-            <div class="d-flex flex-column flex-shrink-0 p-1 bg-light" id="saveme" style="width: 200px; height: 100vh; overflow-y: auto; position:fixed;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-              <span class="fs-4">Sidebar</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                  Orders
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Customers
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-
-
-
-          <div class="banner flex-grow-1" style="flex:1">
-            <header>
-              <img src= "https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
-              <h1>Collaborations</h1>
-            </header>
-
-            {% block page_content %}{% endblock %}
-          </div>
-
-          </div>
-  
+       {% block page_content %}
+       {% endblock %}
             <!-- Content-->
           
 
