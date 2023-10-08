@@ -73,8 +73,13 @@ header h1 {
 }
 
 .sidebar {
-  height:100%;
+  width: 200px;
+  background-color: #4BD9E8; /* Bootstrap background color */
+  padding: 5px;
+  height: 100%;
+  transition: top 0.3s; 
 }
+
 
 
 
