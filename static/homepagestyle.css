@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@media (max-width: 768px) {
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-family: var(--font-lexend-zetta);
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+:root {
+  /* fonts */
+  --font-lexend-zetta: "Lexend Zetta";
+  --font-holtwood-one-sc: "Holtwood One SC";
+  --font-futura: 'Futura';
+  --font-gravitas-one: "Gravitas One";
+  --font-bebas-neue: "Bebas Neue";
+  --font-dela-gothic-one: "Dela Gothic One";
+
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:#F1E0CB;
+    display: flex;
+}
+.carbanel 
+{
+  position: absolute;
+  top: 484px;
+  left: 295px;
+  font-size: 128px;
+  font-weight: 800;
+  font-family: 'Holtwood One SC';
+  background: linear-gradient(180deg,rgba(117,217,232,1)6%,rgba(16,145,175,1)6%,rgba(0,92,116,1)96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  width: 922px;
+  height: 140px;
+ 
+}
+.carbanel-logo-1 {
+  position: absolute;
+  top: 103px;
+  left: 502px;
+  width: 435px;
+  height: 428px;
+  object-fit: cover;
+}
+.wave
+{
+  position: absolute;  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://static.igem.wiki/teams/4641/wiki/homepage/wavewhite.png");
+  background-size: 1000px 100px;
+  animation: animate 4s ease-in-out infinite;
+  animation-delay: calc(var(--i)*0.25s);
+}
+.wave#wave1
+{
+   z-index: 1000;
+   opacity: 1;
+   background-position-x: 400px;
+}
+.wave#wave2
+{
+   z-index: 999;
+   opacity: 0.5;
+   background-position-x: 300px;
+}
+.wave#wave3
+{
+   z-index: 998;
+   opacity: 0.2;
+   background-position-x: 200px;
+}
+.wave#wave4
+{
+   z-index: 1000;
+   opacity: 0.7;
+   background-position-x: 100px;
+}
+@keyframes animate
+{
+  0%,100%
+  {
+    transform: translate(0px);
+  }   
+  50%
+  {
+    transform: translate(10px);
+  }
+}
+.sec
+{
+    padding: 100px;
+}
+.card
+{
+  background-blend-mode: lighten;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky; 
+  top: 0px;
+  animation: animate 4s ease-in-out infinite;
+  animation-delay: calc(var(--i)*0.25s);
+  
+
+}
+.card img
+{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+ 
+}
+.card-content
+{
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+ height: 100%;
+  color: #215c75;
+  object-fit: cover;
+  font-size: 64px;
+  font-family: Futura;
+  font-weight: 500;
+  line-height: 100px; 
+  letter-spacing: 14px;
+}
+.card-content-2
+{
+  
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #124459;
+  object-fit: cover;
+  font-size: 48px;
+  font-family: Futura;
+  font-weight: 500;
+  line-height: 70px; 
+  letter-spacing: 5px;
+}
+.card-content-2-2
+{
+  
+  margin-bottom: 5px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #124459;
+  object-fit: cover;
+  font-size: 80px;
+  font-family: Futura;
+  font-weight: 800;
+  line-height: 70px; 
+  letter-spacing: 5px;
+}
+
+.card-content-3
+{
+  
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #0A3344;
+  object-fit: cover;
+  font-size: 64px;
+  font-family: Futura;
+  font-weight: 500;
+  line-height: 100px; 
+  letter-spacing: 5px;
+}
+.card-content-4
+{
+  
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #0A3344;
+  object-fit: cover;
+  font-size: 92px;
+  font-family: Dela Gothic One;
+  font-weight: 1000;
+  line-height: 100px; 
+  letter-spacing: 5px;
+}
+.number
+{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #215C75;
+  object-fit: cover;
+  font-size: 128px;
+  font-family:  Dela Gothic One;
+  font-weight: 1000;
+  line-height: 100px; 
+  letter-spacing: 14px;
+}
+.number2
+{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #124459;
+  object-fit: cover;
+  font-size: 92px;
+  font-family:  Dela Gothic One;
+  font-weight: 1000;
+  line-height: 200px; 
+  letter-spacing: 10px;
+}
+
+.card-content-5
+{
+  
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #0A3344;
+  object-fit: cover;
+  font-size: 48px;
+  font-family: Futura;
+  font-weight: 500;
+  line-height: 70px; 
+  letter-spacing: 10px;
+}
+.card-content-6
+{
+  
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  object-fit: cover;
+  font-size: 28px;
+  font-family: Futura;
+  font-weight: 800;
+  line-height: 90px; 
+  letter-spacing: 5px;
+}
+.h2
+{
+  text-align: center;
+  z-index: 11;
+}
+
+.section2 img:hover
+{
+  filter: grayscale(1);
+  transform: scale(1.03);
+}
+
+
+
+.sections {
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  bottom: 0;
+}
+.section2
+{
+  
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex: 1;
+  position: relative;
+  width: 20%;
+  height: 40%;
+  border-radius: 200%;
+  object-fit: cover;
+
+}
+.section2 buttons 
+{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%; 
+  height: 100%;
+  border-radius: 200%;
+  object-fit: cover; 
+}
