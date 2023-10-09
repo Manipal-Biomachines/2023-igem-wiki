@@ -1,14 +1,10 @@
 {% extends "my-layout.html" %}
-{% block page_content %}
+
 
 
 <!-- Sidebar -->
 
-        <div class="content-container" style="display:flex;">
-        <div class="sidebar">
-            <div class="d-flex flex-column flex-shrink-0 p-1" id="saveme" style="width: 200px; height: 100vh; overflow-y: auto; position:fixed; background-color: #ffffff;">
-            
-            <hr>
+        {% sidebar_content %}
             <ol class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
                 <a href="#section1" class="nav-link link-dark" aria-current="page">
@@ -70,23 +66,15 @@
               </li>
 
             </ol>
-          </div>
-        </div>
+        {% end sidebar %}
 
 
 
 
 
-          <div class="banner flex-grow-1" style="flex:1">
-            <header>
-              <img src= "https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
-              <h1>Education</h1>
-            </header>
 
+
+      {% block page_content %}
 
       <div class="content">
                 <div class="m-2 mb-16">
