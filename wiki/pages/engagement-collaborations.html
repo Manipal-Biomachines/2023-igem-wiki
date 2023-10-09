@@ -4,7 +4,7 @@
 
 <!-- Sidebar -->
 
-        {% sidebar_content %}
+        {% block sidebar_content %}
 
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
@@ -67,10 +67,10 @@
               </li>
 
             </ul>
-        {% end sidebar %}
+        {% endblock %}
 
 
-      {% heading %}Collaborations{% end_heading %}
+      {% block heading %}Collaborations{% endblock %}
 
 
       {% block page_content %}
