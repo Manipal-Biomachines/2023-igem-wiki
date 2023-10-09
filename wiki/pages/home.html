@@ -1,60 +1,244 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+    <!-- CSS Files -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepagestyle.css') }}">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body style="background: linear-gradient(to bottom, #d7f4fc, #52aec8);">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d7f4fc;">
+            <a class="navbar-brand" href="#">MIT-MAHE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{ url_for('pages', filename='home.html') }}">
+                      Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='team.html') }}">Meet the Team</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='attributions.html') }}">Attributions</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Project
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='contribution.html') }}">Contributions</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='description.html') }}">Description</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='project-design.html') }}">Design</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='engineering.html') }}">Engineering Success</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='experiments.html') }}">Experiments</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='hardware.html') }}">Hardware</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='project-implementation.html') }}">Implementation</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='model.html') }}">Modeling</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', filename='project-parts.html') }}">Parts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Engagement
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
+                    <a class="dropdown-item" href="{{ url_for('pages', filename='human-practices.html') }}">Human Practices<a> 
+                    <a class="dropdown-item" href="{{ url_for('pages', filename='education.html') }}">Education</a>
+                    <a class="dropdown-item" href="{{ url_for('pages', filename='inclusivity.html') }}">Inclusivity</a>
+                    <a class="dropdown-item" href="{{ url_for('pages', filename='engagement-colloaborations.html') }}">Collaborations</a>
+               
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-{% block title %}Home{% endblock %}
-{% block lead %}<b>Welcome to iGEM 2023!</b> Your team has been approved and you are ready to start the iGEM season!{% endblock %}
 
-{% block page_content %}
+         
 
-<div class="row">
-  <div class="col">
-    <h2>Before you start</h2>
-    <hr>
-    <p>Please read the following pages:</p>
-    <ul>
-      <li><a href="https://competition.igem.org/deliverables/team-wiki" target="_blank">Wiki Requirements page</a></li>
-      <li><a href="https://competition.igem.org/judging/pages-for-awards" target="_blank">Standard URL Pages for Awards</a></li>
-    </ul>
-  </div>
-</div>
-<div class="row mt-4">
-  <div class="col">
-    <h2>Styling your wiki</h2>
-    <hr>
-    <p>Feel free to customize the page styling according to your preferences, or you can simply leave the style as it is. It's wise to focus on a clear content first, and on a clean design later.</p>
-    <p>Be cautious with the size of the assets like images, videos, and more into your wiki. Large file sizes can hinder the presentation of wikis due to slow internet connections. Remember to compress large files before uploading them to iGEM servers.</p>
-    <p>This default wiki meets the requirements, enhances navigability, and provides a user-friendly experience for visitors. You should not feel obliged to go beyond the provided styling.</p>
-  </div>
-</div>
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Tips</h2>
-    <hr>
-    <p>This wiki will be your team's first interaction with the rest of the world, so here are a few tips to help you get started:</p>
-    <ul>
-      <li>State your accomplishments! Tell people what you have achieved from the start.</li>
-      <li>Be clear about what you are doing and how you plan to do this.</li>
-      <li>You have a global audience! Consider the different backgrounds that your users come from.</li>
-      <li>Make sure information is easy to find; nothing should be more than 3 clicks away.</li>
-      <li>Avoid using very small fonts and low contrast colors; information should be easy to read.</li>
-      <li>Start documenting your project as early as possible; don't leave anything to the last minute before the Wiki Freeze. For a complete list of deadlines visit the <a href="https://competition.igem.org/calendar" target="_blank">iGEM Competition calendar</a></li>
-      <li>Have lots of fun!</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspiration</h2>
-    <hr>
-    <p>You can also view other team wikis for inspiration! Here are some examples:</p>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark">2022 DTU-Denmark</a></li>
-      <li><a href="https://2022.igem.wiki/virginia">2022 Virginia</a></li>
-      <li><a href="https://2022.igem.wiki/crete">2022 Crete</a></li>
-      <li><a href="https://2022.igem.wiki/estonia-tuit">2022 Estonia_TUIT</a></li>
-      <li><a href="https://2022.igem.wiki/ashesighana">2022 AshesiGhana</a></li>
-      <li><a href="https://2021.igem.org/Team:SDU-Denmark">2021 SDU-Denmark</a></li>
-      <li><a href="https://2020.igem.org/Team:XMU-China">2020 XMU China </a></li>
-      <li><a href="https://2020.igem.org/Team:TAS_Taipei">2020 TAS Taipei </a></li>
-    </ul>
-  </div>
-</div>
 
-{% endblock %}
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>homepage</title>
+        <link rel="stylesheet" href="homepagestyle.css">
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Holtwood One SC:wght@400&display=swap"/>
+        <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Futura:wght@500&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gravitas One:wght@400&display=swap"/>
+    </head>
+    <body>
+      
+       <section>
+        <div class="carbanel">CarbanEl</div>
+        <img class="carbanel-logo-1" src="https://static.igem.wiki/teams/4641/wiki/homepage/carbanel-logo.png"/>
+      </div>
+        <div class="wave" id="wave1" style="--i:1;"></div>
+        <div class="wave" id="wave2" style="--i:2;"></div>
+        <div class="wave" id="wave3" style="--i:3;"></div>
+        <div class="wave" id="wave4" style="--i:4;"></div>
+       </section>
+
+      <div class="card" >
+        <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+         <div class="card-content">
+          India is home to<br><br><br><br>
+          people
+         </div>
+         <div class="number">
+          1.43 BILLION
+         </div>
+         </div>
+        
+   <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <div class="card-content-2">
+      According to a Central Pollution Control Board report<br>
+        We generate over<br><br><br><br>
+       of Wastewater per day.
+     </div>
+     <div class="number2">
+      35,558 MILLION LITRES
+     </div>
+   </div>
+    
+   <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <div class="card-content-3">
+      This wastewater contains a plethora <br>of compounds including<br> antimicrobials flushed from<br> pharmaceutical and personal care<br> products.
+
+    </div>
+  
+   </div>
+   <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png"> 
+    <div class="card-content-4">
+      Triclocarban<br><br><br><br>threaten aquatic and crop life.
+    </div>
+    <div class="card-content-3">
+      one such contaminant, escapes <br>degradation in wastewater<br> treatment plants to 
+    </div>
+  </div>
+   <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
+    <div class="card-content-5">
+      Moreover, existing degradation<br> methods degrade TCC into<br><br><br><br>which are also toxic and<br>associated with mutagenesis.
+    </div>
+    <div class="card-content-4">
+      <b>4-chloroaniline and 3,4-dichloroaniline</b>
+    </div>
+  </div>
+   <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-6.png">
+    <div class="card-content-6">
+      <h2><b>OUR SOLUTION</b></h2>
+     <p><br><br><br><br><b>CarbanEl</b> uses <b> TccA </b> amidase from Ochrobactrum sp. <b>TCC-2 degrades TCC</b> to 4-chloroaniline and 3,4-dichloroaniline.<br> The associated gene, tccA, is introduced into a <b>chassis</b> which <b>naturally degrades</b> the chloroaniline <b>into non-toxic intermediates</b> of the Krebs cycle.</p> 
+
+
+    </div>
+    </div>
+   <div class="card">
+    
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
+    <img opacity="0.8" src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-6.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-7-buttons.png"> 
+    <div class="sections">
+    <div class="section2">
+      <a href="{{ url_for('pages', filename='description.html') }}">
+      <img
+        class="buttons"
+        src="https://static.igem.wiki/teams/4641/wiki/homepage/description.png" 
+      /></a>
+      <h2 style="color: #F1E0CB;">Description</h2>
+    </div>
+    <div class="section2">
+      <h2 style="color: #F1E0CB;">Implementation</h2>
+      <a href="{{ url_for('pages', filename='project-implementation.html') }}">
+      <img
+        class="buttons"
+        src="https://static.igem.wiki/teams/4641/wiki/homepage/implementation.png" 
+      /></a>
+    </div>
+    <div class="section2">
+      <h2 style="color: #F1E0CB;">Engg Success</h2>
+      <a href="{{ url_for('pages', filename='engineering.html') }}">
+      <img
+        class="buttons"
+        src="https://static.igem.wiki/teams/4641/wiki/homepage/engg-success.png"
+      /></a>
+    </div>
+      <div class="section2">
+        <h2 style="color: #F1E0CB;">Human Practices</h2>
+       <a href="{{ url_for('pages', filename='human-practices.html') }}">
+        <img class="buttons"
+        src="https://static.igem.wiki/teams/4641/wiki/homepage/human-practices.png" /></a>
+      </div>
+    <div class="section2">
+    <h2 style="color: #F1E0CB;">Education</h2>
+      <a href="{{ url_for('pages', filename='education.html') }}">
+      <img
+        class="buttons"
+        src="https://static.igem.wiki/teams/4641/wiki/homepage/education.png"
+      /></a>
+      </div>
+    </div>
+  </div>
+     
+    
+   
+ 
+       <script>
+        let wave1 = document.getElementById('wave1');
+        let wave2 = document.getElementById('wave2');
+        let wave3 = document.getElementById('wave3');
+        let wave4 = document.getElementById('wave4');
+
+        window.addEventListener('scroll',function()
+        {
+           let value = window.scrollY; 
+
+           wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+           wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
+           wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
+           wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
+        })
+       </script> 
+    
+      </body>
+      
+</html>
