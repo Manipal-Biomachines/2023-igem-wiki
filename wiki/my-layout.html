@@ -75,8 +75,8 @@
         <div class="sidebar">
             <div class="d-flex flex-column flex-shrink-0 p-1" id="saveme" style="width: 200px; height: 100vh; overflow-y: auto; position:fixed; background-color: #ffffff;">
             <hr>
-            {% sidebar_content %}
-            {% end sidebar %}
+            {% block sidebar_content %}
+            {% endblock %}
           </div>
         </div>
 
@@ -87,7 +87,7 @@
               <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
               <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
               <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
-              <h1>{% heading %}{% end_heading %}</h1>
+              <h1>{% block heading %}{% endblock %}</h1>
         </header>
 
        {% block page_content %}
