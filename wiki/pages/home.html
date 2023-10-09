@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="{{ url_for('pages', filename='home.html') }}">
+                    <a class="nav-link" href="{{ url_for('home') }}">
                       Home
                     </a>
                 </li>
@@ -27,8 +27,8 @@
                       Team
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='team.html') }}">Meet the Team</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='attributions.html') }}">Attributions</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='team.html') }}">Meet the Team</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='attributions.html') }}">Attributions</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -36,15 +36,15 @@
                       Project
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='contribution.html') }}">Contributions</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='description.html') }}">Description</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='project-design.html') }}">Design</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='engineering.html') }}">Engineering Success</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='experiments.html') }}">Experiments</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='hardware.html') }}">Hardware</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='project-implementation.html') }}">Implementation</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='model.html') }}">Modeling</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', filename='project-parts.html') }}">Parts</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='contribution.html') }}">Contributions</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='description.html') }}">Description</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='project-design.html') }}">Design</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='engineering.html') }}">Engineering Success</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='experiments.html') }}">Experiments</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='hardware.html') }}">Hardware</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='project-implementation.html') }}">Implementation</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='model.html') }}">Modeling</a>
+                      <a class="dropdown-item" href="{{ url_for('pages', page='project-parts.html') }}">Parts</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -52,10 +52,10 @@
                     Engagement
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                    <a class="dropdown-item" href="{{ url_for('pages', filename='human-practices.html') }}">Human Practices<a> 
-                    <a class="dropdown-item" href="{{ url_for('pages', filename='education.html') }}">Education</a>
-                    <a class="dropdown-item" href="{{ url_for('pages', filename='inclusivity.html') }}">Inclusivity</a>
-                    <a class="dropdown-item" href="{{ url_for('pages', filename='engagement-colloaborations.html') }}">Collaborations</a>
+                    <a class="dropdown-item" href="{{ url_for('pages', page='human-practices.html') }}">Human Practices<a> 
+                    <a class="dropdown-item" href="{{ url_for('pages', page='education.html') }}">Education</a>
+                    <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity.html') }}">Inclusivity</a>
+                    <a class="dropdown-item" href="{{ url_for('pages', page='engagement-colloaborations.html') }}">Collaborations</a>
                
                   </div>
                 </li>
@@ -179,7 +179,7 @@
     <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-7-buttons.png"> 
     <div class="sections">
     <div class="section2">
-      <a href="{{ url_for('pages', filename='description.html') }}">
+      <a href="{{ url_for('pages', page='description.html') }}">
       <img
         class="buttons"
         src="https://static.igem.wiki/teams/4641/wiki/homepage/description.png" 
@@ -188,7 +188,7 @@
     </div>
     <div class="section2">
       <h2 style="color: #F1E0CB;">Implementation</h2>
-      <a href="{{ url_for('pages', filename='project-implementation.html') }}">
+      <a href="{{ url_for('pages', page='project-implementation.html') }}">
       <img
         class="buttons"
         src="https://static.igem.wiki/teams/4641/wiki/homepage/implementation.png" 
@@ -196,7 +196,7 @@
     </div>
     <div class="section2">
       <h2 style="color: #F1E0CB;">Engg Success</h2>
-      <a href="{{ url_for('pages', filename='engineering.html') }}">
+      <a href="{{ url_for('pages', page='engineering.html') }}">
       <img
         class="buttons"
         src="https://static.igem.wiki/teams/4641/wiki/homepage/engg-success.png"
@@ -204,13 +204,13 @@
     </div>
       <div class="section2">
         <h2 style="color: #F1E0CB;">Human Practices</h2>
-       <a href="{{ url_for('pages', filename='human-practices.html') }}">
+       <a href="{{ url_for('pages', page='human-practices.html') }}">
         <img class="buttons"
         src="https://static.igem.wiki/teams/4641/wiki/homepage/human-practices.png" /></a>
       </div>
     <div class="section2">
     <h2 style="color: #F1E0CB;">Education</h2>
-      <a href="{{ url_for('pages', filename='education.html') }}">
+      <a href="{{ url_for('pages', page='education.html') }}">
       <img
         class="buttons"
         src="https://static.igem.wiki/teams/4641/wiki/homepage/education.png"
