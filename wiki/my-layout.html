@@ -1,133 +1,157 @@
-<html>
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap5.min.css') }}"
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-    <!-- CSS Files -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="{{ url_for('static', filename='common-waves.css') }}">
-    <script src="{{ url_for('static', filename='bootstrap5.bundle.min.js') }}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <body style="background: #FFFFFF;">
-        <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #5ebca5;">
-              <a class="navbar-brand" href="#">MIT-MAHE</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link" href="{{ url_for('home') }}">
-                        Home
-                      </a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Team
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
-                        <a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Meet the Team</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Project
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
-                        <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contributions</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-design') }}">Design</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-implementation') }}">Implementation</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-parts') }}">Parts</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Engagement
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
-                      <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+<!doctype html>
+<html lang="en">
 
-                      <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
+  <!-- Bootstrap CSS -->
+  <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons.css') }}">
 
-                      <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
+  <!-- Custom CSS -->
+  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='common-waves.css') }}">
 
-                      
-                      
-                      
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+  <title>{% block title %}{% endblock %} | MIT_MAHE - iGEM 2023</title>
+</head>
 
-          <!-- Sidebar -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-          <div class="content-container" style="display:flex;">
-        <div class="sidebar">
-            <div class="d-flex flex-column flex-shrink-0 p-1" id="saveme" style="width: 200px; height: 100vh; overflow-y: auto; position:fixed; background-color: #ffffff;">
-            <hr>
-            {% block sidebar_content %}
-            {% endblock %}
+<body style="background: #FFFFFF;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #5ebca5;">
+    <a class="navbar-brand" href="#">MIT-MAHE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="{{ url_for('home') }}">
+            Home
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Team
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
+            <a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Meet the Team</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
           </div>
-        </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
+            <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contributions</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='project-design') }}">Design</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='project-implementation') }}">Implementation</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='project-parts') }}">Parts</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Engagement
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
+            <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
 
-        <div class="banner flex-grow-1" style="flex:1">
-            <header>
-              <img src= "https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
-              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
-              <h1>{% block heading %}{% endblock %}</h1>
-        </header>
+            <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
 
-       {% block page_content %}
-       {% endblock %}
-            <!-- Content-->
-          
-      </body>
-            <!-- Footer -->
-  <footer class="text-center text-white" style="background-color: #000000; bottom: 0; width: 100%;">
-    <!-- Grid container -->
-    <div class="container p-2">
+            <a class="dropdown-item" href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
 
-      <!-- Section: Social media -->
-      <section class="mb-2">
-    
-        <!-- Google -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="bi bi-envelope"></i></a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
 
-        <!-- Instagram -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/manipalbiomachines/" role="button"><i class="bi bi-instagram"></i></a>
 
-        <!-- Linkedin -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/company/manipal-biomachines/" role="button"><i class="bi bi-linkedin"></i></a>
-        <!-- Github -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://gitlab.igem.org/2023/mit-mahe/-/blob/main/wiki/pages/engagement-collaborations.html?ref_type=heads" role="button"><i class="bi bi-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
+
+
+          </div>
+        </li>
+      </ul>
     </div>
-    <!-- Grid container -->
+  </nav>
 
-    <!-- Copyright -->
-    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 - Content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+  <!-- Sidebar -->
+
+  <div class="content-container" style="display:flex;">
+    <div class="sidebar">
+      <div class="d-flex flex-column flex-shrink-0 p-1" id="saveme"
+        style="width: 200px; height: 100vh; overflow-y: auto; position:fixed; background-color: #ffffff;">
+        <hr>
+        {% block sidebar_content %}
+        {% endblock %}
+      </div>
     </div>
-    <!-- Copyright -->
+
+    <div class="banner flex-grow-1" style="flex:1">
+      <header>
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
+        <h1>{% block heading %}{% endblock %}</h1>
+      </header>
+
+      {% block page_content %}
+      {% endblock %}
+      <!-- Content-->
+
+</body>
+<!-- Footer -->
+<footer class="text-center text-white" style="background-color: #000000; bottom: 0; width: 100%;">
+  <!-- Grid container -->
+  <div class="container p-2">
+
+    <!-- Section: Social media -->
+    <section class="mb-2">
+
+      <!-- Google -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+          class="bi bi-envelope"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+        href="https://www.instagram.com/manipalbiomachines/" role="button"><i class="bi bi-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
+        href="https://www.linkedin.com/company/manipal-biomachines/" role="button"><i class="bi bi-linkedin"></i></a>
+      <!-- Github -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
+        href="https://gitlab.igem.org/2023/mit-mahe/-/blob/main/wiki/pages/engagement-collaborations.html?ref_type=heads"
+        role="button"><i class="bi bi-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023 - Content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+  </div>
+  <!-- Copyright -->
 
 </footer>
 
-  <!-- Footer -->
-  <script src="{{ url_for('static', filename = 'jquery-3.3.1.slim.min.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'popper.min.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'bootstrap.min.js') }}"></script>
-  </html>
+<!-- Footer -->
+<script src="{{ url_for('static', filename = 'jquery-3.3.1.slim.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.min.js') }}"></script>
+
+</html>
