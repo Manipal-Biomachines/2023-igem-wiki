@@ -6,7 +6,7 @@
 }
 header {
   height: 70vh;
-  background-color: #bcfedceb;
+  background: -webkit-linear-gradient(#8bedbb,#005c74);
   position: relative;
   overflow: hidden;
 }
@@ -75,7 +75,7 @@ header h1 {
 .sidebar {
   width: 210px;
   background-color: #000000; /* Bootstrap background color */
-  padding: 20px;
+  padding: 0;
   height: 100%;
   transition: top 0.3s; 
     font-family: 'Poppins', sans-serif;
