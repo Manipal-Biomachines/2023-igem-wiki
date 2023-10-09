@@ -71,6 +71,27 @@
 
           <!-- Sidebar -->
 
+          <div class="content-container" style="display:flex;">
+        <div class="sidebar">
+            <div class="d-flex flex-column flex-shrink-0 p-1" id="saveme" style="width: 200px; height: 100vh; overflow-y: auto; position:fixed; background-color: #ffffff;">
+            <hr>
+            {% sidebar_content %}
+            {% end sidebar %}
+          </div>
+        </div>
+
+        <div class="banner flex-grow-1" style="flex:1">
+            <header>
+              <img src= "https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
+              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
+              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
+              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
+              <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
+              <h1>Education</h1>
+        </header>
+
+
+
        {% block page_content %}
        {% endblock %}
             <!-- Content-->
