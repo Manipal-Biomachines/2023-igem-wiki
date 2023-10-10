@@ -12,6 +12,10 @@ header {
   overflow: hidden;
 }
 
+html {
+  scroll-padding-top: 75px;
+}
+
 #shape {
   position: absolute;
   left: 0;
