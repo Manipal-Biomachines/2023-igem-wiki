@@ -14,11 +14,11 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='common-waves.css') }}">
 
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
   <title>{% block title %}{% endblock %} | MIT_MAHE - iGEM 2023</title>
 </head>
-
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 <body style="background: #FFFFFF;">
   <!-- Navbar -->
@@ -31,15 +31,11 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a class="nav-link" href="{{ url_for('home') }}">
-            Home
-          </a>
+          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Team
-          </a>
+            aria-haspopup="true" aria-expanded="false">Team</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
             <a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Meet the Team</a>
             <a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
@@ -47,9 +43,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Project
-          </a>
+            aria-haspopup="true" aria-expanded="false">Project</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
             <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contributions</a>
             <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a>
@@ -64,30 +58,20 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Engagement
-          </a>
+            aria-haspopup="true" aria-expanded="false">Engagement</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #5ebca5;">
             <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
-
             <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
-
             <a class="dropdown-item" href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
-
             <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
-
-
-
-
           </div>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Sidebar -->
-
   <div class="content-container" style="display:flex;">
+    <!-- Sidebar -->
     <div class="sidebar">
       <div class="d-flex flex-column flex-shrink-0 p-1" id="saveme"
         style="width: 200px; height: 100vh; overflow-y: auto; position:fixed; background-color: #ffffff;">
@@ -98,6 +82,7 @@
     </div>
 
     <div class="banner flex-grow-1" style="flex:1">
+      <!-- Page Header -->
       <header>
         <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
         <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
@@ -107,11 +92,14 @@
         <h1>{% block heading %}{% endblock %}</h1>
       </header>
 
+      <!-- Content-->
       {% block page_content %}
       {% endblock %}
-      <!-- Content-->
+    </div>
+  </div>
 
 </body>
+
 <!-- Footer -->
 <footer class="text-center text-white" style="background-color: #000000; bottom: 0; width: 100%;">
   <!-- Grid container -->
@@ -128,29 +116,33 @@
       <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
         href="https://www.instagram.com/manipalbiomachines/" role="button"><i class="bi bi-instagram"></i></a>
 
-      <!-- Linkedin -->
+      <!-- LinkedIn -->
       <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
         href="https://www.linkedin.com/company/manipal-biomachines/" role="button"><i class="bi bi-linkedin"></i></a>
-      <!-- Github -->
+
+      <!-- Gitlab -->
       <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
-        href="https://gitlab.igem.org/2023/mit-mahe/-/blob/main/wiki/pages/engagement-collaborations.html?ref_type=heads"
-        role="button"><i class="bi bi-github"></i></a>
+        href="https://gitlab.igem.org/2023/mit-mahe/" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gitlab"
+          viewBox="0 0 16 16">
+          <path
+            d="m15.734 6.1-.022-.058L13.534.358a.568.568 0 0 0-.563-.356.583.583 0 0 0-.328.122.582.582 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.673.673 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.046 4.046 0 0 0 1.34-4.668Z" />
+        </svg>
+      </a>
     </section>
-    <!-- Section: Social media -->
   </div>
-  <!-- Grid container -->
 
   <!-- Copyright -->
   <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2023 - Content on this site is licensed under a Creative Commons Attribution 4.0 International license.
   </div>
-  <!-- Copyright -->
-
 </footer>
 
-<!-- Footer -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
