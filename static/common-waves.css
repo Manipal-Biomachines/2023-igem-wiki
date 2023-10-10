@@ -75,7 +75,7 @@ header h1 {
 .sidebar {
   width: 210px;
   background-color: #000000; /* Bootstrap background color */
-  padding: 0;
+  padding: 20px;
   height: 100%;
   transition: top 0.3s; 
     font-family: 'Poppins', sans-serif;
