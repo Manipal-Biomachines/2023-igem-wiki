@@ -1,162 +1,249 @@
 {% extends "my-layout.html" %}
-  
+
 {% block sidebar_content %}
-        <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="#section1" class="nav-link link-dark" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-                  Overview
-                </a>
-              </li>
-              <li>
-                <a href="#section2" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  Goals of the project
-                </a>
-              </li>
-              <li>
-                <a href="#section3" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                  Choice of chassis
-                </a>
-              </li>
-              <li>
-                <a href="#section4" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-                  Parts
-                </a>
-              </li>
-              <li>
-                <a href="#section5" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Plasmid design and cloning
-                </a>
-              </li>
+<ul class="nav nav-pills flex-column mb-auto">
+  <li class="nav-item">
+    <a href="#section1" class="nav-link link-dark" aria-current="page">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#home" />
+      </svg>
+      Overview
+    </a>
+  </li>
+  <li>
+    <a href="#section2" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#speedometer2" />
+      </svg>
+      Goals of the project
+    </a>
+  </li>
+  <li>
+    <a href="#section3" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#table" />
+      </svg>
+      Choice of chassis
+    </a>
+  </li>
+  <li>
+    <a href="#section4" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#grid" />
+      </svg>
+      Parts
+    </a>
+  </li>
+  <li>
+    <a href="#section5" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Plasmid design and cloning
+    </a>
+  </li>
 
-              <li>
-                <a href="#section6" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Implementation: Bioreactor
-                </a>
-              </li>
+  <li>
+    <a href="#section6" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Implementation: Bioreactor
+    </a>
+  </li>
 
-              <li>
-                <a href="#section7" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Sensor
-                </a>
-              </li>
+  <li>
+    <a href="#section7" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Sensor
+    </a>
+  </li>
 
-              <li>
-                <a href="#section8" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Human Practices
-                </a>
-              </li>
+  <li>
+    <a href="#section8" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Human Practices
+    </a>
+  </li>
 
-              <li>
-                <a href="#section9" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Biocontainment
-                </a>
-              </li>
+  <li>
+    <a href="#section9" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Biocontainment
+    </a>
+  </li>
 
-              <li>
-                <a href="#section10" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  References
-                </a>
-              </li>
+  <li>
+    <a href="#section10" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      References
+    </a>
+  </li>
 
-            </ol>
+  </ol>
+  {% endblock %}
 
-{% endblock %}
+  {% block heading %}Design{% endblock %}
 
-{% block heading %}Design{% endblock %}
+  {% block page_content %}
+  <div class="content">
+    <div class="m-2 mb-16">
+      <p class="mt-5 MAIN-STUFF"> Overview </p>
+      <p class="mt-5 sub-stuff" id="section1"> In an era where environmental concerns and sustainability are of utmost
+        importance, the detrimental effects of anthropogenic pollutants on our ecosystems must be addressed.
+        Triclocarban(TCC), a synthetic antibacterial compound commonly found in personal care products, is one such
+        pollutant that has garnered significant attention in recent years due to its persistence and potential adverse
+        impacts on both aquatic and terrestrial environments.<br><br>
+        TCC has been utilized for decades in soaps, detergents, and other consumer products as an antimicrobial agent.
+        As a result, it ends up in wastewater treatment plants, where it is inefficiently removed and is released to the
+        environment through wastewater treatment plant effluent and the sludge, which is often used as a
+        fertilizer.<br><br>
+        TCC's persistence in the environment, combined with its tendency to bioaccumulate in aquatic organisms, has
+        prompted the need for innovative and sustainable solutions to these adverse effects.</p>
 
-{% block page_content %}
-    <div class="content">
-                <div class="m-2 mb-16">
-                    <p class="mt-5 MAIN-STUFF" > Overview </p>
-                    <p class="mt-5 sub-stuff" id="section1"> In an era where environmental concerns and sustainability are of utmost importance, the detrimental effects of anthropogenic pollutants on our ecosystems must be addressed. Triclocarban(TCC), a synthetic antibacterial compound commonly found in personal care products, is one such pollutant that has garnered significant attention in recent years due to its persistence and potential adverse impacts on both aquatic and terrestrial environments.<br><br>
-TCC has been utilized for decades in soaps, detergents, and other consumer products as an antimicrobial agent. As a result, it ends up in wastewater treatment plants, where it is inefficiently removed and is released to the environment through wastewater treatment plant effluent and the sludge, which is often used as a fertilizer.<br><br>
-TCC's persistence in the environment, combined with its tendency to bioaccumulate in aquatic organisms, has prompted the need for innovative and sustainable solutions to these adverse effects.</p>
+      <p class="mt-5 MAIN-STUFF"> Goals of the Project </p>
+      <p class="mt-5 sub-stuff" id="section2"> Our aim is to biodegrade triclocarban within the wastewater treatment
+        plant to prevent issues arising due to the release of TCC into the environment. The triclocarban is to be
+        degraded within our chassis to non toxic byproducts that can enter the Krebs’ cycle and is utilised as a carbon
+        source by our chassis. Unlike other wastewater remediation methods, we place our focus on the sludge, where many
+        toxic compounds get adsorbed [1], TCC being one such compound. <br><br>
+        Once the problem statement was identified, we then explored how to tackle this issue using synthetic biology.
+        Our gene of interest is TccA, which codes for an amidase enzyme that breaks down TCC into 3,4-dichloroaniline
+        and 4-chloroaniline [2]. The gene was from <i> Ochrobactrum sp. TCC-2</i>. The byproducts formed as a result of
+        this conversion are also toxic, hence, this singular enzyme could not solve the problem. </p>
+      <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/flow-chart-design.png" class="img-fluid">
 
-                  <p class="mt-5 MAIN-STUFF" > Goals of the Project </p>  
-                  <p class="mt-5 sub-stuff" id="section2"> Our aim is to biodegrade triclocarban within the wastewater treatment plant to prevent issues arising due to the release of TCC into the environment. The triclocarban is to be degraded within our chassis to non toxic byproducts that can enter the Krebs’ cycle and is utilised as a carbon source by our chassis. Unlike other wastewater remediation methods, we place our focus on the sludge, where many toxic compounds get adsorbed [1], TCC being one such compound. <br><br>
-Once the problem statement was identified, we then explored how to tackle this issue using synthetic biology. Our gene of interest is TccA, which codes for an amidase enzyme that breaks down TCC into 3,4-dichloroaniline and 4-chloroaniline [2]. The gene was from <i> Ochrobactrum sp. TCC-2</i>. The byproducts formed as a result of this conversion are also toxic, hence, this singular enzyme could not solve the problem. </p>
-        <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/flow-chart-design.png" class="img-fluid">
+      <p class="mt-5 MAIN-STUFF"> Choice of Chassis </p>
+      <p class="mt-5 sub-stuff" id="section3"> There exist some bacteria that possess natural pathways capable of
+        degrading the toxic byproducts. Through extensive literature survey, we narrowed down our possible chassis
+        options to three species capable of degrading the byproducts -<i>Acinetobacter baylyi </i>[3], <i> Pseudomonas
+          putida </i>[4] [5]and <i> Pseudomonas fluorescens </i>[6].<br>
+        All three of these organisms were equally suited for our chassis, therefore, our first decision to make was this
+        choice. <br>
+        Besides the inherent ability to break down the chloroaniline byproducts, other major criteria we considered
+        included:<br>
+      <ul>
+        <li>Survivability of the bacteria in the pH range of the wastewater and sludge</li>
+        <li>Survivability of the bacteria in the temperature range of the sludge of the WWTP</li>
+        <li>Survivability at different TCC concentration ranges present in the sludge</li>
+      </ul>
 
-                  <p class="mt-5 MAIN-STUFF" > Choice of Chassis </p>
-                  <p class="mt-5 sub-stuff" id="section3">  There exist some bacteria that possess natural pathways capable of degrading the toxic byproducts. Through extensive literature survey, we narrowed down our possible chassis options to three species capable of degrading the byproducts -<i>Acinetobacter baylyi </i>[3], <i> Pseudomonas putida </i>[4] [5]and <i> Pseudomonas fluorescens </i>[6].<br>
-All three of these organisms were equally suited for our chassis, therefore, our first decision to make was this choice. <br>
-Besides the inherent ability to break down the chloroaniline byproducts, other major criteria we considered included:<br>
-<ul>
-    <li>Survivability of the bacteria in the pH range of the wastewater and sludge</li>
-    <li>Survivability of the bacteria in the temperature range of the sludge of the WWTP</li>
-    <li>Survivability at different TCC concentration ranges present in the sludge</li>
-</ul>
+      We then proceeded to study the growth of these bacteria at conditions similar to WWTPs in India. <br>
+      To learn more about this, check out the <a href="https://2023.igem.wiki/mit-mahe/experiments"
+        target="_blank">experiments page</a></p>
 
-We then proceeded to study the growth of these bacteria at conditions similar to WWTPs in India. <br>
-To learn more about this, check out the <a href="https://2023.igem.wiki/mit-mahe/experiments" target="_blank">experiments page</a></p>
+      <p class="mt-5 MAIN-STUFF"> Parts </p>
+      <p class="mt-5 sub-stuff" id="section4"> <b> AMIDASE TccA </b> <br>
+        The purpose of the amidase protein(Part number:<b>BBa_K4641000</b>) in the chassis is to breakdown Triclocarban
+        (3,4,4′-Trichlorocarbanilide) into 3,4-dichloroaniline and 4-chloroaniline. Our target protein is naturally
+        constitutively expressed in <i>Ochrobactrum sp. TCC-2</i> [2] </p>
 
-            <p class="mt-5 MAIN-STUFF" > Parts </p>
-            <p class="mt-5 sub-stuff" id="section4"> <b> AMIDASE TccA </b> <br>
-            The purpose of the amidase protein(Part number:<b>BBa_K4641000</b>) in the chassis is to breakdown Triclocarban (3,4,4′-Trichlorocarbanilide) into 3,4-dichloroaniline and 4-chloroaniline. Our target protein is naturally constitutively expressed in <i>Ochrobactrum sp. TCC-2</i> [2] </p>
+      <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/part-image.png" class="img-fluid">
+      <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/breakdown-image.jpeg" class="img-fluid">
 
-            <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/part-image.png" class="img-fluid">
-            <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/breakdown-image.jpeg" class="img-fluid">
+      <p class="mt-5 sub-stuff"> <b> Design </b> <br> The fragment was designed to contain restriction sites BamHI and
+        XhoI prior to the start codon and post the stop codon respectively. The fragment was also designed to contain
+        the required overlaps for Gibson assembly with pET22b+. There was an overlap of 20 bp corresponding to the
+        pET22b+ added to either side of the fragment for ease of proceeding to Gibson assembly.</p>
 
+      <p class="mt-5 MAIN-STUFF"> Plasmid Design </p>
+      <p class="mt-5 sub-stuff" id="section5"> The CarbanEl system is based on a Gibson assembly cloning system. The
+        gene fragment is designed and synthesized such that the overhangs are already added. For the characterisation
+        and study of the enzyme activity, we expressed the amidase gene in <i> E. coli BL21 </i>. However, our final
+        intended chassis is <i>Acinetobacter baylyi</i>
+        The plasmid designed is as below:
+      </p>
 
-<p class="mt-5 sub-stuff"> <b> Design </b> <br> The fragment was designed to contain restriction sites BamHI and XhoI prior to the start codon and post the stop codon respectively. The fragment was also designed to contain the required overlaps for Gibson assembly with pET22b+. There was an overlap of 20 bp corresponding to the pET22b+ added to either side of the fragment for ease of proceeding to Gibson assembly.</p>
+      <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/plasmid.png" class="img-fluid">
+      <img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/genetic-circuit.jpeg" class="img-fluid">
 
-<p class="mt-5 MAIN-STUFF" > Plasmid Design </p>
+      <p class="mt-5 MAIN-STUFF"> Implementation </p>
 
-<p class="mt-5 sub-stuff" id="section5"> The CarbanEl system is based on a Gibson assembly cloning system. The gene fragment is designed and synthesized such that the overhangs are already added. For the characterisation and study of the enzyme activity, we expressed the amidase gene in <i> E. coli BL21 </i>. However, our final intended chassis is <i>Acinetobacter baylyi</i>
-The plasmid designed is as below:
-</p>
+      <p class="mt-5 sub-stuff" id="section6"> On the basis of multiple human practice interactions, our proposed
+        implementation was a sludge based bioreactor. This is because a major portion of the TCC as well as other toxic
+        compounds get adsorbed onto the sludge. The methods of disposal of sludge include disposal on land, dumping into
+        water bodies, incineration, digestion followed by drying, drying on drying bed and disposal in landfills[7].
+        This allows the adsorbed TCC to enter the environment. We propose the addition of a cheap packed bed bioreactor
+        on a lab scale and a fluidised bed with a toggling mechanism on an industrial scale. This bioreactor will be
+        implemented immediately after the sludge leaves the aeration tank, prior to the dewatering process. Our modified
+        bacteria will be immobilized on packing material made from locally available rice husk derived biochar. These
+        pellets (in the shape of a Raschig ring) will constitute the packing material. <br>
+        To learn more about the model, check out our <a href="https://2023.igem.wiki/mit-mahe/model"
+          target="_blank">model page</a>
+        To learn more about how we plan to implement this, check out our <a
+          href="https://2023.igem.wiki/mit-mahe/project-implementation" target="_blank">implementation page</a></p>
 
-<img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/plasmid.png" class="img-fluid">
-<img src="https://static.igem.wiki/teams/4641/wiki/design-part-page/genetic-circuit.jpeg" class="img-fluid">
+      <p class="mt-5 MAIN-STUFF"> Sensor </p>
+      <p class="mt-5 sub-stuff" id="section7"> TCC is a micropollutant, present in parts per billion (ppb) levels, with
+        a major effect. Hence, it becomes vital to be able to detect the levels of TCC present in water through a
+        sensitive but cost effective sensor model. <br>
+        We plan to develop a laser based sensor coupled with a photodiode setup. This will allow us to detect TCC levels
+        accurately in water bodies or even in the WWTP. <br>
+        To learn more about the sensor, check out our <a href="https://2023.igem.wiki/mit-mahe/hardware"
+          target="_blank"> Hardware page </a></p>
 
-<p class="mt-5 MAIN-STUFF" > Implementation </p>
+      <p class="mt-5 MAIN-STUFF"> Human Practices </p>
+      <p class="mt-5 sub-stuff" id="section8"> Human practices is a vital part of any iGEM project to ensure that the
+        project that is being developed is impactful, responsible and useful to the world. Our human practices have
+        involved visiting wastewater treatment plants, speaking to stakeholders, and discussing with a wide range of age
+        groups and backgrounds to see how well our project was accepted. <br>
+        The importance of feedback loops, and integrating the inputs from experts and stakeholders alike has been
+        highlighted in our work done by the Human practices team. <br>
+        To learn more about our human practices, check out our <a href="https://2023.igem.wiki/mit-mahe/human-practices"
+          target="_blank"> Human Practices page
+        </a></p>
 
-<p class="mt-5 sub-stuff" id="section6"> On the basis of multiple human practice interactions, our proposed implementation was a sludge based bioreactor. This is because a major portion of the TCC as well as other toxic compounds get adsorbed onto the sludge. The methods of disposal of sludge include disposal on land, dumping into water bodies, incineration, digestion followed by drying, drying on drying bed and disposal in landfills[7]. This allows the adsorbed TCC to enter the environment. We propose the addition of a cheap packed bed bioreactor on a lab scale and a fluidised bed with a toggling mechanism on an industrial scale. This bioreactor will be implemented immediately after the sludge leaves the aeration tank, prior to the dewatering process. Our modified bacteria will be immobilized on packing material made from locally available rice husk derived biochar. These pellets (in the shape of a Raschig ring) will constitute the packing material. <br>
-To learn more about the model, check out our <a href="https://2023.igem.wiki/mit-mahe/model" target="_blank">model page</a>
-To learn more about how we plan to implement this, check out our <a href="https://2023.igem.wiki/mit-mahe/project-implementation" target="_blank">implementation page</a></p>
+      <p class="mt-5 MAIN-STUFF"> Biocontainment </p>
+      <p class="mt-5 sub-stuff" id="section9"> As we are working with genetically modified bacteria, biocontainment and
+        safety is of utmost importance. The cells will be immobilized onto our packing material, biochar, by
+        chemisorption techniques. This immobilization will prevent the escape of bacteria from the bioreactor into the
+        environment.<br>
+        Further, we plan to implement a kill switch to ensure that the bacteria cannot survive outside of the
+        bioreactor.
+        To learn more about our safety practices, check out our <a href="https://2023.igem.wiki/mit-mahe/safety"
+          target="_blank"> safety page </a>
+        <br>
 
-<p class="mt-5 MAIN-STUFF"> Sensor </p>
-<p class="mt-5 sub-stuff" id="section7"> TCC is a micropollutant, present in parts per billion (ppb) levels, with a major effect. Hence, it becomes vital to be able to detect the levels of TCC present in water through a sensitive but cost effective sensor model. <br>
-We plan to develop a laser based sensor coupled with a photodiode setup. This will allow us to detect TCC levels accurately in water bodies or even in the WWTP. <br>
-To learn more about the sensor, check out our <a href="https://2023.igem.wiki/mit-mahe/hardware" target="_blank"> Hardware page </a></p>
+        To learn more about our kill switch, <a href="https://2023.igem.wiki/mit-mahe/project-implementation"
+          target="_blank"> click here </a>
+      </p>
 
-<p class="mt-5 MAIN-STUFF"> Human Practices </p>
-<p class="mt-5 sub-stuff" id="section8"> Human practices is a vital part of any iGEM project to ensure that the project that is being developed is impactful, responsible and useful to the world. Our human practices have involved visiting wastewater treatment plants, speaking to stakeholders, and discussing with a wide range of age groups and backgrounds to see how well our project was accepted. <br>
-The importance of feedback loops, and integrating the inputs from experts and stakeholders alike has been highlighted in our work done by the Human practices team. <br>
-To learn more about our human practices, check out our <a href="https://2023.igem.wiki/mit-mahe/human-practices" target="_blank">  Human Practices page
-</a></p>
-
-
-<p class="mt-5 MAIN-STUFF"> Biocontainment </p>
-<p class="mt-5 sub-stuff" id="section9"> As we are working with genetically modified bacteria, biocontainment and safety is of utmost importance. The cells will be immobilized onto our packing material, biochar, by chemisorption techniques. This immobilization will prevent the escape of bacteria from the bioreactor into the environment.<br> 
-Further, we plan to implement a kill switch to ensure that the bacteria cannot survive outside of the bioreactor. 
-To learn more about our safety practices, check out our <a href="https://2023.igem.wiki/mit-mahe/safety" target="_blank"> safety page </a>
-<br>
-
-To learn more about our kill switch, <a href="https://2023.igem.wiki/mit-mahe/project-implementation" target="_blank"> click here </a> </p>
-
-
-
-<p class="mt-5 MAIN-STUFF"> References </p>
-<p class="mt-5 sub-stuff" id="section10"> 
-[1] Richards, Deanna J., and Wen K. Shieh. “Biological Fate of Organic Priority Pollutants in the Aquatic Environment.” Water Research, vol. 20, no. 9, Elsevier BV, Sept. 1986, pp. 1077–90. <a href="https://doi.org/10.1016/0043-1354(86)90054-0" target="_blank"> https://doi.org/10.1016/0043-1354(86)90054-0</a><br>
-[2]Yun H, Liang B, Qiu J, Zhang L, Zhao Y, Jiang J, Wang A. Functional Characterization of a Novel Amidase Involved in Biotransformation of Triclocarban and its Dehalogenated Congeners in Ochrobactrum sp. TCC-2. Environ Sci Technol. 2017 Jan 3;51(1):291-300. doi: 10.1021/acs.est.6b04885. Epub 2016 Dec 14. PMID: 27966913.<br>
-[3]Hongsawat, Parnuch, and Alisa S. Vangnai. “Biodegradation Pathways of Chloroanilines by Acinetobacter Baylyi Strain GFJ2.” Journal of Hazardous Materials, vol. 186, no. 2–3, Elsevier BV, Feb. 2011, pp. 1300–07. <a href="https://doi.org/10.1016/j.jhazmat.2010.12.002" target="_blank">https://doi.org/10.1016/j.jhazmat.2010.12.002.</a><br>
-[4] Alisa S. Vangnai, Wansiri Petchkroh, Biodegradation of 4-chloroaniline by bacteria enriched from soil, FEMS Microbiology Letters, Volume 268, Issue 2, March 2007, Pages 209–216, <a href="https://doi.org/10.1111/j.1574-6968.2006.00579.x" target="_blank"> https://doi.org/10.1111/j.1574-6968.2006.00579.x</a><br>
-[5] Shah, Maulin P. “Microbial Degradation of 4-chloroaniline by a Bacterial Consortium.” African Journal of Microbiology Research, vol. 9, no. 1, Academic Journals, Jan. 2015, pp. 17–25.  <a href="https://doi.org/10.5897/ajmr2014.7190" target="_blank"> https://doi.org/10.5897/ajmr2014.7190.</a><br>
-[6] Travkin, V.M., Golovleva, L.A. The Degradation of 3,4-Dichloroaniline by Pseudomonas fluorescens Strain 26-K. Microbiology 72, 240–243 (2003).<a href="https://doi.org/10.1023/A:1023236518655"target="_blank"> https://doi.org/10.1023/A:1023236518655 </a><br>
-[7] Zewde, Abraham Amenay, et al. “Improved and Promising Fecal Sludge Sanitizing Methods: Treatment of Fecal Sludge Using Resource Recovery Technologies.” Journal of Water Sanitation and Hygiene for Development, vol. 11, no. 3, IWA Publishing, Apr. 2021, pp. 335–49. <a href="https://doi.org/10.2166/washdev.2021.268"target="_blank"> https://doi.org/10.2166/washdev.2021.268.</a><br>
-            </p>
-                </div>
+      <p class="mt-5 MAIN-STUFF"> References </p>
+      <p class="mt-5 sub-stuff" id="section10">
+        [1] Richards, Deanna J., and Wen K. Shieh. “Biological Fate of Organic Priority Pollutants in the Aquatic
+        Environment.” Water Research, vol. 20, no. 9, Elsevier BV, Sept. 1986, pp. 1077–90. <a
+          href="https://doi.org/10.1016/0043-1354(86)90054-0" target="_blank">
+          https://doi.org/10.1016/0043-1354(86)90054-0</a><br>
+        [2]Yun H, Liang B, Qiu J, Zhang L, Zhao Y, Jiang J, Wang A. Functional Characterization of a Novel Amidase
+        Involved in Biotransformation of Triclocarban and its Dehalogenated Congeners in Ochrobactrum sp. TCC-2. Environ
+        Sci Technol. 2017 Jan 3;51(1):291-300. doi: 10.1021/acs.est.6b04885. Epub 2016 Dec 14. PMID: 27966913.<br>
+        [3]Hongsawat, Parnuch, and Alisa S. Vangnai. “Biodegradation Pathways of Chloroanilines by Acinetobacter Baylyi
+        Strain GFJ2.” Journal of Hazardous Materials, vol. 186, no. 2–3, Elsevier BV, Feb. 2011, pp. 1300–07. <a
+          href="https://doi.org/10.1016/j.jhazmat.2010.12.002"
+          target="_blank">https://doi.org/10.1016/j.jhazmat.2010.12.002.</a><br>
+        [4] Alisa S. Vangnai, Wansiri Petchkroh, Biodegradation of 4-chloroaniline by bacteria enriched from soil, FEMS
+        Microbiology Letters, Volume 268, Issue 2, March 2007, Pages 209–216, <a
+          href="https://doi.org/10.1111/j.1574-6968.2006.00579.x" target="_blank">
+          https://doi.org/10.1111/j.1574-6968.2006.00579.x</a><br>
+        [5] Shah, Maulin P. “Microbial Degradation of 4-chloroaniline by a Bacterial Consortium.” African Journal of
+        Microbiology Research, vol. 9, no. 1, Academic Journals, Jan. 2015, pp. 17–25. <a
+          href="https://doi.org/10.5897/ajmr2014.7190" target="_blank"> https://doi.org/10.5897/ajmr2014.7190.</a><br>
+        [6] Travkin, V.M., Golovleva, L.A. The Degradation of 3,4-Dichloroaniline by Pseudomonas fluorescens Strain
+        26-K. Microbiology 72, 240–243 (2003).<a href="https://doi.org/10.1023/A:1023236518655" target="_blank">
+          https://doi.org/10.1023/A:1023236518655 </a><br>
+        [7] Zewde, Abraham Amenay, et al. “Improved and Promising Fecal Sludge Sanitizing Methods: Treatment of Fecal
+        Sludge Using Resource Recovery Technologies.” Journal of Water Sanitation and Hygiene for Development, vol. 11,
+        no. 3, IWA Publishing, Apr. 2021, pp. 335–49. <a href="https://doi.org/10.2166/washdev.2021.268"
+          target="_blank"> https://doi.org/10.2166/washdev.2021.268.</a><br>
+      </p>
     </div>
-{% endblock %}
+  </div>
+  {% endblock %}
