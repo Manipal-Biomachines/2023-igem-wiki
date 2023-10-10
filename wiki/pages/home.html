@@ -12,60 +12,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body style="background: linear-gradient(to bottom, #d7f4fc, #52aec8);">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d7f4fc;">
-    <a class="navbar-brand" href="#">MIT-MAHE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="{{ url_for('home') }}">
-            Home
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Team
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-            <a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Meet the Team</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Project
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-            <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contributions</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='project-design') }}">Design</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='project-implementation') }}">Implementation</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a>
-            <a class="dropdown-item" href="{{ url_for('pages', page='project-parts') }}">Parts</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Engagement</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-            <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Human Practices<a>
-                <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
-                <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
-                <a class="dropdown-item"
-                  href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Navbar -->
+  {% include 'my-menu.html' %}
 
   <head>
     <meta charset="UTF-8">
@@ -77,146 +25,145 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gravitas One:wght@400&display=swap" />
   </head>
 
-  <body>
-    <section>
-      <div class="carbanel">CarbanEl</div>
-      <img class="carbanel-logo-1" src="https://static.igem.wiki/teams/4641/wiki/homepage/carbanel-logo.png" />
-      </div>
-      <div class="wave" id="wave1" style="--i:1;"></div>
-      <div class="wave" id="wave2" style="--i:2;"></div>
-      <div class="wave" id="wave3" style="--i:3;"></div>
-      <div class="wave" id="wave4" style="--i:4;"></div>
-    </section>
+  <section>
+    <div class="carbanel">CarbanEl</div>
+    <img class="carbanel-logo-1" src="https://static.igem.wiki/teams/4641/wiki/homepage/carbanel-logo.png" />
+    </div>
+    <div class="wave" id="wave1" style="--i:1;"></div>
+    <div class="wave" id="wave2" style="--i:2;"></div>
+    <div class="wave" id="wave3" style="--i:3;"></div>
+    <div class="wave" id="wave4" style="--i:4;"></div>
+  </section>
 
-    <div class="card">
-      <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
-      <div class="card-content">
-        India is home to<br><br><br><br>
-        people
+  <div class="card">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <div class="card-content">
+      India is home to<br><br><br><br>
+      people
+    </div>
+    <div class="number">
+      1.43 BILLION
+    </div>
+  </div>
+
+  <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <div class="card-content-2">
+      According to a Central Pollution Control Board report<br>
+      We generate over<br><br><br><br>
+      of Wastewater per day.
+    </div>
+    <div class="number2">
+      35,558 MILLION LITRES
+    </div>
+  </div>
+
+  <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <div class="card-content-3">
+      This wastewater contains a plethora <br>of compounds including<br> antimicrobials flushed from<br>
+      pharmaceutical and personal care<br> products.
+    </div>
+  </div>
+
+  <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
+    <div class="card-content-4">
+      Triclocarban<br><br><br><br>threaten aquatic and crop life.
+    </div>
+    <div class="card-content-3">
+      one such contaminant, escapes <br>degradation in wastewater<br> treatment plants to
+    </div>
+  </div>
+
+  <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
+    <div class="card-content-5">
+      Moreover, existing degradation<br> methods degrade TCC into<br><br><br><br>which are also toxic
+      and<br>associated with mutagenesis.
+    </div>
+    <div class="card-content-4">
+      <b>4-chloroaniline and 3,4-dichloroaniline</b>
+    </div>
+  </div>
+
+  <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-6.png">
+    <div class="card-content-6">
+      <h2><b>OUR SOLUTION</b></h2>
+      <p><br><br><br><br><b>CarbanEl</b> uses <b> TccA </b> amidase from Ochrobactrum sp. <b>TCC-2 degrades TCC</b> to
+        4-chloroaniline and 3,4-dichloroaniline.<br> The associated gene, tccA, is introduced into a <b>chassis</b>
+        which <b>naturally degrades</b> the chloroaniline <b>into non-toxic intermediates</b> of the Krebs cycle.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
+    <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
+    <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
+    <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
+    <img opacity="0.8" src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-6.png">
+    <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-7-buttons.png">
+    <div class="sections">
+      <div class="section2">
+        <a href="{{ url_for('pages', page='description') }}">
+          <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/description.png" /></a>
+        <h2 style="color: #F1E0CB;">Description</h2>
       </div>
-      <div class="number">
-        1.43 BILLION
+      <div class="section2">
+        <h2 style="color: #F1E0CB;">Implementation</h2>
+        <a href="{{ url_for('pages', page='project-implementation') }}">
+          <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/implementation.png" /></a>
+      </div>
+      <div class="section2">
+        <h2 style="color: #F1E0CB;">Engg Success</h2>
+        <a href="{{ url_for('pages', page='engineering') }}">
+          <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/engg-success.png" /></a>
+      </div>
+      <div class="section2">
+        <h2 style="color: #F1E0CB;">Human Practices</h2>
+        <a href="{{ url_for('pages', page='human-practices') }}">
+          <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/human-practices.png" /></a>
+      </div>
+      <div class="section2">
+        <h2 style="color: #F1E0CB;">Education</h2>
+        <a href="{{ url_for('pages', page='education') }}">
+          <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/education.png" /></a>
       </div>
     </div>
+  </div>
 
-    <div class="card">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
-      <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
-      <div class="card-content-2">
-        According to a Central Pollution Control Board report<br>
-        We generate over<br><br><br><br>
-        of Wastewater per day.
-      </div>
-      <div class="number2">
-        35,558 MILLION LITRES
-      </div>
-    </div>
+  <script>
+    let wave1 = document.getElementById('wave1');
+    let wave2 = document.getElementById('wave2');
+    let wave3 = document.getElementById('wave3');
+    let wave4 = document.getElementById('wave4');
 
-    <div class="card">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
-      <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
-      <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
-      <div class="card-content-3">
-        This wastewater contains a plethora <br>of compounds including<br> antimicrobials flushed from<br>
-        pharmaceutical and personal care<br> products.
-      </div>
-    </div>
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
 
-    <div class="card">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
-      <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
-      <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
-      <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
-      <div class="card-content-4">
-        Triclocarban<br><br><br><br>threaten aquatic and crop life.
-      </div>
-      <div class="card-content-3">
-        one such contaminant, escapes <br>degradation in wastewater<br> treatment plants to
-      </div>
-    </div>
-
-    <div class="card">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
-      <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
-      <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
-      <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
-      <div class="card-content-5">
-        Moreover, existing degradation<br> methods degrade TCC into<br><br><br><br>which are also toxic
-        and<br>associated with mutagenesis.
-      </div>
-      <div class="card-content-4">
-        <b>4-chloroaniline and 3,4-dichloroaniline</b>
-      </div>
-    </div>
-
-    <div class="card">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
-      <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
-      <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
-      <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
-      <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-6.png">
-      <div class="card-content-6">
-        <h2><b>OUR SOLUTION</b></h2>
-        <p><br><br><br><br><b>CarbanEl</b> uses <b> TccA </b> amidase from Ochrobactrum sp. <b>TCC-2 degrades TCC</b> to
-          4-chloroaniline and 3,4-dichloroaniline.<br> The associated gene, tccA, is introduced into a <b>chassis</b>
-          which <b>naturally degrades</b> the chloroaniline <b>into non-toxic intermediates</b> of the Krebs cycle.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-1.png">
-      <img opacity=0.8 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-2.png">
-      <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-3.png">
-      <img opacity=0.5 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-4.png">
-      <img opacity=0.2 src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-5.png">
-      <img opacity="0.8" src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-6.png">
-      <img src="https://static.igem.wiki/teams/4641/wiki/homepage/wave-7-buttons.png">
-      <div class="sections">
-        <div class="section2">
-          <a href="{{ url_for('pages', page='description') }}">
-            <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/description.png" /></a>
-          <h2 style="color: #F1E0CB;">Description</h2>
-        </div>
-        <div class="section2">
-          <h2 style="color: #F1E0CB;">Implementation</h2>
-          <a href="{{ url_for('pages', page='project-implementation') }}">
-            <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/implementation.png" /></a>
-        </div>
-        <div class="section2">
-          <h2 style="color: #F1E0CB;">Engg Success</h2>
-          <a href="{{ url_for('pages', page='engineering') }}">
-            <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/engg-success.png" /></a>
-        </div>
-        <div class="section2">
-          <h2 style="color: #F1E0CB;">Human Practices</h2>
-          <a href="{{ url_for('pages', page='human-practices') }}">
-            <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/human-practices.png" /></a>
-        </div>
-        <div class="section2">
-          <h2 style="color: #F1E0CB;">Education</h2>
-          <a href="{{ url_for('pages', page='education') }}">
-            <img class="buttons" src="https://static.igem.wiki/teams/4641/wiki/homepage/education.png" /></a>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      let wave1 = document.getElementById('wave1');
-      let wave2 = document.getElementById('wave2');
-      let wave3 = document.getElementById('wave3');
-      let wave4 = document.getElementById('wave4');
-
-      window.addEventListener('scroll', function () {
-        let value = window.scrollY;
-
-        wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
-        wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
-        wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
-        wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
-      })
-    </script>
-  </body>
+      wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+      wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
+      wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
+      wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
+    })
+  </script>
+</body>
 
 </html>
