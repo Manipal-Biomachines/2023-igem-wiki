@@ -1,81 +1,171 @@
-<html>
-    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
-    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-    <body>
-      <div>
-          <section>
-              <h1 style="display:inline-block; margin-top:17.26%">&nbsp Project Description </h1>
-              
-          </section>
-          <section>
-          <div class='main-wrapper'>
-              <img src="https://static.igem.wiki/teams/4641/wiki/carbanel-logo.jpg" style="width:32%; height:32%; padding-left:3%;">
-              <p style="color:#6495ED; padding-top:12%; padding-left: 3%; font-size:141%; width: 60%"> Pharmaceutical and personal care products (PPCPs) like cosmetics, soaps, disinfectants and detergents are composed of a plethora of chemical classes including antimicrobial compounds. Triclocarban (TCC) is a popularly incorporated antimicrobial since it prevents product spoilage and infection to the consumer. <br><br><br> PPCPs containing these compounds are consumed globally at a rate of 0.1 million tonnes per year and often find their way into wastewater treatment plants (WWTPs) through washing, direct disposal, or human excreta (as parent compounds, conjugated compounds, or metabolites) [1]. However, due to its high hydrophobicity and chemical stability, TCC in these products is difficult to degrade completely once flushed off into the WWTPs, and 76-79% of TCC is released with sewage sludge. [2] </p>
-          </div>
-          </section>
-              
-          <section>
-          <div class='main-wrapper'>
-              <p style="color:#6495ED; padding-top:12%; padding-left: 3%; font-size:137%; width: 52%"> At local WWTPs in Udupi, India, and Mangalore, India, the average concentration of TCC recorded in the sludge was 21,000 ng/g dw and 13,000 ng/g dw, respectively [3].  The concentration of TCC detected in Indian aquatic environments (including surface waters or even drinking water) was 1119 ng/L [2]. <br><br><br><br> On a global scale, the median values of detected TCC in surface water worldwide ranged around 10-100 ng/L. 51-347 ng/L and 7.5-102 ng/L TCC were monitored in tap and treated drinking water, respectively. [4] <br><br><br> TCC is omnipresent and preserved in environments and even found to accumulate within our flora and fauna, causing hormone disruption. TCC can also threaten human health and has been linked to blood toxicity and disruptions in endocrine activity. </p>
-              <img src="https://static.igem.wiki/teams/4641/wiki/earth.gif" style="width:50%; height:50%">
-          </div>
-          </section>
-          <section>
+{% extends "my-layout.html" %}
+  
+{% block sidebar_content %}
 
- 
-                  <p style="color:black; padding-top:7%; padding-left: 3%; font-size:137%; width: 52%"> 692 ng/g w/w TCC was accumulated in fish from the Kaveri River, India [5].</p>
-                  <p style="color:black; padding-top: 2%; padding-left: 3%; font-size:137%; width: 52%"> Exposure to 5-10 mg/L of TCC for 21 days reduced mobility, feeding, aggression, fecundity or even caused death in fathead minnows. [2] </p>
-                  <p style="color:black; padding-top: 2%; padding-left: 3%; font-size:137%; width: 52%"> Zebrafish larvae were also victims. 6.6 microg/L of TCC altered the expression of proteins related to nervous system development and immune response, binding and metabolism, skeletal muscle development, and function. When exposed to higher concentrations, Zebrafish larvae experienced inhibited heart rate, delayed yolk absorption and swim bladder development, and thyroid hormone. [2] </p>
-                  <p style="color:black; padding-top: 2%; padding-left: 3%; font-size:137%; width: 52%">  TCC has endocrine-disrupting properties that cause reproductive effects in freshwater mud snails, planktonic crustaceans, and amphibians. [2] </p>
+<ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="#section1" class="nav-link link-dark" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                    The Journey of TCC
+                </a>
+              </li>
+              <li>
+                <a href="#section2" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  Extent of TCC Accumulation
+                </a>
+              </li>
+              <li>
+                <a href="#section3" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                  Damage to Agro Industry
+                </a>
+              </li>
+              <li>
+                <a href="#section4" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                  Existing Methods
+                </a>
+              </li>
+              <li>
+                <a href="#section5" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                  Biodegradation of TCC
+                </a>
+              </li>
+
+              <li>
+                <a href="#section6" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                  Chloroanilines
+                </a>
+              </li>
+
+              <li>
+                <a href="#section7" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                  Our Solution
+                </a>
+              </li>
+
+              <li>
+                <a href="#section8" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                  References
+                </a>
+              </li>
 
 
-          </section>
+            </ul>
 
-          <section>
-                  <p style="color:black; padding-top:20%; font-size:130%; padding-left: 2%; padding-right: 2%"> In food crops cultured in hydroponic media, after 4 (four) weeks of exposure, roots accumulated 86–1,350 mg kg−1 of antimicrobials and shoots had accumulated 0.33-5.35 mg kg−1 of antimicrobials including triclocarban. [6]</p>
-                  <p style="color: black; padding-top:1%; font-size:130%; padding-left: 2%; padding-right: 2%"> The uptake and accumulation of TCC due to the use of contaminated biosolids has been detected in several food crops —carrots, green peppers, tomatoes, and cucumbers—and has been proven to hinder proper metabolism in the crops. [2] </p>
-                  <p style="color:black; padding-top: 1%; font-size:130%; padding-left: 2%; padding-right: 2% "> TCC accumulation was also detrimental to soil quality. As an antimicrobial, it may participate in antibiotic resistance bacteria selection and may induce antibiotic-resistant genes in these bacteria. </p>
-          </section>
+{% endblock %}
 
-          <section>
-              <div class='main-wrapper'>
-                  <p style ="color:#6495ED; font-size:468%; width:50%; padding-left: 5%"> <br>Once degraded by existing methods, <span style="color:black">toxic chloroaniline </span> byproducts accumulate in the system. </p>
-                  <p style ="color:#6495ED; font-size:268.7%; width:50%" > <br><br> According to studies conducted by the World Health Organisation and Centers for Disease Control and Prevention, 4-chloroaniline and 3,4-dichloroaniline act as carcinogens and cause <span style="color:black"> methemoglobinemia </span>—which is a condition characterized by an abnormal form of hemoglobin in the blood leading to cyanosis and hypoxia. </p>
+{% block heading %}Project Description{% endblock %}
 
-              </div>
-          </section>
+{% block page_content %}
+<div class="content">
+    <div class="m-5 mb-16">
+        <p class="mt-5 sub-stuff"><b>Pharmaceutical and personal care products</b> (PPCPs) like cosmetics, soaps, disinfectants and detergents are composed of a plethora of chemical classes including antimicrobial compounds. <b>Triclocarban </b> (TCC) is a popularly incorporated antimicrobial since it prevents product spoilage and infection to the consumer.</p>
 
-          <section>
-                  <p style="color:#6495ED; padding-top: 12%; font-size: 140%; width: 70%; padding-left: 5%"> <br><br><br>Adsorption is the most prevalent physical approach to removing triclocarban (TCC) from water, but there is room for improvement in its operational parameters. Additionally, desorption should be considered to ensure sustainable water treatment. Although activated carbon adsorption has been considered, its disadvantages include high costs, lack of selectivity, and a limited regenerative capacity [7] <br><br><br>  In the case of chemical methods, Ultraviolet light (UV), chlorine oxidation, ozone, and electron-Fenton are usually considered promising methods. Inorganic ions, like sulfate and nitrate, often found in wastewater, were found to hinder the photolysis of TCC by UV radiation [8]. Chlorine oxidation often results in the incomplete degradation of the compounds and the production of hazardous byproducts. Chemical approaches are generally more expensive, while ozone-based techniques have been proven to be less effective. It was found that most methods currently utilized by WWTPs in India aren’t adequate for removing TCC. [2] </p>
-          </section>
+    <img src="https://static.igem.wiki/teams/4641/wiki/project-description-images/figure-1.jpg" class="img-fluid">
 
-          <section>
-                  <p style="padding-top: 15%; font-size: 130%; padding-left:15%; padding-right:15%; color:#6495ED"> We plan on using multiple enzymes in tandem, TCC-2 from Ochrobactrum sp., which degrades TCC, and a few others to degrade its toxic byproducts, which finally form non-toxic daughter compounds that enter the TCA metabolic cycle. Moreover, to improve its efficiency, we plan to mutate TCC-2. This will effectively lower the impact of TCC on our environment, and in the affected sectors of aquaculture, agriculture, and human health. Hence, our enzyme(s) would degrade this compound into harmless by-products in the aeration tank of a wastewater treatment plant, avoiding the impact as mentioned above in the real world.<br><br><br> We plan to integrate biocontainment strategies and kill switches into our project design, aiming to address concerns regarding the safe and responsible use of genetically modified enzymes. As a detection method, we aim to develop a biosensor to quantify TCC concentration. These measures will help prevent unintended environmental release, protecting aquatic ecosystems and human health while effectively degrading triclocarban in wastewater treatment plants.</p>
-          </section>
+    <p class="mt-5 MAIN-STUFF">The Journey of TCC
+</p>
 
-          <section>
-              <div class='main-wrapper'>
-                  <p style="color:#6495ED; font-size: 130.5%; padding-left: 5%; width: 50%; padding-top:6%; overflow:hidden;"> Our inspiration for the project was primarily through a professor from our university, Manipal Academy of Higher Education, Dr. K. Balakrishna, who elucidated the incomplete degradation of antimicrobials in the wastewater treatment plants. On researching further, we came across triclocarban and the extent of its toxicity across biospheres.<br><br><br>Udupi, a coastal city in Karnataka, India, recorded high concentrations of triclocarban (540 ng/L) in its local water bodies. According to a study by the Manipal Academy of Higher Education (MAHE), Udupi generates approximately 13 million liters of wastewater daily, of which triclocarban (TCC) levels were up to 6.4 mg/L. [9, 13] Literature indicates that this concentration of TCC is capable of causing chronic and acute toxicity for fish. [10, 11]. The high concentrations of TCC in local areas have led to adverse effects on aquatic organisms, including disruption of hormone systems and reproductive abnormalities. <br><br><br> Globally, triclocarban has been detected in various water bodies, including rivers, lakes, and oceans. Studies have revealed the presence of TCC in over 58% of the water samples collected from 33 countries, highlighting the need for effective wastewater treatment methods to prevent further contamination of water bodies. [12, 13, 14] </p>
-                  <image class="img_8" src="https://static.igem.wiki/teams/4641/wiki/beach.jpg" style="width:30%; height:30%; padding-top:13%; padding-left:5%">
-              </div>
-          </section>
+    <p class="mt-5 sub-stuff"> PPCPs are consumed globally at a rate of <b>0.1 million tonnes per year</b> and find their way into waste water treatment plants [1]. </p>
+    <figure>
+  <img src="https://static.igem.wiki/teams/4641/wiki/project-description-images/figure-2.jpg" class="img-fluid">
+  <figcaption>Concentrations (ng/L) of PPCPs reported in surface water samples from different countries [9]</figcaption>
+</figure>
 
-          <section>
-              <div class='main-wrapper'>
-              <p style="color:#6495ED; font-size: 93.75%; padding-left:2%"> <br>[1] Gopal, C. M., Bhat, K., Ramaswamy, B. R., Kumar, V., Singhal, R. K., Basu, H., Udayashankar, H. N., Vasantharaju, S. G., Praveenkumarreddy, Y., Lino, Y., & Balakrishna, K. (2021). Seasonal occurrence and risk assessment of pharmaceutical and personal care products in Bengaluru rivers and lakes, India. Journal of Environmental Chemical Engineering, 9(4), 105610.<a href="https://doi.org/10.1016/j.jece.2021.105610">https://doi.org/10.1016/j.jece.2021.105610</a> <br><br><br> [2] Yun, H., Liang, B., Kong, D., Li, X., & Wang, A. (2020). Fate, risk and removal of triclocarban: A critical review. Journal of Hazardous Materials, 387, 121944.<a href="https://doi.org/10.1016/j.jhazmat.2019.121944">https://doi.org/10.1016/j.jhazmat.2019.121944</a> <br><br><br> [3] Subedi, B., Balakrishna, K., Joshua, D. I., & Kannan, K. (2017). Mass loading and removal of pharmaceuticals and personal care products including psychoactives, antihypertensives, and antibiotics in two sewage treatment plants in southern India. Chemosphere, 167, 429-437. <a href="https://doi.org/10.1016/j.chemosphere.2016.10.026">https://doi.org/10.1016/j.chemosphere.2016.10.026</a> <br><br><br>[4] Shen, J. Y., Chang, M. S., Yang, H., & Wu, G. J. (2012). Simultaneous determination of triclosan, triclocarban, and transformation products of triclocarban in aqueous samples using solid-phase micro-extraction-HPLC-MS/MS. Journal of Separation Science, 35(19), 2544-2552.<a href="https://doi.org/10.1002/jssc.201200181">https://doi.org/10.1002/jssc.201200181</a> <br><br><br> [5] Vimalkumar, K., Seethappan, S., & Pugazhendhi, A. (2019). Fate of Triclocarban (TCC) in aquatic and terrestrial systems and human exposure. Chemosphere, 230, 201-209. <a href="https://doi.org/10.1016/j.chemosphere.2019.04.145">https://doi.org/10.1016/j.chemosphere.2019.04.145</a> <br><br><br> [6] Mathews, S., Henderson, S. & Reinhold, D. Uptake and accumulation of antimicrobials, triclocarban and triclosan, by food crops in a hydroponic system. Environ Sci Pollut Res 21, 6025–6033 (2014). <a href="https://doi.org/10.1007/s11356-013-2474-3">https://doi.org/10.1007/s11356-013-2474-3</a><br><br><br> [7] Grégorio Crini, Eric Lichtfouse. Advantages and disadvantages of techniques used for wastewater treatment. Environmental Chemistry Letters, 2019, 17 (1), pp.145-155. 10.1007/s10311-018-0785-9 .hal-02082890<br><br><br>[8] Azeezah Amigun Taiwo, Saheed Mustapha, Tijani Jimoh Oladejo, Adekola Folahan Amoo & Rabi Elabor (2022): Occurrence, effects, detection, and photodegradation of triclosan and triclocarban in the environment: a review, International Journal of Environmental Analytical Chemistry, DOI: 10.1080/03067319.2022.2106860</p>
-              <p style="color:#6495ED; font-size: 93.75%; padding-left:1%"> <br>[9] Subedi, B., Balakrishna, K., Joshua, D. I., & Kannan, K. (2017). Mass loading and removal of pharmaceuticals and personal care products including psychoactives, antihypertensives, and antibiotics in two sewage treatment plants in southern India. Chemosphere, 167, 429-437.<a href="https://doi.org/10.1016/j.chemosphere.2016.10.026">https://doi.org/10.1016/j.chemosphere.2016.10.026</a> <br><br><br>[10] Lenz, K. A., Pattison, C., & Ma, H. (2017). Triclosan (TCS) and triclocarban (TCC) induce systemic toxic effects in a model organism the nematode Caenorhabditis elegans. Environmental Pollution, 231, 462-470.<a href="https://doi.org/10.1016/j.envpol.2017.08.036">https://doi.org/10.1016/j.envpol.2017.08.036</a> <br><br><br> [11] Tamura, I., Kagota, K. I., Yasuda, Y., Yoneda, S., Morita, J., Nakada, N., ... & Yamamoto, H. (2013). Ecotoxicity and screening level ecotoxicological risk assessment of five antimicrobial agents: triclosan, triclocarban, resorcinol, phenoxyethanol and p‐thymol. Journal of Applied Toxicology, 33(11), 1222-1229.<a href="https://doi.org/10.1002/jat.2771">https://doi.org/10.1002/jat.2771</a> <br><br><br>[12] Kavitha, V. (2022). Global prevalence and visible light mediated photodegradation of pharmaceuticals and personal care products (PPCPs)-a review. Results in Engineering, 100469.<a href="https://doi.org/10.1016/j.rineng.2022.100469">https://doi.org/10.1016/j.rineng.2022.100469</a><br><br><br>[13] Balakrishna, K., Rath, A., Praveenkumarreddy, Y., Guruge, K. S., & Subedi, B. (2017). A review of the occurrence of pharmaceuticals and personal care products in Indian water bodies. Ecotoxicology and environmental safety, 137, 113-120. <a href="https://doi.org/10.1016/j.ecoenv.2016.11.014">https://doi.org/10.1016/j.ecoenv.2016.11.014</a> <br><br><br>[14] Halden, R. U., & Paull, D. H. (2005). Co-occurrence of triclocarban and triclosan in US water resources. Environmental science & technology, 39(6), 1420-1426. <a href="https://doi.org/10.1021/es049071e">https://doi.org/10.1021/es049071e</a></p>
-          </div>
-          <footer style="padding-bottom:0%; margin-bottom:0%; margin-top:1.5%">
-              <p style="color:white; font-size:93.75%; text-align:center">© 2022 - Content on this site is licensed under a Creative Commons Attribution 4.0 International license.<br>The repository used to create this website is available at <a href="gitlab.igem.org/2023/mit-mahe/description">gitlab.igem.org/2023/mit-mahe/description</a>.</p>
-      
-          </footer>
-          </section>
+    <p class="mt-5 sub-stuff"><b>76-79% of triclocarban (TCC) is released</b> with sewage sludge since it is difficult to degrade using existing, implemented methods [2].<br><br>
+TCC is omnipresent and preserved in the environment and even found to accumulate within our flora and fauna, causing <b>hormone disruption</b> and aiding anti-bacterial resistance.</p>
 
-          
+    <p class="mt-5 MAIN-STUFF">Extent of TCC Accumulation</p>
 
-      </div>
-  </body>
-</html>
+    <p class="mt-5 sub-stuff"> At local wastewater treatment plants (WWTPs) in Udupi and Mangalore, India, the average concentration of TCC recorded in the <b>sludge</b> was <b>21,000 ng/g dw</b> and <b>13,000 ng/g dw</b>, respectively [3].<br><br>
+The concentration of TCC detected in <b>Indian aquatic environments</b> (including surface waters or even drinking water) was <b>1119 ng/L</b> [2]. <br><br>
+On a global scale, the median values of detected TCC in surface water worldwide ranged around 10-100 ng/L. 51-347 ng/L and 7.5-102 ng/L TCC were monitored in tap and treated drinking water, respectively [4]. <br><br>
+</p>
+
+    <p class="mt-5 MAIN-STUFF">Damage to Aquatics</p>
+
+    <p class="mt-5 sub-stuff">Pertaining to Indian waters, 692 ng/g w/w TCC was accumulated in fish from the Kaveri River, India [5]. Victims and their symptoms included:<br><br>
+<b>Zebrafish larvae</b>: Affected nervous system & skeletal muscle development, metabolism along with hormonal conditions.
+<b>Fathead minnows</b>: Reduced mobility & feeding, aggression, fecundity and even death. <br><br>
+<b>Freshwater mud snails, planktonic crustaceans, and amphibians</b>: Reproductive issues rooted from endocrine-disruption.</p>
+
+        <p class="mt-5 MAIN-STUFF">Damage to Agro Industry</p>
+
+        <p class="mt-5 sub-stuff"> In food crops cultured in <b>contaminated hydroponic media</b>, after four weeks of exposure, roots accumulated 86–1,350 mg kg−1 of antimicrobials and shoots had accumulated 0.33-5.35 mg kg−1 of antimicrobials, including triclocarban [6]. <br><br>
+
+The uptake and accumulation of TCC due to the use of <b>contaminated biosolids as fertilisers</b> has been detected in several food crops —carrots, green peppers, tomatoes, and cucumbers—and has been proven to hinder proper metabolism in the crops [2]. <br><br>
+
+Accumulation of TCC was observed in soil and soil-dwelling organisms. Moreover, microbial communities and their metabolic activities like nitrification and denitrification were heavily affected. As an antimicrobial, it may participate in <b>antibiotic resistance bacteria selection</b> and may induce antibiotic-resistant genes in these bacteria. [2] </p>
+
+        <p class="mt-5 MAIN-STUFF">Existing Methods</p>
+
+        <p class="mt-5 sub-stuff"> Adsorption is the most prevalent physical approach to removing TCC from water, but there is room for improvement in its operational parameters. Additionally, desorption should be considered to ensure sustainable water treatment. Although activated carbon adsorption has been considered, its disadvantages include <b>high costs, lack of selectivity, and a limited regenerative capacity </b> [7]. <br><br>
+
+In the case of chemical methods, Ultraviolet light (UV), chlorine oxidation, ozone, and electron-Fenton are usually considered promising methods. Inorganic ions, like sulphate and nitrate, often found in wastewater, were found to <b>hinder the photolysis of TCC</b> by UV radiation [8]. Chlorine oxidation often results in the incomplete degradation of the compounds and the production of <b>hazardous byproducts</b>. Chemical approaches are generally more <b>expensive</b>, while ozone-based techniques have been proven to be <b>less effective</b>. <br><br>
+
+<b>It was found that most methods currently utilised by WWTPs in India aren’t adequate for removing TCC [2]. </p>
+
+<p class="mt-5 MAIN-STUFF">Biodegradation of TCC</p>
+
+<p class="mt-5 sub-stuff"> Isolated from a WWTP in China, <i>Ochrobactrum sp. TCC-2</i> expresses an amidase enzyme through the TccA gene which can break down TCC. However, according to literature, it was found to degrade TCC to <b>toxic byproducts 3,4-Dichloroaniline (3,4-DCA) and 4-Chloroaniline (4-CA)</b>. Amidase also showed activity with amide bond cleavage in carbanilide, dichlorocarbanilide, trichlorocarbanilide. </p>
+
+<img src="https://static.igem.wiki/teams/4641/wiki/project-description-images/figure-3.jpg" class="img-fluid">
+
+
+<p class="mt-5 MAIN-STUFF">Chloroanilines</p>
+<p class="mt-5 sub-stuff"> Once degraded by existing methods, toxic chloroaniline byproducts accumulate in the environment. According to studies conducted by the World Health Organisation and Centers for Disease Control and Prevention, 4-chloroaniline and 3,4-dichloroaniline act as <b>carcinogens</b> and cause <b>methemoglobinemia</b>—which is a condition characterised by an abnormal form of haemoglobin in the blood leading to <b>cyanosis and hypoxia</b>. </p>
+
+<p class="mt-5 MAIN-STUFF">Our Solution</p>
+
+<p class="mt-5 sub-stuff"> 
+    <ul>
+        <li>Some bacteria, through other degradation pathways, can degrade the initial byproducts 3,4-DCA and 4-CA to Krebs’ cycle intermediates which are then utilised by the bacteria.</li>
+        <li><b>Our proposed solution to degrade TCC into non-toxic final products was to insert the novel amidase gene into a chassis which degrades its byproducts.</b></li>
+        <li>Our project involves modifying a known metabolic pathway by adding one step to it. 
+</li>
+        <li>Our novel amidase gene acts along with a cluster of native genes that degrade the compound till cis,cis-muconic acid which is then further taken into the Krebs' cycle.
+</li>
+    </ul>
+
+    <figure>
+  <img src="https://static.igem.wiki/teams/4641/wiki/project-description-images/figure-4.jpg" class="img-fluid">
+  <figcaption> Proposed degradation pathway</figcaption>
+</figure>
+
+</p>
+
+<p class="mt-5 MAIN-STUFF">References</p>
+
+<p class='mt-5 sub-stuff'> [1] Gopal, C. M., Bhat, K., Ramaswamy, B. R., Kumar, V., Singhal, R. K., Basu, H., Udayashankar, H. N., Vasantharaju, S. G., Praveenkumarreddy, Y., Lino, Y., & Balakrishna, K. (2021). Seasonal occurrence and risk assessment of pharmaceutical and personal care products in Bengaluru rivers and lakes, India. Journal of Environmental Chemical Engineering, 9(4), 105610. <a href="https://doi.org/10.1016/j.jece.2021.105610" target="_blank"> https://doi.org/10.1016/j.jece.2021.105610 </a><br><br>
+
+[2] Yun, H., Liang, B., Kong, D., Li, X., & Wang, A. (2020). Fate, risk and removal of triclocarban: A critical review. Journal of Hazardous Materials, 387, 121944. <a href="https://doi.org/10.1016/j.jhazmat.2019.121944" target="_blank"> https://doi.org/10.1016/j.jhazmat.2019.121944 </a><br><br>
+
+[3] Subedi, B., Balakrishna, K., Joshua, D. I., & Kannan, K. (2017). Mass loading and removal of pharmaceuticals and personal care products including psychoactives, antihypertensives, and antibiotics in two sewage treatment plants in southern India. Chemosphere, 167, 429-437. <a href="https://doi.org/10.1016/j.chemosphere.2016.10.026 " target="_blank"> https://doi.org/10.1016/j.chemosphere.2016.10.026 </a><br><br>
+
+[4] Shen, J. Y., Chang, M. S., Yang, H., & Wu, G. J. (2012). Simultaneous determination of triclosan, triclocarban, and transformation products of triclocarban in aqueous samples using solid-phase micro-extraction-HPLC-MS/MS. Journal of Separation Science, 35(19), 2544-2552. <a href="https://doi.org/10.1002/jssc.201200181" target="_blank">https://doi.org/10.1002/jssc.201200181 </a> <br><br>
+
+[5] Vimalkumar, K., Seethappan, S., & Pugazhendhi, A. (2019). Fate of Triclocarban (TCC) in aquatic and terrestrial systems and human exposure. Chemosphere, 230, 201-209. <a href="https://doi.org/10.1016/j.chemosphere.2019.04.145" target="_blank"> https://doi.org/10.1016/j.chemosphere.2019.04.145 </a> <br><br>
+
+[6] Mathews, S., Henderson, S. & Reinhold, D. Uptake and accumulation of antimicrobials, triclocarban and triclosan, by food crops in a hydroponic system. Environ Sci Pollut Res 21, 6025–6033 (2014). <a href="https://doi.org/10.1007/s11356-013-2474-3 " target="_blank">https://doi.org/10.1007/s11356-013-2474-3 <br><br>
+
+[7] Grégorio Crini, Eric Lichtfouse. Advantages and disadvantages of techniques used for wastewater treatment. Environmental Chemistry Letters, 2019, 17 (1), pp.145-155. <a href="https://doi.org/10.1007/s10311-018-0785-9" target="_blank">https://doi.org/10.1007/s10311-018-0785-9</a><br><br>
+
+[8] Azeezah Amigun Taiwo, Saheed Mustapha, Tijani Jimoh Oladejo, Adekola Folahan Amoo & Rabi Elabor (2022): Occurrence, effects, detection, and photodegradation of triclosan and triclocarban in the environment: a review, International Journal of Environmental Analytical Chemistry, <a href="https://doi.org/10.1080/03067319.2022.2106860" target="_blank">https://doi.org/10.1080/03067319.2022.2106860</a><br><br>
+[9] Ebele, A. J., Abdallah, M. A., & Harrad, S. (2017). Pharmaceuticals and personal care products (PPCPs) in the freshwater aquatic environment. Emerging Contaminants, 3(1), 1-16. <a href="https://doi.org/10.1016/j.emcon.2016.12.004 " target="_blank">https://doi.org/10.1016/j.emcon.2016.12.004 </a><br><br>
+</p>
+
+
+
+
+
+    </div>
+</div>
+
+
+{% endblock %}
