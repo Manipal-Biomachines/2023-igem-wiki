@@ -1,66 +1,72 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4BD9E8;">
-              <a class="navbar-brand" href="#">MIT-MAHE</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link" href="{{ url_for('home') }}">
-                        Home
-                      </a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Team
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                        <a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Meet the Team</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Project
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                        <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contributions</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-design') }}">Design</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-implementation') }}">Implementation</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a>
-                        <a class="dropdown-item" href="{{ url_for('pages', page='project-parts') }}">Parts</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Engagement
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-communityengagement') }}">Community Engagement</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-partnership') }}">Partnership</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='engagement-sciencecommunication') }}">Science Communication</a>
-                      
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Awards
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-part') }}">Part</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-model') }}">Model</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-inclusivity') }}">Inclusivity</a>
-                      <a class="dropdown-item" href="{{ url_for('pages', page='awards-education') }}">Education</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+  <a class="navbar-brand" href="#">MIT-MAHE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="{{ url_for('home') }}">
+          Home
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Team
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
+          <a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Meet the Team</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Project
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
+          <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contributions</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='project-design') }}">Design</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='project-implementation') }}">Implementation</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='project-parts') }}">Parts</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Engagement
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
+          <a class="dropdown-item" href="{{ url_for('pages', page='engagement-collaborations') }}">Collaborations</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='engagement-communityengagement') }}">Community
+            Engagement</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='engagement-partnership') }}">Partnership</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='engagement-sciencecommunication') }}">Science
+            Communication</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Awards
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #66D7EB;">
+          <a class="dropdown-item" href="{{ url_for('pages', page='awards-part') }}">Part</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='awards-model') }}">Model</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='awards-inclusivity') }}">Inclusivity</a>
+          <a class="dropdown-item" href="{{ url_for('pages', page='awards-education') }}">Education</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
