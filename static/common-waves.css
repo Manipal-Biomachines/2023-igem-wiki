@@ -1,64 +1,76 @@
 /* Apply Montserrat font to specific <p> tags */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 header {
   height: 70vh;
-  background: -webkit-linear-gradient(#8bedbb,#005c74);
+  background: -webkit-linear-gradient(#8bedbb, #005c74);
   position: relative;
   overflow: hidden;
 }
+
 #shape {
   position: absolute;
   left: 0;
   bottom: -2vw;
 }
+
 header img:not(#shape) {
   position: absolute;
   left: 0;
 }
+
 header img:nth-child(1) {
   opacity: 0.4;
   bottom: -0.1vw;
   animation: move-1 5s infinite;
 }
+
 @keyframes move-1 {
   50% {
     transform: translateY(15px);
   }
 }
+
 header img:nth-child(2) {
   opacity: 0.3;
   bottom: 0.5vw;
   animation: move-2 4s infinite;
 }
+
 @keyframes move-2 {
   50% {
     transform: translateY(35px);
   }
 }
+
 header img:nth-child(3) {
   bottom: 0.3vw;
   opacity: 0.2;
   animation: move-3 3.5s infinite;
 }
+
 @keyframes move-3 {
   50% {
     transform: translateY(25px);
   }
 }
+
 header img:nth-child(4) {
   bottom: 0.1vw;
   opacity: 0.3;
   animation: move-4 3s infinite;
 }
+
 @keyframes move-4 {
   50% {
     transform: translateY(20px);
   }
 }
+
 header h1 {
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -74,48 +86,53 @@ header h1 {
 
 .sidebar {
   width: 210px;
-  background-color: #000000; /* Bootstrap background color */
+  background-color: #000000;
+  /* Bootstrap background color */
   padding: 20px;
   height: 100%;
-  transition: top 0.3s; 
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #d4ffe9
-    line-height: 1.5;
+  transition: top 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d4ffe9 line-height: 1.5;
 }
 
-
-
-
 .content {
-  margin-left: 100px; /* Adjust margin to accommodate the sidebar width */
+  margin-left: 100px;
+  /* Adjust margin to accommodate the sidebar width */
   padding: 0px;
 }
 
-.whole-thing{
-  display:flex;
-  margin:0;
+.whole-thing {
+  display: flex;
+  margin: 0;
 }
 
-.content{
-  flex:1;
-  padding:1px;
+.content {
+  flex: 1;
+  padding: 1px;
 }
 
 p.MAIN-STUFF {
-    font-family: 'Montserrat', sans-serif; /* Replace 'Your Main Font' with your preferred font */
-    font-size: 27px; /* Adjust the font size as needed */
-    font-weight: bold; /* Optional: Set the font weight */
-    color: #333; /* Optional: Set the text color */
-    background: -webkit-linear-gradient(#8bedbb, #005c74);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  /* Replace 'Your Main Font' with your preferred font */
+  font-size: 27px;
+  /* Adjust the font size as needed */
+  font-weight: bold;
+  /* Optional: Set the font weight */
+  color: #333;
+  /* Optional: Set the text color */
+  background: -webkit-linear-gradient(#8bedbb, #005c74);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* CSS Styles for paragraphs with class "sub-stuff" */
 p.sub-stuff {
-    font-family: 'Poppins', sans-serif; /* Replace 'Your Sub Font' with your preferred font */
-    font-size: 20px; /* Adjust the font size as needed */
-    color: #666; /* Optional: Set the text color */
+  font-family: 'Poppins', sans-serif;
+  /* Replace 'Your Sub Font' with your preferred font */
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: #666;
+  /* Optional: Set the text color */
 }
