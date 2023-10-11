@@ -1,9 +1,75 @@
 {% extends "my-layout.html" %}
   
 {% block sidebar_content %}
+<ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="#section1" class="nav-link link-dark" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                  CAD Design Model
+                </a>
+              </li>
+              <li>
+                <a href="#section2" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  Bioremediation Airtable
+                </a>
+              </li>
+              <li>
+                <a href="#section3" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                  Bioreactor Handbook
+                </a>
+              </li>
+              <li>
+                <a href="#section4" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                  Wet Lab Handbook
+                </a>
+              </li>
+              <li>
+                <a href="#section5" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                  Part: BBa_K4641000
+                </a>
+              </li>
+
+            </ul>
+
 {% endblock %}
 
 {% block heading %}Contributions{% endblock %}
 
 {% block page_content %}
+
+<div class="content">
+                <div class="m-2 mb-16">
+                    <p class="mt-5 MAIN-STUFF" id="section1"> CAD Design Model—Workstation model for specially abled people </p>
+                    <p class="mt-5 sub-stuff"> Our research found that scientific research can be a hostile field for specially-abled individuals. One of our team members interacted with their friend who uses a wheelchair, and they brought up this issue about lab accessibility. Hence, we identified this problem and proposed the model described below. This is primarily due to a lack of accessibility features in labs and awareness regarding how to provide accommodations to people with disabilities and neurodivergence.<br><br>
+
+In conversations with people with disabilities, we found that people with wheelchairs often found it difficult to perform experiments due to lab workstations designed for abled people in standing positions. While height-adjustable workstations are available on the market, they can be inaccessible to some labs due to the lack of funds and resources. Some labs may also be designed with built-in workstations, so adding a new workstation may be inconvenient because of the lab's positioning and lack of space. To rectify this, we created a portable and collapsible height-adjustable workstation model that attaches to an existing workstation; this allows the workstation to be used when necessary and stored away when not in use. It is also composed of simple and cheap materials and is easy to build, so labs with limited space and finances can use it. <br><br>
+Further, we believe that this will be a good starting point for other iGEM teams who are looking to improve the inclusivity of their lab practices and project. We have provided our CAD design and blueprints and encouraged other teams to modify them as necessary.
+ </p>
+<p class="mt-5 MAIN-STUFF" id="section2"> Bioremediation Airtable </p>
+<p class="mt-5 sub-stuff"> Bioremediation is a newly introduced track in iGEM 2023. Before this, Bioremediation based projects fell under the Environment Track, a vast track, which includes a multitude of projects. The members of iGEM MIT-MAHE have made an effort to compile all previous year bioremediation based projects as an airtable. The table was inspired by the Phoenix project and we believe it would be a resource for future teams to refer to and draw inspiration from. </p>
+
+<p class="mt-5 MAIN-STUFF" id="section3"> Bioreactor Handbook—A Beginner’s Guide</p>
+<p class="mt-5 sub-stuff"> A major part of our project involves designing a bioreactor as a part of our implementation. Our team has designed a packed bed bioreactor to effectively degrade TCC into non-toxic products using our modified bacteria. 
+Designing a bioreactor can be quite daunting, considering the huge number of factors that need to be taken into consideration. However, with strong basic principles in place, a viable bioreactor can be designed and then further optimised. To assist future iGEM teams with this, we have designed a bioreactor handbook to refer to when dealing with designing bioreactors. </p>
+
+<div class="ratio ratio-16x9 mt-5">
+          <iframe src="https://static.igem.wiki/teams/4641/wiki/contributions/bioreactorhandbook.pdf" allowfullscreen></iframe>
+</div>
+
+
+<p class="mt-5 MAIN-STUFF" id="section4">Wet Lab Handbook—Guide to working with different chassis </p>
+
+<p class="mt-5 sub-stuff"> As a part of our project, our team worked with different bacteria—Pseudomonas fluoroscens, Pseudomonas putida and Acinetobacter baylyi in the lab. These organisms are not commonly used as model organisms. However, the standardisation of more organisms as model organisms is required. This is because other bacteria have desirable properties that existing model organisms may not possess. Our team has designed a guide to working with these bacteria as chassis for future teams to refer from. 
+</p>
+
+<p class="mt-5 MAIN-STUFF" id="section5">Part: BBa_K4641000</p>
+
+
+                </div>
+</div>
+
 {% endblock %}
