@@ -6,4 +6,379 @@
 {% block heading %}Engineering Success{% endblock %}
 
 {% block page_content %}
+<div class="content">
+    <div class="m-2 mb-16">
+        <p class="MAIN-STUFF" style="text-align:center;">MODULE 0</P>
+        <p class="MAIN-STUFF"><u>Overview: </u></p>
+        <p class="sub-stuff">The first module of our DBTL cycle shows how our initial project idea shifted on the basis of iHP and testing. </p>
+        <p class="MAIN-STUFF"><u>Design: </u></p>
+        <p class="sub-stuff">
+          The team of MIT-MAHE set out to solve the problem of <b>triclocarban entering our environment</b> and causing major issues. We initially identified a novel TccA amidase enzyme expressed in Ochrobactrum sp. TCC-2. This amidase had only 27-38% sequence similarity with other known amidases. This enzyme is capable of breaking down triclocarban (TCC) into 4-chloroaniline and 3,4-dichloroaniline.[1] <br><br>
+          We initially wanted to implement this system within the aeration tank of the wastewater treatment plant. The aim was to increase the enzyme efficiency to function within the hydraulic retention time of the wastewater treatment plant. <br><br>
+          Hydraulic retention time (HRT) of the aeration tank of a wastewater treatment plant is the amount of time taken for one full volume of the aeration tank to pass out of the aeration tank after completion of process. <br>
+          HRT=Volume of the aeration tank/flow rate of the water
+          Commonly, HRT for <b>conventional activated sludge processes is about 2-24 hours</b>[7].<br><br>
+          We wanted to achieve this by modifying amino acid residues through  an in-silico version of site directed mutagenesis.
+          We wanted to identify the key residues involved in the catalytic action and improve the binding affinity of the substrate to the enzyme, which we had initially believed might increase the efficiency of the enzyme.
+        </p>
+        <p class="MAIN-STUFF"><u>Build: </u></p>
+        <p class="sub-stuff">
+          The TccA amidase enzyme has not been fully characterized in literature. Therefore, the first step before building our genetic circuit was to understand the structure, binding site and working of the enzyme. <br><br>
+          We predicted the structure of the TccA amidase as well as the binding sites. Since most of our data was not obtained via experimentation, our Human practices team reached out to many experts, including Mr. Omkar Khade and Dr. Gurunath Ramanathan, to learn more about the feasibility of our project idea.
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <u>Catalytic Triad</u>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    Through literature survey, we found the catalytic triad of the amidase family to be Ser-Ser-Lys. To identify exactly which triad (Ser-Ser-Lys) of the amidase family was involved, we used multiple alignments.
+                    <br>
+                    <br>
+                    GRASP (collection of tools to perform and analyze ancestral sequence reconstruction) shows the amino acid residues that most probably form the binding pocket of the enzyme. Here, Ser 155 and Ser 179 showed 85% confidence scores showing that it interacts with TCC and Lys 79 with 59% confidence score showing it is not actively involved in bond cleavage but does help in stabilizing the interactions.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b>Alphafold</b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <!--Fig 1-->
+                  <p class="sub-stuff" style="text-align:center;">
+                    <b>Fig 1:</b> Model which was used for this (predicted by Alpha Fold and present in UniProt)</p>
+                  <p class="sub-stuff">
+                    We predicted structures by different softwares like SWISS-MODEL, Alphafold and iTASSER. For the test stage, we proceeded with the Alphafold model as it showed the highest percentage of residues lying within the accepted region of the Ramachandran plot.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="MAIN-STUFF"><u>Test: </u></p>
+          <p class="sub-stuff">
+            We performed docking studies with the predicted binding site. The docking results from Autodock Vina and SeamDock showed ΔG values of -7.51 kcal/mol and -4.7 kcal/mol respectively. This implies that TCC has a good affinity towards the TccA amidase protein. <br><br>
+          </p>
+          <!--<b>Fig 9:</b>2D visualization of our docked structure in Discovery Studio Visualizer (DSV)-->
+          <p class="sub-stuff" style="text-align:center;"><b>Fig 9:</b>2D visualization of our docked structure in Discovery Studio Visualizer (DSV)</p>
+          <p class="sub-stuff">
+            These  ΔG values imply that there is a stable binding of TCC to the TccA amidase. This suggests that the predicted binding sites were correct.
+          </p>
+          <p class="MAIN-STUFF"><u>Learn: </u></p>
+          <p class="sub-stuff">Through iHP meetings with Mr. Omkar Khade and Dr. Gurunath Ramanathan, we learnt that manually altering the amino acids in close proximity to the catalytic triad requires a comprehensive understanding of the individual functions of each amino acid involved. A random mutagenesis approach would be difficult to perform in-silico as such experiments are usually only performed in-vitro. As a result, we felt the best way forward was to focus on the initial problem statement-dealing with TCC  in wastewater, with an alternative approach.
+          </p>
+
+          <p class="MAIN-STUFF" style="text-align:center;">MODULE 1</p>
+
+          <p class="MAIN-STUFF"><u>Design: </u></p>
+          <p class="sub-stuff">
+
+            Ensuring our focus on the problem statement, and taking note of everything learnt in Module 0, we looked back towards our previous human practices interactions. One of the major questions that had been posed to us was the formation of toxic byproducts 4-chloroaniline and 3,4-dichloroaniline on biodegrading TCC. Considering these changes, we decided to focus our project on breaking down the TCC into non-toxic byproducts. <br><br>
+            Through literature surveys, we studied the presence of gene clusters as a part of other pathways in bacteria that could degrade the above mentioned by-products.
+            However, insertion of such large cassettes within known model organisms could cause severe metabolic load on the cell and may lead to stunted growth or loss of plasmid. <br><br>
+            Hence, we looked for potential model organisms that had not been characterized for this purpose. An important parameter was the existence of pathways that could degrade the chloroaniline byproducts of TCC breakdown.
+            Through extensive literature survey, we narrowed down our possible chassis options to three species capable of degrading the byproducts -<i>Acinetobacter baylyi </i>[3], <i> Pseudomonas putida </i>[4] [5]and <i> Pseudomonas fluorescens </i>[6]. <br>
+            All three of these organisms had the natural capability to degrade the toxic by-products. The other major criteria we considered included:
+            <ul>
+              <li>Survivability of the bacteria in the pH range of the wastewater and sludge(6.5-8)</li>
+              <li>Survivability of the bacteria in the temperature range of the sludge tank of the WWTP(20-37° C)</li>
+              <li>Survivability at different TCC concentration ranges present in the sludge(13,000-21,000 ng/ml of TCC or 13-21 ppm of TCC)</li></ul><br><br>
+
+              Aim: To design experiments to check which of our three chosen bacterial species: <i>Pseudomonas putida, Pseudomonas fluorescens</i>, and <i>Acinetobacter baylyi</i> had the best survivability in wastewater treatment plant conditions
+              <br><br>
+              As TCC does not uniformly dissolve in small volumes of water, we dissolve TCC in acetonitrile at first and then dilute this mixture in water. To ensure that acetonitrile does not have any adverse effect on the growth of our bacteria, we take acetonitrile-containing media as a condition as well.
+          </p>
+          <p class="MAIN-STUFF"><u>Design: </u></p>
+          <p class="sub-stuff">
+            <b>Growth Curves</b> To perform these experiments, we inoculated the bacteria in media that simulated the conditions of the sludge tank.The growth was measured by checking the arbitrary units of optical density at 600nm. To convert to absolute units, a calibration curve was plotted for wet weight of the cell vs OD.
+          </p>
+          <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            <li>
+              <b>pH</b>
+              The growth of the bacterial species at pH range of 6 to 8 was growth in LB media.
+            </li>
+            <li>
+              <b>Temperature</b>
+              For temperature studies, we inoculated the bacteria in LB broth media and studied the growth over a temperature range of 24°C to 37°C.
+            </li>
+            <li>
+              <b>Acetonitrile</b>
+               To dissolve and dilute TCC in water, we need to dissolve it in acetonitrile first as TCC has extremely low solubility in water. Since acetonitrile will be in the media that our bacteria grow in, we have to make sure the presence of this compound does not impede the steady growth of our organisms.
+            </li>
+            <li>
+              <b>TCC (Sludge concentration)</b>
+              To discern whether our organisms can survive and be effective in the sludge tank, we need to know whether they can survive in the concentration of TCC within the sludge tank and effectively break down this TCC and its constituent degradation products. Hence, we inoculated our bacteria in media containing a range of TCC concentrations that is generally  present in the sludge (13000 - 21000ng\ml).
+            </li>
+          </ol>
+          <p class="MAIN-STUFF"><u>Test: </u></p>
+          <p class="sub-stuff">
+            The growth curves obtained from all the experiments we performed for all three of our possible chassis’ have been listed below:
+          </p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b>Effect of Acetonitrile</b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    <b><i>Pseudomonas putida</i></b>
+                    </p>
+                    <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                      <li>
+                        Growth curve of <i>Pseudomonas putida</i> in the presence of acetonitrile
+                        <!--(insert image of p putida acetonitrile)-->
+                        <br><br>
+                        Inference: The presence of acetonitrile in the growth media does not affect the growth of <i>Pseudomonas putida</i>.
+                      </li>
+                      <li>
+                        Growth curve of <i>Pseudomonas fluorescens</i> in presence of acetonitrile.
+                        <!--(insert image of p fluorescens acetonitrile)-->
+                        <br><br>
+                        Inference: It was found that the presence of acetonitrile does not appreciably affect the growth of <i>Pseudomonas fluorescens</i>.
+                      </li>
+                      <li>
+                        Growth curve of <i>Acinetobacter baylyi</i> in the presence of acetonitrile
+                        <!--(insert image of a baylyi acetonitrile)-->
+                        <br><br>
+                        Inference:  It was observed that acetonitrile affects the growth of <i>Acinetobacter baylyi</i> and acts as an inhibitor.
+                      </li>
+                    </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b>Effect of pH</b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <li>
+                      Growth curve of <i>Pseudomonas putida</i> at different pH values
+                      <!--(insert image of p putida ph)-->
+                      <br><br>
+                      Inference: The presence of acetonitrile in the growth media does not affect the growth of <i>Pseudomonas putida</i>.
+                    </li>
+                    <li>
+                      Growth curves of <i>Pseudomonas fluorescens</i> at different pH values
+                      <!--(insert image of p fluorescens pH)-->
+                      <br><br>
+                      Inference: The optimal pH for growth of <i>Pseudomonas fluorescens</i> was observed to be pH 8.
+                    </li>
+                    <li>
+                      Growth curve of <i>Acinetobacter baylyi</i> at different pH values
+                      <!--(insert image of a baylyi pH)-->
+                      <br><br>
+                      Inference:  It was observed that the growth of <i>Acinetobacter baylyi</i> was not deterred by variation in the pH. Thus we infer that it would thrive within this pH range typically found in wastewater treatment plants.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b>Effect of Temperature</b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <li>
+                      Growth curve of <i>Pseudomonas putida</i> at 24° C and 37° C
+                      <!--(insert image of p putida Temp)-->
+                      <br><br>
+                      Inference: It is observed that <i>Pseudomonas putida </i> exhibits superior growth at 24 degrees Celsius, whereas its growth is adversely affected at 37 degrees Celsius.
+                    </li>
+                    <li>
+                      Growth curve of <i>Pseudomonas fluorescens</i> at 24° C and 30° C
+                      <!--(insert image of p fluorescens temp)-->
+                      <br><br>
+                      Inference: It was observed that <i>Pseudomonas fluorescens</i> exhibits better growth at 24° C.
+                    </li>
+                    <li>
+                      Growth curve of <i>Acinetobacter baylyi</i> at 30° C and 37° C
+                      <!--(insert image of a baylyi Temp)-->
+                      <br><br>
+                      <!--Below inference needs to be changed-->
+                      Inference:  It was observed that the growth of <i>Acinetobacter baylyi</i> was not deterred by variation in the pH. Thus we infer that it would thrive within this pH range typically found in wastewater treatment plants.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b>Effect of TCC in Sludge Level Concentrations</b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <li>
+                      Growth curve of <i>Pseudomonas putida</i> at different concentrations of TCC (sludge concentration)
+                      <!--((insert image of p putida tcc sludge)-->
+                      <br><br>
+                      Inference: Growth of <i>Pseudomonas putida</i> was stunted in the presence of TCC as compared to the control.
+                    </li>
+                    <li>
+                      Growth curve of <i>Pseudomonas fluorescens</i> in the presence of TCC (sludge concentration)
+                      <!--(insert image of p fluorescens tcc sludge)-->
+                      <br><br>
+                      Inference: It was observed that TCC did not deter the growth of <i>Pseudomonas fluorescens</i>.
+                    </li>
+                    <li>
+                      Growth curve of <i>Acinetobacter baylyi</i> in the presence of different concentrations of TCC (sludge concentration)
+                      <!--(insert image of a baylyi tcc sludge)-->
+                      <br><br>
+                      <b>Inference:<b> Presence of TCC at such high concentrations does not inhibit the growth of <i>Acinetobacter baylyi</i>. However, the TCC was dissolved in acetonitrile. Our final inference is that the inhibitory effect that existed due to the usage of acetonitrile appeared to be canceled out by the presence of TCC.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="MAIN-STUFF"><u>Learn: </u></p>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b><i>Pseudomonas putida:</i></b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <li>It has a lag phase of roughly 4 hours, after which its growth plateaus become steady. </li>
+                    <li>We found that it showed optimal growth at 30ºC and 7.5pH</li>
+                    <li>Its growth is stunted under the presence of TCC. </li>
+                    <li>It shows reduced growth at 37ºC.</li>
+                  </ul>
+                  <p class="sub-stuff">
+                    <b><u>Conclusion:</u></b>
+                    <br><br>
+                     After taking these observations into account, our final conclusion was to eliminate this strain as it does not proliferate well in the temperature conditions observed in the sludge tank of a wastewater treatment plant.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b><i>Pseudomonas fluorescens:</i></b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <li>shows good growth at 30ºC, 7.5 pH.</li>
+                    <li>Growth is stunted under the presence of TCC. </li>
+                  </ul>
+                  <p class="sub-stuff">
+                    <b><u>Conclusion:</u></b>
+                    <br><br>
+                    After taking these observations into account, our final conclusion was to rule this strain out as it does not proliferate well in the pH range observed in the sludge tank of a wastewater treatment plant.                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <b><i>Acinetobacter baylyi:</i></b>
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <li>It has a lag phase of 8-9 hours using primary inoculum</li>
+                    <li>The lag phase for the secondary inoculation was about 2-3 hours. We tested its growth by altering the temperature, pH, and TCC concentration. </li>
+                    <li>We found that 30ºC, 7.5 pH were the ideal conditions for growth and surprisingly, the presence of such high concentrations of TCC did not impede its exponential growth. Hence, <i>A. baylyi</i> can proliferate and grow uninhibited in the presence of TCC.</li>
+                  </ul>
+                  <p class="sub-stuff">
+                    <b><u>Conclusion:</u></b>
+                    <br><br>
+                    Due to its ability to proliferate in environments containing near-toxic levels of TCC as well as with all the other parameters that it would be subjected to within the sludge tank of a wastewater treatment plant, we were able to come to the conclusion that <i>Acinetobacter baylyi</i> is the best choice for our bacterial chassis. The other two bacteria were promptly rejected due to their growth being stunted in the temperature and pH range of the sludge tank.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="MAIN-STUFF" style="text-align:center;">MODULE 0</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+    </div>
+</div>
 {% endblock %}
