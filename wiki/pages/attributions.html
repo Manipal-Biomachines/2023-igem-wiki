@@ -1,26 +1,24 @@
-{% extends "layout.html" %}
+{% extends "my-layout.html" %}
 
-{% block title %}Attributions{% endblock %}
-{% block lead %}This page must show the attribution form of your project. This includes the work done by each of the
-student members on your team and any work that was done by people outside of your team, including the host labs,
-advisors, instructors, and individuals not on the team roster. This requirement is not about literature references -
-these can and should be displayed throughout your wiki.{% endblock %}
+
+{% block heading %}Attributions{% endblock %}
 
 {% block page_content %}
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #2</h4>
-      <p>Describe what work your team members did and what other people did for your project.</p>
-      <p>The form that bas been embded in an iframe in this page shows your team's Project Attribution form. This page
-        must keep the form as it is.</p>
-      <p>If you use a different website framework, make sure to embed the right URL for your team's form.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/deliverables/project-attribution">Project Attribution
-          page</a> for more information.</p>
+
+<div class="content">
+    <div class="m-5 mb-16">
+        <p class="mt-5 MAIN-STUFF" id="section1">Attributions<br></p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+	The iGEM team of MIT-MAHE understands the importance of giving credit	where it is due. The attributions page acknowledges the hard work, 		dedication, and creativity of all members of the team. Further, this 	project would not have been possible without the support of our	mentors,advisors, external contractors, PIs and secondary PIs.
+<br>
+ More detailed descriptions of the team members contributions to the project as well as external attributions can be found in the attribution form below.
+        
+
+        </p>
     </div>
-  </div>
 </div>
+
+{% endblock %}
 
 <!--
   ======================================================================
