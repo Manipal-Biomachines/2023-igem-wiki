@@ -140,21 +140,21 @@
       <p class="mt-5 sub-stuff">Electrochemical sensors are used to detect <b>various compounds in wastewater at parts per million levels</b>. It consists of an electrode and a material coated transducer. A material which can have redox reactions with the analyte is chosen to coat the electrode. As the reaction takes place, the transducer connected to the electrode converts the chemical signal to an electrical signal which can then be detected.[6]
       <br><br> Triclocarban possesses free ions such as chlorine ion (Cl<sup>-</sup>) which can produce a signal by interacting with the positive electrode. Unfortunately we found no literature on triclocarban’s redox reactions. Hence, even if we go by the assumption that these chlorine ions will interact with the electrode, this sensor would still have <b>low selectivity</b> as there are many compounds possessing chlorine ions. Moreover, employing this in a bioreactor setup would not be feasible because then our sensor must undergo selective coating, the sample would have to undergo pretreatment and proper calibration has to be done.
       </p>
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/electrochemical-sensor-png.jpeg" class="img-fluid mt-5" style="scale:0.8;">
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/electrochemical-sensor-png.jpeg" class="img-fluid mt-5" style="scale:0.65;">
       <p class="mt-5 sub-stuff"><b>Figure 2:</b> Graphical illustration of Electrochemical sensor [7]</p>
-      <p class="mt-5 MAIN-STUFF" id="section5"><u>ENZYME-BASED SENSOR:</u></p>
+      <p class="mt-5 sub-stuff" id="section5"><u>ENZYME-BASED SENSOR:</u></p>
       <p class="mt-5 sub-stuff">Enzyme-based biosensors are sensors whose recognition element is an enzyme which is immobilized on the surface of the sensor. The enzyme is chosen based on its binding affinity to the analyte. When the analyte binds to the enzyme, the enzyme undergoes some physiochemical changes which are converted to a measurable signal by the transducer present in the sensor which is then detected.[8]
       <br><br>An amidase from <i>Ochrobactrum sp. TCC-2</i> is capable of degrading triclocarban and possesses a high binding affinity towards this compound. However, after consulting experts, we found that due to the trace levels of triclocarban in effluent, <b>significant modifications would have to be made to the biosensor in order to make it sensitive to triclocarban</b>. Given our time constraint, this detection method was not feasible.
       <br><br></p>
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/enzyme-based-sensor.jpeg" class="img-fluid mt-5" style="scale:0.8;">
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/enzyme-based-sensor.jpeg" class="img-fluid mt-5" style="scale:0.69;">
       <p class="mt-5 sub-stuff"><b>Figure 3:</b> Graphical illustration of Enzyme-based sensors [9]</p>
-      <p class="mt-5 MAIN-STUFF" id="section6"><u>APTASENSORS:</u></p>
+      <p class="mt-5 sub-stuff" id="section6"><u>APTASENSORS:</u></p>
       <p class="mt-5 sub-stuff">Since most of our ideas were discarded due to off-target effects, we were looking for something that will specifically bind to triclocarban. This is when we came across aptamers, also known as artificial antibodies. They are single-stranded deoxyribonucleic acids (ssDNA) or ribonucleic acids (RNA), specific to a certain compound and obtained by SELEX (Systematic Evolution of Ligands by Exponential Enrichment) method. These aptamers are used as detector molecules on a biosensor.[10]
       <br><br>Through our literature survey, we found that there are no existing aptamers for triclocarban which meant that we would either have to construct it in our lab using SELEX or employ an in-silico method of aptamer construction. <b>SELEX is an expensive and time consuming procedure</b>, while in-silico methods of aptamer construction require SELEX to validate the oligonucleotide library produced and then isolate a specific aptamer [11]. Due to these constraints and the lack of resources, we decided to explore further avenues.
       <br><br></p>
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/aptasensor.jpeg" class="img-fluid mt-5" style="scale:0.7;">
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/aptasensor-crop.jpeg" class="img-fluid mt-5" style="scale:0.7;">
       <p class="mt-5 sub-stuff"><b>Figure 4:</b> Graphical illustration of Aptasensor [12]</p>
-      <p class="mt-5 sub-STUFF" id="section7"><u>NANOBODIES-BASED SENSORS:</u></p>
+      <p class="mt-5 sub-stuff" id="section7"><u>NANOBODIES-BASED SENSORS:</u></p>
       <p class="mt-5 sub-stuff">Nanobodies, also known as VHHs (variable domain of heavy chain of immunoglobulin) are variable fragments of camelid-heavy chain antibodies. Due to their small size, they can be extremely selective while binding to epitomes. They provide high stability, versatility, affinity and specificity.
       <br><br>Three nanobodies T4, T9 and T10 were found to bind to triclocarban. We explored the option of detecting this interaction and further built upon these findings using recent detection techniques.[13]</p>
       <img src="https://static.igem.wiki/teams/4641/wiki/hardware/nanobodies-image.png" class="img-fluid mt-5">
@@ -162,7 +162,7 @@
       <p class="mt-5 sub-stuff">Usually, Gold nanoparticles conjugated with single-domain antibodies are employed to enhance the detection signal. It was found that the utilization of antibody-modified gold nanoparticles offers advantages in terms of immobilizing a greater quantity of antibody onto the electrode. This is to increase the sensitivity of electrochemical impedance sensors.[14]
       <br><br>We also found that a selective detection limit of picograms per milliliter (pg/mL) using the llama antibody-templated gold particles for cholera toxin detection has been done. Llama VHHs were found to possess the remarkable capability of differentiating between closely related molecules with a high degree of similarity. We discovered that TCC binds to Llama single domain antibodies. Llama single domain antibodies have been subjected to sequencing, cloned into an expression vector, and expressed in Escherichia coli. They have also been generated in large quantities within Saccharomyces cerevisiae.[15] However since the <b>purification of single domain antibodies is expensive</b>, we decided to explore other horizons for a cheaper alternative.
       <br><br></p>
-      <p class="mt-5 sub-STUFF" id="section8"><u>MOLECULARLY IMPRINTED POLYMER BASED SENSORS:</u></p>
+      <p class="mt-5 sub-stuff" id="section8"><u>MOLECULARLY IMPRINTED POLYMER BASED SENSORS:</u></p>
       <p class="mt-5 sub-stuff">Molecularly imprinted polymers (MIPs) are synthetic polymers that mimic the structure of the compound to be detected [16]. The utilization of molecularly imprinted polymers has significantly enhanced the sensitivity of traditional chemical sensors.
 
       <br><br>We aimed to find a selective recognition polymer for triclocarban and to integrate the detection system into the wastewater treatment plant or propose it along with our bioreactor. Molecularly imprinted polymers for the <b>detection of triclocarban and triclosan have been published</b>. However, the polymer recognizes both of these compounds, due to which we need to create a novel polymer which is highly sensitive and selective towards TCC.
@@ -174,7 +174,7 @@
       <img src="https://static.igem.wiki/teams/4641/wiki/hardware/mip-2-crop.jpeg" class="img-fluid mt-5" style="scale:0.7;">
       <p class="mt-5 sub-stuff"><b>Figure 7:</b> Graphical illustration of Molecularly Imprinted Polymer [19]</p>
 
-      <p class="mt-5 sub-STUFF" id="section9"><u>NANOMATERIAL BASED SENSORS:</u></p>
+      <p class="mt-5 sub-stuff" id="section9"><u>NANOMATERIAL BASED SENSORS:</u></p>
       <p class="mt-5 sub-stuff">As previously stated, triclocarban is an EDC(Endocrine disrupting chemicals). Nanomaterials have shown ability to identify EDCs down to picomole or single molecule level and have been identified as viable tools for analyzing trace-level chemical species. Additionally, they can be employed as pre-treatment steps for LC-MS and GC-MS. Before doing chromatographic analysis, appropriate sample preparation techniques must be used due to the complexity of certain environmental matrices and given that EDCs are often present in low quantities.
       <br><br>A suitable sample preparation method allows the preconcentration of the analytes, a reduction in the matrix effect by the removal/separation of the analytes from interferers in the matrix, and the transfer of the analytes to a medium suitable for the analytical instrumentation. To achieve this, it has been seen that employing nanomaterials in sorptive extraction methods and membrane-assisted solvent extraction proves to be beneficial.[20] Electrochemical sensors and biosensors integrating nanomaterials have shown great potential to improve the sensitivity, selectivity, and response speed for EDC detection due to the particular chemical and electrical characteristics displayed by nanomaterials.[21]
       <br><br>We could not proceed with this idea as <b>no nanomaterial has been isolated for the detection of triclocarban</b> and we would have to make inferences from the nanomaterials used in triclosan detection. Moreover, there are a number of nanomaterials used in the detection of triclosan (some of which were expensive) and due to some constraints, we were unable to conduct experiments to optimize it for triclocarban.
@@ -193,15 +193,15 @@
       <p class="mt-5 sub-stuff"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <msup><mrow><mi>v</mi><mn>0</mn></mrow></msup>
     <mo>=</mo>
-    <mfrac><mn>1</mn><mrow><mn>λ</mn><mn>0</mn></mrow></mfrac>
-    <mo>−</mo>
+    <mfrac><mn>1</mn><mrow><mn>λ</mn><mn><sub>0</sub></mn></mrow></mfrac>
+    <mo>−</mo><br>
     <mfrac><mn>1</mn><mrow><mn>λ</mn><mn>1</mn></mrow></mfrac>
-    <mo>=</mo>
+    <mo>=</mo><br>
     <mrow><mn>1</mn><mo>/</mo><mn>785</mn></mrow>
-    <mo>−</mo>
+    <mo>−</mo><br>
     <mrow><mn>1</mn><mo>/</mo><mn>13129.61</mn></mrow>
-    <mo>=</mo>
-    <mrow><mn>1.19772162610^-3</mn></mrow>
+    <mo>=</mo><
+    <mrow><mn>1.19772162610^-3</mn></mrow><br>
     <mo>λ</mo>
     <mo>=</mo>
     <mrow><mn>834.9185474</mn></mrow>
