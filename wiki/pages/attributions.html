@@ -1,26 +1,56 @@
-{% extends "my-layout.html" %}
+<!doctype html>
+<html lang="en">
 
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-{% block heading %}Attributions{% endblock %}
+  <!-- Bootstrap CSS -->
+  <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap-icons.css') }}">
 
-{% block page_content %}
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='common-waves.css') }}">
+  <link href="{{ url_for('static', filename='Font_Montserrat.css') }}" rel='stylesheet'>
+  <link href="{{ url_for('static', filename='Font_Poppins.css') }}" rel='stylesheet'>
 
-<div class="content">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <title>{% block title %}{% endblock %} | MIT_MAHE - iGEM 2023</title>
+</head>
+
+<body style="background: #FFFFFF;">
+  <!-- Navbar -->
+  {% include 'my-menu.html' %}
+
+  
+      <!-- Page Header -->
+      <header>
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
+        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
+        <h1>{% block heading %}{% endblock %}</h1>
+      </header>
+
+      <!-- Content-->
+      {% block page_content %}
+
+    <div class="content">
     <div class="m-5 mb-16">
         <p class="mt-5 MAIN-STUFF" id="section1">Attributions<br></p>
         <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
 	The iGEM team of MIT-MAHE understands the importance of giving credit	where it is due. The attributions page acknowledges the hard work, 		dedication, and creativity of all members of the team. Further, this 	project would not have been possible without the support of our	mentors,advisors, external contractors, PIs and secondary PIs.
 <br>
  More detailed descriptions of the team members contributions to the project as well as external attributions can be found in the attribution form below.
-        
 
         </p>
-    </div>
-</div>
 
-{% endblock %}
-
-<!--
+        <!--
   ======================================================================
   == VERY IMPORTANT                                                   ==
   ======================================================================
@@ -43,5 +73,62 @@
   </iframe>
 </div>
 <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    </div>
+</div>
 
-{% endblock %}
+      {% endblock %}
+
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center text-white" style="background-color: #000000; bottom: 0; width: 100%;">
+  <!-- Grid container -->
+  <div class="container p-2">
+
+    <!-- Section: Social media -->
+    <section class="mb-2">
+
+      <!-- Google -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+          class="bi bi-envelope"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+        href="https://www.instagram.com/manipalbiomachines/" role="button"><i class="bi bi-instagram"></i></a>
+
+      <!-- LinkedIn -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
+        href="https://www.linkedin.com/company/manipal-biomachines/" role="button"><i class="bi bi-linkedin"></i></a>
+
+      <!-- Gitlab -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
+        href="https://gitlab.igem.org/2023/mit-mahe/" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gitlab"
+          viewBox="0 0 16 16">
+          <path
+            d="m15.734 6.1-.022-.058L13.534.358a.568.568 0 0 0-.563-.356.583.583 0 0 0-.328.122.582.582 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.673.673 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.046 4.046 0 0 0 1.34-4.668Z" />
+        </svg>
+      </a>
+    </section>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023 - Content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script defer src="{{ url_for('static', filename = 'script.js') }}"></script>
+
+</html>
+
+
