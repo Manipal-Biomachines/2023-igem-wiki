@@ -1,9 +1,52 @@
 {% extends "my-layout.html" %}
-  
+
 {% block sidebar_content %}
+<ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+        <a href="#section1" class="nav-link link-dark" aria-current="page">
+            <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#PARTS:BBa_K4641000" />
+            </svg>
+            Overview
+        </a>
+    </li>
+</ul>
 {% endblock %}
 
 {% block heading %}Parts{% endblock %}
 
 {% block page_content %}
+
+<div class="content">
+    <div class="m-5 mb-16">
+        <p class="mt-5 MAIN-STUFF" id="section1">PARTS:BBa_K4641000<br></p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+        <table border="1">
+            <tr>
+                <th>Part Number</th>
+                <th>Part Type:</th>
+                <th>Short description:</th>
+                <th>Long Description:</th>
+                <th>Length</th>
+            </tr>
+            <tr>
+                <td><a href="http://parts.igem.org/Part:BBa_K4641000">BBa_K4641000</a></td>
+                <td>Coding</td>
+                <td>TccA</td>
+                <td>Ochrobactrum sp. TCC-2 TccA amidase protein coding region. This part codes for an amidase
+                    involved
+                    in
+                    cleaving the amide bonds in N-(4-Chlorophenyl)-N′-(3,4-dichlorophenyl)urea (Common name:
+                    Triclocarban or
+                    3,4,4′-Trichlorocarbanilide). The breakdown forms two daughter compounds : 3,4-Dichloroaniline
+                    and
+                    4-Chloroaniline</td>
+                <td>1452</td>
+            </tr>
+        </table>
+
+        </p>
+    </div>
+</div>
+
 {% endblock %}
