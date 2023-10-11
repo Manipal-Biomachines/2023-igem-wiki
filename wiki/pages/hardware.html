@@ -125,10 +125,10 @@
     <div class="content">
                 <div class="m-5 mb-16">
                     <p class="mt-5 MAIN-STUFF" id="section1"><b> WHY DETECT TRICLOCARBAN IN SLUDGE?</b></p>
-      <p class="mt-5 sub-stuff">Triclocarban is a <b>common antimicrobial agent</b> found in consumer and personal care products. It serves as a disinfectant, an antiseptic drug but most of all, an environmental contaminant. Triclocarban is also and endocrine-disrupting chemical[1]. <b>Endocrine-disrupting chemicals</b> (EDCs) are exogenous chemcials or chemical compositions that have the potential to significantly alter a variety of imporatnt biochemical pathways and affect the endocrine system[2].
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/properties-of-tcc-2.jpeg" class="img-fluid mt-5" style="scale:0.7;">
-      <p class="sub-stuff"><b>Figure 1:</b> Properties of TCC</p>
-      <br><br> <p class="mt-5 sub-stuff">The average concentration of triclocarban found in the sludge of wastewater treatment plants is about <b>21,000 ng/g or 21 ppm</b> on a dry weight basis (dm) in primary sludge and <b>13,000 ng/g or 13 ppm</b> dm in secondary sludge [4]. Therefore, detecting triclocarban and measuring its concentration requires powerful analytical techniques.
+      <p class="mt-5 sub-stuff">Triclocarban is a <b>common antimicrobial agent</b> found in consumer and personal care products. It serves as a disinfectant, an antiseptic drug but most of all, an environmental contaminant. Triclocarban is also and endocrine-disrupting chemical.[1] <b>Endocrine-disrupting chemicals</b> (EDCs) are exogenous chemcials or chemical compositions that have the potential to significantly alter a variety of imporatnt biochemical pathways and affect the endocrine system.[2]
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/properties-of-tcc-2.jpeg" class="img-fluid mt-5" style="scale:0.6;">
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 1:</b> Properties of TCC</p>
+      <br><br> <p class="mt-5 sub-stuff">The average concentration of triclocarban found in the sludge of wastewater treatment plants is about <b>21,000 ng/g or 21 ppm</b> on a dry weight basis (dm) in primary sludge and <b>13,000 ng/g or 13 ppm</b> dm in secondary sludge.[4] Therefore, detecting triclocarban and measuring its concentration requires powerful analytical techniques.
       <br><br></p>
       <p class="mt-5 MAIN-STUFF" id="section2"><b>CURRENT DETECTION METHODS:</b></p>
       <p class="mt-5 sub-stuff">Triclocarban is generally detected using High-Performance Liquid Chromatography (HPLC), Gas Chromatography-Mass Spectrometry (GC-MS), Liquid Chromatography-Mass Spectrometry (LC-MS), Solid-Phase Extraction (SPE), Nuclear Magnetic Resonance (NMR) and fluorescence detectors.[5]
@@ -141,24 +141,24 @@
       <br><br> Triclocarban possesses free ions such as chlorine ion (Cl<sup>-</sup>) which can produce a signal by interacting with the positive electrode. Unfortunately we found no literature on triclocarban’s redox reactions. Hence, even if we go by the assumption that these chlorine ions will interact with the electrode, this sensor would still have <b>low selectivity</b> as there are many compounds possessing chlorine ions. Moreover, employing this in a bioreactor setup would not be feasible because then our sensor must undergo selective coating, the sample would have to undergo pretreatment and proper calibration has to be done.
       </p>
       <img src="https://static.igem.wiki/teams/4641/wiki/hardware/electrochemical-sensor-png.jpeg" class="img-fluid mt-5" style="scale:0.65;">
-      <p class="mt-5 sub-stuff"><b>Figure 2:</b> Graphical illustration of Electrochemical sensor [7]</p>
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 2:</b> Graphical illustration of Electrochemical sensor [7]</p>
       <p class="mt-5 sub-stuff" id="section5"><u>ENZYME-BASED SENSOR:</u></p>
       <p class="mt-5 sub-stuff">Enzyme-based biosensors are sensors whose recognition element is an enzyme which is immobilized on the surface of the sensor. The enzyme is chosen based on its binding affinity to the analyte. When the analyte binds to the enzyme, the enzyme undergoes some physiochemical changes which are converted to a measurable signal by the transducer present in the sensor which is then detected.[8]
       <br><br>An amidase from <i>Ochrobactrum sp. TCC-2</i> is capable of degrading triclocarban and possesses a high binding affinity towards this compound. However, after consulting experts, we found that due to the trace levels of triclocarban in effluent, <b>significant modifications would have to be made to the biosensor in order to make it sensitive to triclocarban</b>. Given our time constraint, this detection method was not feasible.
       <br><br></p>
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/enzyme-based-sensor.jpeg" class="img-fluid mt-5" style="scale:0.69;">
-      <p class="mt-5 sub-stuff"><b>Figure 3:</b> Graphical illustration of Enzyme-based sensors [9]</p>
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/enzyme-based-sensor.jpeg" class="img-fluid mt-5" style="scale:0.55;">
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 3:</b> Graphical illustration of Enzyme-based sensors [9]</p>
       <p class="mt-5 sub-stuff" id="section6"><u>APTASENSORS:</u></p>
       <p class="mt-5 sub-stuff">Since most of our ideas were discarded due to off-target effects, we were looking for something that will specifically bind to triclocarban. This is when we came across aptamers, also known as artificial antibodies. They are single-stranded deoxyribonucleic acids (ssDNA) or ribonucleic acids (RNA), specific to a certain compound and obtained by SELEX (Systematic Evolution of Ligands by Exponential Enrichment) method. These aptamers are used as detector molecules on a biosensor.[10]
       <br><br>Through our literature survey, we found that there are no existing aptamers for triclocarban which meant that we would either have to construct it in our lab using SELEX or employ an in-silico method of aptamer construction. <b>SELEX is an expensive and time consuming procedure</b>, while in-silico methods of aptamer construction require SELEX to validate the oligonucleotide library produced and then isolate a specific aptamer [11]. Due to these constraints and the lack of resources, we decided to explore further avenues.
       <br><br></p>
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/aptasensor-crop.jpeg" class="img-fluid mt-5" style="scale:0.7;">
-      <p class="mt-5 sub-stuff"><b>Figure 4:</b> Graphical illustration of Aptasensor [12]</p>
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/aptasensor-crop.jpeg" class="img-fluid mt-5" style="scale:0.55;">
+      <p class="sub-stuff style="text-align:center;""><b>Figure 4:</b> Graphical illustration of Aptasensor [12]</p>
       <p class="mt-5 sub-stuff" id="section7"><u>NANOBODIES-BASED SENSORS:</u></p>
       <p class="mt-5 sub-stuff">Nanobodies, also known as VHHs (variable domain of heavy chain of immunoglobulin) are variable fragments of camelid-heavy chain antibodies. Due to their small size, they can be extremely selective while binding to epitomes. They provide high stability, versatility, affinity and specificity.
       <br><br>Three nanobodies T4, T9 and T10 were found to bind to triclocarban. We explored the option of detecting this interaction and further built upon these findings using recent detection techniques.[13]</p>
       <img src="https://static.igem.wiki/teams/4641/wiki/hardware/nanobodies-image.png" class="img-fluid mt-5">
-      <p class="mt-5 sub-stuff"><b>Figure 5:</b> Details of TCC binding to T9 (which is reasonable similar to T4) and T10 nanobodies respectively [13]</p>
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 5:</b> Details of TCC binding to T9 (which is reasonable similar to T4) and T10 nanobodies respectively [13]</p>
       <p class="mt-5 sub-stuff">Usually, Gold nanoparticles conjugated with single-domain antibodies are employed to enhance the detection signal. It was found that the utilization of antibody-modified gold nanoparticles offers advantages in terms of immobilizing a greater quantity of antibody onto the electrode. This is to increase the sensitivity of electrochemical impedance sensors.[14]
       <br><br>We also found that a selective detection limit of picograms per milliliter (pg/mL) using the llama antibody-templated gold particles for cholera toxin detection has been done. Llama VHHs were found to possess the remarkable capability of differentiating between closely related molecules with a high degree of similarity. We discovered that TCC binds to Llama single domain antibodies. Llama single domain antibodies have been subjected to sequencing, cloned into an expression vector, and expressed in Escherichia coli. They have also been generated in large quantities within Saccharomyces cerevisiae.[15] However since the <b>purification of single domain antibodies is expensive</b>, we decided to explore other horizons for a cheaper alternative.
       <br><br></p>
@@ -169,10 +169,10 @@
       <br><br>Molecularly Imprinted Solid-Phase Extraction (MISPE)  was shown to significantly improve the extraction of TCC, achieving an impressive extraction rate of 89.9%. The usage of LC-MS or GC–MS without MISPE, detected around 60 times lower percentage of Triclocarban compared to those obtained using MISPE-HPLC-UV.[17]
       <br><br>This approach would require <b>extensive experimental data</b> which analyzes various interactions in the sludge of the wastewater treatment plant and experimentation needs to be done to build a polymer. Therefore, due to <b>time constraints</b>, we decided to look for other feasible options.
       <br><br></p>
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/mip-1.jpeg" class="img-fluid mt-5" style="scale:0.8;">
-      <p class="mt-5 sub-stuff"><b>Figure 6:</b> Designing a molecularly imprinted polymer [18]</p>
-      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/mip-2-crop.jpeg" class="img-fluid mt-5" style="scale:0.7;">
-      <p class="mt-5 sub-stuff"><b>Figure 7:</b> Graphical illustration of Molecularly Imprinted Polymer [19]</p>
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/mip-1.jpeg" class="img-fluid mt-5" style="scale:0.6;">
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 6:</b> Designing a molecularly imprinted polymer [18]</p>
+      <img src="https://static.igem.wiki/teams/4641/wiki/hardware/mip-2-crop.jpeg" class="img-fluid mt-5" style="scale:0.5;">
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 7:</b> Graphical illustration of Molecularly Imprinted Polymer [19]</p>
 
       <p class="mt-5 sub-stuff" id="section9"><u>NANOMATERIAL BASED SENSORS:</u></p>
       <p class="mt-5 sub-stuff">As previously stated, triclocarban is an EDC(Endocrine disrupting chemicals). Nanomaterials have shown ability to identify EDCs down to picomole or single molecule level and have been identified as viable tools for analyzing trace-level chemical species. Additionally, they can be employed as pre-treatment steps for LC-MS and GC-MS. Before doing chromatographic analysis, appropriate sample preparation techniques must be used due to the complexity of certain environmental matrices and given that EDCs are often present in low quantities.
@@ -187,25 +187,16 @@
       <br><br>Raman Spectroscopy was used in order to identify specific bond vibrations (peaks) in the structure of triclocarban. Raman spectroscopy, unlike other elemental analysis, is a non destructive method and does not change the samples composition or structure and offers higher resolution compared to other spectral methods.[23][24]
       <br><br>Using an <b>excitation laser of wavelength 785 nm</b>,  Surface Enhanced Raman Spectral analysis of triclocarban was analyzed. The Raman Spectra for <b>1</b> part per million and <b>100</b> parts per million triclocarban gives a unique peak at <b>758.34644</b> cm<sup>-1</sup>. In the 10 parts per million sample, a Raman shift is seen towards the left, and the peak is detected at 754.38551cm<sup>-1</sup>. Using this data, we can come to a conclusion that the Raman Shift should be around <b>750-760</b> cm<sup>-1</sup> (wavenumber).</p>
       <img src="https://static.igem.wiki/teams/4641/wiki/hardware/tcc-raman-sers-3.png" class="img-fluid mt-5" style="scale:0.6;">
-      <p class="sub-stuff"><b>Figure 8:</b> Surface Enhanced Raman Spectroscopy of triclocarban dissolved in 5% acetone. (1, 10, 100 ppm)[9]
-      <br>The wavelength that detects this Raman shift was calculated using the formula,</p>
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 8:</b> Surface Enhanced Raman Spectroscopy of triclocarban dissolved in 5% acetone. (1, 10, 100 ppm)[9]
+      <br>The wavelength that detects this Raman shift was calculated using the formula:</p>
       <!--need to add the equations-->
-      <p class="mt-5 sub-stuff"><p><span class="math display">$$\overline{v} = \frac{1}{\lambda_{0}} -
-\frac{1}{\lambda}
-          
-          \overline{v} = \frac{1}{785} - \frac{1}{13129.61}
-          
-          \overline{v} =  1.19772162610^{-3}
-          
-          \lambda = \frac{1}{\overline{v}}
-          
-          \lambda =  834.9185474$$</span></p></p>
+      <img src="" class="img-fluid mt-5" style="scale:1;">
       <p class="mt-5 sub-stuff">The wavelength was identified as  = 834.9185474 nm. In order to acquire the specific wavelength, we plan on using an <b>IR filter</b> of wavelength range <b>820 to 840 nm</b>. Additionally,  A <b>silicon PIN photodiode</b> within the <b>range 830 to 950 nm</b> was selected. A microcontroller attached to this photodiode would wirelessly transmit the data to a software which would be programmed to quantify triclocarban using the standard calibration curve.
 </p>
       <img src="https://static.igem.wiki/teams/4641/wiki/hardware/ln-conc-vs-intensity-graph.jpeg" class="img-fluid mt-5" style="scale:0.7;">
-      <p class="mt-5 sub-stuff"><b>Figure 9:</b> Graphical illustration of Enzyme-based sensors [9]</p>
+      <p class="sub-stuff" style="text-align:center;"><b>Figure 9:</b> Graphical illustration of Enzyme-based sensors [9]</p>
       <br><br>
-      <p class="mt-5 sub-STUFF" id="section12"><u>Lab-scale detection: (Wet Lab- Future Implementation)</u></p>
+      <p class="mt-5 sub-stuff" id="section12"><u>Lab-scale detection: (Wet Lab- Future Implementation)</u></p>
       <p class="mt-5 sub-stuff">To quantify the TCC degradation efficiency of TccA amidase, we need to perform expression studies. To detect the loss in TCC, we have come up with a method that includes a Thin Film Solid Phase MicroExtraction (TFSPME). This membrane can adsorb TCC and other non polar compounds. This is done by vigorously moving the membrane in the broth and then eluting the TCC with Acetonitrile (HPLC grade).
       <br><br>We plan on extracting TCC from the broth containing E.coli Bl21 before inoculation and 2 days after inoculation to check for the efficiency of the enzyme. We also plan on taking multiple readings in the middle of our 2 day span, to get the kinetics of the enzyme based on the concentration of TCC.
       <br><br>These samples along with the standard concentrations of TCC will be sent to LCMS or GCMS to get the concentrations of our samples. We also plan on sending standard solutions for 4 Chloroaniline and 3,4-Dichloroaniline, to check for the rate of production of by-products. UV-VIS Detection is not possible as the by-products formed have a very similar Lambda max to TCC.
