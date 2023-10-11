@@ -34,80 +34,13 @@ section
     position: relative;
     width: 100%;
     height: 100vh;
-    background:#F1E0CB;
+    background-image: url('https://static.igem.wiki/teams/4641/wiki/homepage/homepage3.png');
+    background-size: cover; 
+    background-position: center;
+    background im;
     display: flex;
 }
-.carbanel 
-{
-  position: absolute;
-  top: 484px;
-  left: 295px;
-  font-size: 128px;
-  font-weight: 800;
-  font-family: 'Holtwood One SC';
-  background: linear-gradient(180deg,rgba(117,217,232,1)6%,rgba(16,145,175,1)6%,rgba(0,92,116,1)96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  width: 922px;
-  height: 140px;
- 
-}
-.carbanel-logo-1 {
-  position: absolute;
-  top: 103px;
-  left: 502px;
-  width: 435px;
-  height: 428px;
-  object-fit: cover;
-}
-.wave
-{
-  position: absolute;  
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url("https://static.igem.wiki/teams/4641/wiki/homepage/wavewhite.png");
-  background-size: 1000px 100px;
-  animation: animate 4s ease-in-out infinite;
-  animation-delay: calc(var(--i)*0.25s);
-}
-.wave#wave1
-{
-   z-index: 1000;
-   opacity: 1;
-   background-position-x: 400px;
-}
-.wave#wave2
-{
-   z-index: 999;
-   opacity: 0.5;
-   background-position-x: 300px;
-}
-.wave#wave3
-{
-   z-index: 998;
-   opacity: 0.2;
-   background-position-x: 200px;
-}
-.wave#wave4
-{
-   z-index: 1000;
-   opacity: 0.7;
-   background-position-x: 100px;
-}
-@keyframes animate
-{
-  0%,100%
-  {
-    transform: translate(0px);
-  }   
-  50%
-  {
-    transform: translate(10px);
-  }
-}
+
 .sec
 {
     padding: 100px;
@@ -124,8 +57,7 @@ section
   top: 0px;
   animation: animate 4s ease-in-out infinite;
   animation-delay: calc(var(--i)*0.25s);
-  
-
+  background-color: transparent;
 }
 .card img
 {
@@ -398,4 +330,17 @@ section
   height: 100%;
   border-radius: 200%;
   object-fit: cover; 
+}
+.row
+{
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  gap: 1.2rem;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
 }
