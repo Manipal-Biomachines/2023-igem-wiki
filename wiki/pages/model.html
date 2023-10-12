@@ -113,7 +113,7 @@ Along with the modeling of the biological system and in-silico characterization 
  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
     <br>
     Gene regulation refers to controlling a particular gene expression in a cell. Gene regulation in <b>Fig 1</b> depicts the TCC pathway in the bacteria and the simultaneous expression of the amidase gene using the T7 promoter(BBa_1719005). RBS(shine-dalgarno sequence) and PelB sequence have been integrated into our genetic circuit as part of our plasmid pET22b+ backbone. 
-    Modeling gene expression would help us accurately predict the rate at which our desired enzyme is being expressed in a cell under certain conditions and calculate our bacteria' degradation efficiency of triclocarban. 
+    Modeling gene expression would help us accurately predict the rate at which our desired enzyme is being expressed in a cell under certain conditions and calculate our bacteria's degradation efficiency of triclocarban. 
     <br>
     <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-1.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
     <center><i<b>Fig 1:</b>TccA Gene Regulation in <i>Escherichia coli</i></center>
@@ -129,22 +129,22 @@ Along with the modeling of the biological system and in-silico characterization 
           <tr>
             <td>K1</td>
             <td>Transcription rate of T7 RNA polymerase</td>
-            <th>bps/sec</th>
+            <th>bps/sec(Base pairs per second)</th>
           </tr>
           <tr>
             <td>K2 </td>
-            <td>K2 is the translation rate of a ribosome in E.coli</td>
-            <th>AAs/sec</th>
+            <td>Translation rate of a ribosome in <i> E.coli</i></td>
+            <th>AAs/sec(Amino acids per second)</th>
           </tr>
           <tr>
             <td>d1</td>
             <td>Degradation rate of mRNA</td>
-            <th></th>
+            <th>bps/sec(Base pairs per second)</th>
           </tr>
           <tr>
-            <td>d2r</td>
+            <td>d2</td>
             <td>Degradation rate of protein</td>
-            <th></th>
+            <th>AAs/sec(Amino acids per second)</th>
           </tr>
     </table>
     <br>
@@ -155,8 +155,6 @@ Along with the modeling of the biological system and in-silico characterization 
 The genetic circuit represents the regulation of TccA gene in <i>E.coli</i>. In the presence of TCC, the T7 promoter is activated, and the T7 RNA polymerase binds to the promoter and starts the transcription. The transcription rate of T7 RNA polymerase is 250 bps/ sec. Our gene, including RBS, is 1562 bps long; assuming that the degradation of mRNA is negligible the time taken to transcribe our gene is 6.25 secs. 
 <br>
 Generally, the translation rate of a ribosome in E.coli will range from 12 to 21, but here we are assuming the most extended translation rate, which is 12.1 AA/sec. Our protein sequence is about 515 AA long, so assuming that protein degradation is low and negligible the time taken to translate mRNA to protein is 42.56 secs. 
-<br>
-Once the enzyme is produced in the cell, it binds to TCC and degrades it to the by-products and the native enzymes in <i>E.coli</i> degrade TCC to some by-products, which can enter the Krebs cycle in bacteria.
 <br>
 We modeled the protein production in <i> E.coli </i>. However, in the future, we can study and model the protein production rate in our preferred chassis <i>Acinetobacter baylyi. </i>
 </p>
