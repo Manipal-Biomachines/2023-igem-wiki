@@ -182,8 +182,9 @@ p.sub-stuff {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .modal-image {
-  width: 400px; 
+  width: 400px;
   height: 400px;
   display: block;
   margin: 0 auto;
