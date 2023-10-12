@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@media (max-width: 768px) {}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 70vh;
+  background: -webkit-linear-gradient(#8bedbb, #005c74);
+  position: relative;
+  overflow: hidden;
+}
+
+#shape {
+  position: absolute;
+  left: 0;
+  bottom: -2vw;
+}
+
+header img:not(#shape) {
+  position: absolute;
+  left: 0;
+}
+
+header img:nth-child(1) {
+  opacity: 0.4;
+  bottom: -0.1vw;
+  animation: move-1 5s infinite;
+}
+
+@keyframes move-1 {
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+header img:nth-child(2) {
+  opacity: 0.3;
+  bottom: 0.5vw;
+  animation: move-2 4s infinite;
+}
+
+@keyframes move-2 {
+  50% {
+    transform: translateY(35px);
+  }
+}
+
+header img:nth-child(3) {
+  bottom: 0.3vw;
+  opacity: 0.2;
+  animation: move-3 3.5s infinite;
+}
+
+@keyframes move-3 {
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+header img:nth-child(4) {
+  bottom: 0.1vw;
+  opacity: 0.3;
+  animation: move-4 3s infinite;
+}
+
+@keyframes move-4 {
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+header h1 {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  font-size: 8vmin;
+  text-align: left;
+  margin-left: 30px;
+  color: #000000;
+}
+
+/* Style the gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* Adjust the gap between rows */
+}
+
+/* Style individual image items */
+.image {
+  width: calc(33.33% - 10px);
+  /* Set the width for each image to achieve 3 images in a row */
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* Style the image itself to fill the container */
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Maintain the aspect ratio and fill the container */
+}
+
+/* Style the text */
+.text {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  /* Background color for text */
+  color: #fff;
+  /* Text color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  z-index: 1;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* When hovering over .image, display the text */
+.image:hover .text {
+  display: block;
+  opacity: 1;
+}
+
+/* Restyle the image when hovered */
+.image:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  /* Adjust the gap between images in the row */
+}
