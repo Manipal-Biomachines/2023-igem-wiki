@@ -21,7 +21,7 @@
               </a>
             </li>
             <li>
-              <a href="#section4" class="nav-link link-dark">
+             <!--<a href="#section4" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
                 Structure Prediction
               </a>
@@ -49,24 +49,24 @@
                 Molecular Dynamic Simulations
               </a>
             </li>
-            <li>
+            <li>  -->
               <a href="#section9" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
                 Growth Modeling
               </a>
             </li>
-            <a href="#section10" class="nav-link link-dark">
+            <!--<a href="#section10" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                 Enzyme Kinetics
               </a>
             </li>
-            <li>
+            <li>-->
               <a href="#section11" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
                 Bioreactor Modeling
               </a>
             </li>
-            <li>
+            <li><!--
               <a href="#section12" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
                 Introduction
@@ -95,7 +95,7 @@
                 Conclusion:
               </a>
             </li>
-            <li>
+            <li>-->
 {% endblock %}
 
 {% block heading %}Model{% endblock %}
@@ -298,8 +298,8 @@ Results: The binding affinity was -4.7 kcal/mol, and the TCC molecule was bindin
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-13b.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
 <center><b>Fig 13:</b> Docking structure in <b>SeamDock</b></center>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-14.png" class="img-fluid rounded mx-auto d-block mt-4"> 
-<center><b>Fig 14:</b>2D visualization of our docked structure in <b>Discovery Studio Visualizer (DSV)</b> [20].</center>
-<b>Dock of TccA amidase with linuron</p></b>
+<center><b>Fig 14:</b>2D visualization of our docked structure in <b>Discovery Studio Visualizer (DSV)</b> [20].</center><br>
+<u><b>Dock of TccA amidase with linuron</b></u>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-15.png" class="img-fluid rounded mx-auto d-block mt-4"> 
 <center><b>Fig.15:</b> The docking results of linuron dock with TccA enzyme on  <b>AutoDock</b>  for 9 cycles.</center><br>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
@@ -365,15 +365,15 @@ It reaches a plateau after 7(ns), beyond which it will have a constant fluctuati
 The overall fluctuations are within 1Å. Hence, all data obtained from further experimentation will provide accurate results.
 <br>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-20.png" class="img-fluid rounded mx-auto d-block mt-4">
-<center><b>Fig 20:</b> Number of hydrogen atoms versus Time (ps) from <b>GROMACS</b>.</center>
+<center><b>Fig 20:</b> Number of hydrogen atoms vs. Time (ps) from <b>GROMACS</b>.</center>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-    Hydrogen bonds depict the hydration of the enzyme. It shows the number of hydrogen atoms interacting with the amino acid residues in the enzyme over a period of time. The hydrogen bonds stabilize the transitional residues that occur as time progresses.  Hence, the greater the hydrogen interactions, the more stable the enzyme. Hence, if certain hydrogen interactions are removed, especially from the residues involved in catalysis, there may be a change in the Kcat (catalytic constant) value. The effect the hydrogen bonds have on each residue will need to be tested by conducting experiments. One advantage of MDS over docking studies is in docking, the water molecules are removed for ease of operation. But this step becomes a huge issue for enzymes that actively use the hydrogen bonds from the surrounding water molecules for their catalytic reactions, which would be the case for our amidase enzyme. 
+    Hydrogen bonds depict the hydration of the enzyme. It shows the number of hydrogen atoms interacting with the amino acid residues in the enzyme over a period of time. The hydrogen bonds stabilize the transitional residues that occur as time progresses.  Hence, the greater the hydrogen interactions, the more stable the enzyme. Hence, if certain hydrogen interactions are removed, especially from the residues involved in catalysis, there may be a change in the K<sub>cat</sub> (catalytic constant) value. The effect the hydrogen bonds have on each residue will need to be tested by conducting experiments. One advantage of MDS over docking studies is in docking, the water molecules are removed for ease of operation. But this step becomes a huge issue for enzymes that actively use the hydrogen bonds from the surrounding water molecules for their catalytic reactions, which would be the case for our amidase enzyme. 
     <br><br>
     In the <b>Fig.20</b>, the residues in the enzyme are bonding with 330 to 390 hydrogen atoms with fluctuations of 20 to 30 hydrogen atoms. This implies that the conformation of the enzyme after getting docked with TCC does not vary extensively over time. Hence, we can conclude that the docked structure is very stable and can be used for experimentation.
     <br>    
 </p>
-<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-21.png" class="img-fluid rounded mx-auto d-block mt-4"> 
-The radius of gyration (RoG)  is used to monitor the structural formation process of a molecule. It represents the compactness of the molecule's structure and is calculated as the average distance between each atom and the molecule's center of mass. 
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-21.png" class="img-fluid rounded mx-auto d-block mt-4"> <center>Time (ps) vs. R<sub>g</sub></center>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The radius of gyration (RoG)  is used to monitor the structural formation process of a molecule. It represents the compactness of the molecule's structure and is calculated as the average distance between each atom and the molecule's center of mass. </p>
 <br>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-6.png" class="img-fluid rounded mx-auto d-block mt-4">
 <br>
@@ -385,7 +385,7 @@ As shown in <b>Fig 21</b>, the radius of gyration (Rg) fluctuates between 2.15 a
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-22.png" class="img-fluid rounded mx-auto d-block mt-4">
 <center><b>Fig 22:</b>Area (nm2) versus Time (ps) from <b>GROMACS</b></center>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-    Solvent Accessible Surface (SAS) is the structure's surface area accessible to a solvent measured over a period of time. The TccA enzyme docked with TCC has an area fluctuating between 180 nm2 and 205 nm2 accessible to the solvent (water). This implies that the enzyme folding is very stable, and this structure can be used for further experiments.
+    Solvent Accessible Surface (SAS) is the structure's surface area accessible to a solvent measured over a period of time. The TccA enzyme docked with TCC has an area fluctuating between 180 nm<sup>2</sup> and 205 nm<sup>2</sup> accessible to the solvent (water). This implies that the enzyme folding is very stable, and this structure can be used for further experiments.
     <br><br>    
 </p>
 
@@ -402,7 +402,7 @@ As shown in <b>Fig 21</b>, the radius of gyration (Rg) fluctuates between 2.15 a
         The next steps for us would be to model the degradation pathway of the toxic by-products of TCC by our amidase. We would then put it inside our chassis and predict the concentration of the by-products as time goes by.
         <br>
         Enzyme kinetics governing the degradation pathway from TCC to nontoxic by-products inside our chassis <i>Acinetobacter baylyi</i>: 
-        
+        <br><br>
         <b>Without product Inhibition</b>
         Assumption taken here is the product formed doesn't have an inhibitory effect on the substrate. Hence the equations are formed without product inhibition. </p>
         <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-7.png" class="img-fluid rounded mx-auto d-block mt-4">
@@ -474,11 +474,11 @@ The common assumption taken into consideration for determining kinetics is that 
   <br>
   <u><b>DESIGN EQUATION FOR THE GROWTH RATE:</b></u>
   <br>
-
+  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-33.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
   <center><b>Number of cells versus time called the Bacterial Growth Curve</b></center></p>
    <br>
    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-    <ol style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <ol>
       <li>Lag Phase - No cell division takes place.
                          Change in the number of cells is 0.</li>
       <li>Exponential (Log)  phase- Cell division increases and then becomes constant.
@@ -491,19 +491,73 @@ The common assumption taken into consideration for determining kinetics is that 
         In all these phases, the phase that has the growth of cells (more cell division) is in the Log phase. To calculate the growth of the microorganisms, we used the Monod kinetic equation.<br><br>
         <b>DESIGN EQUATION</b>
         <br><br>
-        The Monod kinetics equation is an empirical model suggested for the growth of microorganisms. It describes the complex process of development and biodegradation linked to growth involving multiple enzymes [3]. The Monod mathematical model is the most frequently and widely used method to describe the growth of microbes in pure and mixed cultures. Monod is used to model the growth of bacteria in the exponential (log) phase. In this phase, the bacteria divides rapidly and hence requires a lot of carbon sources, and TCC is actively used as a carbon source by our transformed bacteria.
+        The Monod kinetics equation is an empirical model suggested for the growth of microorganisms. It describes the complex process of development and biodegradation linked to growth involving multiple enzymes [3]. The Monod mathematical model is the most frequently and widely used method to describe the growth of microbes in pure and mixed cultures. Monod is used to model the growth of bacteria in the exponential (log) phase. In this phase, the bacteria divides rapidly and hence requires a lot of carbon sources, and TCC is actively used as a carbon source by our bacteria.
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-33.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
       </p>
   </p>
   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-  <ul style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-    <li>μ<sub>m</sub> - maximum specific growth rate</li>
+  <ul>
+    <li>&mu;m - maximum specific growth rate</li>
     <li>S - Concentration of the growth limiting factor or substrate</li>
-    <li>K<sub>s</sub> - Half saturation constant </li>
+    <li>Ks - Saturation or Monod model </li>
                </ul> 
               </p> 
                <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-                There are two main dominant constants, µmax and Ks, in Monod kinetics. The Ks values have been observed to vary concerning µmax, thereby implying that the two parameters are not entirely independent but come together during the fitting procedure [4]. We got the values of µmax and Ks from the growth curve data provided by wet-lab experimentation and assumed a few conditions to develop a design equation for our proposed bioreactor model. <br>
-                The three main assumptions considered were as follows:<br>                
+                There are two main dominant constants, &mu;max and Ks, in Monod kinetics. The Ks values have been observed to vary concerning &mu;max, thereby implying that the two parameters are not entirely independent but come together during the fitting procedure [4]. We got the values of &mu;max and Ks from the growth curve data provided by wet-lab experimentation and assumed a few conditions to develop a design equation for our proposed bioreactor model. <br>
+                The three main assumptions considered were as follows:<br> 
+                <ol>
+                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+                  1.Balanced growth was assumed concerning OD (optical density).
+                  
+                  In the maximum growth phase, the cells have adjusted to a new environment and multiply rapidly at a maximum rate. This period of exponential growth with respect to time is referred to as balanced growth, where the cell components grow at the same rate (pseudo-steady state).
+                  <br>
+                  2.Cell suspension is homogeneous.
+                  The cell suspension in the form of a homogenous mixture was assumed to ensure that all components, mainly nutrients, oxygen, and other cellular byproducts.
+                  <br>
+                  3.In our calculations, we have considered TCC as the variable component and kept everything else constant.
+                  <br>
+                  Our main goal here is the check the growth of our chassis utilizing LB broth in the presence the TCC.
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-34.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-35.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-36.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+                  The above equation is the design equation for our ideal batch reactor. This equation calculates the time required for the exponential phase of growth of our bacteria in the presence of TCC in ppm levels in our ideal batch reactor. <br>
+                  where,
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-37.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-9.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <center><b>Growth kinetics for <i> Acinetobacter baylyi </i> </b><center><br>
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-32.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <center><b>Fig:</b>Specific Growth Rate versus Substrate.</center>
+                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+                    From <i> Acinetobacter baylyi </i> growth curve graph given above from wet lab we obtained the value of &mu;max 
+                    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-38.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  </p>
+                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+                    In batch, growth change in the biomass concentration with respect to time in the           exponential phase is given by this equation.
+                  <br>
+                  The growth kinetics model has the following assumptions
+                  <br> <ol>
+                    <li><i>A.baylyi </i>is not transformed</li>
+                    <li><i>A.baylyi </i>is growing in a media like LB broth having a simple carbon source and in the presence of TCC concentration present in the sludge.</li>
+                    <li><i>A.baylyi</i> does not take in TCC as a carbon source as our amidase gene is not present in it (degradation kinetics of the transformed bacteria is done in the following sections).</li>
+                    <li>The bacteria follows Monod, utilizing nutrients of LB broth and tolerating the TCC concentration until TCC concentration needs the maximum limit and the bacteria dies as shown in the graph below, obtained from the experiments carried out in wet lab. </li>
+                    </ol>
+                
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-32.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eq-39.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <br> To calculate the yield coefficient of our bacteria<br>
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-40.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-41.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-42.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+                  *The values used in the calculation are obtained from the experiments carried out in wet lab. Refer to wet lab page for more information about the experiments and growth curve. 
+<br>
+This is the amount of time required for the bacteria <i> Acinetobacter baylyi </i> to grow efficiently in the exponential phase utilizing LB broth and in the presence of TCC in ppm levels.
+<br><br>
+
+                  
+              </p>
+                </p>
+                               
               </p>  
 </p>
 </p>
@@ -511,11 +565,108 @@ The common assumption taken into consideration for determining kinetics is that 
 
 <p class="mt-5 MAIN-STUFF" id="section14">Adsorption Kinetics <br></p>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+  <u><b> DESIGN EQUATION FOR THE ADSORPTION: </b></u><br>
+Our goal is to achieve 90% adsorption efficiency as after 90% adsorption, the TCC concentration in the outlet sludge falls down to  non toxic levels ; to do that, we are calculating the amount of biochar needed. For our bacteria to degrade TCC, TCC first needs to get adsorbed from sludge onto our biochar. Hence, adsorption kinetics(mass transfer) plays a very important role in modeling our bioreactor. 
+<br>
+From the literature, we know that the adsorption kinetics of TCC onto biochar has been done only up to batch process in a shake flask where only 0.5g of biochar was used [34]. In our model, we have calculated and scaled up the adsorption kinetics of TCC onto the biochar from 0.5 g to a lab-scale packed bed bioreactor. According to our Raschig ring calculation mentioned below, the amount of biochar we need for our lab scale packed bioreactor of height 900mm and 5cm diameter is 1211g or 1.211 Kg, and we scaled up our calculation to fit the lab scale, including the treatment of 1.2L of sludge instead of 50 mL as mentioned in the literature. The calculations related to scaling up to lab-scale haven't been done before; by using our calculation on the scaling-up mechanism, we modeled our bioreactor to identify the number of cycles we need to run our packed bed through and determine the reusability of our packed bed before it is discharged. An immobilized packed bed bioreactor with biochar is used to treat harmful aniline and chloroaniline contaminants in the sludge, and the calculations ensuing it have been proposed for the first time. 
+<br>
+A few assumptions taken are as follows:
+<br><ol>
+<li>Bacterial growth in the pores of biochar doesnt affect the adsorption.</li>
+<li>Biofilm formation on the biochar wont be significant enough before the packed bed is replaced.</li>
+<li>Hydrophobic Contaminants other than TCC will also get adsorbed onto biochar, which will be removed by the regeneration process (our chassis also degrades a huge number of other contaminants that might be adsorbed onto biochar). Hence, biochar will not get easily exhausted by other contaminants.</li>
+</ol><br><br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-6.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<br> Material balance: TCC lost from sludge=TCC gained by biochar
+  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/22-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+  <br><b>This is the ideal design equation for adsorption kinetics in our packed bed.</b>
+  To optimize the method, we decided to do the calculations based on the highest(21 ppm), lowest (10 ppm), and average concentration (15 ppm) of TCC in sludge.
+  <br>
+  The pseudo-second-order model fit the data better, suggesting that TCC adsorption capacity increased as initial TCC concentrations increased. According to the pseudo-second-order estimation, the adsorption process was a rate-controlling phase of TCC removal by biochar. The kinetic model predicts activity over the entire spectrum of adsorption by assuming that the rate-limiting step is chemisorption. In this case, the adsorption rate was determined by adsorption capacity rather than adsorbate concentration (TCC).
+  <br>
+  Langmuir Isotherm: The adsorption equilibrium of TCC on biochar follows the Langmuir isotherm. A better fit with the Langmuir model results suggests that monolayer TCC adsorption occurred in BC(biochar) and BK1(biochar:KOH=1:1). The adsorbate (TCC) was attached to the biochar surface homogeneously.
+  <br>
+  Since TCC adsorption follows pseudo second order kinetics [34]:
+  From pseudo 2nd order kinetics:
+  <br><br>
+  
+  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/23-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+
+   <br><br>
+   <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-7.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+   Equation (1) was validated by taking the data points from the literature, which matches the literature results. Hence, we went ahead with this equation for our scaled-up lab-scale studies [34].
+<br><br>
+<b>Case 1:</b> Taking yo as 21 ppm
+for n=1(Cycle 1)
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-24.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/23-2.png" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/24-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br><br> n=2 (Cycle 2)
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/25-1.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<br> This is the mass balance of cycle 2 adsorption kinetics<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/ur-mom.png" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-26-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-26.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<b>Fig</b> Python code for the calculation of number of cycles that can treat 21 ppm of TCC.
+<br><br>
+Value of n = 46, where n is the number of cycles that can treat 21 ppm of TCC with 1211 g of biochar. <br><br>
+For 46 cycles, our packed bed can treat 46x1.2L of sludge = 55.2 L of sludge. <br> <br>
+Each cycle is run for 2 days, so 46x2 = 92 days of run time. Hence, 55.2L of sludge can be treated in 92 days, after which our packing material needs to be replaced.
+<br>
+<b>Case 2:</b> Taking yo as 15 ppm<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-27.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<br> n=1(Cycle 1)
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/27-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-28.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+<br>
+<b>Fig</b> Python code for the calculation of number of cycles which can treat 15 ppm of TCC
+Value of n = 65, where n is the number of cycle that can treat 15 ppm of TCC with 1211 g of biochar.
+<br>
+For 65 cycles, our packed bed can treat 65x1.2L of sludge = 78 L of sludge. 
+<br>
+Each cycle is run for 2 days, so 65x2 = 130 days of run time. Hence, 78L of sludge can be treated in 130 days, after which our packing material needs to be replaced.
+<br>
+<b>Case 3:</b> Taking yo as 10 ppm
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-29.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-28.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/29-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-30.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<b>Fig</b>  Python code for the calculation of number of cycles which can treat 10 ppm of TCC
+<br>
+Value of n = 96, where n is the number of cycles that can treat 10 ppm of TCC with 1211 g of biochar.
+<br>
+For 96 cycles, our packed bed can treat 96x1.2 L of sludge = 115.2 L. 
+<br>
+Each cycle is run for 2 days, so 96x2 = 192 days of run time. Hence, 115.2L of sludge can be treated in 192 days, after which our packing material needs to be replaced.
+<br><br>
+<u><b>Raschig ring calculation: </b></u>
+<br>
+Raschig rings are tubular tubes for facilitating chemical processing and mass transfer packing material. They are porous, homogeneous, and have the same length and diameter [5]. 
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-31.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-30.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-31.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-32.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-8.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+L/D*=1, as it is the optimum ratio for Rashig ring. 
+
+</p>
+</p>
+<br><br>
+<p class="mt-5 MAIN-STUFF" id="section15">Degradation Kinetics<br></p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
    <br>
    
 </p>
 </p>
 <br><br>
+
 <p class="mt-5 MAIN-STUFF" id="section15">Degradation Kinetics<br></p>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
    <br>
