@@ -1,10 +1,604 @@
 {% extends "my-layout.html" %}
   
 {% block sidebar_content %}
+ <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#section1" class="nav-link link-dark" aria-current="page">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+            MODEL:
+          </a>
+        </li>
+        <li>
+            <a href="#section2" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                TccA gene regulation in <i>E.coli</i>
+              </a>
+            </li>
+            <li>
+              <a href="#section3" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                Structure Modeling
+              </a>
+            </li>
+            <li>
+              <a href="#section4" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                Structure Prediction
+              </a>
+            </li>
+            <li>
+              <a href="#section5" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                Catalytic Triad
+              </a>
+            </li>
+            <a href="#section6" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                Enzyme Efficiency
+              </a>
+            </li>
+            <li>
+              <a href="#section7" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                Docking
+              </a>
+            </li>
+            <li>
+              <a href="#section8" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                Molecular Dynamic Simulations
+              </a>
+            </li>
+            <li>
+              <a href="#section9" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                Growth Modeling
+              </a>
+            </li>
+            <a href="#section10" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                Enzyme Kinetics
+              </a>
+            </li>
+            <li>
+              <a href="#section11" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                Bioreactor Modeling
+              </a>
+            </li>
+            <li>
+              <a href="#section12" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#section13" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                Growth Kinetics
+              </a>
+            </li>
+            <a href="#section14" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                Adsorption Kinetics
+              </a>
+            </li>
+            <li>
+              <a href="#section15" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                Degradation Kinetics
+              </a>
+            </li>
+            <li>
+              <a href="#section16" class="nav-link link-dark">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                Conclusion:
+              </a>
+            </li>
+            <li>
 {% endblock %}
 
 {% block heading %}Model{% endblock %}
-
 {% block page_content %}
+<div class="content">
+    <div class="m-5 mb-16">
+        <p class="mt-5 MAIN-STUFF" id="section1"><br>Introduction</p>
+                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+                        Modeling of biological systems is a scientific approach that involves creating simplified representations or simulations of complex biological processes, organisms, or ecosystems to gain a better understanding of how they function. These models can be based on mathematical equations, computer simulations, or conceptual frameworks, and they serve as tools to analyze, predict, and explain various aspects of the natural world.
+<br>
+Along with the modeling of the biological system and in-silico characterization of the parts that we are using, we have also simulated and proposed a model for a bioreactor in which the bacteria will be introduced. These mathematical simulations and computations are necessary, not only as a scientific endeavor but also as a practical necessity. 
+<br>
+ </p>
+ <p class="mt-5 MAIN-STUFF" id="section2">TccA gene regulation in <i>E.coli</i><br></p>
+ <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <br>
+    Gene regulation refers to controlling a particular gene expression in a cell. Gene regulation in <b>Fig 1</b> depicts the TCC pathway in the bacteria and the simultaneous expression of the amidase gene using the T7 promoter(BBa_1719005). RBS(shine-dalgarno sequence) and PelB sequence have been integrated into our genetic circuit as part of our plasmid pET22b+ backbone. 
+    Modeling gene expression would help us accurately predict the rate at which our desired enzyme is being expressed in a cell under certain conditions and calculate our bacteria' degradation efficiency of triclocarban. 
+    <br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-1.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+    <center><i<b>Fig 1:</b>TccA Gene Regulation in <i>Escherichia coli</i></center>
+    <br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <br>
+    <table border="1">
+        <tr>
+            <th>Parameter</th>
+            <th>Explanation</th>
+            <th>Units</th>
+          </tr>
+          <tr>
+            <td>K1</td>
+            <td>Transcription rate of T7 RNA polymerase</td>
+            <th>bps/sec</th>
+          </tr>
+          <tr>
+            <td>K2 </td>
+            <td>K2 is the translation rate of a ribosome in E.coli</td>
+            <th>AAs/sec</th>
+          </tr>
+          <tr>
+            <td>d1</td>
+            <td>Degradation rate of mRNA</td>
+            <th></th>
+          </tr>
+          <tr>
+            <td>d2r</td>
+            <td>Degradation rate of protein</td>
+            <th></th>
+          </tr>
+    </table>
+    <br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-16.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-3.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+The genetic circuit represents the regulation of TccA gene in <i>E.coli</i>. In the presence of TCC, the T7 promoter is activated, and the T7 RNA polymerase binds to the promoter and starts the transcription. The transcription rate of T7 RNA polymerase is 250 bps/ sec. Our gene, including RBS, is 1562 bps long; assuming that the degradation of mRNA is negligible the time taken to transcribe our gene is 6.25 secs. 
+<br>
+Generally, the translation rate of a ribosome in E.coli will range from 12 to 21, but here we are assuming the most extended translation rate, which is 12.1 AA/sec. Our protein sequence is about 515 AA long, so assuming that protein degradation is low and negligible the time taken to translate mRNA to protein is 42.56 secs. 
+<br>
+Once the enzyme is produced in the cell, it binds to TCC and degrades it to the by-products and the native enzymes in <i>E.coli</i> degrade TCC to some by-products, which can enter the Krebs cycle in bacteria.
+<br>
+We modeled the protein production in <i> E.coli </i>. However, in the future, we can study and model the protein production rate in our preferred chassis <i>Acinetobacter baylyi. </i>
+</p>
+</p>
+<br><br>
+<p class="mt-5 MAIN-STUFF" id="section3"><br>Structure Modelling</p>
+                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+                        <br>
+                        Structure modeling was used in our project to identify the possible mechanism(s) to help determine the prediction outcomes. We could analyze the biological micromolecule's or macromolecule's three-dimensional structure through modeling. In our project, we wanted to identify the effect of how TCC binds to the amidase enzyme, as it hasn’t been elucidated in the literature. To do so, we had to predict the structure of the enzyme. 
+                        <br>
+</p>
+<p class="mt-5 MAIN-STUFF" id="section4"><br>Structure Prediction</p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <br>
+    The structure of an enzyme is essential to determine the functions of the enzymes. The linear sequence of the polypeptide chain influences the chain's characteristic fold into a three-dimensional structure. Our enzyme of interest is an amidohydrolase enzyme (EC 3.5.1.4) produced by the TccA gene in <i>Ochrobactrum sp</i>TCC-2. This amidohydrolase is responsible for the hydrolysis of the two amide bonds in Triclocarban (TCC), thereby converting it into more biodegradable byproducts like 4-chloroaniline [4CA], 3,4-Dichloroaniline [3,4DCA] and 4-Chlorocatechol [4CC], which are also toxic to the environment. We found that the TccA gene has the conserved catalytic triad of the amidase signature enzyme family and has low amino acid sequence similarity of about 27%-38% with other biochemically characterized amidase [1].
+    We proposed a model to improve the amidase enzyme efficiency but did not pursue it further due to time and resource constraints. As the amidase enzyme has yet to be characterized, we explored the possibility of directed evolution. The directed evolution method involves random mutagenesis to engineer the protein's active site to produce an enzyme with the required efficiency without in-depth knowledge of its structure. To carry this out, we need an initial understanding of the enzyme's activity and properties like Km and Vmax. To determine these parameters, we proposed drawing inferences from the enzymes of the family, which will target the carbon-nitrogen bonds, apart from the peptide bonds for linear amidase, the same as our enzyme[2][3]. 
+    <br><br>
+    Eventually, we dropped this idea as an in-silico study with only improved binding efficiency of the substrate to the enzyme will not be enough proof of concept to show that the enzyme efficiency has been increased. In contrast, an in-vitro study would not suit our timeline. Moreover, the amidase shows 76.92% efficiency in the absence of glucose, which mimics our system; thus, the scope of improvement will be negligible [1]. 
+    <br><br>
+    
+</p>  
+<p class="mt-5 MAIN-STUFF" id="section5"><br>Catalytic Triad</p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <br>
+    The catalytic triad comprises a group of three amino acids found in the active sites of some enzymes like hydrolase and transferase. The catalytic triad provides a model for the chemical features and the structural properties of the enzyme, which allows them to facilitate reactions. Through a literature survey, we found the catalytic triad of the amidase family to be Ser-Ser-Lys. To identify exactly which triad (Ser-Ser-Lys) of the amidase family was involved, we used multiple alignments to identify it. In our amidase enzyme, we identified six lysine residues, namely L43, L79, L193, L271, L281, and L471, in the protein structure, of which 4, namely L43, L271, L281, and L471, lie on the surface. Among the remaining two lysines, L193 resulted in the formation of the ser-ser-lys triad; as this particular triad is stretched over 300 amino acids, we decided to rule it out as it is improbable to be involved in the binding. The final lysine was L79, surrounded by four probable serine residues around which it forms a catalytic triad, stretching over 100 amino acids [1]. 
+    <br>
+    <u><b>AlphaFold</b></u> [4,5]
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-2.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 2:</b> Model which was used for this (predicted by <b>AlphaFold</b>and present in <b>UniProt</b> [6]) </center>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-3.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 3:</b>Ramachandran Plot for the predicted structure of our amidase taken from <b>UniProt</b></center>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig4.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <center><Fig 4:</b>Results generated from the Ramachandran Plot (using <b>AlphaFold</b>)</center>
+    <br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <u><b>SWISS-MODEL</b></u> [7-11]
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-5.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <center><b>Fig 5:</b> Model predicted by <b>SWISS-MODEL</b> (having 35.35% sequence identity with 6-aminohexanoate cyclic dimer hydrolase, PDB id: 2A2Q)</center>
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-6.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <center><b>Fig 6:</b>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b> generated structure)</center>
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-7.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <center><Fig 7:</b>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b>)</center>
+            <br>
+            <u>Conclusion:</u>
+            We generated a Ramachandran plot for both the structures predicted by <b>AlphaFold</b> and <b>SWISS-MODEL</b>. The <b>AlphaFold</b> structure showed 93.5% residues in the favorable region, whereas the structure predicted using <b>SWISS-MODEL</b> showed 90% residues. Therefore, we chose the same because the <b>AlphaFold</b> predicted structure is more energetically favorable. 
+            <br><br>
+            Since the structure of our amidase enzyme isn't well studied, we used software to predict its structure and binding sites. Models predicted by different software like <b>SWISS-MODEL</b> showed 35.6% sequence identity with 6-aminohexanoate cyclic dimer hydrolase. The binding site of all models was predicted using <b>GRASP</b> [12].
+            <br>
+            <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-8.png" class="img-fluid rounded mx-auto d-block mt-4"> 
+            <center><b>Fig 8:</b> GRASP Results</center>
+</p>
+<br>
+<b>GRASP</b> shows the amino acid residues that most probably form the binding pocket of the enzyme, out of which Ser 155 and Ser 179 showed 85% confidence scores showing that it interacts and Lys 79 with 59% confidence score showing it is not actively involved in bond cleavage but does help in stabilizing the interactions. The catalytic triad also shows a very high GC content, which is very common across all of the amidases having this triad. These glycines are also involved in stabilizing the structure. In the Ser-Ser-Lys catalytic triad, the lysine polarizes the serine in the middle, forming one strong hydrogen bond with the nucleophilic serine to activate it. Further, the lysine can stabilize the structure, which is crucial for its orientation inside the active site. 
+<br><br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-9.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+<center><b>Fig 9:</b>Multiple Sequence alignment was done with <i>Ochrobactrum sp.</i> TCC-2 and other amidases.</center>
+<br>
+We used <b>Clustal Omega</b> [13] for multiple sequence alignment of p-nitro acetanilide hydrolase (Accession No. -K9NBS6),6-aminohexanoate-cyclic-dimer hydrolase(Acc No.-P13397), linuron hydrolase( AEO20132),omega-lactams(BAI44731) and our <i>Ochrobactrum sp.</i> TCC-2 amidase. After aligning our amidase with several other biochemically similar amidases, which also have the Ser-Ser-Lys catalytic triad, it was observed that our predicted triad residues perfectly align with all the other ones. This further validates the hypothesis that the catalytic triad was a major active site involved in the interaction between TCC and TccA amidase.
+<br><br>
+</p>   
+<p class="mt-5 MAIN-STUFF" id="section6"><br>Enzyme Efficiency</p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <br>
+    Two key methods for enhancing enzyme efficiency through site-directed mutagenesis are [14]:
+    Replacing one amino acid with an isosteric residue of different function: This method investigates how changes in chemical properties affect enzyme function while keeping the enzyme's overall structure constant.
+    <br>
+    Replacing one amino acid with another of identical function but resulting in a different structure: This method explores the relationship between function and structural variation, focusing on how enzyme efficiency depends on structural diversity.
+    <br><br>
+    To further ensure our predicted binding site was accurate, we changed the Serine-Serine-Lysine (Ser-Ser-Lys) residues within the amidase enzyme's catalytic triad. Using PolyPhen software, we predicted that these mutations would harm the enzyme's function. This indicates that these specific residues are crucial for the enzyme's activity.
+    <br><br>
+    This finding highlights that the residues around the catalytic triad are essential. Altering the amino acids close to the catalytic triad requires a comprehensive understanding of each amino acid's functions. However, in contrast, previous directed evolution studies have demonstrated improved efficiency through modifications to amino acids situated at a distance from the binding site. This observation does represent the relationship between residue changes and enzymatic performance, showing that an iterative approach may not yield the desired goal. 
+    <br><br>
+    The amidase enzyme possesses a high-efficiency rate portrayed by its ability to degrade 77% of initial TCC concentration (in 24 hours without glucose). This indicates that nature has optimized it to a significant degree, leaving limited room for improvement through evolutionary methods.
+    The suggested maximum improvement achievable through directed evolution, approximately 3-4%, is quite modest. The effort required for such a marginal enhancement may not be justified.
+    Resource constraints, including a lack of access to supercomputers, further impede the feasibility of exploring complex methods like modifying the enzyme's transient state at an atomic level.
+    Given these factors, the project's original goal of substantially increasing the enzyme's efficiency may not be feasible using the chosen approaches. Therefore, exploring alternative strategies or objectives that align better with the available resources and constraints would be a better option.
+    <br><br>
+</p>  
+<p class="mt-5 MAIN-STUFF" id="section7"><br>Docking</p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <br>
+    We docked our amidase enzyme from the TccA gene of <i>Ochrobactrum sp.</i> TCC-2 to the TCC molecule using the following softwares:
+     <b>AutoDock</b> [15] (Version 1.5.7) 
+    When we docked TCC to the amidase enzyme using<b>AutoDock</b> for 50 docking runs, we got the best binding energy, -7.51 kcal/mol (a considerably good binding affinity score), where TCC was bound to the catalytic triad.
+    <table border="1">
+    <tr>
+        <td style="width: 200px;">Binding energy </td>
+        <td style="width: 200px;">-7.51</td>
+      </tr>
+      <tr>
+        <td style="width: 200px;">Ligand efficiency </td>
+        <td style="width: 200px;">-0.4</td>
+      </tr>
+      <tr>
+        <td style="width: 200px;"">Intermolecular energy</td>
+        <td style="width: 200px;">-8.11</td>
+      </tr>
+      <tr>
+        <td>Total internal energy</td>
+        <td>-0.38</td>
+      </tr>
+      <tr>
+        <td>Electrostatic energy</td>
+        <td>0.09</td>
+      </tr>
+      <tr>
+        <td>Torsional energy</td>
+        <td>0.6</td>
+      </tr>
+      <tr>
+        <td>Unbound energy</td>
+        <td>-0.38</td>
+      </tr>
+      <tr>
+        <td>cIRMSs</td>
+        <td>1.42</td>
+      </tr>
+      <tr>
+        <td>refRMSr</td>
+        <td>8.61</td>
+      </tr> 
+    </table>
+    <br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-10.png" class="img-fluid rounded mx-auto d-block mt-4"> 
+    <center><b>Fig:10 </b><b>AutoDock</b> Results.</center>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-11.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 11:</b>Docking in <b>AutoDock </b>with grid box</center>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-12a.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-12-b.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+    <center><b>Fig 12: </b>Analysis of Docked Structure in Chimera.</center>
+    <br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    A web server <b>SeamDock</b> [16,17] as a confirmatory -
+Its docking protocol incorporates various powerful software tools, enhancing its capability for molecular docking simulations. These software tools include <b>Dock 6, AutoDock4, EADock, AutoDock Vina,</b> and<b> rDock.</b>
+<br>
+Workflow/Procedure of <b>SeamDock</b>: To generate results, we provided input files containing our ligand(UniProt ID: A0A167MNS0) and receptor [18]  information to the system. Subsequently, we examined the output data and drew conclusions based on our analysis, as outlined in the study [19].
+<br>
+Results: The binding affinity was -4.7 kcal/mol, and the TCC molecule was binding to the Ser-Ser-Lys catalytic triad, which proves that it could further act upon TCC to degrade it.
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-13-a.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-13b.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+<center><b>Fig 13:</b> Docking structure in <b>SeamDock</b></center>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-14.png" class="img-fluid rounded mx-auto d-block mt-4"> 
+<center><b>Fig 14:</b>2D visualization of our docked structure in <b>Discovery Studio Visualizer (DSV)</b> [20].</center>
+<b>Dock of TccA amidase with linuron</p></b>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-15.png" class="img-fluid rounded mx-auto d-block mt-4"> 
+<center><b>Fig.15:</b> The docking results of linuron dock with TccA enzyme on  <b>AutoDock</b>  for 9 cycles.</center><br>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+Linuron (3-(3,4-chlorophenyl)-1-methoxy-1-methylurea) is a phenyl urea herbicide that accumulates in the soil and controls the germination and new emergence of grasses and broad-leafed weeds. It inhibits the photosynthesis in plants. 
+<br><br>
+<b>Inference from the dock:</b>
+Delta G values between -5.6 and -6.7 point to stable interactions between the amidase and the linuron, possibly leading to product degradation. This research was performed to see whether the TccA amidase enzyme can break down additional substances that are ideally broken down by other amidases. Linuron is one of the numerous compounds an enzyme from the amidase family has degraded. Amidohydrolases break it down into the carcinogenic byproduct 3,4-DCA. This by-product is also a by-product of TCC being broken down by the enzyme TccA amidase. According to the BLAST results shown in <b>Fig. 11</b>, the TccA amidase enzyme shares roughly 50% identity with other amidase enzymes. Hence, it is safe to assume that it may also degrade other substances broken down by the enzymes in the amidase family.
+<br><br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-16.png" class="img-fluid rounded mx-auto d-block mt-4"> 
+<center><b>Fig.16:</b> <b>BLAST [21-28]</b> results of TccA amidase enzyme showing around 50% similarity with other amidase enzymes.</center>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+<b>Inference from the docking studies:</b>
+The catalytic triad has Ser-Ser-Lys. The nitrogen molecule of TCC showed H bond interactions with Ser 179 and Ser 155. The two Serines interact with TCC and are nearer to it in the docked structure. Being positively charged, Lysine is a bit far, helps bring a water molecule closer, and aids the Serine for the proper cleavage of TCC amide bonds. Hence, lysine doesn't actively interact with TCC but brings a water molecule for the hydrolytic reaction.
+<br><br>
+</p>
+</p>
+</p>
+</p>  
+
+<p class="mt-5 MAIN-STUFF" id="section8"><br>Molecular Dynamic Simulations</p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <br>
+A Molecular Dynamics Simulation (MDS) is a computational method used to simulate and study the behavior of atoms and molecules over a period of time. It helps simulate the interactions between atoms or molecules using force fields. Force fields are mathematical models that describe forces acting on the sample to be studied due to factors like van der Waal interactions, hydrogen bonding, electrostatic interactions, etc, over a period of time. It helps record the positions and velocities of every atom or molecule while considering their interactions. MDS is often used to study protein folding, chemical and protein interaction reactions, and material properties. It is a powerful tool and requires significant computational resources. We conducted MDS studies for the TccA amidase and analyzed the results to check the overall stability of the enzyme.
+<br><br>
+<u><b>MDS Results of the docked structure of TccA amidase with TCC</b></u>
+Specifics-
+<ul>
+<li>pH - 7</li>
+<li>Temperature - 37°C</li>
+<li>Ionized water</li>
+<li>OPLS3 force field</li>
+<li>Software used - <b>GROMACS</b> v4.5.5</li>
+<b>RMSF</b>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-17.png" class="img-fluid rounded mx-auto d-block mt-4">
+<center><b>Fig 17:</b> Root Mean Square Fluctuation in nano-meters (nm) versus Residues from <b>GROMACS</b>.</center>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+Root Mean Square Fluctuation (RMSF) calculates how much each residue fluctuates inside a molecular structure. It sheds light on the system's adaptability and dynamics. Throughout the simulation track, RMSF determines the average deviation of atom positions from their average positions. It focuses on the positional variations of each specific residue for time in a given environment.
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-4.png" class="img-fluid rounded mx-auto d-block mt-4">
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <br>
+    Most of the peaks in <b>Fig.17</b> are less than 2 nm, an ideal range for a stable structure. The peaks around the 100th, 200th, and 275th residues are due to loops formed by the residues in that range. This can be seen in the <b>Fig.18</b>. The regions highlighted in pink, orange, and red are the residues forming turns and loops; they are generally more unstable than the rest of the structural residues. Hence, they contribute to the peaks. Apart from the highlighted residues, the rest are stable. Hence, we can say that the enzyme may retain its conformation despite getting docked with TCC and other environmental changes.
+    <br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-18.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <center> <b> Fig 18:</b> Docked structure of TccA amidase with TCC.</center>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+        <i>Orange- residue 95 to 105 residue</i>
+            <i>Pink - residue 200 - 212 residue</i>
+            <i>Red - residue 270 to 275 residue</i>
+            <b>RMSD</b>
+            <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-19.png" class="img-fluid rounded mx-auto d-block mt-4">
+            <center><b>Fig 19:</b> Root Mean Square Deviation (nm) versus Time (ns) from<b>GROMACS</b> [29-31].</center>
+            <br>
+            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+            Root Mean Square Deviation (RMSD) depicts the quality of the prediction over a period of time. It displays the Euclidean distance (the distance between two points in Euclidian space) between predicted values and measured actual values. 
+            <br>
+            <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-5.png" class="img-fluid rounded mx-auto d-block mt-4">
+            <br>
+            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">  
+In our case, the deviation from the predicted value of the distance between the atoms is increasing very slightly with time; however, the structure is stable, and that stability extends up to 10 ns.
+<br>
+It reaches a plateau after 7(ns), beyond which it will have a constant fluctuation between 0.175 and 0.225.
+<br>
+The overall fluctuations are within 1Å. Hence, all data obtained from further experimentation will provide accurate results.
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-20.png" class="img-fluid rounded mx-auto d-block mt-4">
+<center><b>Fig 20:</b> Number of hydrogen atoms versus Time (ps) from <b>GROMACS</b>.</center>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    Hydrogen bonds depict the hydration of the enzyme. It shows the number of hydrogen atoms interacting with the amino acid residues in the enzyme over a period of time. The hydrogen bonds stabilize the transitional residues that occur as time progresses.  Hence, the greater the hydrogen interactions, the more stable the enzyme. Hence, if certain hydrogen interactions are removed, especially from the residues involved in catalysis, there may be a change in the Kcat (catalytic constant) value. The effect the hydrogen bonds have on each residue will need to be tested by conducting experiments. One advantage of MDS over docking studies is in docking, the water molecules are removed for ease of operation. But this step becomes a huge issue for enzymes that actively use the hydrogen bonds from the surrounding water molecules for their catalytic reactions, which would be the case for our amidase enzyme. 
+    <br><br>
+    In the <b>Fig.20</b>, the residues in the enzyme are bonding with 330 to 390 hydrogen atoms with fluctuations of 20 to 30 hydrogen atoms. This implies that the conformation of the enzyme after getting docked with TCC does not vary extensively over time. Hence, we can conclude that the docked structure is very stable and can be used for experimentation.
+    <br>    
+</p>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-21.png" class="img-fluid rounded mx-auto d-block mt-4"> 
+The radius of gyration (RoG)  is used to monitor the structural formation process of a molecule. It represents the compactness of the molecule's structure and is calculated as the average distance between each atom and the molecule's center of mass. 
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-6.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+It provides valuable information about the overall size and shape of the molecule during the simulation process. The radius of gyration decreases with time, and it becomes more compact showing that TCC is a natural substrate of our enzyme and forms a stable structure with TccA. The changes in the radius of gyration can tell us the conformational changes and dynamics of the docked molecule over time.
+<br>
+As shown in <b>Fig 21</b>, the radius of gyration (Rg) fluctuates between 2.15 and 2.1 (nm); this implies that the structure of the enzyme is very stable and can be used for further experimentation.
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-22.png" class="img-fluid rounded mx-auto d-block mt-4">
+<center><b>Fig 22:</b>Area (nm2) versus Time (ps) from <b>GROMACS</b></center>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    Solvent Accessible Surface (SAS) is the structure's surface area accessible to a solvent measured over a period of time. The TccA enzyme docked with TCC has an area fluctuating between 180 nm2 and 205 nm2 accessible to the solvent (water). This implies that the enzyme folding is very stable, and this structure can be used for further experiments.
+    <br><br>    
+</p>
+
+</p>
+       </p>     
+    </p>
+    <p class="mt-5 MAIN-STUFF" id="section9"><br>Growth Modeling</p>
+    <p class="mt-5 MAIN-STUFF" id="section10"><br>Enzyme Kinetics</p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-23.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+<center><b>Fig 23:</b> Degradation Pathway of <i>Acinetobacter Baylyi</i>GFJ2 [32]. </center>
+</p>
+    <br>
+        The next steps for us would be to model the degradation pathway of the toxic by-products of TCC by our amidase. We would then put it inside our chassis and predict the concentration of the by-products as time goes by.
+        <br>
+        Enzyme kinetics governing the degradation pathway from TCC to nontoxic by-products inside our chassis <i>Acinetobacter baylyi</i>: 
+        
+        <b>Without product Inhibition</b>
+        Assumption taken here is the product formed doesn't have an inhibitory effect on the substrate. Hence the equations are formed without product inhibition.
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-7.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-8.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-9.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-10.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-11.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-12.png" class="img-fluid rounded mx-auto d-block mt-4">
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <b>With product Inhibition </b>
+    <br>
+    When the product is formed during the process, it acts as an inhibitor and binds to the enzyme or enzyme-substrate complex, thus stopping product formation.
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-13.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-14.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-15.png" class="img-fluid rounded mx-auto d-block mt-4">
+    </p>
+</p>
+<br>
+</p>
+</p>  
+</p>
+
+<p class="mt-5 MAIN-STUFF" id="section11">Bioreactor Modeling<br></p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+   <br>
+   <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/bioreactor-workflow.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+   <center></b>The Bioreactor Workflow</b></center>
+</p>
+</p>
+<br><br>
+
+<p class="mt-5 MAIN-STUFF" id="section12">Introduction<br></p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+   <br>
+   Bioreactors are tanks where raw materials are converted into biochemical products using microbial, human, plant, or animal cells. In wastewater treatment plants, bioreactors are designed to support an active biological climate, which helps the bacteria and protozoa to survive. The bioreactor we are proposing is a packed bed model. We have opted for a packed bed reactor as it helps establish better contact between the fluids and the solids. To determine the kinetics of the bioreactor, we had to come up with equations that could help us calculate the kinetics. To break down the calculation into different parts, we had to understand the different stages of our final degradation. The 3 stages that lead to the degradation of TCC are as follows:<br>
+<ol>
+  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+<li>Growth of our chassis</li>
+<li>Adsorption of the TCC from sludge onto biochar, and then TCC goes into the cell by passive diffusion, given its hydrophobic nature,</li>
+<li>Degradation kinetics come into play. </li>
+</ol>
+</p>
+<br> 
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+The bacteria uses TCC as a carbon source, and TccA breaks it down further into non-toxic byproducts.<br>
+Hence, we came to the conclusion to divide our design equation into the following three parts:<br>
+</p>
+<ol>
+  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+<li>Based on microbial growth.</li>
+<li>Based on the degradation kinetics of TCC.</li>
+<li>Based on the adsorption kinetics.</li>
+</ol>
+</p>
+<br>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+To pick the right type of bioreactor, we went through literature and talked to experts. We have made a Bioreactor Handbook to make this process easier for future iGEM teams.
+<br>
+The common assumption taken into consideration for determining kinetics is that it is an ideal case with no regard for other compounds in the sludge. 
+</p>
+</p>
+</p>
+<br><br>
+
+<p class="mt-5 MAIN-STUFF" id="section13">Growth Kinetics<br></p>
+
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+  <br>
+  <u><b>DESIGN EQUATION FOR THE GROWTH RATE:</b></u>
+  <br>
+  <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/bioreactor-workflow.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+  <center><b>Number of cells versus time called the Bacterial Growth Curve</b></center></p>
+   <br>
+   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+    <ol>
+      <li>Lag Phase - No cell division takes place.
+                         Change in the number of cells is 0.</li>
+      <li>Exponential (Log)  phase- Cell division increases and then becomes constant.
+                         Change in the number of cells increases exponentially.</li>
+      <li>Stationary phase- No cell division takes place.</li>
+      <li>Death phase- All the nutrients are used up.</li>
+      </ol>
+      <br>
+      <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+        In all these phases, the phase that has the growth of cells (more cell division) is in the Log phase. To calculate the growth of the microorganisms, we used the Monod kinetic equation.<br><br>
+        <b>DESIGN EQUATION</b>
+        <br><br>
+        The Monod kinetics equation is an empirical model suggested for the growth of microorganisms. It describes the complex process of development and biodegradation linked to growth involving multiple enzymes [3]. The Monod mathematical model is the most frequently and widely used method to describe the growth of microbes in pure and mixed cultures. Monod is used to model the growth of bacteria in the exponential (log) phase. In this phase, the bacteria divides rapidly and hence requires a lot of carbon sources, and TCC is actively used as a carbon source by our bacteria.
+        <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/bioreactor-workflow.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+      </p>
+  </p>
+  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+  <ul>
+    <li>μm - maximum specific growth rate</li>
+    <li>S - Concentration of the growth limiting factor or substrate</li>
+    <li>Ks - Saturation or Monod model </li>
+               </ul> 
+              </p> 
+               <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+                There are two main dominant constants, µmax and Ks, in Monod kinetics. The Ks values have been observed to vary concerning µmax, thereby implying that the two parameters are not entirely independent but come together during the fitting procedure [4]. We got the values of µmax and Ks from the growth curve data provided by wet-lab experimentation and assumed a few conditions to develop a design equation for our proposed bioreactor model. <br>
+                The three main assumptions considered were as follows:<br>                
+              </p>  
+</p>
+</p>
+<br><br>
+
+<p class="mt-5 MAIN-STUFF" id="section14">Adsorption Kinetics <br></p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+   <br>
+   
+</p>
+</p>
+<br><br>
+<p class="mt-5 MAIN-STUFF" id="section15">Degradation Kinetics<br></p>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+   <br>
+   
+
+        <p class="mt-5 MAIN-STUFF" id="section16">References<br></p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
+         [1] Zheng, Z. L., Ye, M. Q., Zuo, Z. Y., Liu, Z. G., Tai, K. C., & Zou, G. L. (2006). Probing the importance of hydrogen bonds in the active site of the subtilisin nattokinase by site-directed mutagenesis and molecular dynamics simulation. Biochemical Journal, 395(3), 509-515.
+         <br>
+         [2] Sneha, P., & Doss, C. G. P. (2016). Molecular dynamics: new frontier in personalized medicine. Advances in protein chemistry and structural biology, 102, 181-224.
+         <br>
+         [3] Plattes, M., & Lahore, H. M. F. (2023). Perspectives on the Monod model in biological wastewater treatment. Journal of Chemical Technology & Biotechnology, 98(4), 833-837.
+         <br>
+         [4]Jumper, J., Evans, R., Pritzel, A., Green, T., Figurnov, M., Ronneberger, O., ... & Hassabis, D. (2021). Highly accurate protein structure prediction with AlphaFold. Nature, 596(7873), 583-589.<a href="https://doi.org/10.1038/s41586-021-03819-2">https://doi.org/10.1038/s41586-021-03819-2</a>
+         <br>
+         [5] Varadi, M., Anyango, S., Deshpande, M., Nair, S., Natassia, C., Yordanova, G., ... & Velankar, S. (2022). AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models. Nucleic acids research, 50(D1), D439-D444.<a href="https://doi.org/10.1093/nar/gkab1061">https://doi.org/10.1093/nar/gkab1061</a>
+         <br>
+         [6] The UniProt Consortium , UniProt: the Universal Protein Knowledgebase in 2023, Nucleic Acids Research, Volume 51, Issue D1, 6 January 2023, Pages D523-D531,<a href =”https://doi.org/10.1093/nar/gkac1052">https://doi.org/10.1093/nar/gkac1052 </a>
+<br>
+[7] Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R., ... & Schwede, T. (2018). SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic acids research, 46(W1), W296-W303.<a href =”https://doi.org/10.1093/nar/gky427”> https://doi.org/10.1093/nar/gky427</a>
+<br>
+[8] Bienert, S., Waterhouse, A., de Beer, T.A.P., Tauriello, G., Studer, G., Bordoli, L., Schwede, T. The SWISS-MODEL Repository - new features and functionality. Nucleic Acids Res. 45, D313-D319 (2017). <a href=”https://doi.org/10.1093/nar/gkw1132”>https://doi.org/10.1093/nar/gkw1132</a>
+<br>
+[9] Guex, N., Peitsch, M. C., & Schwede, T. (2009). Automated comparative protein structure modeling with SWISS-MODEL and Swiss-PdbViewer: A historical perspective. Electrophoresis, 30(S1), S162-S173.<a href =”https://doi.org/10.1002/elps.200900140”>https://doi.org/10.1002/elps.200900140</a>
+<br>
+[10] Studer, G., Rempfer, C., Waterhouse, A. M., Gumienny, R., Haas, J., & Schwede, T. (2020). QMEANDisCo-distance constraints applied on model quality estimation. Bioinformatics, 36(6), 1765-1771.<a href =”https://doi.org/10.1093/bioinformatics/btz828”>https://doi.org/10.1093/bioinformatics/btz828</a>
+<br>
+[11] Bertoni, M., Kiefer, F., Biasini, M., Bordoli, L., & Schwede, T. (2017). Modeling protein quaternary structure of homo-and hetero-oligomers beyond binary interactions by homology. Scientific reports, 7(1), 10480.<a href=”https://doi.org/10.1038/s41598-017-09654-8”>https://doi.org/10.1038/s41598-017-09654-8</a>
+<br>
+[12] Santana, C. A., Silveira, S. D. A., Moraes, J. P., Izidoro, S. C., de Melo-Minardi, R. C., Ribeiro, A. J., ... & Thornton, J. M. (2020). GRaSP: a graph-based residue neighborhood strategy to predict binding sites. Bioinformatics, 36(Supplement_2), i726-i734.<a href=”https://doi.org/10.1093/bioinformatics/btaa805”>https://doi.org/10.1093/bioinformatics/btaa805</a>
+<br>
+[13] Sievers, F., Wilm, A., Dineen, D., Gibson, T. J., Karplus, K., Li, W., ... & Higgins, D. G. (2011). Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. Molecular systems biology, 7(1), 539.<a href=”https://doi.org/10.1038/msb.2011.75”>https://doi.org/10.1038/msb.2011.75</a>
+<br>
+[14] Zheng, G., Yu, B., Wang, Y., Ma, C., & Chen, T. (2021). Fate and biodegradation characteristics of triclocarban in wastewater treatment plants and sewage sludge composting processes and risk assessment after entering the ecological environment. Journal of Hazardous Materials, 412, 125270.
+<br>
+[15] Forli, S., Huey, R., Pique, M. E., Sanner, M. F., Goodsell, D. S., & Olson, A. J. (2016). Computational protein-ligand docking and virtual drug screening with the AutoDock suite. Nature protocols, 11(5), 905-919.<a href=”https://doi.org/10.1038/nprot.2016.051”>https://doi.org/10.1038/nprot.2016.051</a>
+<br>
+[16] Murail, S., De Vries, S. J., Rey, J., Moroy, G., & Tufféry, P. (2021). SeamDock: an interactive and collaborative online docking resource to assist small compound molecular docking. Frontiers in Molecular Biosciences, 8, 716466.<a href=”https://doi.org/10.3389/fmolb.2021.716466”>https://doi.org/10.3389/fmolb.2021.716466</a>
+Tufféry P & Murail S.
+<br>
+[17] Docking_py, a python library for ligand protein docking. Zenodo (2020), <a href=”http://doi.org/10.5281/zenodo.4506970”>http://doi.org/10.5281/zenodo.4506970</a>.
+<br>
+[18]Liu, S. (2020). Bioprocess engineering: kinetics, sustainability, and reactor design. Elsevier.
+<br>
+[19] Pekguzel, E. A., Gundogdu, T. K., & Azbar, N. (2015). Enhancement of biohydrogen production via thermophilic cell culture immobilized on glass beads and raschig rings of different sizes in a packed bed reactor. Chemical and Biochemical Engineering Quarterly, 29(4), 541-547.
+<br>
+[20] BIOVIA, Dassault Systèmes, Discovery studio visualizer, San Diego: Dassault Systèmes
+<br>
+[21] Altschul, S.F., Gish, W., Miller, W., Myers, E.W., Lipman, D.J. (1990) “Basic local alignment search tool.” J. Mol. Biol. 215:403-410. PubMed
+<br>
+[22] Altschul, S.F., Madden, T.L., Schaffer, A.A., Zhang, J., Zhang, Z., Miller, W., Lipman, D.J. (1997) “Gapped BLAST and PSI-BLAST: a new generation of protein database search programs.” Nucleic Acids Res. 25:3389-3402. PubMed
+<br>
+[23] Zhang Z., Schwartz S., Wagner L., Miller W. (2000), “A greedy algorithm for aligning DNA sequences” J Comput Biol 2000; 7(1-2):203-14. PubMed
+<br>
+[24]Morgulis A., Coulouris G., Raytselis Y., Madden T.L., Agarwala R., Schaffer A.A. (2008) “Database indexing for production MegaBLAST searches.” Bioinformatics 15:1757-1764. PubMed
+<br>
+[25]Camacho C., Coulouris G., Avagyan V., Ma N., Papadopoulos J., Bealer K., Madden T.L. (2008) “BLAST+: architecture and applications.” BMC Bioinformatics 10:421. PubMed
+<br>
+[26]Boratyn GM, Schaffer AA, Agarwala R, Altschul SF, Lipman DJ, Madden T.L. (2012) “Domain enhanced lookup time accelerated BLAST.” Biol Direct. 2012 Apr 17;7:12. PubMed
+<br>
+[27] Boratyn GM, Thierry-Mieg J, Thierry-Mieg D, Busby B, Madden T.L. (2019) “Magic-BLAST, an accurate RNA-seq aligner for long and short reads.” BMC Bioinformatics. 2019 Jul 25;20(1):405. PubMed
+<br>
+[28]Camacho C, Boratyn GM, Joukov V, Vera Alvarez R, Madden TL. ElasticBLAST: accelerating sequence search via cloud computing. BMC Bioinformatics. 2023 Mar 26;24(1):117. doi: 10.1186/s12859-023-05245-9. PMID: 36967390
+<br>
+[29] S. Pronk et al.,“GROMACS 4.5: a high-throughput and highly parallel open source molecular simulation toolkit,” Bioinformatics, vol. 29, no. 7, pp. 845-854, Apr. 2013, doi: 10.1093/BIOINFORMATICS/BTT055.
+<br>
+[30]M. J. Abraham et al.,“GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers,” SoftwareX, vol. 1-2, pp. 19-25, Sep. 2015, doi: 10.1016/J.SOFTX.2015.06.001.
+<br>
+[31]S. Páll, M. J. Abraham, C. Kutzner, B. Hess, and E. Lindahl, “Tackling exascale software challenges in molecular dynamics simulations with GROMACS,” Lect. Notes Comput. Sci. (including Subser. Lect. Notes Artif. Intell. Lect. Notes Bioinformatics), vol. 8759, pp. 3-27, 2015, doi: 10.1007/978-3-319-15976-8_1/FIGURES/7.
+<br>
+[32] Hongsawat, P., & Vangnai, A. S. (2011). Biodegradation pathways of chloroanilines by Acinetobacter baylyi strain GFJ2. Journal of Hazardous Materials, 186(2-3), 1300-1307<a href=”.https://doi.org/10.1016/j.jhazmat.2010.12.002”>.https://doi.org/10.1016/j.jhazmat.2010.12.002</a>
+
+
+   
+</div>
+</div>
+          
+            </div>
+          </div>
+
+
 {% endblock %}
 
