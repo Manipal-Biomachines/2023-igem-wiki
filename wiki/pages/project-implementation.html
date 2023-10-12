@@ -1,382 +1,645 @@
 {% extends "my-layout.html" %}
-  
+
 {% block sidebar_content %}
-   <ul class="nav nav-pills flex-column mb-auto">
-                      <li class="nav-item">
-                        <a href="#section1" class="nav-link link-dark" aria-current="page">
-                          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-                          Implementation
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#section2" class="nav-link link-dark">
-                          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                          Bioreactor
-                        </a>
-                      <li>
-                        <a href="#section7" class="nav-link link-dark">
-                          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                          Cost Analysis
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#section8" class="nav-link link-dark">
-                          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                          Future Implementation
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#section11" class="nav-link link-dark">
-                          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                          Kill switch
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#section12" class="nav-link link-dark">
-                          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                          References
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-                </div>
-                  </div>
-                </div>
+<ul class="nav nav-pills flex-column mb-auto">
+  <li class="nav-item">
+    <a href="#section1" class="nav-link link-dark" aria-current="page">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#home" />
+      </svg>
+      Implementation
+    </a>
+  </li>
+  <li>
+    <a href="#section2" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#speedometer2" />
+      </svg>
+      Bioreactor
+    </a>
+  </li>
+  <li>
+    <a href="#section7" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Cost Analysis
+    </a>
+  </li>
+  <li>
+    <a href="#section8" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Future Implementation
+    </a>
+  </li>
+  <li>
+    <a href="#section11" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Kill switch
+    </a>
+  </li>
+  <li>
+    <a href="#section12" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      References
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 {% endblock %}
 
 {% block heading %}Implementation {% endblock %}
 
 {% block page_content %}
- <div class="content">
-                <div class="m-5 mb-16">
-                    <p class="mt-5 MAIN-STUFF" id="section1">Implementation<br></p>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-                      Triclocarban (TCC) concentration in sludge is relatively higher than in effluent, and this is difficult to degrade due to the compounds' chemical stability and high hydrophobicity. To combat this, our team has designed a packed bed bioreactor to be set up in the sludge treatment plant and efficiently degrade TCC into non-toxic compounds using our chassis.
-                      <br><br><br>
-                      Bioreactors are tanks where raw materials are converted into biochemical products using microbial, human, plant, or animal cells. Bioreactors create an environment that is suitable for the growth of the cells that are cultured within it. In wastewater treatment plants, bioreactors are designed to support an active biological climate that can help bacteria and protozoa survive. We have opted for a packed bed reactor as it helps establish better contact between the fluids and the solids. We have further ideated our bioreactor's packing material and other relevant parameters to ensure that TCC gets degraded into its non-toxic compounds.   
-                      <br><br>
-                      <p class="mt-5 MAIN-STUFF" id="section2">Bioreactor<br></p>
-                      </p>
-                    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/cad-design-of-the-bioreactor-model.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-                   <center><b>Fig1:</b>CAD design of the bioreactor</center> <br>
-                   <center><iframe title="MIT-MAHE: Packed Bed Bioreactor (2023) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/7445e532-d9e3-47b8-8ed5-1f63aa27cbd4" frameborder="1" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
-                   <center>Batch Packed Bed Bioreactor</center><br><br>
-                    <br><br>
-                    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/substrate-spectrum-and-specificity-of-tcca.png" class="img-fluid rounded mx-auto d-block mt-4">
-                    <center><b>Fig 2:</b>Substrate spectrum and Specificity of TccA [1].</center>
-                    <br><br>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Along with the breakdown of TCC, our native amidase enzyme TccA has a broad substrate specificity, as shown in <b>Fig 2</b>. This amidase can break down many other toxic substrates, and the toxic byproducts thus formed will be degraded by our chassis <i> Acinetobacter baylyi </i>GFJ2  strain. Therefore, we are designing our bioreactor in a way that can degrade a multitude of contaminants and can also be used to immobilize several other bacteria, thus using cocultures for biodegradation. This kind of technology would also set a precedent for developing similar projects dealing with wastewater micropollutants.
-                      <br><br>
-                      Suppose we were to implement our bioreactor in wastewater; the common suggestion is to go for a continuous flow bioreactor, as this allows better efficiency and higher amounts of water can be purified in a given time. However, that may be inefficient as our bacteria would require time to degrade the contaminants and hence require longer residence time in the continuous bioreactor. Hence, we decided to design a packed bed bioreactor with immobilized bacteria, with packing material as biochar, which will provide a nutritious environment for the growth of the bacteria, hence reducing the lag phases, provided TCC enters the cell by passive diffusion and, therefore gets broken down inside the cell.<br><br>
-                      The concentration of  TCC in sludge (21000 ng/g dry weight) is significantly higher than in effluent (13000 ng/g dry weight) [2]. We decided to implement our sludge-based bioreactor when the sludge is in a liquid state (97-99% water content) before the drying and further treatment process to turn the liquid sludge into biosolids. We got this idea through one of our human practices visits to a wastewater treatment plant in West Bengal, India.  
-                   </p>
-                   <br><br><br>
-                    <p class="mt-5 MAIN-STUFF" id="section3">Biochar<br></p>
-                    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/locally-derived-biochar.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-                    <center><b>Fig 3:</b>Locally derived biochar from the burning of rice husk and is a waste product of rice mill industries</center>
-                    <br><br>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Biochar is a carbon-rich substance produced by the thermal combustion of organic waste in an oxygen-limited environment. Biochar has a high surface area, due to which it exhibits micropollutant and cell adsorption properties. It has high cation exchange capacity and stability, making it useful for packing material for the packed bed bioreactor. Biochar is a simple, affordable, and effective choice for adsorption of our target contaminant, triclocarban (TCC). It is also locally derived from rice mills in our locality. The biochar has the perfect pore size of 0.6 to 0.8 nanometers required to adsorb TCC efficiently.
-                      <br><br>
-                      According to the literature, the biochar modified with KOH in a ratio of 1:1 of biochar to KOH showed higher adsorption of the target compound TCC compared to other ratios and just plain biochar. The KOH activation increased the biochar's surface area, pore volume, and diameter, resulting in greater adsorption performance. Biochar can also be used as a source of nutrients for the immobilized bacteria to proliferate, increasing degradation efficiency [3].
-                      <br><br>
-                      Two primary options were considered for selecting the appropriate packing material for a packed column: structured and random packing. Each of these options has distinct characteristics and advantages tailored to specific applications.
-                      <br><br>
-                      <b>Structured packing-</b> It comprises engineered discs made from metal, plastic, or porcelain materials. These discs have internal structures arranged in various honeycomb-like patterns. They are typically utilized within cylindrical columns and consist of large material pieces. The design of structured packing cylinders is intricate and optimized to provide a substantial surface area for efficient liquid-vapour contact without introducing excessive resistance to liquid flow.  
-                      <br><br>
-                      <b>Random packing-</b> It is employed in separation columns, particularly in processes like distillation. Its primary purpose is to increase the surface area available for vapor-liquid contact, thus enhancing the efficiency of chemical separation. Random packing comprises small pieces strategically designed to create a vast surface area for reactants to interact while keeping the column's complexity to a minimum. The key objective of random packing is to maximize the surface-to-volume ratio and minimize pressure drop.
-                      We decided to go ahead with random packing because of the reasons listed below:
-                      <br>
-                      (1) Random packing gives more contact area between biochar and the sludge, increasing the mass transfer of the active component (in our case, it is TCC).
-                      <br>
-                      (2) It is much more economically viable to implement than structured packing. 
-                      <br>
-                      (3) It allows for better porosity and aeration.
-                      <br>
-                      (4) Easy handling and transport.
-                     <br>
-                     Since a Raschig ring structure provides maximum surface area, we chose to use a Raschig ring made of biochar as our packing material (detailed below).  
-                      </p>
-          <br><br><br><br>
-           
-                    <p class="mt-3 MAIN-STUFF" id="section4">Raschig ring<br></p>
-                    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/raschig-ring.png" class="img-fluid rounded mx-auto d-block mt-4">
-                    <center><b>Fig 4:</b>Raschig ring</center>
-                    <br><br>
-                    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/cad-of-raschig-ring.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-                    <center><b>Fig 5:</b>Proposed Model of Raschig rings</center>
-                    <br><br>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The idea for making Biochar Raschig rings developed during one of our iHP meetings with Dr. Kamatam Krishnaiah, where we were inspired by the desire to satisfy two crucial requirements. The two requirements for the Raschig rings were that we could make them out of biochar and to have the maximum surface area. A maximum surface area is desired to overcome few difficulties , one of which is fouling of the biochar due to the sludge flow. A standardized procedure for making biochar Raschig rings does not exist; hence, we have created a theoretical proposal for their construction.  To do this construction, we found information on Biochar pelletizing and making Raschig rings.
-                    <br><br>
-                      <u>Production of Biochar Pellets:</u>
-                      <br><br>
-                      Biochar pellets are made by compacting residual biochar into uniformly sized pellets using mechanical force with or without a binder. Pelletization of residual biochar is achievable due to the combined effects of roller pressure and back pressure caused by friction between the compressed material and the channel walls.
-                      
-                      <br><br>
-                      <u>Biochar Pelletizing Methods [3]:</u></p>
-                      <img src="https://static.igem.wiki/teams/4641/wiki/implementation/pelletization-system.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-                      <center><b>Fig 6:</b>Pelletization system [4]</center>
-                      <br><br>
-                      <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">In <b> Fig 6</b>, the compressive bar will exert force on the biochar pellet, forming a ring structure.<br><br>
-                        1. A binder is required to process biochar's pelletization under pyrolysis process conditions. A few researchers used pyrolysis oil, lignin, starch, and other ingredients as binders and moisture in the densification process. They found that the mechanical characteristics of biochar pellets combined with them improved significantly.
-                       <br><br>
-                        2. However, such binders will not bring about the required binding for making raschig rings, therefore the properties of biochar can be further optimized by the use of polar functional groups for stronger electrostatic force of attraction.
-                        (We plan on using rice husk biochar; binders could be Lignin, starch, Ca(OH)2, clay, NaOH with 5-20% water)
-                        
-                        Clay looked promising to us due to its affordability and was later validated with a human practice meeting with Dr. Kevin Sowers and Dr. Ramananda Bhat sir as well. 
-                        <br><br>
-                        3. Moisture, which is also essential in pelletization and can act as a binder and a lubricant. can be added to the mixtures at different ratios using a magnetic stirrer before pelletization based on the biochar feed.
-                        <br><br>
-                        4. The shaped rings are fired in a furnace at high temperatures. However, biochar produced at high pyrolysis temperatures (greater than 500 °C) leads to the unsuccessful formation of pellets and rings and results in the degradation of biochar’s organic matter. This makes the biochar brittle, and therefore, further optimization is required for firing and heating temperatures for biochar to make Raschig rings.
-                        <br><br>
-                        <u><b>Making of  a Raschig ring</b> [6,7] :  </u>
-                        <br><br>
-                        1. The selected material (biochar) is initially obtained as a powder or granules. 
-                        <br><br>
-                        2. The shaping process involves forming the material into the characteristic cylindrical ring shape. This can be achieved through the method of pressing.
-                        <br><br>
-                        3. After shaping, the rings are dried to remove moisture and prepare them for firing to increase mechanical strength.
-                        <br><br>
-                        4. The shaped rings are fired in a furnace at high temperatures. However, biochar produced at high pyrolysis temperatures (greater than 500°C) leads to the unsuccessful formation of pellets and rings and results in the degradation of biochar’s organic matter. This makes the biochar brittle, and therefore, further optimization is required for firing and heating temperatures for biochar to make raschig rings
-                        <br><br>
-                        <u><b>Immobilizing Bacteria on Raschig Rings</b> [7,8]:</u>
-                        <br><br>
-                        1.Isolate bacteria and shake at 150 rpm for 12 hours in a Minimal Salt Medium containing 0.66 g/L NaH2PO4.2H2O, 0.58 g/L Na2HPO4, 0.5 g/L NaCl, 2 g/L NH4Cl, 3 g/L KH2PO4, and 0.25 g/L MgSO4.7H2O at pH 7.0.
-                        <br><br>
-                        2.The bacteria-inoculated Minimal Salt Medium (MSM) is then centrifuged at 6000 rpm for 10 minutes, and the supernatant is discarded. The particle is resuspended and rinsed with 0.85% NaCl.
-                        <br><br>
-                        3.To increase the concentration of the bacteria, 10 mL of MSM is added. Biochar is mixed with MSM with TCC and concentrated bacteria to immobilize cells.
-                        <br><br>
-                        4.Shake the mixture at 150 rpm for 48 hours at room temperature. The cells are immobilized on the surface of the biochar. 
-                        <br><br>
-                        <u>Immobilization technique</u>:
-                          <br><br> 
-                          Two methods can be employed to immobilize the microorganisms on the Raschig rings:<br><br>
-                        1. Adsorption- In this process, we gently shake or swirl the raschig rings with the bacterial culture to allow the bacteria to attach to the ring surface.
-                        <br><br>
-                        2. Dipping- In this method, we dip the raschig ring into a bacterial culture for a fixed time to allow the bacteria to adhere to the surface. 
-                        </p>
-                        
-                        <br><br>
-                   
-                    <p class="mt-3 MAIN-STUFF" id="section5">Sparger<br></p>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Spargers are devices that distribute gasses into the liquid medium present in a bioreactor. There are different types of spargers: porous, orifice, nozzle, perforated, ladder, spider-type, and O-type spargers. Among these, perforated plate sparger is more efficient for our bioreactor due to its smaller orifice diameter. It is more efficient in gas-liquid mass transfer due to generating smaller bubble diameters. A perforated plate sparger comprises a flat plate with evenly spaced holes or perforations. These holes or perforations are distributed across the surface of the plate to maintain a uniform distribution of gas into the liquid medium. We aim to design the perforation plate more diminutive than the size of the raschig ring to overcome the possibility of the raschig ring passing through the holes. Further, the air pressure will be regulated through the pipe inlets connected from the bottom of the tank and spread across the channels, resulting in a uniform distribution. The gas-liquid mass transfer takes place in the tank.
-                     </p>
-                     <img src="https://static.igem.wiki/teams/4641/wiki/implementation/proposed-model-for-sparger.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-                     <center><b>Fig 7:</b>Proposed model for Sparger</center><br><br>
-                    <p class="mt-3 MAIN-STUFF" id="section6">Pressure Gauge<br></p>
-                     <img src="https://static.igem.wiki/teams/4641/wiki/implementation/pressure-gauge.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-                     <center><b>Fig 8:</b>Proposed Model of Pressure Gauge</center><br><br>
-                     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">A pressure-powered system uses pressure gauges to measure the fluid intensity in the system to ensure there are no leaks or pressure variations that could impair the system's functioning. Hence, to ensure the proper functioning of our bioreactor, we would install a hydrostatic bourdon tube pressure gauge in the inlet valve. Hydrostatic pressure gauges measure the hydrostatic pressure of the liquid, which is influenced by the liquid’s height, density, and gravity. A bourdon tube possesses an elastic tube soldered on one end and fashioned into a socket. A rotary gear with a pointer receives the deflection in the tube resulting from a change in pressure; this deflection is proportional to the applied pressure. The basic idea of a Bourdon pressure gauge is that a curved tube will straighten when pressure is applied, as shown by a dial or digital readout. Bourdon tube pressure gauges are suitable for media that do not crystallize and are not highly viscous, hence suitable for a sludge treatment plant [9,10]. 
-                    </p>
-                   <center><iframe title="MIT-MAHE: Packed Bed single (2023) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/25fef466-e79a-4da1-abad-f4990a1c924f" frameborder="1" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
-                   <center>Mechanism of our Single Packed Bed Bioreactor</center><br><br>
-                    <p class="mt-3 MAIN-STUFF" id="section7">Cost Analysis<br></p>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"><b>Cost Analysis - Packed bed batch Bioreactor </b><br><br>
-                     <u><b> Design - batch packed bed reactor</b> [10,11]</u>
-                    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-                      <li>Glass column</li>
-                      <li>Pressure gauge</li>
-                      <li>Water pump</li>
-                      <li>Sparger</li>
-                      <li>PVC pipes</li>
-                      <li>Biochar raschig rings</li>
-                      <li>Immobilization of bacteria on the rings</li>
-                    </ul>
-                    <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-                      <tr>
-                        <th>Equipment</th>
-                        <th>Average price (in INR)</th>
-                      </tr>
-                      <tr>
-                        <td>Generic Temperature Gauge</td>
-                        <td>750</td>
-                      </tr>
-                      <tr>
-                        <td style="width: 20px;">Pressure gauge</td>
-                        <td style="width: 20px;">2441</td>
-                      </tr>
-                      <tr>
-                        <td style="width: 20px;">Glass column</td>
-                        <td style="width: 20px;">5000</td>
-                      </tr>
-                      <tr>
-                        <td style="width: 20px;">Industrial Stirrer</td>
-                        <td style="width: 20px;">2500</td>
-                      </tr>
-                      <tr>
-                        <td style="width: 20px;">Motor</td>
-                        <td style="width: 20px;">1400</td>
-                      </tr>
-                      <tr>
-                        <td style="width: 20px;">Water pump</td>
-                        <td style="width: 20px;">4800</td>
-                      </tr>
-                      <tr>
-                        <td style="width: 20px;">PVC pipes</td>
-                        <td style="width: 20px;">400</td>
-                      </tr>
-                      <tr>
-                        <td style="width: 20px;">Sparger</td>
-                        <td style="width: 20px;">1000</td>
-                      </tr> 
-                  </table>
-                  <br>
-                  *These prices are rough estimates referenced from the product market prices. We also expect an increase in the proposed rate with the addition of biochar pelleting, immobilization cost, and operating cost.
-                  <br><br>
-                  <b>Total cost - 18291(INR) </b><br>
-                  <b> Total cost - 219.77 (Dollars) as of 10/10/2023 </b>
+<div class="content">
+  <div class="m-5 mb-16">
+    <p class="mt-5 MAIN-STUFF" id="section1">Implementation<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      Triclocarban (TCC) concentration in sludge is relatively higher than in effluent, and this is difficult to degrade
+      due to the compounds' chemical stability and high hydrophobicity. To combat this, our team has designed a packed
+      bed bioreactor to be set up in the sludge treatment plant and efficiently degrade TCC into non-toxic compounds
+      using our chassis.
+      <br><br><br>
+      Bioreactors are tanks where raw materials are converted into biochemical products using microbial, human, plant,
+      or animal cells. Bioreactors create an environment that is suitable for the growth of the cells that are cultured
+      within it. In wastewater treatment plants, bioreactors are designed to support an active biological climate that
+      can help bacteria and protozoa survive. We have opted for a packed bed reactor as it helps establish better
+      contact between the fluids and the solids. We have further ideated our bioreactor's packing material and other
+      relevant parameters to ensure that TCC gets degraded into its non-toxic compounds.
+      <br><br>
+    <p class="mt-5 MAIN-STUFF" id="section2">Bioreactor<br></p>
+    </p>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/cad-design-of-the-bioreactor-model.jpeg"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig1:</b>CAD design of the bioreactor</center> <br>
+    <center><iframe title="MIT-MAHE: Packed Bed Bioreactor (2023) [English]" width="560" height="315"
+        src="https://video.igem.org/videos/embed/7445e532-d9e3-47b8-8ed5-1f63aa27cbd4" frameborder="1"
+        allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
+    <center>Batch Packed Bed Bioreactor</center><br><br>
+    <br><br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/substrate-spectrum-and-specificity-of-tcca.png"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 2:</b>Substrate spectrum and Specificity of TccA [1].</center>
+    <br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Along with the breakdown of TCC, our native amidase
+      enzyme TccA has a broad substrate specificity, as shown in <b>Fig 2</b>. This amidase can break down many other
+      toxic substrates, and the toxic byproducts thus formed will be degraded by our chassis <i> Acinetobacter baylyi
+      </i>GFJ2 strain. Therefore, we are designing our bioreactor in a way that can degrade a multitude of contaminants
+      and can also be used to immobilize several other bacteria, thus using cocultures for biodegradation. This kind of
+      technology would also set a precedent for developing similar projects dealing with wastewater micropollutants.
+      <br><br>
+      Suppose we were to implement our bioreactor in wastewater; the common suggestion is to go for a continuous flow
+      bioreactor, as this allows better efficiency and higher amounts of water can be purified in a given time. However,
+      that may be inefficient as our bacteria would require time to degrade the contaminants and hence require longer
+      residence time in the continuous bioreactor. Hence, we decided to design a packed bed bioreactor with immobilized
+      bacteria, with packing material as biochar, which will provide a nutritious environment for the growth of the
+      bacteria, hence reducing the lag phases, provided TCC enters the cell by passive diffusion and, therefore gets
+      broken down inside the cell.<br><br>
+      The concentration of TCC in sludge (21000 ng/g dry weight) is significantly higher than in effluent (13000 ng/g
+      dry weight) [2]. We decided to implement our sludge-based bioreactor when the sludge is in a liquid state (97-99%
+      water content) before the drying and further treatment process to turn the liquid sludge into biosolids. We got
+      this idea through one of our human practices visits to a wastewater treatment plant in West Bengal, India.
+    </p>
+    <br><br><br>
+    <p class="mt-5 MAIN-STUFF" id="section3">Biochar<br></p>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/locally-derived-biochar.jpeg"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 3:</b>Locally derived biochar from the burning of rice husk and is a waste product of rice mill
+      industries</center>
+    <br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Biochar is a carbon-rich substance produced by the
+      thermal combustion of organic waste in an oxygen-limited environment. Biochar has a high surface area, due to
+      which it exhibits micropollutant and cell adsorption properties. It has high cation exchange capacity and
+      stability, making it useful for packing material for the packed bed bioreactor. Biochar is a simple, affordable,
+      and effective choice for adsorption of our target contaminant, triclocarban (TCC). It is also locally derived from
+      rice mills in our locality. The biochar has the perfect pore size of 0.6 to 0.8 nanometers required to adsorb TCC
+      efficiently.
+      <br><br>
+      According to the literature, the biochar modified with KOH in a ratio of 1:1 of biochar to KOH showed higher
+      adsorption of the target compound TCC compared to other ratios and just plain biochar. The KOH activation
+      increased the biochar's surface area, pore volume, and diameter, resulting in greater adsorption performance.
+      Biochar can also be used as a source of nutrients for the immobilized bacteria to proliferate, increasing
+      degradation efficiency [3].
+      <br><br>
+      Two primary options were considered for selecting the appropriate packing material for a packed column: structured
+      and random packing. Each of these options has distinct characteristics and advantages tailored to specific
+      applications.
+      <br><br>
+      <b>Structured packing-</b> It comprises engineered discs made from metal, plastic, or porcelain materials. These
+      discs have internal structures arranged in various honeycomb-like patterns. They are typically utilized within
+      cylindrical columns and consist of large material pieces. The design of structured packing cylinders is intricate
+      and optimized to provide a substantial surface area for efficient liquid-vapour contact without introducing
+      excessive resistance to liquid flow.
+      <br><br>
+      <b>Random packing-</b> It is employed in separation columns, particularly in processes like distillation. Its
+      primary purpose is to increase the surface area available for vapor-liquid contact, thus enhancing the efficiency
+      of chemical separation. Random packing comprises small pieces strategically designed to create a vast surface area
+      for reactants to interact while keeping the column's complexity to a minimum. The key objective of random packing
+      is to maximize the surface-to-volume ratio and minimize pressure drop.
+      We decided to go ahead with random packing because of the reasons listed below:
+      <br>
+      (1) Random packing gives more contact area between biochar and the sludge, increasing the mass transfer of the
+      active component (in our case, it is TCC).
+      <br>
+      (2) It is much more economically viable to implement than structured packing.
+      <br>
+      (3) It allows for better porosity and aeration.
+      <br>
+      (4) Easy handling and transport.
+      <br>
+      Since a Raschig ring structure provides maximum surface area, we chose to use a Raschig ring made of biochar as
+      our packing material (detailed below).
+    </p>
+    <br><br><br><br>
 
-     
-                   </p>
-                   <br><br>
-                   <p class="mt-5 MAIN-STUFF" id="section8">Future Implementation<br></p>
-                   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-                    Industrial scale-up of such a bioreactor faces multiple hurdles, including quantifying the required amount of biochar and mass manufacturing of the Raschig ring to fill the packed bed. To overcome these issues, we propose a fluidized bed batch bioreactor as our future implementation, which will utilize a lesser number of rings and also increase the mass transfer and mixing of the sludge with the biochar Raschig ring. We propose using a sparger to regulate sludge flow within the fluidized bed bioreactor to ensure a continuous sludge flow, as the viscosity of the sludge we are treating is almost equal to that of water. 
-                     </p>
-                     <p class="mt-5 MAIN-STUFF" id="section9"><br>Regeneration of biochar</p>
-                     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-                      Regeneration of biochar is done to clear the active sites of biochar of adsorbed compounds left at the end of a process. Regeneration of biochar after the adsorption process enables it to improve the lifespan of a given packed bed. This reduces the operational costs of the process it is being utilized in. Hence, for our solution, the regeneration of biochar is essential for optimizing the wastewater treatment plant's economic efficiency.
-                      <br><br>
-                      Biochar regeneration employs the opposite process of adsorption, and the techniques used can be widely classified as either adsorbate desorption or adsorbate decomposition. The adsorbate decomposition method involves decomposing the adsorbed materials into less toxic byproducts or completely mineralizing the adsorbed pollutants. On the other hand, adsorbate desorption involves breaking bonds between the biochar surface and the adsorbate (contaminants) by thermal or non-thermal methods [13].
-                      <br><br>
-                      After our batch process for the degradation of triclocarban, we plan on using n-hexane as a solvent to regenerate the biochar. This regeneration would clear the active sites of undegraded triclocarban and other compounds. A suitable solvent (adsorbent) for regeneration should show good reusability and recyclability in industrial processes [14].
-                      <br><br>
-                      We chose n-hexane as our solvent for this process due to its relatively low boiling point (69 °C) [15]. This allows for easy evaporation and condensation, which makes it easily recyclable. 
-                      n-hexane is also relatively cheap and non-toxic to the environment and the bacterias in the sludge.                      
-                       </p>
-                       <br><br>
-                       <p class="mt-5 MAIN-STUFF" id="section10">Toggling Mechanism<br></p>
-                       <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To treat the sludge which is continuously getting generated from the wastewater treatment plant along with having a regeneration process, we propose a toggling mechanism where 2 bioreactors will be present but only one will work at a time while the other will get regenerated .
-                        The toggling time is kept in such a way that our bacteria will have time to grow and degrade TCC upto 90% efficiency. From the calculations done in the model page, we decided that the toggling time or the time for which the sludge remains in one of the bioreactor before it is switched to the other bioreactor is 2 days at the max.
-                        </p>
-                        <br>
-                        <center><iframe title="MIT-MAHE: Toggling Mechanism (2023) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/1b7b8225-7cdd-403b-9dc3-a0d13273b47d" frameborder="1" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
-                        <center>Toggling Mechanism</center><br><br>
-                        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-                        This video focuses on one of the bioreactors and shows the events taking place inside it (Batch time(T) and regeneration).
-                        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-                        <br><br>
-                       <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-                        <u>Toggling mechanism with regeneration:</u> 
-                        
-                        <br><br>
-                        <center><iframe title="MIT-MAHE: Biochar Regeneration (2023) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/39553852-8d78-4746-bc53-fb257a9f8cb2" frameborder="1" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
-                        <center>Toggling Mechanism with Biochar Regeneration</center><br><br>
-                        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-                        <b>Time (T)=0 to T=2</b> days: Sludge from the wastewater treatment plant is continuously fed into the sludge tank starting at <b>T=0</b> days. It should be able to hold 2 days' worth of sludge, hence it fills completely at <b>T=2</b> days.
-<br><br><br>
-<b>T=2 to T=4 days</b>: Once the right-hand side bioreactor fills up with the sludge, it remains in the tank and reacts with the immobilized bacteria within the reactor for two days. After two days, it leaves the bioreactor. While one reactor discharges, the sludge tank continues to fill up in the meantime <b>T=2 to T=4 </b>days.
-<br><br><br>
-<b>T=4 to T=6</b> days: As the left-side bioreactor gets filled by the sludge from the sludge tank, the sludge will remain within  that reactor for 2 days and react with the immobilized bacteria (TCC goes inside the cell to get degraded by passive diffusion). The right-hand side bioreactor will now undergo a regeneration process, which will take a day or less than that.<br><br> The n-hexane will be released into the bioreactor, which will coat all the packing material, desorbing the contaminants that weren't degraded by our bacteria and releasing them into a side compartment where water will be present. This water + n-hexane + contaminants inside the side compartment can be heated to 70°C by a heating coil thus n-hexane starts boiling as the boiling point of n-hexane is 69°C, and pure hexane vapors get released, which gets collected in the small compartment above and condenses (since temperature there is much lower than 70°C) and can be used again and again at the end of each batch process after  the discharge of the sludge from that bioreactor. The compartment with the water and left behind contaminants can be released back into the bioreactor at the start of the following batch process which gives the water + contaminants enough time to cool down from 70°C to normal temperatures before the start of the next batch process. When this water + contaminants goes inside the bioreactor along with the next batch process, fresh water will be supplied in that compartment to maintain the water volume for the next regeneration process. This cycle also continues with the left-hand side bioreactor and regeneration after every degradation cycle. This regeneration process ensures that the active sites on the biochar after every batch process is not filled with other contaminants and hence ensures that the pores of the biochar are not clogged for the next batch process.
-<br><br><br>
+    <p class="mt-3 MAIN-STUFF" id="section4">Raschig ring<br></p>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/raschig-ring.png"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 4:</b>Raschig ring</center>
+    <br><br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/cad-of-raschig-ring.jpeg"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 5:</b>Proposed Model of Raschig rings</center>
+    <br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The idea for making Biochar Raschig rings developed
+      during one of our iHP meetings with Dr. Kamatam Krishnaiah, where we were inspired by the desire to satisfy two
+      crucial requirements. The two requirements for the Raschig rings were that we could make them out of biochar and
+      to have the maximum surface area. A maximum surface area is desired to overcome few difficulties , one of which is
+      fouling of the biochar due to the sludge flow. A standardized procedure for making biochar Raschig rings does not
+      exist; hence, we have created a theoretical proposal for their construction. To do this construction, we found
+      information on Biochar pelletizing and making Raschig rings.
+      <br><br>
+      <u>Production of Biochar Pellets:</u>
+      <br><br>
+      Biochar pellets are made by compacting residual biochar into uniformly sized pellets using mechanical force with
+      or without a binder. Pelletization of residual biochar is achievable due to the combined effects of roller
+      pressure and back pressure caused by friction between the compressed material and the channel walls.
 
-                         </p>
-                         <br>
-                         <p class="mt-5 MAIN-STUFF" id="section11">Kill Switch<br></p><br><br>
-                         <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-                           We have ideated a CRISPR-based kill switch for the biocontainment of our genetically modified organism, <i>Acinetobacter baylyi</i>. Our goal is to ensure that this modified bacteria does not escape into the environment. We plan to utilize a kill switch that will be triggered by blue light, and provide an effective containment mechanism.
+      <br><br>
+      <u>Biochar Pelletizing Methods [3]:</u>
+    </p>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/pelletization-system.jpeg"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 6:</b>Pelletization system [4]</center>
+    <br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">In <b> Fig 6</b>, the compressive bar will exert
+      force on the biochar pellet, forming a ring structure.<br><br>
+      1. A binder is required to process biochar's pelletization under pyrolysis process conditions. A few researchers
+      used pyrolysis oil, lignin, starch, and other ingredients as binders and moisture in the densification process.
+      They found that the mechanical characteristics of biochar pellets combined with them improved significantly.
+      <br><br>
+      2. However, such binders will not bring about the required binding for making raschig rings, therefore the
+      properties of biochar can be further optimized by the use of polar functional groups for stronger electrostatic
+      force of attraction.
+      (We plan on using rice husk biochar; binders could be Lignin, starch, Ca(OH)2, clay, NaOH with 5-20% water)
+
+      Clay looked promising to us due to its affordability and was later validated with a human practice meeting with
+      Dr. Kevin Sowers and Dr. Ramananda Bhat sir as well.
+      <br><br>
+      3. Moisture, which is also essential in pelletization and can act as a binder and a lubricant. can be added to the
+      mixtures at different ratios using a magnetic stirrer before pelletization based on the biochar feed.
+      <br><br>
+      4. The shaped rings are fired in a furnace at high temperatures. However, biochar produced at high pyrolysis
+      temperatures (greater than 500 °C) leads to the unsuccessful formation of pellets and rings and results in the
+      degradation of biochar’s organic matter. This makes the biochar brittle, and therefore, further optimization is
+      required for firing and heating temperatures for biochar to make Raschig rings.
+      <br><br>
+      <u><b>Making of a Raschig ring</b> [6,7] : </u>
+      <br><br>
+      1. The selected material (biochar) is initially obtained as a powder or granules.
+      <br><br>
+      2. The shaping process involves forming the material into the characteristic cylindrical ring shape. This can be
+      achieved through the method of pressing.
+      <br><br>
+      3. After shaping, the rings are dried to remove moisture and prepare them for firing to increase mechanical
+      strength.
+      <br><br>
+      4. The shaped rings are fired in a furnace at high temperatures. However, biochar produced at high pyrolysis
+      temperatures (greater than 500°C) leads to the unsuccessful formation of pellets and rings and results in the
+      degradation of biochar’s organic matter. This makes the biochar brittle, and therefore, further optimization is
+      required for firing and heating temperatures for biochar to make raschig rings
+      <br><br>
+      <u><b>Immobilizing Bacteria on Raschig Rings</b> [7,8]:</u>
+      <br><br>
+      1.Isolate bacteria and shake at 150 rpm for 12 hours in a Minimal Salt Medium containing 0.66 g/L NaH2PO4.2H2O,
+      0.58 g/L Na2HPO4, 0.5 g/L NaCl, 2 g/L NH4Cl, 3 g/L KH2PO4, and 0.25 g/L MgSO4.7H2O at pH 7.0.
+      <br><br>
+      2.The bacteria-inoculated Minimal Salt Medium (MSM) is then centrifuged at 6000 rpm for 10 minutes, and the
+      supernatant is discarded. The particle is resuspended and rinsed with 0.85% NaCl.
+      <br><br>
+      3.To increase the concentration of the bacteria, 10 mL of MSM is added. Biochar is mixed with MSM with TCC and
+      concentrated bacteria to immobilize cells.
+      <br><br>
+      4.Shake the mixture at 150 rpm for 48 hours at room temperature. The cells are immobilized on the surface of the
+      biochar.
+      <br><br>
+      <u>Immobilization technique</u>:
+      <br><br>
+      Two methods can be employed to immobilize the microorganisms on the Raschig rings:<br><br>
+      1. Adsorption- In this process, we gently shake or swirl the raschig rings with the bacterial culture to allow the
+      bacteria to attach to the ring surface.
+      <br><br>
+      2. Dipping- In this method, we dip the raschig ring into a bacterial culture for a fixed time to allow the
+      bacteria to adhere to the surface.
+    </p>
+
     <br><br>
 
-        The "Light-Induced Kill Switch" entails the use of a specific wavelength of light as the trigger for bacterial containment. The system relies on genetically engineered photoreceptors that respond to this light signal, which, when interrupted, leads to a chain of events resulting in cell death [16][17][18].
+    <p class="mt-3 MAIN-STUFF" id="section5">Sparger<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Spargers are devices that distribute gasses into the
+      liquid medium present in a bioreactor. There are different types of spargers: porous, orifice, nozzle, perforated,
+      ladder, spider-type, and O-type spargers. Among these, perforated plate sparger is more efficient for our
+      bioreactor due to its smaller orifice diameter. It is more efficient in gas-liquid mass transfer due to generating
+      smaller bubble diameters. A perforated plate sparger comprises a flat plate with evenly spaced holes or
+      perforations. These holes or perforations are distributed across the surface of the plate to maintain a uniform
+      distribution of gas into the liquid medium. We aim to design the perforation plate more diminutive than the size
+      of the raschig ring to overcome the possibility of the raschig ring passing through the holes. Further, the air
+      pressure will be regulated through the pipe inlets connected from the bottom of the tank and spread across the
+      channels, resulting in a uniform distribution. The gas-liquid mass transfer takes place in the tank.
+    </p>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/proposed-model-for-sparger.jpeg"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 7:</b>Proposed model for Sparger</center><br><br>
+    <p class="mt-3 MAIN-STUFF" id="section6">Pressure Gauge<br></p>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/pressure-gauge.jpeg"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center><b>Fig 8:</b>Proposed Model of Pressure Gauge</center><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">A pressure-powered system uses pressure gauges to
+      measure the fluid intensity in the system to ensure there are no leaks or pressure variations that could impair
+      the system's functioning. Hence, to ensure the proper functioning of our bioreactor, we would install a
+      hydrostatic bourdon tube pressure gauge in the inlet valve. Hydrostatic pressure gauges measure the hydrostatic
+      pressure of the liquid, which is influenced by the liquid’s height, density, and gravity. A bourdon tube possesses
+      an elastic tube soldered on one end and fashioned into a socket. A rotary gear with a pointer receives the
+      deflection in the tube resulting from a change in pressure; this deflection is proportional to the applied
+      pressure. The basic idea of a Bourdon pressure gauge is that a curved tube will straighten when pressure is
+      applied, as shown by a dial or digital readout. Bourdon tube pressure gauges are suitable for media that do not
+      crystallize and are not highly viscous, hence suitable for a sludge treatment plant [9,10].
+    </p>
+    <center><iframe title="MIT-MAHE: Packed Bed single (2023) [English]" width="560" height="315"
+        src="https://video.igem.org/videos/embed/25fef466-e79a-4da1-abad-f4990a1c924f" frameborder="1"
+        allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
+    <center>Mechanism of our Single Packed Bed Bioreactor</center><br><br>
+    <p class="mt-3 MAIN-STUFF" id="section7">Cost Analysis<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"><b>Cost Analysis - Packed bed batch Bioreactor
+      </b><br><br>
+      <u><b> Design - batch packed bed reactor</b> [10,11]</u>
+    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <li>Glass column</li>
+      <li>Pressure gauge</li>
+      <li>Water pump</li>
+      <li>Sparger</li>
+      <li>PVC pipes</li>
+      <li>Biochar raschig rings</li>
+      <li>Immobilization of bacteria on the rings</li>
+    </ul>
+    <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <tr>
+        <th>Equipment</th>
+        <th>Average price (in INR)</th>
+      </tr>
+      <tr>
+        <td>Generic Temperature Gauge</td>
+        <td>750</td>
+      </tr>
+      <tr>
+        <td style="width: 20px;">Pressure gauge</td>
+        <td style="width: 20px;">2441</td>
+      </tr>
+      <tr>
+        <td style="width: 20px;">Glass column</td>
+        <td style="width: 20px;">5000</td>
+      </tr>
+      <tr>
+        <td style="width: 20px;">Industrial Stirrer</td>
+        <td style="width: 20px;">2500</td>
+      </tr>
+      <tr>
+        <td style="width: 20px;">Motor</td>
+        <td style="width: 20px;">1400</td>
+      </tr>
+      <tr>
+        <td style="width: 20px;">Water pump</td>
+        <td style="width: 20px;">4800</td>
+      </tr>
+      <tr>
+        <td style="width: 20px;">PVC pipes</td>
+        <td style="width: 20px;">400</td>
+      </tr>
+      <tr>
+        <td style="width: 20px;">Sparger</td>
+        <td style="width: 20px;">1000</td>
+      </tr>
+    </table>
+    <br>
+    *These prices are rough estimates referenced from the product market prices. We also expect an increase in the
+    proposed rate with the addition of biochar pelleting, immobilization cost, and operating cost.
+    <br><br>
+    <b>Total cost - 18291(INR) </b><br>
+    <b> Total cost - 219.77 (Dollars) as of 10/10/2023 </b>
 
-        <br><br>
-    We are building upon the kill switch designed by <b>iGEM USTC, NEU-China and Unesp_Brazil</b> [19][20][21]. The implementation of the project proposed by iGEM USTC was also done in wastewater treatment plants. By installing a blue light emitting device post our designed bioreactor, the process of our biocontainment becomes inexpensive and easier to control. We will be utilizing the two dimerized Photoreceptor VVDs and the linker molecule submitted by  iGEM USTC to the iGEM parts registry. </p>
-        <br>
-        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> Table of parts submitted by iGEM USTC 2019: [19]</p><br>
+
+    </p>
+    <br><br>
+    <p class="mt-5 MAIN-STUFF" id="section8">Future Implementation<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      Industrial scale-up of such a bioreactor faces multiple hurdles, including quantifying the required amount of
+      biochar and mass manufacturing of the Raschig ring to fill the packed bed. To overcome these issues, we propose a
+      fluidized bed batch bioreactor as our future implementation, which will utilize a lesser number of rings and also
+      increase the mass transfer and mixing of the sludge with the biochar Raschig ring. We propose using a sparger to
+      regulate sludge flow within the fluidized bed bioreactor to ensure a continuous sludge flow, as the viscosity of
+      the sludge we are treating is almost equal to that of water.
+    </p>
+    <p class="mt-5 MAIN-STUFF" id="section9"><br>Regeneration of biochar</p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      Regeneration of biochar is done to clear the active sites of biochar of adsorbed compounds left at the end of a
+      process. Regeneration of biochar after the adsorption process enables it to improve the lifespan of a given packed
+      bed. This reduces the operational costs of the process it is being utilized in. Hence, for our solution, the
+      regeneration of biochar is essential for optimizing the wastewater treatment plant's economic efficiency.
+      <br><br>
+      Biochar regeneration employs the opposite process of adsorption, and the techniques used can be widely classified
+      as either adsorbate desorption or adsorbate decomposition. The adsorbate decomposition method involves decomposing
+      the adsorbed materials into less toxic byproducts or completely mineralizing the adsorbed pollutants. On the other
+      hand, adsorbate desorption involves breaking bonds between the biochar surface and the adsorbate (contaminants) by
+      thermal or non-thermal methods [13].
+      <br><br>
+      After our batch process for the degradation of triclocarban, we plan on using n-hexane as a solvent to regenerate
+      the biochar. This regeneration would clear the active sites of undegraded triclocarban and other compounds. A
+      suitable solvent (adsorbent) for regeneration should show good reusability and recyclability in industrial
+      processes [14].
+      <br><br>
+      We chose n-hexane as our solvent for this process due to its relatively low boiling point (69 °C) [15]. This
+      allows for easy evaporation and condensation, which makes it easily recyclable.
+      n-hexane is also relatively cheap and non-toxic to the environment and the bacterias in the sludge.
+    </p>
+    <br><br>
+    <p class="mt-5 MAIN-STUFF" id="section10">Toggling Mechanism<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To treat the sludge which is continuously getting
+      generated from the wastewater treatment plant along with having a regeneration process, we propose a toggling
+      mechanism where 2 bioreactors will be present but only one will work at a time while the other will get
+      regenerated .
+      The toggling time is kept in such a way that our bacteria will have time to grow and degrade TCC upto 90%
+      efficiency. From the calculations done in the model page, we decided that the toggling time or the time for which
+      the sludge remains in one of the bioreactor before it is switched to the other bioreactor is 2 days at the max.
+    </p>
+    <br>
+    <center><iframe title="MIT-MAHE: Toggling Mechanism (2023) [English]" width="560" height="315"
+        src="https://video.igem.org/videos/embed/1b7b8225-7cdd-403b-9dc3-a0d13273b47d" frameborder="1"
+        allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
+    <center>Toggling Mechanism</center><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      This video focuses on one of the bioreactors and shows the events taking place inside it (Batch time(T) and
+      regeneration).
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <br><br>
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <u>Toggling mechanism with regeneration:</u>
+
+      <br><br>
+      <center><iframe title="MIT-MAHE: Biochar Regeneration (2023) [English]" width="560" height="315"
+          src="https://video.igem.org/videos/embed/39553852-8d78-4746-bc53-fb257a9f8cb2" frameborder="1"
+          allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></center>
+      <center>Toggling Mechanism with Biochar Regeneration</center><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <b>Time (T)=0 to T=2</b> days: Sludge from the wastewater treatment plant is continuously fed into the sludge tank
+      starting at <b>T=0</b> days. It should be able to hold 2 days' worth of sludge, hence it fills completely at
+      <b>T=2</b> days.
+      <br><br><br>
+      <b>T=2 to T=4 days</b>: Once the right-hand side bioreactor fills up with the sludge, it remains in the tank and
+      reacts with the immobilized bacteria within the reactor for two days. After two days, it leaves the bioreactor.
+      While one reactor discharges, the sludge tank continues to fill up in the meantime <b>T=2 to T=4 </b>days.
+      <br><br><br>
+      <b>T=4 to T=6</b> days: As the left-side bioreactor gets filled by the sludge from the sludge tank, the sludge
+      will remain within that reactor for 2 days and react with the immobilized bacteria (TCC goes inside the cell to
+      get degraded by passive diffusion). The right-hand side bioreactor will now undergo a regeneration process, which
+      will take a day or less than that.<br><br> The n-hexane will be released into the bioreactor, which will coat all
+      the packing material, desorbing the contaminants that weren't degraded by our bacteria and releasing them into a
+      side compartment where water will be present. This water + n-hexane + contaminants inside the side compartment can
+      be heated to 70°C by a heating coil thus n-hexane starts boiling as the boiling point of n-hexane is 69°C, and
+      pure hexane vapors get released, which gets collected in the small compartment above and condenses (since
+      temperature there is much lower than 70°C) and can be used again and again at the end of each batch process after
+      the discharge of the sludge from that bioreactor. The compartment with the water and left behind contaminants can
+      be released back into the bioreactor at the start of the following batch process which gives the water +
+      contaminants enough time to cool down from 70°C to normal temperatures before the start of the next batch process.
+      When this water + contaminants goes inside the bioreactor along with the next batch process, fresh water will be
+      supplied in that compartment to maintain the water volume for the next regeneration process. This cycle also
+      continues with the left-hand side bioreactor and regeneration after every degradation cycle. This regeneration
+      process ensures that the active sites on the biochar after every batch process is not filled with other
+      contaminants and hence ensures that the pores of the biochar are not clogged for the next batch process.
+      <br><br><br>
+
+    </p>
+    <br>
+    <p class="mt-5 MAIN-STUFF" id="section11">Kill Switch<br></p><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      We have ideated a CRISPR-based kill switch for the biocontainment of our genetically modified organism,
+      <i>Acinetobacter baylyi</i>. Our goal is to ensure that this modified bacteria does not escape into the
+      environment. We plan to utilize a kill switch that will be triggered by blue light, and provide an effective
+      containment mechanism.
+      <br><br>
+
+      The "Light-Induced Kill Switch" entails the use of a specific wavelength of light as the trigger for bacterial
+      containment. The system relies on genetically engineered photoreceptors that respond to this light signal, which,
+      when interrupted, leads to a chain of events resulting in cell death [16][17][18].
+
+      <br><br>
+      We are building upon the kill switch designed by <b>iGEM USTC, NEU-China and Unesp_Brazil</b> [19][20][21]. The
+      implementation of the project proposed by iGEM USTC was also done in wastewater treatment plants. By installing a
+      blue light emitting device post our designed bioreactor, the process of our biocontainment becomes inexpensive and
+      easier to control. We will be utilizing the two dimerized Photoreceptor VVDs and the linker molecule submitted by
+      iGEM USTC to the iGEM parts registry.
+    </p>
+    <br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> Table of parts submitted by iGEM USTC 2019: [19]
+    </p><br>
     <table border="1">
-        <tr>
-            <td>Positive Photoreceptor  </td>
-            <td>Negative Photoreceptor  </td>
-            <td>Linker molecule  </td>
-        </tr>
-        <tr>
-            <td>BBa_K2660009  </td>
-            <td>BBa_K2660008  </td>
-            <td>BBa_K105012  </td>
-        </tr>
+      <tr>
+        <td>Positive Photoreceptor </td>
+        <td>Negative Photoreceptor </td>
+        <td>Linker molecule </td>
+      </tr>
+      <tr>
+        <td>BBa_K2660009 </td>
+        <td>BBa_K2660008 </td>
+        <td>BBa_K105012 </td>
+      </tr>
     </table>
     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"><b><u>Design of our guide RNA:</u></b></p>
     <br>
     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-       
-        The gRNA consists of target and PAM sequence. Literature survey to identify genes that are essential to the natural metabolism of <i>Acinetobacter baylyi</i> was done. Targeting genes essential for the survival of <i>Acinetobacter baylyi</i> will ensure that we achieve specific cell death. 
 
-    <br><br>
-    In <i>Acinetobacter baylyi</i>, ACIAD1150 (called pyrC for short) and ACIAD1419 were identified as genes responsible to express pyrimidine ribonucleotides which serve as integral molecules. Researchers tried to remove the pyrC gene, but were unsuccessful, suggesting that this gene is irreplaceable by another gene in the bacterium. Thus, they found that the pyrC gene is really crucial for the survival of the bacterium [22].
-    <br>We obtained the sequence of the ACIAD1150 from the <i>Actinobacter baylyi</i> genome database[23].</p> <br>
-<img src="https://static.igem.wiki/teams/4641/wiki/implementation/fasta-sequence-kill-switch.png" class="img-fluid rounded mx-auto d-block mt-4">
-<center>FASTA sequence of gene ACIAD1150</center><br><br>
-<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To ensure that this sequence did not exist in any other organism, we ran a FASTA search with a higher expectation value and a lower gap penalty. The closest match apart from <i>Acinetobacter baylyi</i>, with 90% identity, was found to be <i>Acinetobacter baumannii</i> [24].<br></p>
-<br>
-<img src="https://static.igem.wiki/teams/4641/wiki/implementation/similarity-search.png" class="img-fluid rounded mx-auto d-block mt-4"> <br>
-<center>Similarity search of gene ACIAD1150 (Parameters modified to have high expectation value (50) and a lower gap opening penalty (-2) to find more possible  matches</center><br><br><p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> We analyzed the use of <i>Acinetobacter baumannii</i> in wastewater treatment plants, to ensure that an off target effect did not occur. After conducting a literature review, we can conclude that <i>Acinetobacter baumanii</i> was found to be non essential for the smooth operation of wastewater treatment plants  and is found to be harmful in most treatment plants due to its pathogenic nature [25][26].<br>
-<br>By utilizing the ACIAD1150 gene, (the last 100 base pairs were removed due to limitations by the tool) we designed different versions of the guide RNA using an online tool [27].  A sequence that can bind to the 895th amino acid of ACIAD1150 and has a 92% on target accuracy was identified.<br></p>
-<br>
+      The gRNA consists of target and PAM sequence. Literature survey to identify genes that are essential to the
+      natural metabolism of <i>Acinetobacter baylyi</i> was done. Targeting genes essential for the survival of
+      <i>Acinetobacter baylyi</i> will ensure that we achieve specific cell death.
 
-<img src="https://static.igem.wiki/teams/4641/wiki/implementation/tabular-column-kill.png" class="img-fluid rounded mx-auto d-block mt-4"> <br>
-<center>Potential guide RNAs as generated using online tools</center><br><br>
-<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To further bolster the stability of our kill switch, we will engineer the plasmid carrying the kill switch to be antibiotic-independent for maintenance by using an alternative mechanism such as reporter genes, auxotrophic marker and host specific origin of replication. This prevents potential interference from antibiotic resistance evolution [28][29]. <br>
-<br>
-Extensive laboratory and environmental testing needs to be done, to validate the efficacy of our kill switch. The results obtained will be assessed to identify if the kill switch is activated under conditions of blue light in the environment. This will lead to selective and efficient elimination of our modified bacteria. This validation must be conducted in controlled environments as well as in simulated wastewater treatment conditions to mimic real-world scenarios.<br>
-<br>
-As an alternative to our initial plan, if our proposed light-induced kill switch doesn't prove effective, we intend to develop a CRISPR-based kill switch for the biocontainment of our genetically modified <i>Acinetobacter baylyi</i> [30]. This alternative kill switch is designed to activate in response to elevated chlorine levels, providing a reliable containment mechanism. <br>
-<br>
-The proposed design would include a two-input system. By integrating genetic components sensitive to chlorine-induced stress, high chlorine concentrations can be dectected. To ensure genetic stability, we plan to incorporate functional redundancy within the circuit and modulate the SOS response [31].<br>
-
-</p>
-
-
-
-                         <p class="mt-5 MAIN-STUFF" id="section12">References<br></p>
-                         <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-                          [1]Yun, H., Liang, B., Qiu, J., Zhang, L., Zhao, Y., Jiang, J., & Wang, A. (2017). Functional characterization of a novel amidase involved in biotransformation of triclocarban and its dehalogenated congeners in Ochrobactrum sp. TCC-2. Environmental Science & Technology, 51(1),291-300. <a href="https://doi.org/10.1021/acs.est.6b04885">https://doi.org/10.1021/acs.est.6b04885</a>
-                          <br>
-                          [2] Subedi, B., Balakrishna, K., Joshua, D. I., & Kannan, K. (2017). Mass loading and removal of pharmaceuticals and personal care products including psychoactives, antihypertensives, and antibiotics in two sewage treatment plants in southern India. Chemosphere, 167, 429-437. <a href="https://doi.org/10.1016/j.chemosphere.2016.10.026">https://doi.org/10.1016/j.chemosphere.2016.10.026</a> 
-                          <br>
-                          [3]Jenjaiwit, S., Supanchaiyamat, N., Hunt, A. J., Ngernyen, Y., Ratpukdi, T., & Siripattanakul-Ratpukdi, S. (2021). Removal of triclocarban from treated wastewater using cell-immobilized biochar as a sustainable water treatment technology. Journal of Cleaner Production, 320, 128919. <a href="https://doi.org/10.1016/j.jclepro.2021.128919">https://doi.org/10.1016/j.jclepro.2021.128919</a>
-                          <br>
-                          [4]Mohammadi, A. (2021). Overview of the benefits and challenges associated with pelletizing biochar. Processes, 9(9), 1591<a href="https://doi.org/10.3390/pr9091591">https://doi.org/10.3390/pr9091591</a>
-                          <br>
-                          [5]Hu, Q., Shao, J., Yang, H., Yao, D., Wang, X., & Chen, H. (2015). Effects of binders on the properties of bio-char pellets. Applied Energy, 157,508-516.<a href="https://doi.org/10.1016/j.apenergy.2015.05.019">https://doi.org/10.1016/j.apenergy.2015.05.019</a>
-                          <br>
-                          [6]Villora, J. M., Baudín, C., Callejas, P., & Flora Barba, M. (2004). Influence of the processing route on reliability of Raschig rings for wastewater treatments. Key Engineering Materials, 264, 2437-2440.<a href="https://doi.org/10.4028/www.scientific.net/KEM.264-268.2437">https://doi.org/10.4028/www.scientific.net/KEM.264-268.2437</a>
-                          <br>
-                          [7]Salvi, S., & Paranjape, A. P. (2017, February). Comparison of different types of Raschig rings. In 2017 Third International Conference on Advances in Electrical, Electronics, Information, Communication and Bio-Informatics (AEEICB) (pp. 56-60). IEEE.<a href="https://doi.org/10.1109/AEEICB.2017.7972383">https://doi.org/10.1109/AEEICB.2017.7972383</a>
-                          <br>
-                          [8]Jenjaiwit, S., Supanchaiyamat, N., Hunt, A. J., Ngernyen, Y., Ratpukdi, T., & Siripattanakul-Ratpukdi, S. (2021). Removal of triclocarban from treated wastewater using cell-immobilized biochar as a sustainable water treatment technology. Journal of Cleaner Production, 320, 128919.<a href="https://doi.org/10.1016/j.jclepro.2021.128919">https://doi.org/10.1016/j.jclepro.2021.128919</a>
-                          <br>
-                          [9] Obtained from IQS Directory : <a href="https://www.iqsdirectory.com/articles/pressure-gauge.html#:~:text=Pressure%20gauges%20are%20an%20essential,of%20pressure%20in%20a%20system.">https://www.iqsdirectory.com/articles/pressure-gauge.html#:~:text=Pressure%20gauges%20are%20an%20essential,of%20pressure%20in%20a%20system. </a> 
-                          <br>
-                          [10] Obtained from Tamson: <a href="https://tameson.com/pages/pressure-gauge-selection#:~:text=The%20following%20are%20common%20types,and%20are%20not%20highly%20viscous.">https://tameson.com/pages/pressure-gauge-selection#:~:text=The%20following%20are%20common%20types,and%20are%20not%20highly%20viscous.</a> 
-                          <br>
-                          [11] Shi, Y., Chen, H., Chen, W., Ye, G., Qu, J., Li, J., ... & Duan, X. (2023). Effects of particle shape and packing style on ethylene oxidation reaction using particle-resolved CFD simulation. Particuology, 82, 87-97 <a href="https://doi.org/10.1016/j.partic.2023.01.012">https://doi.org/10.1016/j.partic.2023.01.012</a>
-                          <br>
-                          [12] Dai, G., Huangfu, J., Wang, X., Du, S., & Zhao, T. (2023). A Review of Radiative Heat Transfer in Fixed-Bed Particle Solar Receivers. Sustainability, 15(13), 9918 <a href="https://doi.org/10.3390/su15139918">https://doi.org/10.3390/su15139918</a>
-                          <br>
-                          [13] Alsawy, T., Rashad, E., El-Qelish, M. et al. A comprehensive review on the chemical regeneration of biochar adsorbent for sustainable wastewater treatment. npj Clean Water 5, 29 (2022). <a href="https://doi.org/10.1038/s41545-022-00172-3">https://doi.org/10.1038/s41545-022-00172-3</a>
-                          <br>
-                          [14] Yingjie Dai, Naixin Zhang, Chuanming Xing, Qingxia Cui, Qiya Sun, The adsorption, regeneration and engineering applications of biochar for removal organic pollutants: A review,Chemosphere,Volume 223,2019,Pages 12-27,ISSN 0045-6535, <a href="https://doi.org/10.1016/j.chemosphere.2019.01.161.">https://doi.org/10.1016/j.chemosphere.2019.01.161.</a> 
-                          <br>
-                          [15]  M. A. Alkhaldi (2018) Estimation of boiling points by investigations of viscosity Arrhenius behaviours in Methyl Benzoate + n-Hexane binary liquid systems at atmospheric pressure, Physics and Chemistry of Liquids, 56:2, 250-265,<a href="https://doi.org/10.1080/00319104.2017.1327582">https://doi.org/10.1080/00319104.2017.1327582</a>
-<br>[16]	KAWANO, F. et al. Engineered pairs of distinct photoswitches for optogenetic control of cellular proteins. Nat. Commun. v.6 n.6256, 2015.
-    <br>[17]	NIHONGAKI, Y. et al. Photoactivatable CRISPR-Cas9 for optogenetic genome editing. Nature Biotechnology v.33 p.755, 2015. VOIGT, C;CALIANDO, B. 
-    <br>[18]	Targeted DNA degradation using a CRISPR device stably carried in the host genome. Nature Communications v.6 p.6989, 2015.ll
-    <br>[19]	<a href="https://2019.igem.org/Team:USTC/Kill_Switch">https://2019.igem.org/Team:USTC/Kill_Switch</a>
-    <br>[20]	<a href="https://2016.igem.org/Team:NEU-China">https://2016.igem.org/Team:NEU-China</a>
-    <br>[21]	<a href="https://2018.igem.org/Team:Unesp_Brazil/Design">https://2018.igem.org/Team:Unesp_Brazil/Design
-    <br>[22]	De Berardinis, V., Vallenet, D., Castelli, V., Besnard, M., Pinet, A., Cruaud, C., ... & Weissenbach, J. (2008). A complete collection of single‐gene deletion mutants of Acinetobacter baylyi ADP1. Molecular systems biology, 4(1), 174.
-    <br>[23]	<a href="https://www.genoscope.cns.fr/cgi-bin/ggb/thesaurus/gbrowse/thesaurus/">https://www.genoscope.cns.fr/cgi-bin/ggb/thesaurus/gbrowse/thesaurus/</a>
-    <br>[24]	Madeira, F., Pearce, M., Tivey, A. R., Basutkar, P., Lee, J., Edbali, O., ... & Lopez, R. (2022). Search and sequence analysis tools services from EMBL-EBI in 2022. Nucleic acids research, 50(W1), W276-W279.
-    <br>[25]	Eze, E. C., El Zowalaty, M. E., & Pillay, M. (2021). Antibiotic resistance and biofilm formation of Acinetobacter baumannii isolated from high-risk effluent water in tertiary hospitals in South Africa. Journal of Global Antimicrobial Resistance, 27, 82-90.
-    <br>[26]	Higgins, P. G., Hrenovic, J., Seifert, H., & Dekic, S. (2018). Characterization of Acinetobacter baumannii from water and sludge line of secondary wastewater treatment plant. Water Research, 140, 261-267.
-    <br>[27]	<a href="https://sg.idtdna.com/site/order/designtool/index/CRISPR_SEQUENCE">https://sg.idtdna.com/site/order/designtool/index/CRISPR_SEQUENCE</a>
-    <br>[28]	Hägg, P., de Pohl, J. W., Abdulkarim, F., & Isaksson, L. A. (2004). A host/plasmid system that is not dependent on antibiotics and antibiotic resistance genes for stable plasmid maintenance in Escherichia coli. Journal of biotechnology, 111(1), 17-30.
-    <br>[29]	Kim, S. K., Kim, H., Woo, S. G., Kim, T. H., Rha, E., Kwon, K. K., ... & Lee, D. H. (2022). CRISPRi-based programmable logic inverter cascade for antibiotic-free selection and maintenance of multiple plasmids. Nucleic acids research, 50(22), 13155-13171.
-    <br>[30]Rottinghaus, A. G., Ferreiro, A., Fishbein, S. R., Dantas, G., & Moon, T. S. (2022). Genetically stable CRISPR-based kill switches for engineered microbes. Nature communications, 13(1), 672.
-    <br>[31]	Stirling, F., Bitzan, L., O’Keefe, S., Redfield, E., Oliver, J. W., Way, J., & Silver, P. A. (2017). Rational design of evolutionarily stable microbial kill switches. Molecular cell, 68(4), 686-697.
-    
+      <br><br>
+      In <i>Acinetobacter baylyi</i>, ACIAD1150 (called pyrC for short) and ACIAD1419 were identified as genes
+      responsible to express pyrimidine ribonucleotides which serve as integral molecules. Researchers tried to remove
+      the pyrC gene, but were unsuccessful, suggesting that this gene is irreplaceable by another gene in the bacterium.
+      Thus, they found that the pyrC gene is really crucial for the survival of the bacterium [22].
+      <br>We obtained the sequence of the ACIAD1150 from the <i>Actinobacter baylyi</i> genome database[23].
+    </p> <br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/fasta-sequence-kill-switch.png"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <center>FASTA sequence of gene ACIAD1150</center><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To ensure that this sequence did not exist in any
+      other organism, we ran a FASTA search with a higher expectation value and a lower gap penalty. The closest match
+      apart from <i>Acinetobacter baylyi</i>, with 90% identity, was found to be <i>Acinetobacter baumannii</i>
+      [24].<br></p>
+    <br>
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/similarity-search.png"
+      class="img-fluid rounded mx-auto d-block mt-4"> <br>
+    <center>Similarity search of gene ACIAD1150 (Parameters modified to have high expectation value (50) and a lower gap
+      opening penalty (-2) to find more possible matches</center><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> We analyzed the use of <i>Acinetobacter
+        baumannii</i> in wastewater treatment plants, to ensure that an off target effect did not occur. After
+      conducting a literature review, we can conclude that <i>Acinetobacter baumanii</i> was found to be non essential
+      for the smooth operation of wastewater treatment plants and is found to be harmful in most treatment plants due to
+      its pathogenic nature [25][26].<br>
+      <br>By utilizing the ACIAD1150 gene, (the last 100 base pairs were removed due to limitations by the tool) we
+      designed different versions of the guide RNA using an online tool [27]. A sequence that can bind to the 895th
+      amino acid of ACIAD1150 and has a 92% on target accuracy was identified.<br>
     </p>
-                           </p>
-                    </div>
-                    </div>
+    <br>
+
+    <img src="https://static.igem.wiki/teams/4641/wiki/implementation/tabular-column-kill.png"
+      class="img-fluid rounded mx-auto d-block mt-4"> <br>
+    <center>Potential guide RNAs as generated using online tools</center><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To further bolster the stability of our kill switch,
+      we will engineer the plasmid carrying the kill switch to be antibiotic-independent for maintenance by using an
+      alternative mechanism such as reporter genes, auxotrophic marker and host specific origin of replication. This
+      prevents potential interference from antibiotic resistance evolution [28][29]. <br>
+      <br>
+      Extensive laboratory and environmental testing needs to be done, to validate the efficacy of our kill switch. The
+      results obtained will be assessed to identify if the kill switch is activated under conditions of blue light in
+      the environment. This will lead to selective and efficient elimination of our modified bacteria. This validation
+      must be conducted in controlled environments as well as in simulated wastewater treatment conditions to mimic
+      real-world scenarios.<br>
+      <br>
+      As an alternative to our initial plan, if our proposed light-induced kill switch doesn't prove effective, we
+      intend to develop a CRISPR-based kill switch for the biocontainment of our genetically modified <i>Acinetobacter
+        baylyi</i> [30]. This alternative kill switch is designed to activate in response to elevated chlorine levels,
+      providing a reliable containment mechanism. <br>
+      <br>
+      The proposed design would include a two-input system. By integrating genetic components sensitive to
+      chlorine-induced stress, high chlorine concentrations can be dectected. To ensure genetic stability, we plan to
+      incorporate functional redundancy within the circuit and modulate the SOS response [31].<br>
+
+    </p>
+
+
+
+    <p class="mt-5 MAIN-STUFF" id="section12">References<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      [1]Yun, H., Liang, B., Qiu, J., Zhang, L., Zhao, Y., Jiang, J., & Wang, A. (2017). Functional characterization of
+      a novel amidase involved in biotransformation of triclocarban and its dehalogenated congeners in Ochrobactrum sp.
+      TCC-2. Environmental Science & Technology, 51(1),291-300. <a
+        href="https://doi.org/10.1021/acs.est.6b04885">https://doi.org/10.1021/acs.est.6b04885</a>
+      <br>
+      [2] Subedi, B., Balakrishna, K., Joshua, D. I., & Kannan, K. (2017). Mass loading and removal of pharmaceuticals
+      and personal care products including psychoactives, antihypertensives, and antibiotics in two sewage treatment
+      plants in southern India. Chemosphere, 167, 429-437. <a
+        href="https://doi.org/10.1016/j.chemosphere.2016.10.026">https://doi.org/10.1016/j.chemosphere.2016.10.026</a>
+      <br>
+      [3]Jenjaiwit, S., Supanchaiyamat, N., Hunt, A. J., Ngernyen, Y., Ratpukdi, T., & Siripattanakul-Ratpukdi, S.
+      (2021). Removal of triclocarban from treated wastewater using cell-immobilized biochar as a sustainable water
+      treatment technology. Journal of Cleaner Production, 320, 128919. <a
+        href="https://doi.org/10.1016/j.jclepro.2021.128919">https://doi.org/10.1016/j.jclepro.2021.128919</a>
+      <br>
+      [4]Mohammadi, A. (2021). Overview of the benefits and challenges associated with pelletizing biochar. Processes,
+      9(9), 1591<a href="https://doi.org/10.3390/pr9091591">https://doi.org/10.3390/pr9091591</a>
+      <br>
+      [5]Hu, Q., Shao, J., Yang, H., Yao, D., Wang, X., & Chen, H. (2015). Effects of binders on the properties of
+      bio-char pellets. Applied Energy, 157,508-516.<a
+        href="https://doi.org/10.1016/j.apenergy.2015.05.019">https://doi.org/10.1016/j.apenergy.2015.05.019</a>
+      <br>
+      [6]Villora, J. M., Baudín, C., Callejas, P., & Flora Barba, M. (2004). Influence of the processing route on
+      reliability of Raschig rings for wastewater treatments. Key Engineering Materials, 264, 2437-2440.<a
+        href="https://doi.org/10.4028/www.scientific.net/KEM.264-268.2437">https://doi.org/10.4028/www.scientific.net/KEM.264-268.2437</a>
+      <br>
+      [7]Salvi, S., & Paranjape, A. P. (2017, February). Comparison of different types of Raschig rings. In 2017 Third
+      International Conference on Advances in Electrical, Electronics, Information, Communication and Bio-Informatics
+      (AEEICB) (pp. 56-60). IEEE.<a
+        href="https://doi.org/10.1109/AEEICB.2017.7972383">https://doi.org/10.1109/AEEICB.2017.7972383</a>
+      <br>
+      [8]Jenjaiwit, S., Supanchaiyamat, N., Hunt, A. J., Ngernyen, Y., Ratpukdi, T., & Siripattanakul-Ratpukdi, S.
+      (2021). Removal of triclocarban from treated wastewater using cell-immobilized biochar as a sustainable water
+      treatment technology. Journal of Cleaner Production, 320, 128919.<a
+        href="https://doi.org/10.1016/j.jclepro.2021.128919">https://doi.org/10.1016/j.jclepro.2021.128919</a>
+      <br>
+      [9] Obtained from IQS Directory : <a
+        href="https://www.iqsdirectory.com/articles/pressure-gauge.html#:~:text=Pressure%20gauges%20are%20an%20essential,of%20pressure%20in%20a%20system.">https://www.iqsdirectory.com/articles/pressure-gauge.html#:~:text=Pressure%20gauges%20are%20an%20essential,of%20pressure%20in%20a%20system.
+      </a>
+      <br>
+      [10] Obtained from Tamson: <a
+        href="https://tameson.com/pages/pressure-gauge-selection#:~:text=The%20following%20are%20common%20types,and%20are%20not%20highly%20viscous.">https://tameson.com/pages/pressure-gauge-selection#:~:text=The%20following%20are%20common%20types,and%20are%20not%20highly%20viscous.</a>
+      <br>
+      [11] Shi, Y., Chen, H., Chen, W., Ye, G., Qu, J., Li, J., ... & Duan, X. (2023). Effects of particle shape and
+      packing style on ethylene oxidation reaction using particle-resolved CFD simulation. Particuology, 82, 87-97 <a
+        href="https://doi.org/10.1016/j.partic.2023.01.012">https://doi.org/10.1016/j.partic.2023.01.012</a>
+      <br>
+      [12] Dai, G., Huangfu, J., Wang, X., Du, S., & Zhao, T. (2023). A Review of Radiative Heat Transfer in Fixed-Bed
+      Particle Solar Receivers. Sustainability, 15(13), 9918 <a
+        href="https://doi.org/10.3390/su15139918">https://doi.org/10.3390/su15139918</a>
+      <br>
+      [13] Alsawy, T., Rashad, E., El-Qelish, M. et al. A comprehensive review on the chemical regeneration of biochar
+      adsorbent for sustainable wastewater treatment. npj Clean Water 5, 29 (2022). <a
+        href="https://doi.org/10.1038/s41545-022-00172-3">https://doi.org/10.1038/s41545-022-00172-3</a>
+      <br>
+      [14] Yingjie Dai, Naixin Zhang, Chuanming Xing, Qingxia Cui, Qiya Sun, The adsorption, regeneration and
+      engineering applications of biochar for removal organic pollutants: A review,Chemosphere,Volume 223,2019,Pages
+      12-27,ISSN 0045-6535, <a
+        href="https://doi.org/10.1016/j.chemosphere.2019.01.161.">https://doi.org/10.1016/j.chemosphere.2019.01.161.</a>
+      <br>
+      [15] M. A. Alkhaldi (2018) Estimation of boiling points by investigations of viscosity Arrhenius behaviours in
+      Methyl Benzoate + n-Hexane binary liquid systems at atmospheric pressure, Physics and Chemistry of Liquids, 56:2,
+      250-265,<a href="https://doi.org/10.1080/00319104.2017.1327582">https://doi.org/10.1080/00319104.2017.1327582</a>
+      <br>[16] KAWANO, F. et al. Engineered pairs of distinct photoswitches for optogenetic control of cellular
+      proteins. Nat. Commun. v.6 n.6256, 2015.
+      <br>[17] NIHONGAKI, Y. et al. Photoactivatable CRISPR-Cas9 for optogenetic genome editing. Nature Biotechnology
+      v.33 p.755, 2015. VOIGT, C;CALIANDO, B.
+      <br>[18] Targeted DNA degradation using a CRISPR device stably carried in the host genome. Nature Communications
+      v.6 p.6989, 2015.ll
+      <br>[19] <a href="https://2019.igem.org/Team:USTC/Kill_Switch">https://2019.igem.org/Team:USTC/Kill_Switch</a>
+      <br>[20] <a href="https://2016.igem.org/Team:NEU-China">https://2016.igem.org/Team:NEU-China</a>
+      <br>[21] <a href="https://2018.igem.org/Team:Unesp_Brazil/Design">https://2018.igem.org/Team:Unesp_Brazil/Design
+        <br>[22] De Berardinis, V., Vallenet, D., Castelli, V., Besnard, M., Pinet, A., Cruaud, C., ... & Weissenbach,
+        J. (2008). A complete collection of single‐gene deletion mutants of Acinetobacter baylyi ADP1. Molecular systems
+        biology, 4(1), 174.
+        <br>[23] <a
+          href="https://www.genoscope.cns.fr/cgi-bin/ggb/thesaurus/gbrowse/thesaurus/">https://www.genoscope.cns.fr/cgi-bin/ggb/thesaurus/gbrowse/thesaurus/</a>
+        <br>[24] Madeira, F., Pearce, M., Tivey, A. R., Basutkar, P., Lee, J., Edbali, O., ... & Lopez, R. (2022).
+        Search and sequence analysis tools services from EMBL-EBI in 2022. Nucleic acids research, 50(W1), W276-W279.
+        <br>[25] Eze, E. C., El Zowalaty, M. E., & Pillay, M. (2021). Antibiotic resistance and biofilm formation of
+        Acinetobacter baumannii isolated from high-risk effluent water in tertiary hospitals in South Africa. Journal of
+        Global Antimicrobial Resistance, 27, 82-90.
+        <br>[26] Higgins, P. G., Hrenovic, J., Seifert, H., & Dekic, S. (2018). Characterization of Acinetobacter
+        baumannii from water and sludge line of secondary wastewater treatment plant. Water Research, 140, 261-267.
+        <br>[27] <a
+          href="https://sg.idtdna.com/site/order/designtool/index/CRISPR_SEQUENCE">https://sg.idtdna.com/site/order/designtool/index/CRISPR_SEQUENCE</a>
+        <br>[28] Hägg, P., de Pohl, J. W., Abdulkarim, F., & Isaksson, L. A. (2004). A host/plasmid system that is not
+        dependent on antibiotics and antibiotic resistance genes for stable plasmid maintenance in Escherichia coli.
+        Journal of biotechnology, 111(1), 17-30.
+        <br>[29] Kim, S. K., Kim, H., Woo, S. G., Kim, T. H., Rha, E., Kwon, K. K., ... & Lee, D. H. (2022).
+        CRISPRi-based programmable logic inverter cascade for antibiotic-free selection and maintenance of multiple
+        plasmids. Nucleic acids research, 50(22), 13155-13171.
+        <br>[30]Rottinghaus, A. G., Ferreiro, A., Fishbein, S. R., Dantas, G., & Moon, T. S. (2022). Genetically stable
+        CRISPR-based kill switches for engineered microbes. Nature communications, 13(1), 672.
+        <br>[31] Stirling, F., Bitzan, L., O’Keefe, S., Redfield, E., Oliver, J. W., Way, J., & Silver, P. A. (2017).
+        Rational design of evolutionarily stable microbial kill switches. Molecular cell, 68(4), 686-697.
+
+    </p>
+    </p>
+  </div>
+</div>
 {% endblock %}

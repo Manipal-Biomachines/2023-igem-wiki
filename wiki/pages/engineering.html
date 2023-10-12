@@ -50,6 +50,7 @@
       Module 4
     </a>
   </li>
+</ul>
 
 {% endblock %}
 
@@ -58,946 +59,1205 @@
 {% block page_content %}
 
 <div class="content">
-    <div class="m-2 mb-16">
-        <p class="mt-5 MAIN-STUFF">MODULE 0</p>
-        <p class="MAIN-STUFF"><u>Overview: </u></p>
-        <p class="sub-stuff">The first module of our DBTL cycle shows how our initial project idea shifted on the basis of iHP and testing. </p>
-        <p class="MAIN-STUFF"><u>Design: </u></p>
-        <p class="sub-stuff">
-          The team of MIT-MAHE set out to solve the problem of <b>triclocarban entering our environment</b> and causing major issues. We initially identified a novel TccA amidase enzyme expressed in Ochrobactrum sp. TCC-2. This amidase had only 27-38% sequence similarity with other known amidases. This enzyme is capable of breaking down triclocarban (TCC) into 4-chloroaniline and 3,4-dichloroaniline.[1] <br><br>
-          We initially wanted to implement this system within the aeration tank of the wastewater treatment plant. The aim was to increase the enzyme efficiency to function within the hydraulic retention time of the wastewater treatment plant. <br><br>
-          Hydraulic retention time (HRT) of the aeration tank of a wastewater treatment plant is the amount of time taken for one full volume of the aeration tank to pass out of the aeration tank after completion of process. <br>
-          HRT=Volume of the aeration tank/flow rate of the water
-          Commonly, HRT for <b>conventional activated sludge processes is about 2-24 hours</b>[7].<br><br>
-          We wanted to achieve this by modifying amino acid residues through  an in-silico version of site directed mutagenesis.
-          We wanted to identify the key residues involved in the catalytic action and improve the binding affinity of the substrate to the enzyme, which we had initially believed might increase the efficiency of the enzyme.
-        </p>
-        <p class="MAIN-STUFF"><u>Build: </u></p>
-        <p class="sub-stuff">
-          The TccA amidase enzyme has not been fully characterized in literature. Therefore, the first step before building our genetic circuit was to understand the structure, binding site and working of the enzyme. <br><br>
-          We predicted the structure of the TccA amidase as well as the binding sites. Since most of our data was not obtained via experimentation, our Human practices team reached out to many experts, including Mr. Omkar Khade and Dr. Gurunath Ramanathan, to learn more about the feasibility of our project idea.
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading1">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-                  aria-expanded="true" aria-controls="collapse1">
-                  <u>Catalytic Triad</u>
-                </button>
-              </h4>
-              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    Through literature survey, we found the catalytic triad of the amidase family to be Ser-Ser-Lys. To identify exactly which triad (Ser-Ser-Lys) of the amidase family was involved, we used multiple alignments.
-                    <br>
-                    <br>
-                    GRASP (collection of tools to perform and analyze ancestral sequence reconstruction) shows the amino acid residues that most probably form the binding pocket of the enzyme. Here, Ser 155 and Ser 179 showed 85% confidence scores showing that it interacts with TCC and Lys 79 with 59% confidence score showing it is not actively involved in bond cleavage but does help in stabilizing the interactions.
-                    </p>
-                </div>
-              </div>
-            </div>
+  <div class="m-2 mb-16">
+    <p class="mt-5 MAIN-STUFF">MODULE 0</p>
+    <p class="MAIN-STUFF"><u>Overview: </u></p>
+    <p class="sub-stuff">The first module of our DBTL cycle shows how our initial project idea shifted on the basis of
+      iHP and testing. </p>
+    <p class="MAIN-STUFF"><u>Design: </u></p>
+    <p class="sub-stuff">
+      The team of MIT-MAHE set out to solve the problem of <b>triclocarban entering our environment</b> and causing
+      major issues. We initially identified a novel TccA amidase enzyme expressed in Ochrobactrum sp. TCC-2. This
+      amidase had only 27-38% sequence similarity with other known amidases. This enzyme is capable of breaking down
+      triclocarban (TCC) into 4-chloroaniline and 3,4-dichloroaniline.[1] <br><br>
+      We initially wanted to implement this system within the aeration tank of the wastewater treatment plant. The aim
+      was to increase the enzyme efficiency to function within the hydraulic retention time of the wastewater
+      treatment plant. <br><br>
+      Hydraulic retention time (HRT) of the aeration tank of a wastewater treatment plant is the amount of time taken
+      for one full volume of the aeration tank to pass out of the aeration tank after completion of process. <br>
+      HRT=Volume of the aeration tank/flow rate of the water
+      Commonly, HRT for <b>conventional activated sludge processes is about 2-24 hours</b>[7].<br><br>
+      We wanted to achieve this by modifying amino acid residues through an in-silico version of site directed
+      mutagenesis.
+      We wanted to identify the key residues involved in the catalytic action and improve the binding affinity of the
+      substrate to the enzyme, which we had initially believed might increase the efficiency of the enzyme.
+    </p>
+    <p class="MAIN-STUFF"><u>Build: </u></p>
+    <p class="sub-stuff">
+      The TccA amidase enzyme has not been fully characterized in literature. Therefore, the first step before
+      building our genetic circuit was to understand the structure, binding site and working of the enzyme. <br><br>
+      We predicted the structure of the TccA amidase as well as the binding sites. Since most of our data was not
+      obtained via experimentation, our Human practices team reached out to many experts, including Mr. Omkar Khade
+      and Dr. Gurunath Ramanathan, to learn more about the feasibility of our project idea.
+    </p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading1">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true"
+            aria-controls="collapse1">
+            <u>Catalytic Triad</u>
+          </button>
+        </h4>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              Through literature survey, we found the catalytic triad of the amidase family to be Ser-Ser-Lys. To
+              identify exactly which triad (Ser-Ser-Lys) of the amidase family was involved, we used multiple
+              alignments.
+              <br>
+              <br>
+              GRASP (collection of tools to perform and analyze ancestral sequence reconstruction) shows the amino
+              acid residues that most probably form the binding pocket of the enzyme. Here, Ser 155 and Ser 179 showed
+              85% confidence scores showing that it interacts with TCC and Lys 79 with 59% confidence score showing it
+              is not actively involved in bond cleavage but does help in stabilizing the interactions.
+            </p>
           </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading2">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
-                  aria-expanded="true" aria-controls="collapse2">
-                  <b>Alphafold</b>
-                </button>
-              </h4>
-              <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2">
-                <div class="accordion-body">
-                  <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/model-which-was-used-for-this-predicted-by-alpha-fold-and-present-in-uniprot.png">
-                    <center><b>Fig 1:</b> Model which was used for this (predicted by Alpha Fold and present in UniProt)</center>
-                  <p class="sub-stuff">
-                    We predicted structures by different softwares like SWISS-MODEL, Alphafold and iTASSER. For the test stage, we proceeded with the Alphafold model as it showed the highest percentage of residues lying within the accepted region of the Ramachandran plot.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="MAIN-STUFF"><u>Test: </u></p>
-          <p class="sub-stuff">
-            We performed docking studies with the predicted binding site. The docking results from Autodock Vina and SeamDock showed ΔG values of -7.51 kcal/mol and -4.7 kcal/mol respectively. This implies that TCC has a good affinity towards the TccA amidase protein. <br><br>
-          </p>
-          <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/2d-visualization-of-our-docked-structure-in-discovery-studio-visualizer-dsv.jpg"style="scale:0.4;">
-          <center><b>Fig 2:</b>2D visualization of our docked structure in Discovery Studio Visualizer (DSV)</center>
-          <p class="sub-stuff">
-            These  ΔG values imply that there is a stable binding of TCC to the TccA amidase. This suggests that the predicted binding sites were correct.
-          </p>
-          <p class="MAIN-STUFF"><u>Learn: </u></p>
-          <p class="sub-stuff">Through iHP meetings with Mr. Omkar Khade and Dr. Gurunath Ramanathan, we learnt that manually altering the amino acids in close proximity to the catalytic triad requires a comprehensive understanding of the individual functions of each amino acid involved. A random mutagenesis approach would be difficult to perform in-silico as such experiments are usually only performed in-vitro. As a result, we felt the best way forward was to focus on the initial problem statement-dealing with TCC  in wastewater, with an alternative approach.
-          </p>
-<hr>
-          <p class="mt-5 MAIN-STUFF">MODULE 1</p>
-
-          <p class="MAIN-STUFF"><u>Design: </u></p>
-          <p class="sub-stuff">
-
-            Ensuring our focus on the problem statement, and taking note of everything learnt in Module 0, we looked back towards our previous human practices interactions. One of the major questions that had been posed to us was the formation of toxic byproducts 4-chloroaniline and 3,4-dichloroaniline on biodegrading TCC. Considering these changes, we decided to focus our project on breaking down the TCC into non-toxic byproducts. <br><br>
-            Through literature surveys, we studied the presence of gene clusters as a part of other pathways in bacteria that could degrade the above mentioned by-products.
-            However, insertion of such large cassettes within known model organisms could cause severe metabolic load on the cell and may lead to stunted growth or loss of plasmid. <br><br>
-            Hence, we looked for potential model organisms that had not been characterized for this purpose. An important parameter was the existence of pathways that could degrade the chloroaniline byproducts of TCC breakdown.
-            Through extensive literature survey, we narrowed down our possible chassis options to three species capable of degrading the byproducts -<i>Acinetobacter baylyi </i>[3], <i> Pseudomonas putida </i>[4] [5]and <i> Pseudomonas fluorescens </i>[6]. <br>
-            All three of these organisms had the natural capability to degrade the toxic by-products. The other major criteria we considered included:
-            <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-              <li>Survivability of the bacteria in the pH range of the wastewater and sludge(6.5-8)</li>
-              <li>Survivability of the bacteria in the temperature range of the sludge tank of the WWTP(20-37° C)</li>
-              <li>Survivability at different TCC concentration ranges present in the sludge(13,000-21,000 ng/ml of TCC or 13-21 ppm of TCC)</li></ul><br><br>
-          <p class="sub-stuff">
-              Aim: To design experiments to check which of our three chosen bacterial species: <i>Pseudomonas putida, Pseudomonas fluorescens</i>, and <i>Acinetobacter baylyi</i> had the best survivability in wastewater treatment plant conditions
-              <br><br>
-              As TCC does not uniformly dissolve in small volumes of water, we dissolve TCC in acetonitrile at first and then dilute this mixture in water. To ensure that acetonitrile does not have any adverse effect on the growth of our bacteria, we take acetonitrile-containing media as a condition as well.
-          </p>
-          <p class="MAIN-STUFF"><u>Build: </u></p>
-          <p class="sub-stuff">
-            <b>Growth Curves</b> To perform these experiments, we inoculated the bacteria in media that simulated the conditions of the sludge tank.The growth was measured by checking the arbitrary units of optical density at 600nm. To convert to absolute units, a calibration curve was plotted for wet weight of the cell vs OD.
-          </p>
-          <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-            <li>
-              <b>pH</b>
-              The growth of the bacterial species at pH range of 6 to 8 was growth in LB media.
-            </li>
-            <li>
-              <b>Temperature</b>
-              For temperature studies, we inoculated the bacteria in LB broth media and studied the growth over a temperature range of 24°C to 37°C.
-            </li>
-            <li>
-              <b>Acetonitrile</b>
-               To dissolve and dilute TCC in water, we need to dissolve it in acetonitrile first as TCC has extremely low solubility in water. Since acetonitrile will be in the media that our bacteria grow in, we have to make sure the presence of this compound does not impede the steady growth of our organisms.
-            </li>
-            <li>
-              <b>TCC (Sludge concentration)</b>
-              To discern whether our organisms can survive and be effective in the sludge tank, we need to know whether they can survive in the concentration of TCC within the sludge tank and effectively break down this TCC and its constituent degradation products. Hence, we inoculated our bacteria in media containing a range of TCC concentrations that is generally  present in the sludge (13000 - 21000ng\ml).
-            </li>
-          </ol>
-          <p class="MAIN-STUFF"><u>Test: </u></p>
-          <p class="sub-stuff">
-            The growth curves obtained from all the experiments we performed for all three of our possible chassis’ have been listed below:
-          </p>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading3">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
-                  aria-expanded="true" aria-controls="collapse3">
-                  <b>Effect of Acetonitrile</b>
-                </button>
-              </h4>
-              <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    <b><i>Pseudomonas putida</i></b>
-                    </p>
-                    <ol  style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                      <li>
-                        Growth curve of <i>Pseudomonas putida</i> in the presence of acetonitrile
-                        <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-acetonitrile.png" style="scale:0.4;">
-                        <br>
-                        Inference: The presence of acetonitrile in the growth media does not affect the growth of <i>Pseudomonas putida</i>.
-                      </li>
-                      <br><br>
-                      <li>
-                        Growth curve of <i>Pseudomonas fluorescens</i> in presence of acetonitrile.
-                        <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-acetonitrile.png" style="scale:0.4;">
-                        <br>
-                        Inference: It was found that the presence of acetonitrile does not appreciably affect the growth of <i>Pseudomonas fluorescens</i>.
-                      </li>
-                      <br><br>
-                      <li>
-                        Growth curve of <i>Acinetobacter baylyi</i> in the presence of acetonitrile
-                        <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-acetonitrile.png" style="scale:0.5;">
-                        <br>
-                        Inference:  It was observed that acetonitrile affects the growth of <i>Acinetobacter baylyi</i> and acts as an inhibitor.
-                      </li>
-                    </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading4">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
-                  aria-expanded="true" aria-controls="collapse4">
-                  <b>Effect of pH</b>
-                </button>
-              </h4>
-              <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4">
-                <div class="accordion-body">
-                  <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <li>
-                      Growth curve of <i>Pseudomonas putida</i> at different pH values
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-temp.png" style="scale:0.4;">
-                      <br>
-                      Inference: The presence of acetonitrile in the growth media does not affect the growth of <i>Pseudomonas putida</i>.
-                    </li>
-                    <br><br>
-                    <li>
-                      Growth curves of <i>Pseudomonas fluorescens</i> at different pH values
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-ph.png" style="scale:0.4;">
-                      <br>
-                      Inference: The optimal pH for growth of <i>Pseudomonas fluorescens</i> was observed to be pH 8.
-                    </li>
-                    <br><br>
-                    <li>
-                      Growth curve of <i>Acinetobacter baylyi</i> at different pH values
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-ph.png" style="scale:0.4;">
-                      <br>
-                      Inference:  It was observed that the growth of <i>Acinetobacter baylyi</i> was not deterred by variation in the pH. Thus we infer that it would thrive within this pH range typically found in wastewater treatment plants.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading5">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
-                  aria-expanded="true" aria-controls="collapse5">
-                  <b>Effect of Temperature</b>
-                </button>
-              </h4>
-              <div id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5">
-                <div class="accordion-body">
-                  <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <li>
-                      Growth curve of <i>Pseudomonas putida</i> at 24° C and 37° C
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-temp.png" style="scale:0.4;">
-                      <br>
-                      Inference: It is observed that <i>Pseudomonas putida </i> exhibits superior growth at 24 degrees Celsius, whereas its growth is adversely affected at 37 degrees Celsius.
-                    </li>
-                    <br><br>
-                    <li>
-                      Growth curve of <i>Pseudomonas fluorescens</i> at 24° C and 30° C
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-temp.png" style="scale:0.4;">
-                      <br>
-                      Inference: It was observed that <i>Pseudomonas fluorescens</i> exhibits better growth at 24° C.
-                    </li>
-                    <br><br>
-                    <li>
-                      Growth curve of <i>Acinetobacter baylyi</i> at 30° C and 37° C
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-temp.png" style="scale:0.4;">
-                      <br>
-                      <!--Below inference needs to be changed-->
-                      Inference:  It was observed that the growth of <i>Acinetobacter baylyi</i> was not deterred by variation in the pH. Thus we infer that it would thrive within this pH range typically found in wastewater treatment plants.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading6">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
-                  aria-expanded="true" aria-controls="collapse6">
-                  <b>Effect of TCC in Sludge Level Concentrations</b>
-                </button>
-              </h4>
-              <div id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6">
-                <div class="accordion-body">
-                  <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <li>
-                      Growth curve of <i>Pseudomonas putida</i> at different concentrations of TCC (sludge concentration)
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-tcc-sludge.png" style="scale:0.4;">
-                      <br>
-                      Inference: Growth of <i>Pseudomonas putida</i> was stunted in the presence of TCC as compared to the control.
-                    </li>
-                    <br><br>
-                    <li>
-                      Growth curve of <i>Pseudomonas fluorescens</i> in the presence of TCC (sludge concentration)
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-tcc-sludge.png" style="scale:0.4;">
-                      <br>
-                      Inference: It was observed that TCC did not deter the growth of <i>Pseudomonas fluorescens</i>.
-                    </li>
-                    <br><br>
-                    <li>
-                      Growth curve of <i>Acinetobacter baylyi</i> in the presence of different concentrations of TCC (sludge concentration)
-                      <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-tcc-sludge.png" style="scale:0.4;">
-                      <br>
-                      <b>Inference:<b> Presence of TCC at such high concentrations does not inhibit the growth of <i>Acinetobacter baylyi</i>. However, the TCC was dissolved in acetonitrile. Our final inference is that the inhibitory effect that existed due to the usage of acetonitrile appeared to be canceled out by the presence of TCC.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p class="MAIN-STUFF"><u>Learn: </u></p>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading7">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
-                  aria-expanded="true" aria-controls="collapse7">
-                  <b><i>Pseudomonas putida:</i></b>
-                </button>
-              </h4>
-              <div id="collapse7" class="accordion-collapse collapse show" aria-labelledby="heading7">
-                <div class="accordion-body">
-                  <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <li>It has a lag phase of roughly 4 hours, after which its growth plateaus become steady. </li>
-                    <li>We found that it showed optimal growth at 30ºC and 7.5pH</li>
-                    <li>Its growth is stunted under the presence of TCC. </li>
-                    <li>It shows reduced growth at 37ºC.</li>
-                  </ul>
-                  <p class="sub-stuff">
-                    <b><u>Conclusion:</u></b>
-                    <br><br>
-                     After taking these observations into account, our final conclusion was to eliminate this strain as it does not proliferate well in the temperature conditions observed in the sludge tank of a wastewater treatment plant.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading8">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"
-                  aria-expanded="true" aria-controls="collapse8">
-                  <b><i>Pseudomonas fluorescens:</i></b>
-                </button>
-              </h4>
-              <div id="collapse8" class="accordion-collapse collapse show" aria-labelledby="heading8">
-                <div class="accordion-body">
-                  <ul s style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <li>Shows good growth at 30ºC, 7.5 pH.</li>
-                    <li>Growth is stunted under the presence of TCC. </li>
-                  </ul>
-                  <p class="sub-stuff">
-                    <b><u>Conclusion:</u></b>
-                    <br><br>
-                    After taking these observations into account, our final conclusion was to rule this strain out as it does not proliferate well in the pH range observed in the sludge tank of a wastewater treatment plant.                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading9">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9"
-                  aria-expanded="true" aria-controls="collapse9">
-                  <b><i>Acinetobacter baylyi:</i></b>
-                </button>
-              </h4>
-              <div id="collapse9" class="accordion-collapse collapse show" aria-labelledby="heading9">
-                <div class="accordion-body">
-                  <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <li>It has a lag phase of 8-9 hours using primary inoculum</li>
-                    <li>The lag phase for the secondary inoculation was about 2-3 hours. We tested its growth by altering the temperature, pH, and TCC concentration. </li>
-                    <li>We found that 30ºC, 7.5 pH were the ideal conditions for growth and surprisingly, the presence of such high concentrations of TCC did not impede its exponential growth. Hence, <i>A. baylyi</i> can proliferate and grow uninhibited in the presence of TCC.</li>
-                  </ul>
-                  <p class="sub-stuff">
-                    <b><u>Conclusion:</u></b>
-                    <br><br>
-                    Due to its ability to proliferate in environments containing near-toxic levels of TCC as well as with all the other parameters that it would be subjected to within the sludge tank of a wastewater treatment plant, we were able to come to the conclusion that <i>Acinetobacter baylyi</i> is the best choice for our bacterial chassis. The other two bacteria were promptly rejected due to their growth being stunted in the temperature and pH range of the sludge tank.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-<hr>
-          <p class="mt-5 MAIN-STUFF">MODULE 2</p>
-
-          <p class="MAIN-STUFF"><u>Design:</u></p>
-
-          <p class="sub-stuff">
-            To carry out the wet lab experiments, including cloning, we started out by designing our part and plasmid. <br>
-            Aim: To create a genetic circuit containing TccA amidase and insert it in <i> E.coli </i> to study its expression and characterise the enzyme.<br><br>
-            <u>Part Design</u>
-            <br><br>
-            The purpose of the amidase protein <a href="http://parts.igem.org/Part:BBa_K4641000">(Part number: BBa_K4641000)</a> in the chassis is to breakdown Triclocarban (3,4,4′-Trichlorocarbanilide) into 3,4-dichloroaniline and 4-chloroaniline. Our target protein is naturally constitutively expressed in <i>Ochrobactrum sp. TCC-2</i>
-          </p>
-          <img src="" style="img-fluid">
-          <img src="" style="img-fluid">
-
-          <p class="sub-stuff">
-            <u>Plasmid Design</u><br><br>
-            The CarbanEl system is based on a Gibson assembly cloning system. The gene fragment is designed and synthesized such that the overhangs to integrate the gene into pET22b+ are already added. For the characterization and study of the enzyme activity, we expressed the amidase gene in <i> E. coli BL21 </i>. However, our final intended chassis is <i>Acinetobacter baylyi</i>
-            <br>
-            The plasmid design is as below:
-          </p>
-          <img src="" style="img-fluid">
-
-          <p class="sub-stuff">
-            <u>Genetic circuit design:</u><br><br>
-            Gene regulation refers to how a particular gene expression can be controlled. It includes a variety of mechanisms that can be used to increase or decrease the expression or production of specific gene products.
-          </p>
-
-          <img src="" style="img-fluid">
-          <p class="sub-stuff">
-            <b>Fig 1:</b>TccA Gene Regulation in <i>Escherichia coli</i>
-          </p>
-
-          <p class="MAIN-STUFF"><u>Build:</u></p>
-
-          <p class="sub-stuff">
-            The first step was to build our genetic circuit in <i> E.coli DH5alpha</i>  to study the expression and degradation kinetics of our part.
-            <br><br>
-            We started with amplifying our tccA fragment and performing PCR clean-up. We isolated pET22b+ plasmid and proceeded with the Gibson Assembly to insert the TccA amidase gene.
-            The competent <i>E. Coli E.coli DH5alpha</i> cells were prepared by CaCl<sub>2</sub> method and the cells were transformed.
-          </p>
-          <!--(Insert image:  transformed plate in DH5alpha)-->
-          <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/transformed-plate-in-dh5alpha.jpg" style="img-fluid" style="scale:0.4;">
-          <p class="sub-stuff" style="text-align:center;">i(Transformed plate-contains tccA Gibson assembled pET22b+ transformed DH5alpha cells)</p>
-          <p class="sub-stuff">
-            After a confirmatory colony PCR to check the presence of our insert, we transformed the Gibson-assembled plasmid into <i> E.coli BL21 </i> and then we moved towards expression studies.
-          </p>
-
-          <p class="MAIN-STUFF"><u>Test:</u></p>
-          <p class="sub-stuff">
-            <u>Cloning:</u><br>
-            Double digestion was then performed on the isolated plasmid of the transformed cells to confirm the presence of the fragment which was successful. We then went on to expression studies. SDS-PAGE was carried out but distinct bands were not observed. This could have been due to the extended time for destaining.
-          </p>
-          <!--(insert image: SDS gel image)-->
-          <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/sds-gel-image.png" style="img-fluid" style="scale:0.6;">
-          <p class="sub-stuff" style="text-align:center;"><i>(SDS gel image- Lane 1,2,7,8 uninduced cells, Lane 3,4,9,10 induced cells and 5,6 ladder)</i></p>
-
-          <p class="sub-stuff">
-            <b><u>Genetic circuit</u></b><br><br>
-            The genetic circuit represents the regulation of TccA gene in <i>E.coli</i>. Our gene, including RBS, is 1562 bps long; assuming that the degradation of mRNA is negligible the time taken to transcribe our gene is 6.25 secs.<br><br>We modeled the protein production in <i> E.coli </i>. However, in the future, we can study and model the protein production rate in our preferred chassis <i>Acinetobacter baylyi.</i>
-          </p>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading10">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10"
-                  aria-expanded="true" aria-controls="collapse10">
-                  <b>Modeling the genetic Circuit:</b>
-                </button>
-              </h4>
-              <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10">
-                <div class="accordion-body">
-                  <img src="" style="img-fluid">
-                  <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <tr>
-                      <th>Parameter</th>
-                      <th>Explanation</th>
-                      <th>Units</th>
-                    </tr>
-                    <tr>
-                      <td>k<sub>1</sub></td>
-                      <td>Transcription rate of T7 RNA polymerase</td>
-                      <td>bps/sec</td>
-                    </tr>
-                    <tr>
-                      <td>k<sub>2</sub></td>
-                      <td>k<sub>2</sub> is the translation rate of a ribosome in E.coli</td>
-                      <td>AAs/sec</td>
-                    </tr>
-                    <tr>
-                      <td>d<sub>1</sub></td>
-                      <td>Degradation rate of mRNA</td>
-                      <td>bps/sec</td>
-                    </tr>
-                    <tr>
-                      <td>d<sub>2</sub></td>
-                      <td>Degradation rate of protein</td>
-                      <td>AA/sec</td>
-                    </tr>
-                  </table>
-                  <p class="sub-stuff">
-                    Assuming that degradation rate of mRNA is low and almost negligible, d<sub>1</sub> ≈ 0
-                    <br>
-                    Assuming that degradation of protein is low and almost negligible, d<sub>2</sub> ≈ 0
-                    <br><br>
-                    k<sub>1</sub> is  Transcription rate of T7 RNA polymerase = 250 bps/s<br><br>The length of TccA gene, including the RBS and PelB = 1562 bps
-                    <br><br>
-                    k<sub>1</sub> = 1562/250 = 6.25s <br><br>
-                    [mRNA] = k<sub>1</sub> [Gene] - d1[mRNA] [mRNA] = k<sub>1</sub> [Gene]<br>
-                    <b>mRNA = 6.25 [Gene]</b>
-                    <br>
-                    k<sub>2</sub> is the translation rate of a ribosome in <i>E.coli</i>
-                    <br>
-                    Length of the mRNA = 1562 bps
-                    <br>
-                    [Protein] = k<sub>2</sub> [mRNA]- d<sub>2</sub>[Protein]
-                    <br>
-                    [Protein] = k<sub>2</sub>
-                    <br>
-                    Assuming that the translation rate of a ribosome in <i>E.coli</i> is 12. 1 AA/sec,
-                    <br>
-                    Our protein = 515 AA (including RBS and PelB)
-                    <br>
-                    k<sub>2</sub>
-                    <br>
-                    = 42.56 secs
-                    <br>
-                    <b>Protein = 42.56 [mRNA]</b>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="sub-stuff"><b><u>Design equation based on degradation kinetics</u></b></p>
-          <p class="sub-stuff">The rate expression is related to the rate at which the TccA amidase enzyme from the  <i>Ochrobactrum sp.</i> can degrade TCC. Since our chassis for implementation is <i>Acinetobacter baylyi</i>, which is also gram-negative like <i>Ochrobactrum sp.</i>TCC-2, the rate of transport or the passive diffusion of TCC into the cell is assumed to be similar in both bacteria. The rate of degradation of the TCC inside the cell by the TccA amidase enzyme produced by our chassis will be very similar. The time calculated here for 21 PPM (the highest concentration of TCC found in sludge) will be used to model the bioreactor.</p>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading11">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11"
-                  aria-expanded="true" aria-controls="collapse11">
-                  <b>Study of the design equation</b>
-                </button>
-              </h4>
-              <div id="collapse11" class="accordion-collapse collapse show" aria-labelledby="heading11">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    In this study [1], we have used the values as shown in the tabular column below.
-These values were used to calculate -r<sub>A</sub>  (the rate of reaction with respect to reactant A or in our case TCC) using differential calculation.
-                  </p>
-                  <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <tr>
-                      <th>Time (hours)</th>
-                      <th>CA(concentration of TCC in 𝞵m )</th>
-                      <th>-r<sub>A</sub></th>
-                    </tr>
-                    <tr>
-                      <td>0</td>
-                      <td>31.7</td>
-                      <td>3.667</td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>10.8</td>
-                      <td>0.9375</td>
-                    </tr>
-                    <tr>
-                      <td>24</td>
-                      <td>1.3</td>
-                      <td>0.15</td>
-                    </tr>
-                    <tr>
-                      <td>48</td>
-                      <td>0.2</td>
-                      <td>0.014</td>
-                    </tr>
-                    <tr>
-                      <td>72</td>
-                      <td>0</td>
-                      <td>0</td>
-                    </tr>
-                  </table>
-                  <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/concentration-of-substrate-vs-time.jpg" style="img-fluid" style="0.5">
-                  <p class="sub-stuff" style="text-align:center;"><i>(Concentration of substrate vs. time)</i></p>
-                  <p class="sub-stuff">
-                    <u>Assuming first order kinetics</u><br>
-                    -r<sub>A</sub>= K(C<sub>A</sub>)<sup>n</sup><br>
-                    ln(-r<sub>A</sub>) = lnK+n (lnC<sub>A</sub>)
-                  </p>
-                  <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-                    <tr>
-                      <th>ln (-r<sub>A</sub>)</th>
-                      <th>ln (C<sub>A</sub>)</th>
-                    </tr>
-                    <tr>
-                      <td>3.456</td>
-                      <td>1.299</td>
-                    </tr>
-                    <tr>
-                      <td>2.379</td>
-                      <td>-0.0645</td>
-                    </tr>
-                    <tr>
-                      <td>0.262</td>
-                      <td>-1.897</td>
-                    </tr>
-                    <tr>
-                      <td>-1.609</td>
-                      <td>-4.566</td>
-                    </tr>
-                    <tr>
-                      <td>-</td>
-                      <td>-</td>
-                    </tr>
-                  </table>
-                  <img src="<img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/ln-ca-vs-ln-ra.png" style="img-fluid" style="0.5">
-                  <p class="sub-stuff">
-                    From the above graph, we know that the following data:<br>
-                    Slope = n = 1.1198 ≈ 1, which implies that it follows first-order kinetics.<br>
-                    Intercept = ln k = -2.5633 <br>
-                    Therefore, k = e<sup>-2.5633</sup><br>
-                    k= 0.082, which is the calculated rate expression. <br>
-                    From the literature, we learned the value of k  [1].<br>
-                    k = 0.112
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="MAIN-STUFF"><u>Learn:</u></p>
-          <p class="sub-stuff">
-          On comparing our values to the literature, we get that the k values are approximately equal, thus validating our differential calculus method.<br><br>Hence, TccA amidase follows first-order kinetics.<br><br>Future cycles would involve the validation of these kinetics through experimentation.</p>
-<hr>
-          <p class="mt-5 MAIN-STUFF">MODULE 3</p>
-          <p class="MAIN-STUFF"><u>Summary</u></p>
-          <p class="sub-stuff">
-            As mentioned in our <a href="https://2023.igem.wiki/mit-mahe/project-implementation">implementation</a>, we aim to introduce a bioreactor in the wastewater treatment plant to treat the primary sludge and clear it of our target contaminant, Triclocarban (TCC). <br><br>
-From the results of our previous module of the DBTL cycle, <i>Acinetobacter baylyi</i> GFJ2 was the most viable choice for a chassis because it had the best growth in high concentrations of TCC and a good survivability for the widely varying conditions of wastewater treatment plants. Additionally, the bacteria has the natural ability to degrade the toxic byproducts produced by the degradation of TCC into non toxic byproducts (cis-muconic acid) that can be taken by the Krebs cycle [3].
-          </p>
-
-          <p class="MAIN-STUFF"><u>Design:</u></p>
-          <p class="sub-stuff">
-            The team came up with multiple bioreactor designs for the implementation of our project that take into account the degradation kinetics of the enzyme, the growth kinetics of the bacteria, and the adsorption kinetics of TCC onto the packing material.<br><br>
-            We have currently proposed a lab scale bioreactor due to the fact that we need to conduct further optimisation experiments to upscale into a bioreactor that is feasible on an industrial scale.
-          </p>
-          <!--insert image of bioreactor-->
-          <p class="sub-stuff">
-            We wanted to design a sludge based bioreactor where the primary sludge becomes the feed. The primary sludge is almost 97-99% water [4]. We ideated this after a visit to a wastewater treatment plant in West Bengal, India. <br><br>
-            We wanted the bacteria that degraded the TCC to be immobilized within a matrix. Literature suggests that cell immobilised systems are far superior to free cell suspensions as it avoids cell washout and improves reaction rates [5]. <br><br>
-            We found that biochar, a carbon-rich solid product produced from the pyrolysis of biomass residues, was an attractive option for an immobilisation matrix due to its low cost, easy availability and ability to immobilize cells efficiently[6].<br><br>
-          </p>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading12">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 1- Continuous flow packed-bed reactor</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse12" class="accordion-collapse collapse show" aria-labelledby="heading12">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    The design of this reactor would be such that the primary sludge would continuously flow through the packed bed over the span of two days. <br><br>
-                    The primary sludge would be pumped from the bottom of the reactor and exited from the top. The reactor top would be perforated to allow airflow, and the reactor would be continuously sparged with air to increase mass transfer and provide oxygen to the microbes for proliferation. <br><br>
-                    The reactor would be fitted with a pressure gauge in order to measure and maintain the pressure drop across the reactor.<br><br>
-                    The reactor will operate in continuous flow under unsterile conditions.<br><br>
-                  </p>
-                  <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/packed-bed-reactor.png" style="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading13">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13"
-                  aria-expanded="true" aria-controls="collapse13">
-                  <b><i><u>Design 2 - Continuous stirred tank reactor</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse13" class="accordion-collapse collapse show" aria-labelledby="heading13">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    In this design, the primary sludge would enter from the top of the reactor and exit from the bottom of the reactor. <br><br>
-                    The biochar with the immobilized bacteria would be fixed onto the walls of the reactor using a honeycomb-like scaffold. <br><br>
-                    The reactor would have a stirrer that would agitate the sludge and aerate it to promote mass transfer and adsorption onto the biochar. To prevent excess heat from being generated, the reactor would have cooling jackets surrounding it. A temperature gauge would be added to measure the temperature and regulate it to promote the exponential growth of microorganisms. <br><br>
-                    A level gauge would be added in order to prevent the overflow of the sludge in the reactor. A pipe at the top would be introduced to recycle the overflow into the tank. The reactor will operate in continuous flow under unsterile conditions.<br><br>
-                  </p>
-                  <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/stirred-tank-reactor.png" style="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading14">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14"
-                  aria-expanded="true" aria-controls="collapse14">
-                  <b><i><u>Design 3 - Batch stirred tank reactor</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse14" class="accordion-collapse collapse show" aria-labelledby="heading14">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    This reactor would be similar to the continuous stirred tank bioreactor, except the sludge would stay in the tank for longer to allow more time for mass transfer. The rpm of the stirrer would be slower, and a sparger would be added to increase aeration. The rest of the elements would remain the same as in Design 2.  The reactor will be operated in batch mode in unsterile conditions.
-                  </p>
-                  <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/batch-stirred-tank.png" style="img-fluid" style="scale:0.6;">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading15">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 4 - batch packed bed reactor</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse15" class="accordion-collapse collapse show" aria-labelledby="heading15">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    The packed bed reactor would consist of a packed bed with biochar and immobilized bacteria as packing material between two perforated plates. The primary sludge would enter from the top of the reactor and flow to the bottom with the help of gravity. This eliminates the need for a pump to fill the sludge in the reactor. A sparger at the bottom center would aerate the sludge and would promote a vertical circular flow due to Bernoulli's principle. This will help increase mass transfer efficiency. <br><br>
-                    The sparger would have a valve to prevent the backflow of sludge into it, and the sparging would begin before the inflow of sludge into the reactor began. The outlet pipe will also have a valve to prevent sludge from leaving the tank before the specified time. The valve in the inlet pipe is to control the flow rate of the sludge entering the tank. The reactor would be fitted with a pressure gauge to measure and maintain the pressure drop across the reactor. The reactor will be operated in batch mode in unsterile conditions.
-                  </p>
-                  <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/batch-packed-bed-reactor.png" style="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading15">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 5 - fluidized bed</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse15" class="accordion-collapse collapse show" aria-labelledby="heading15">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    This design would consist of a fluidized bed with the packing material. The fluidized bed will have a sparging system with appropriate tubing to control the flow rate of air. This would allow an upward, circular flow of the sludge. This agitation will increase mass transfer efficiency. <br><br>
-                    The continuous flow would be due to the movement of the liquid phase (primary sludge) and gaseous phase (air from the sparger). Both of these factors will induce movement of the solid, i.e., the packing material. The reactor will operate in continuous flow under unsterile conditions.
-                  </p>
-                  <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/fluidised-bed.png" style="img-fluid">
-                  <p class="sub-stuff">
-                    <u>Packing Material:</u><br><br>
-                    The packing material for the packed and fluidized bed is chemically modified biochar with bacteria immobilized on it. The team decided to make the biochar into the shape of a hollow cylinder called a Raschig ring. This type of structure would increase the area of adsorption and improve mass transfer efficiency. The hollow cylinder pipe-like structure would prevent the problem of choking the reactor due to larger particles that may be present in the sludge. While cylindrical pellets are more commonly used and available, we propose the novel idea of a biochar Raschig ring.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="MAIN-STUFF"><u>Build:</u></p>
-          <p class="sub-stuff"><u><i>Reactor</i></u></p>
-          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-            <li>The material of the reactors needs to be non-reactive to the compounds that will be present in the primary sludge that will enter the reactors. In response to this, we had a few options available to us, those being mild steel, stainless steel, glass, etc. Since our model is a lab-scale reactor, we chose to use glass to make the body of the lab-scale reactor. </li>
-            <li>The inlet, outlet, and recycle pipes will be made of PVC. </li>
-            <li>The stirrer would have a slow speed of 50 rpm. </li>
-            <li>We would use generic industrial temperature and pressure gauges for the reactors. </li>
-            <li>The sparger would be a perforated sparger for uniform aeration and would be placed at the bottom of all the reactor designs except for the continuous flow fluidized bed. The fluidized bed will have tube sparging with appropriate tubing to control the airflow for more aeration and, hence, more mass transfer efficiency.</li>
-          </ul>
-          <p class="sub-stuff"><u><i>Packing Material</i></u></p>
-          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-            <li>The packing material would consist of biochar. The biochar will be modified with a 1:1 ratio of biochar to KOH[8]. According to literature, the biochar modified with KOH showed higher adsorption of the target compound TCC compared to other ratios and just plain biochar.</li>
-            <li>The biochar would be made into the shape of a Raschig ring using clay as a binding agent. The dimensions of the raschig ring are in the ratio 1:1 of the diameter to the height, and the inside diameter will be 1cm as shown in the figure below. These ideas were validated by meetings with Dr. Bhat and Dr. Kevin Sowers. </li>
-            <li>The Raschig ring would then be fired at 110°C to 130°C to harden the ring so that it does not dissolve in the primary sludge.</li>
-            <li>The genetically modified bacteria would then be immobilized on the biochar raschig rings.</li>
-            <li> The biochar used will be sourced from a local rice mill by processing rice husk that is produced as waste at the mill. </li>
-          </ul>
-
-          <p class="MAIN-STUFF"><u>Test:</u></p>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading16">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 1- Continuous flow packed-bed reactor</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse16" class="accordion-collapse collapse show" aria-labelledby="heading16">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    This design would allow us to treat a large amount of sludge in less time. The sparger would provide enough aeration for our bacteria to grow optimally, and degradation would occur efficiently. <br><br>
-                    However, according to our adsorption and degradation kinetics the minimum contact time required for efficient degradation of our target contaminant TCC would be 2 days. This large amount of time required a longer packed bed would increase our cost of building. Additionally, since it would be a continuous flow chances of choking at the outlet pipe increased.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading17">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 2 - Continuous stirred tank reactor (CSTR)</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse17" class="accordion-collapse collapse show" aria-labelledby="heading17">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    To overcome the issue of a large amount of packing material required we came up with the design of the CSTR. in this reactor we designed a scaffold that would be 3D printed and placed on the wall of the reactor. The purpose of the scaffold was to hold the biochar in place for adsorption of our target contaminant TCC to occur. <br><br>
-                    The stirring would increase the mass transfer efficiency and there would be sufficient aeration because of it as well. However,  this did not solve the issue we had with the contact time and additionally the regeneration of the adsorbent i.e. the biochar proved to be difficult in this case.
-                    According to literature, since the degradation of the compound by the enzyme produced by the bacteria is very slow as shown by the kinetics in the <a href="https://2023.igem.wiki/mit-mahe/model">models</a> page the type of reactor most suitable for slow reactions was a batch process.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading18">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 3 - Batch stirred tank reactor</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse18" class="accordion-collapse collapse show" aria-labelledby="heading18">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    This design would allow the sludge to remain in contact with the biochar for the required amount of time. And regeneration of the biochar would not prove to be an issue, however the the cost of this design was more than anticipated, causing us to reject this design.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading19">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 4 - batch packed bed reactor</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse19" class="accordion-collapse collapse show" aria-labelledby="heading19">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    This design proved to be the most suited to our requirements. The reactor being a batch process allowed us to maintain the required contact time of 2 days. The sparging allowed aeration and sufficient flow for efficient mass transfer. The inflow of the sludge from the top of the reactor removed the cost of the pump as gravity would help the fluid flow down the column.<br><br>
-                    The cost analysis concluded this design to be the cheapest option for us.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="heading20">
-                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20"
-                  aria-expanded="true" aria-controls="collapse12">
-                  <b><i><u>Design 5 - fluidized bed</u></i></b>
-                </button>
-              </h4>
-              <div id="collapse20" class="accordion-collapse collapse show" aria-labelledby="heading20">
-                <div class="accordion-body">
-                  <p class="sub-stuff">
-                    This design proved to be the most suited to our requirements. The reactor being a batch process allowed us to maintain the required contact time of 2 days. The sparging allowed aeration and sufficient flow for efficient mass transfer. The inflow of the sludge from the top of the reactor removed the cost of the pump as gravity would help the fluid flow down the column.<br><br>
-                    The cost analysis concluded this design to be the cheapest option for us.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p class="MAIN-STUFF"><u>Learn:</u></p>
-          <p class="sub-stuff">
-            For a lab scale reactor we will use the batch packed bed reactor. The kinetics of enzyme degradation, TCC adsorption onto the biochar and the bacterial growth kinetics have been fitted into the equations for a batch reactor as given in the <a href="https://2023.igem.wiki/mit-mahe/model">models</a> page.<br><br>
-            We learnt that design 1 would not be feasible due to low hydraulic retention time of the primary sludge in the tank, hence we tried design 2. However, through a human practices visit with Dr. Subbulaxmi we learnt that the efficiency of the biochar would be reduced significantly.<br><br>
-            Design 3 significantly improved contact time; however, it would not be enough to compensate for the low absorption efficiency of the biochar after our other meetings with Dr. Murty. <br><br>
-            Design 4 incorporated all the suggestions from Dr. Bhat and Dr. Subbulaxmi and led us to our most ideal design that gave us a high hydraulic retention time of the primary sludge in the tank as well as a high adsorption affinity of the biochar. <br><br>
-            However, we learnt from Dr. Kevin Sowers that this model would only be feasible for a lab scale model. Since at industry level we would be required to treat a larger amount of primary sludge per day we proposed design 5 which would have comparable efficiency to design 4 and be able to treat large quantities of sludge due to its larger volume and continuous operation.
-          </p>
-<hr>
-          <p class="mt-5 MAIN-STUFF">MODULE 4</p>
-
-          <p class="MAIN-STUFF"><u>Design:</u></p>
-          <p class="sub-stuff">
-            Our goal was to design a detection system that would go hand in hand with our bioreactor set-up and was accurate, highly sensitive, and cost-effective. In our design stage, we have explored numerous ideas, highlights of which include:
-          </p>
-            <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-              <li><i>Electrochemical sensors</i> - were explored, as they are one of the most prevalent detection systems. However, we found that it would not be feasible to achieve the desired selectivity towards triclocarban.</li>
-              <li><i>Enzyme based sensors</i>- we identified an enzyme from Ochrobactrum sp.TCC-2; but due to the trace levels of TCC found in effluent this option would not be sensitive enough.</li>
-              <li><i>Aptasensors</i>- Aptamers specific for TCC are not available in the literature, due to which, we would be required to isolate and identify one de-novo using SELEX. This is expensive and would not be feasible within our time constraint. </li>
-              <li><i>Nanobody based sensors</i>- three nanobodies which were specific to TCC were identified. We realised that immobilizing the nanobody on the sensor and making required modifications would be expensive and within the given time frame, building a prototype and testing didn’t seem like a viable option.</li>
-              <li><i>Molecularly imprinted polymer based sensors(MIP)</i>- we found an MIP which would detect triclocarban and triclosan combined. Making an MIP specific to triclocarban in the lab would require extensive experimental data and testing. </li>
-              <li><i>Nanomaterial based sensors</i>- Nanomaterial based sensors can detect endocrine disrupting compounds and since TCC is one of them, this drew our attention. However, after thorough literature review we found that there was no nanomaterial isolated specifically for TCC detection. </li>
-            </ul>
-          <a href="https://2023.igem.wiki/mit-mahe/hardware#section3" class="nav-link link-dark">Ideation Page</a>
-          <p class="sub-stuff">
-            Toward the end, we decided to simplify our approach by using Raman Spectroscopy to identify light of a certain wavelength range specific to TCC and design a simplified prototype of an optical detection system using a laser and  a photodiode to detect this range of wavelengths.
-          </p>
-          <p class="MAIN-STUFF"><u>Build:</u></p>
-          <p class="sub-stuff">
-            We used the Raman spectroscopy setup in our secondary PI, Kapil Sadani’s laboratory to conduct experiments and isolate the specific peaks for our compound. Using the data from these experiments, we calculated the specific wavelength for the IR filter and photodiode and built a theoretical set-up that can be employed for the detection of TCC.
-          </p>
-          <img src="" style="img-fluid">
-          <p class="sub-stuff" style="text-align:center;"><b><i>Figure: Block Diagram of our set-up</i></b></p>
-          <p class="sub-stuff">
-            This set-up would include a laser of 785 nanometer monochromatic light, two focal lenses, a mirror with a hole to cleanly pass the focused laser, a sample stage (cuvette), an IR filter, a photodiode, and a microcontroller. The sample would have to be manually collected and brought to this set-up.
-          </p>
-          <p class="MAIN-STUFF"><u>Test:</u></p>
-          <p class="sub-stuff">
-            We ran experiments for various samples as follows :
-          </p>
-          <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-            <li>Raman spectroscopic analysis for Triclocarban dissolved in 5% acetone.</li>
-            <li>Surface Enhanced Raman Spectroscopy (SERS) for Triclocarban dissolved in 5% acetone.</li>
-            <li>Lake water sample, that was suspected to have triclocarban dissolved in it, to baseline and isolate the specific peaks for TCC using SERS.</li>
-          </ol>
-          <p class="sub-stuff">
-            From this we found the specific wavelength for our Infrared filter and photodiode.
-          </p>
-          <a href="https://static.igem.wiki/teams/4641/wiki/hardware/h-s-wiki-notebook-docx.pdf">Hardware Notebook</a>
-          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-            <li>
-              Experiment 1: 1, 10, 100 ppm (parts per million) of TCC in 5% acetone (standard)
-              <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/raman-spec-1.png" style="img-fluid" style="scale:0.5;">
-              Figure: Surface Enhanced Raman Spectroscopy of triclocarban dissolved in 5% acetone. (1, 10, 100 ppm)
-            </li>
-            <li>
-              Experiment 2: 1, 10, 100 ppm (parts per million)of TCC in lake water sample
-              <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/raman-spec-2.png" style="img-fluid" style="scale:0.5;" style="img-fluid">
-              Figure: Surface Enhanced Raman Spectroscopy of triclocarban dissolved in lake water. (1, 10, 100 ppm)
-            </li>
-          </ul>
-
-          <p class="MAIN-STUFF"><u>Learn:</u></p>
-          <p class="sub-stuff">
-            From the experimental data, we learned that the unique peaks (unique wavenumber) for Triclocarban is observed at 758.3 cm<sup>-1</sup>and 1445.2cm<sup>-1</sup>. Moreover, the second peak observed at 1445.2 cm-1 can be concluded as an overtone of the peak observed at 758.3 cm<sup>-1</sup> as the ratio of the intensities at various concentrations remains constant.
-            <br><br>
-            In the lake water sample, we noticed peaks within the range of 750 and 760 nanometers.  We can assume that the lake water sample initially had dissolved triclocarban. After experiments with spiked triclocarban were done, we noticed an amplification in the baseline peaks.
-            <br><br>
-            These preliminary results are indicative of a starting point for proving our proof of concept of a detection system selective and sensitive towards TCC and easily adaptable in all kinds of bioreactor setups.
-          </p>
-          <p class="MAIN-STUFF">Success:</p>
-          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
-            <li><i> Acinetobacter baylyi</i> was identified as the most viable chassis for the incorporation of TccA amidase</li>
-            <li>A successful clone of TccA in pET22b+ was obtained in <i> E.coli DH5alpha </i> and then transformed into <i> E.coli BL21 </i>.</li>
-            <li>We successfully found the wavelength of the IR filter which can be used in our detection system set up to detect TCC in sludge</li>
-            <li>A packed bed batch reactor was found to be the most viable option for a lab scale bioreactor while a fluidised bed reactor was preferred for future implementation. </li>
-          </ul>
-
-          <p class="MAIN-STUFF"><u>References:</u></p>
-          <p class="sub-stuff">
-            [1]Yun H, Liang B, Qiu J, Zhang L, Zhao Y, Jiang J, Wang A. Functional Characterization of a Novel Amidase Involved in Biotransformation of Triclocarban and its Dehalogenated Congeners in Ochrobactrum sp. TCC-2. Environ Sci Technol. 2017 Jan 3;51(1):291-300. <a href="https://doi.org/10.1021/acs.est.6b04885">https://doi.org/10.1021/acs.est.6b04885</a>. Epub 2016 Dec 14. PMID: 27966913.
-            <br><br>
-            [2]Hülter, N., Sørum, V., Borch-Pedersen, K. et al. Costs and benefits of natural transformation in Acinetobacter baylyi . BMC Microbiol 17, 34 (2017). <a href="https://doi.org/10.1186/s12866-017-0953-2">https://doi.org/10.1186/s12866-017-0953-2</a>
-            <br><br>
-            [3]Hongsawat, Parnuch, and Alisa S. Vangnai. “Biodegradation Pathways of Chloroanilines by Acinetobacter Baylyi Strain GFJ2.” Journal of Hazardous Materials, vol. 186, no. 2–3, Elsevier BV, Feb. 2011, pp. 1300–07. <a href="https://doi.org/10.1016/j.jhazmat.2010.12.002.">https://doi.org/10.1016/j.jhazmat.2010.12.002.</a>
-            <br><br>
-            [4] Nazari, L., Sarathy, S., Santoro, D., Ho, D., Ray, M. B., & Xu, C. (2018). Recent advances in energy recovery from wastewater sludge. In Elsevier eBooks (pp. 67–100). <a href="https://doi.org/10.1016/b978-0-08-101029-7.00011-4">https://doi.org/10.1016/b978-0-08-101029-7.00011-4</a>
-            <br><br>
-            [5] Zhu, Y. (2007). Immobilized cell fermentation for production of chemicals and fuels. In Elsevier eBooks (pp. 373–396). <a href="https://doi.org/10.1016/b978-044452114-9/50015-3">https://doi.org/10.1016/b978-044452114-9/50015-3</a>
-            <br><br>
-            [6]Wu, C., Zhi, D., Yao, B., Zhou, Y., Yang, Y., & Zhou, Y. (2022). Immobilization of microbes on biochar for water and soil remediation: A review. Environmental Research, 212, 113226. <a href="https://doi.org/10.1016/j.envres.2022.113226">https://doi.org/10.1016/j.envres.2022.113226</a>
-            <br><br>
-            [7] Eggen, T., & Vogelsang, C. (2015). Occurrence and fate of pharmaceuticals and personal care products in wastewater. In Comprehensive Analytical Chemistry (pp. 245–294). <a href="https://doi.org/10.1016/b978-0-444-63299-9.00007-7">https://doi.org/10.1016/b978-0-444-63299-9.00007-7</a>
-          </p>
-
-
-
-
+        </div>
+      </div>
     </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading2">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true"
+            aria-controls="collapse2">
+            <b>Alphafold</b>
+          </button>
+        </h4>
+        <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2">
+          <div class="accordion-body">
+            <img
+              src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/model-which-was-used-for-this-predicted-by-alpha-fold-and-present-in-uniprot.png">
+            <center><b>Fig 1:</b> Model which was used for this (predicted by Alpha Fold and present in UniProt)
+            </center>
+            <p class="sub-stuff">
+              We predicted structures by different softwares like SWISS-MODEL, Alphafold and iTASSER. For the test
+              stage, we proceeded with the Alphafold model as it showed the highest percentage of residues lying
+              within the accepted region of the Ramachandran plot.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="MAIN-STUFF"><u>Test: </u></p>
+    <p class="sub-stuff">
+      We performed docking studies with the predicted binding site. The docking results from Autodock Vina and
+      SeamDock showed ΔG values of -7.51 kcal/mol and -4.7 kcal/mol respectively. This implies that TCC has a good
+      affinity towards the TccA amidase protein. <br><br>
+    </p>
+    <img
+      src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/2d-visualization-of-our-docked-structure-in-discovery-studio-visualizer-dsv.jpg"
+      style="scale:0.4;">
+    <center><b>Fig 2:</b>2D visualization of our docked structure in Discovery Studio Visualizer (DSV)</center>
+    <p class="sub-stuff">
+      These ΔG values imply that there is a stable binding of TCC to the TccA amidase. This suggests that the
+      predicted binding sites were correct.
+    </p>
+    <p class="MAIN-STUFF"><u>Learn: </u></p>
+    <p class="sub-stuff">Through iHP meetings with Mr. Omkar Khade and Dr. Gurunath Ramanathan, we learnt that
+      manually altering the amino acids in close proximity to the catalytic triad requires a comprehensive
+      understanding of the individual functions of each amino acid involved. A random mutagenesis approach would be
+      difficult to perform in-silico as such experiments are usually only performed in-vitro. As a result, we felt the
+      best way forward was to focus on the initial problem statement-dealing with TCC in wastewater, with an
+      alternative approach.
+    </p>
+    <hr>
+    <p class="mt-5 MAIN-STUFF">MODULE 1</p>
+
+    <p class="MAIN-STUFF"><u>Design: </u></p>
+    <p class="sub-stuff">
+
+      Ensuring our focus on the problem statement, and taking note of everything learnt in Module 0, we looked back
+      towards our previous human practices interactions. One of the major questions that had been posed to us was the
+      formation of toxic byproducts 4-chloroaniline and 3,4-dichloroaniline on biodegrading TCC. Considering these
+      changes, we decided to focus our project on breaking down the TCC into non-toxic byproducts. <br><br>
+      Through literature surveys, we studied the presence of gene clusters as a part of other pathways in bacteria
+      that could degrade the above mentioned by-products.
+      However, insertion of such large cassettes within known model organisms could cause severe metabolic load on the
+      cell and may lead to stunted growth or loss of plasmid. <br><br>
+      Hence, we looked for potential model organisms that had not been characterized for this purpose. An important
+      parameter was the existence of pathways that could degrade the chloroaniline byproducts of TCC breakdown.
+      Through extensive literature survey, we narrowed down our possible chassis options to three species capable of
+      degrading the byproducts -<i>Acinetobacter baylyi </i>[3], <i> Pseudomonas putida </i>[4] [5]and <i> Pseudomonas
+        fluorescens </i>[6]. <br>
+      All three of these organisms had the natural capability to degrade the toxic by-products. The other major
+      criteria we considered included:
+    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li>Survivability of the bacteria in the pH range of the wastewater and sludge(6.5-8)</li>
+      <li>Survivability of the bacteria in the temperature range of the sludge tank of the WWTP(20-37° C)</li>
+      <li>Survivability at different TCC concentration ranges present in the sludge(13,000-21,000 ng/ml of TCC or
+        13-21 ppm of TCC)</li>
+    </ul><br><br>
+    </p>
+    <p class="sub-stuff">
+      Aim: To design experiments to check which of our three chosen bacterial species: <i>Pseudomonas putida,
+        Pseudomonas fluorescens</i>, and <i>Acinetobacter baylyi</i> had the best survivability in wastewater
+      treatment plant conditions
+      <br><br>
+      As TCC does not uniformly dissolve in small volumes of water, we dissolve TCC in acetonitrile at first and then
+      dilute this mixture in water. To ensure that acetonitrile does not have any adverse effect on the growth of our
+      bacteria, we take acetonitrile-containing media as a condition as well.
+    </p>
+    <p class="MAIN-STUFF"><u>Build: </u></p>
+    <p class="sub-stuff">
+      <b>Growth Curves</b> To perform these experiments, we inoculated the bacteria in media that simulated the
+      conditions of the sludge tank.The growth was measured by checking the arbitrary units of optical density at
+      600nm. To convert to absolute units, a calibration curve was plotted for wet weight of the cell vs OD.
+    </p>
+    <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li>
+        <b>pH</b>
+        The growth of the bacterial species at pH range of 6 to 8 was growth in LB media.
+      </li>
+      <li>
+        <b>Temperature</b>
+        For temperature studies, we inoculated the bacteria in LB broth media and studied the growth over a
+        temperature range of 24°C to 37°C.
+      </li>
+      <li>
+        <b>Acetonitrile</b>
+        To dissolve and dilute TCC in water, we need to dissolve it in acetonitrile first as TCC has extremely low
+        solubility in water. Since acetonitrile will be in the media that our bacteria grow in, we have to make sure
+        the presence of this compound does not impede the steady growth of our organisms.
+      </li>
+      <li>
+        <b>TCC (Sludge concentration)</b>
+        To discern whether our organisms can survive and be effective in the sludge tank, we need to know whether they
+        can survive in the concentration of TCC within the sludge tank and effectively break down this TCC and its
+        constituent degradation products. Hence, we inoculated our bacteria in media containing a range of TCC
+        concentrations that is generally present in the sludge (13000 - 21000ng\ml).
+      </li>
+    </ol>
+    <p class="MAIN-STUFF"><u>Test: </u></p>
+    <p class="sub-stuff">
+      The growth curves obtained from all the experiments we performed for all three of our possible chassis’ have
+      been listed below:
+    </p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading3">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true"
+            aria-controls="collapse3">
+            <b>Effect of Acetonitrile</b>
+          </button>
+        </h4>
+        <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              <b><i>Pseudomonas putida</i></b>
+            </p>
+            <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li>
+                Growth curve of <i>Pseudomonas putida</i> in the presence of acetonitrile
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-acetonitrile.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: The presence of acetonitrile in the growth media does not affect the growth of
+                <i>Pseudomonas putida</i>.
+              </li>
+              <br><br>
+              <li>
+                Growth curve of <i>Pseudomonas fluorescens</i> in presence of acetonitrile.
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-acetonitrile.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: It was found that the presence of acetonitrile does not appreciably affect the growth of
+                <i>Pseudomonas fluorescens</i>.
+              </li>
+              <br><br>
+              <li>
+                Growth curve of <i>Acinetobacter baylyi</i> in the presence of acetonitrile
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-acetonitrile.png"
+                  style="scale:0.5;">
+                <br>
+                Inference: It was observed that acetonitrile affects the growth of <i>Acinetobacter baylyi</i> and
+                acts as an inhibitor.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading4">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true"
+            aria-controls="collapse4">
+            <b>Effect of pH</b>
+          </button>
+        </h4>
+        <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4">
+          <div class="accordion-body">
+            <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li>
+                Growth curve of <i>Pseudomonas putida</i> at different pH values
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-temp.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: The presence of acetonitrile in the growth media does not affect the growth of
+                <i>Pseudomonas putida</i>.
+              </li>
+              <br><br>
+              <li>
+                Growth curves of <i>Pseudomonas fluorescens</i> at different pH values
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-ph.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: The optimal pH for growth of <i>Pseudomonas fluorescens</i> was observed to be pH 8.
+              </li>
+              <br><br>
+              <li>
+                Growth curve of <i>Acinetobacter baylyi</i> at different pH values
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-ph.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: It was observed that the growth of <i>Acinetobacter baylyi</i> was not deterred by
+                variation in the pH. Thus we infer that it would thrive within this pH range typically found in
+                wastewater treatment plants.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading5">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true"
+            aria-controls="collapse5">
+            <b>Effect of Temperature</b>
+          </button>
+        </h4>
+        <div id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5">
+          <div class="accordion-body">
+            <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li>
+                Growth curve of <i>Pseudomonas putida</i> at 24° C and 37° C
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-temp.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: It is observed that <i>Pseudomonas putida </i> exhibits superior growth at 24 degrees
+                Celsius, whereas its growth is adversely affected at 37 degrees Celsius.
+              </li>
+              <br><br>
+              <li>
+                Growth curve of <i>Pseudomonas fluorescens</i> at 24° C and 30° C
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-temp.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: It was observed that <i>Pseudomonas fluorescens</i> exhibits better growth at 24° C.
+              </li>
+              <br><br>
+              <li>
+                Growth curve of <i>Acinetobacter baylyi</i> at 30° C and 37° C
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-temp.png"
+                  style="scale:0.4;">
+                <br>
+                <!--Below inference needs to be changed-->
+                Inference: It was observed that the growth of <i>Acinetobacter baylyi</i> was not deterred by
+                variation in the pH. Thus we infer that it would thrive within this pH range typically found in
+                wastewater treatment plants.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading6">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true"
+            aria-controls="collapse6">
+            <b>Effect of TCC in Sludge Level Concentrations</b>
+          </button>
+        </h4>
+        <div id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6">
+          <div class="accordion-body">
+            <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li>
+                Growth curve of <i>Pseudomonas putida</i> at different concentrations of TCC (sludge concentration)
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-putida-tcc-sludge.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: Growth of <i>Pseudomonas putida</i> was stunted in the presence of TCC as compared to the
+                control.
+              </li>
+              <br><br>
+              <li>
+                Growth curve of <i>Pseudomonas fluorescens</i> in the presence of TCC (sludge concentration)
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/p-fluorescens-tcc-sludge.png"
+                  style="scale:0.4;">
+                <br>
+                Inference: It was observed that TCC did not deter the growth of <i>Pseudomonas fluorescens</i>.
+              </li>
+              <br><br>
+              <li>
+                Growth curve of <i>Acinetobacter baylyi</i> in the presence of different concentrations of TCC (sludge
+                concentration)
+                <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/a-baylyi-tcc-sludge.png"
+                  style="scale:0.4;">
+                <br>
+                <b>Inference:</b> Presence of TCC at such high concentrations does not inhibit the growth of
+                <i>Acinetobacter baylyi</i>. However, the TCC was dissolved in acetonitrile. Our final inference
+                is that the inhibitory effect that existed due to the usage of acetonitrile appeared to be
+                canceled out by the presence of TCC.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="MAIN-STUFF"><u>Learn: </u></p>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading7">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true"
+            aria-controls="collapse7">
+            <b><i>Pseudomonas putida:</i></b>
+          </button>
+        </h4>
+        <div id="collapse7" class="accordion-collapse collapse show" aria-labelledby="heading7">
+          <div class="accordion-body">
+            <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li>It has a lag phase of roughly 4 hours, after which its growth plateaus become steady. </li>
+              <li>We found that it showed optimal growth at 30ºC and 7.5pH</li>
+              <li>Its growth is stunted under the presence of TCC. </li>
+              <li>It shows reduced growth at 37ºC.</li>
+            </ul>
+            <p class="sub-stuff">
+              <b><u>Conclusion:</u></b>
+              <br><br>
+              After taking these observations into account, our final conclusion was to eliminate this strain as it
+              does not proliferate well in the temperature conditions observed in the sludge tank of a wastewater
+              treatment plant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading8">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true"
+            aria-controls="collapse8">
+            <b><i>Pseudomonas fluorescens:</i></b>
+          </button>
+        </h4>
+        <div id="collapse8" class="accordion-collapse collapse show" aria-labelledby="heading8">
+          <div class="accordion-body">
+            <ul s style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li>Shows good growth at 30ºC, 7.5 pH.</li>
+              <li>Growth is stunted under the presence of TCC. </li>
+            </ul>
+            <p class="sub-stuff">
+              <b><u>Conclusion:</u></b>
+              <br><br>
+              After taking these observations into account, our final conclusion was to rule this strain out as it
+              does not proliferate well in the pH range observed in the sludge tank of a wastewater treatment plant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading9">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true"
+            aria-controls="collapse9">
+            <b><i>Acinetobacter baylyi:</i></b>
+          </button>
+        </h4>
+        <div id="collapse9" class="accordion-collapse collapse show" aria-labelledby="heading9">
+          <div class="accordion-body">
+            <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li>It has a lag phase of 8-9 hours using primary inoculum</li>
+              <li>The lag phase for the secondary inoculation was about 2-3 hours. We tested its growth by altering
+                the temperature, pH, and TCC concentration. </li>
+              <li>We found that 30ºC, 7.5 pH were the ideal conditions for growth and surprisingly, the presence of
+                such high concentrations of TCC did not impede its exponential growth. Hence, <i>A. baylyi</i> can
+                proliferate and grow uninhibited in the presence of TCC.</li>
+            </ul>
+            <p class="sub-stuff">
+              <b><u>Conclusion:</u></b>
+              <br><br>
+              Due to its ability to proliferate in environments containing near-toxic levels of TCC as well as with
+              all the other parameters that it would be subjected to within the sludge tank of a wastewater treatment
+              plant, we were able to come to the conclusion that <i>Acinetobacter baylyi</i> is the best choice for
+              our bacterial chassis. The other two bacteria were promptly rejected due to their growth being stunted
+              in the temperature and pH range of the sludge tank.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="mt-5 MAIN-STUFF">MODULE 2</p>
+
+    <p class="MAIN-STUFF"><u>Design:</u></p>
+
+    <p class="sub-stuff">
+      To carry out the wet lab experiments, including cloning, we started out by designing our part and plasmid. <br>
+      Aim: To create a genetic circuit containing TccA amidase and insert it in <i> E.coli </i> to study its
+      expression and characterise the enzyme.<br><br>
+      <u>Part Design</u>
+      <br><br>
+      The purpose of the amidase protein <a href="http://parts.igem.org/Part:BBa_K4641000">(Part number:
+        BBa_K4641000)</a> in the chassis is to breakdown Triclocarban (3,4,4′-Trichlorocarbanilide) into
+      3,4-dichloroaniline and 4-chloroaniline. Our target protein is naturally constitutively expressed in
+      <i>Ochrobactrum sp. TCC-2</i>
+    </p>
+    <img src="" style="img-fluid">
+    <img src="" style="img-fluid">
+
+    <p class="sub-stuff">
+      <u>Plasmid Design</u><br><br>
+      The CarbanEl system is based on a Gibson assembly cloning system. The gene fragment is designed and synthesized
+      such that the overhangs to integrate the gene into pET22b+ are already added. For the characterization and study
+      of the enzyme activity, we expressed the amidase gene in <i> E. coli BL21 </i>. However, our final intended
+      chassis is <i>Acinetobacter baylyi</i>
+      <br>
+      The plasmid design is as below:
+    </p>
+    <img src="" style="img-fluid">
+
+    <p class="sub-stuff">
+      <u>Genetic circuit design:</u><br><br>
+      Gene regulation refers to how a particular gene expression can be controlled. It includes a variety of
+      mechanisms that can be used to increase or decrease the expression or production of specific gene products.
+    </p>
+
+    <img src="" style="img-fluid">
+    <p class="sub-stuff">
+      <b>Fig 1:</b>TccA Gene Regulation in <i>Escherichia coli</i>
+    </p>
+
+    <p class="MAIN-STUFF"><u>Build:</u></p>
+
+    <p class="sub-stuff">
+      The first step was to build our genetic circuit in <i> E.coli DH5alpha</i> to study the expression and
+      degradation kinetics of our part.
+      <br><br>
+      We started with amplifying our tccA fragment and performing PCR clean-up. We isolated pET22b+ plasmid and
+      proceeded with the Gibson Assembly to insert the TccA amidase gene.
+      The competent <i>E. Coli E.coli DH5alpha</i> cells were prepared by CaCl<sub>2</sub> method and the cells were
+      transformed.
+    </p>
+    <!--(Insert image:  transformed plate in DH5alpha)-->
+    <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/transformed-plate-in-dh5alpha.jpg"
+      style="img-fluid" style="scale:0.4;">
+    <p class="sub-stuff" style="text-align:center;">i(Transformed plate-contains tccA Gibson assembled pET22b+
+      transformed DH5alpha cells)</p>
+    <p class="sub-stuff">
+      After a confirmatory colony PCR to check the presence of our insert, we transformed the Gibson-assembled plasmid
+      into <i> E.coli BL21 </i> and then we moved towards expression studies.
+    </p>
+
+    <p class="MAIN-STUFF"><u>Test:</u></p>
+    <p class="sub-stuff">
+      <u>Cloning:</u><br>
+      Double digestion was then performed on the isolated plasmid of the transformed cells to confirm the presence of
+      the fragment which was successful. We then went on to expression studies. SDS-PAGE was carried out but distinct
+      bands were not observed. This could have been due to the extended time for destaining.
+    </p>
+    <!--(insert image: SDS gel image)-->
+    <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/sds-gel-image.png" style="img-fluid"
+      style="scale:0.6;">
+    <p class="sub-stuff" style="text-align:center;"><i>(SDS gel image- Lane 1,2,7,8 uninduced cells, Lane 3,4,9,10
+        induced cells and 5,6 ladder)</i></p>
+
+    <p class="sub-stuff">
+      <b><u>Genetic circuit</u></b><br><br>
+      The genetic circuit represents the regulation of TccA gene in <i>E.coli</i>. Our gene, including RBS, is 1562
+      bps long; assuming that the degradation of mRNA is negligible the time taken to transcribe our gene is 6.25
+      secs.<br><br>We modeled the protein production in <i> E.coli </i>. However, in the future, we can study and
+      model the protein production rate in our preferred chassis <i>Acinetobacter baylyi.</i>
+    </p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading10">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true"
+            aria-controls="collapse10">
+            <b>Modeling the genetic Circuit:</b>
+          </button>
+        </h4>
+        <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10">
+          <div class="accordion-body">
+            <img src="" style="img-fluid">
+            <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <tr>
+                <th>Parameter</th>
+                <th>Explanation</th>
+                <th>Units</th>
+              </tr>
+              <tr>
+                <td>k<sub>1</sub></td>
+                <td>Transcription rate of T7 RNA polymerase</td>
+                <td>bps/sec</td>
+              </tr>
+              <tr>
+                <td>k<sub>2</sub></td>
+                <td>k<sub>2</sub> is the translation rate of a ribosome in E.coli</td>
+                <td>AAs/sec</td>
+              </tr>
+              <tr>
+                <td>d<sub>1</sub></td>
+                <td>Degradation rate of mRNA</td>
+                <td>bps/sec</td>
+              </tr>
+              <tr>
+                <td>d<sub>2</sub></td>
+                <td>Degradation rate of protein</td>
+                <td>AA/sec</td>
+              </tr>
+            </table>
+            <p class="sub-stuff">
+              Assuming that degradation rate of mRNA is low and almost negligible, d<sub>1</sub> ≈ 0
+              <br>
+              Assuming that degradation of protein is low and almost negligible, d<sub>2</sub> ≈ 0
+              <br><br>
+              k<sub>1</sub> is Transcription rate of T7 RNA polymerase = 250 bps/s<br><br>The length of TccA gene,
+              including the RBS and PelB = 1562 bps
+              <br><br>
+              k<sub>1</sub> = 1562/250 = 6.25s <br><br>
+              [mRNA] = k<sub>1</sub> [Gene] - d1[mRNA] [mRNA] = k<sub>1</sub> [Gene]<br>
+              <b>mRNA = 6.25 [Gene]</b>
+              <br>
+              k<sub>2</sub> is the translation rate of a ribosome in <i>E.coli</i>
+              <br>
+              Length of the mRNA = 1562 bps
+              <br>
+              [Protein] = k<sub>2</sub> [mRNA]- d<sub>2</sub>[Protein]
+              <br>
+              [Protein] = k<sub>2</sub>
+              <br>
+              Assuming that the translation rate of a ribosome in <i>E.coli</i> is 12. 1 AA/sec,
+              <br>
+              Our protein = 515 AA (including RBS and PelB)
+              <br>
+              k<sub>2</sub>
+              <br>
+              = 42.56 secs
+              <br>
+              <b>Protein = 42.56 [mRNA]</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="sub-stuff"><b><u>Design equation based on degradation kinetics</u></b></p>
+    <p class="sub-stuff">The rate expression is related to the rate at which the TccA amidase enzyme from the
+      <i>Ochrobactrum sp.</i> can degrade TCC. Since our chassis for implementation is <i>Acinetobacter baylyi</i>,
+      which is also gram-negative like <i>Ochrobactrum sp.</i>TCC-2, the rate of transport or the passive diffusion of
+      TCC into the cell is assumed to be similar in both bacteria. The rate of degradation of the TCC inside the cell
+      by the TccA amidase enzyme produced by our chassis will be very similar. The time calculated here for 21 PPM
+      (the highest concentration of TCC found in sludge) will be used to model the bioreactor.
+    </p>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading11">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true"
+            aria-controls="collapse11">
+            <b>Study of the design equation</b>
+          </button>
+        </h4>
+        <div id="collapse11" class="accordion-collapse collapse show" aria-labelledby="heading11">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              In this study [1], we have used the values as shown in the tabular column below.
+              These values were used to calculate -r<sub>A</sub> (the rate of reaction with respect to reactant A or
+              in our case TCC) using differential calculation.
+            </p>
+            <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <tr>
+                <th>Time (hours)</th>
+                <th>CA(concentration of TCC in 𝞵m )</th>
+                <th>-r<sub>A</sub></th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>31.7</td>
+                <td>3.667</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>10.8</td>
+                <td>0.9375</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>1.3</td>
+                <td>0.15</td>
+              </tr>
+              <tr>
+                <td>48</td>
+                <td>0.2</td>
+                <td>0.014</td>
+              </tr>
+              <tr>
+                <td>72</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+            <img
+              src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/concentration-of-substrate-vs-time.jpg"
+              style="img-fluid" style="0.5">
+            <p class="sub-stuff" style="text-align:center;"><i>(Concentration of substrate vs. time)</i></p>
+            <p class="sub-stuff">
+              <u>Assuming first order kinetics</u><br>
+              -r<sub>A</sub>= K(C<sub>A</sub>)<sup>n</sup><br>
+              ln(-r<sub>A</sub>) = lnK+n (lnC<sub>A</sub>)
+            </p>
+            <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <tr>
+                <th>ln (-r<sub>A</sub>)</th>
+                <th>ln (C<sub>A</sub>)</th>
+              </tr>
+              <tr>
+                <td>3.456</td>
+                <td>1.299</td>
+              </tr>
+              <tr>
+                <td>2.379</td>
+                <td>-0.0645</td>
+              </tr>
+              <tr>
+                <td>0.262</td>
+                <td>-1.897</td>
+              </tr>
+              <tr>
+                <td>-1.609</td>
+                <td>-4.566</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </table>
+            <img src="<img src=" https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/ln-ca-vs-ln-ra.png"
+              style="img-fluid" style="0.5">
+            <p class="sub-stuff">
+              From the above graph, we know that the following data:<br>
+              Slope = n = 1.1198 ≈ 1, which implies that it follows first-order kinetics.<br>
+              Intercept = ln k = -2.5633 <br>
+              Therefore, k = e<sup>-2.5633</sup><br>
+              k= 0.082, which is the calculated rate expression. <br>
+              From the literature, we learned the value of k [1].<br>
+              k = 0.112
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="MAIN-STUFF"><u>Learn:</u></p>
+    <p class="sub-stuff">
+      On comparing our values to the literature, we get that the k values are approximately equal, thus validating our
+      differential calculus method.<br><br>Hence, TccA amidase follows first-order kinetics.<br><br>Future cycles
+      would involve the validation of these kinetics through experimentation.</p>
+    <hr>
+    <p class="mt-5 MAIN-STUFF">MODULE 3</p>
+    <p class="MAIN-STUFF"><u>Summary</u></p>
+    <p class="sub-stuff">
+      As mentioned in our <a href="https://2023.igem.wiki/mit-mahe/project-implementation">implementation</a>, we aim
+      to introduce a bioreactor in the wastewater treatment plant to treat the primary sludge and clear it of our
+      target contaminant, Triclocarban (TCC). <br><br>
+      From the results of our previous module of the DBTL cycle, <i>Acinetobacter baylyi</i> GFJ2 was the most viable
+      choice for a chassis because it had the best growth in high concentrations of TCC and a good survivability for
+      the widely varying conditions of wastewater treatment plants. Additionally, the bacteria has the natural ability
+      to degrade the toxic byproducts produced by the degradation of TCC into non toxic byproducts (cis-muconic acid)
+      that can be taken by the Krebs cycle [3].
+    </p>
+
+    <p class="MAIN-STUFF"><u>Design:</u></p>
+    <p class="sub-stuff">
+      The team came up with multiple bioreactor designs for the implementation of our project that take into account
+      the degradation kinetics of the enzyme, the growth kinetics of the bacteria, and the adsorption kinetics of TCC
+      onto the packing material.<br><br>
+      We have currently proposed a lab scale bioreactor due to the fact that we need to conduct further optimisation
+      experiments to upscale into a bioreactor that is feasible on an industrial scale.
+    </p>
+    <!--insert image of bioreactor-->
+    <p class="sub-stuff">
+      We wanted to design a sludge based bioreactor where the primary sludge becomes the feed. The primary sludge is
+      almost 97-99% water [4]. We ideated this after a visit to a wastewater treatment plant in West Bengal, India.
+      <br><br>
+      We wanted the bacteria that degraded the TCC to be immobilized within a matrix. Literature suggests that cell
+      immobilised systems are far superior to free cell suspensions as it avoids cell washout and improves reaction
+      rates [5]. <br><br>
+      We found that biochar, a carbon-rich solid product produced from the pyrolysis of biomass residues, was an
+      attractive option for an immobilisation matrix due to its low cost, easy availability and ability to immobilize
+      cells efficiently[6].<br><br>
+    </p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading12">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 1- Continuous flow packed-bed reactor</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse12" class="accordion-collapse collapse show" aria-labelledby="heading12">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              The design of this reactor would be such that the primary sludge would continuously flow through the
+              packed bed over the span of two days. <br><br>
+              The primary sludge would be pumped from the bottom of the reactor and exited from the top. The reactor
+              top would be perforated to allow airflow, and the reactor would be continuously sparged with air to
+              increase mass transfer and provide oxygen to the microbes for proliferation. <br><br>
+              The reactor would be fitted with a pressure gauge in order to measure and maintain the pressure drop
+              across the reactor.<br><br>
+              The reactor will operate in continuous flow under unsterile conditions.<br><br>
+            </p>
+            <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/packed-bed-reactor.png"
+              style="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading13">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="true"
+            aria-controls="collapse13">
+            <b><i><u>Design 2 - Continuous stirred tank reactor</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse13" class="accordion-collapse collapse show" aria-labelledby="heading13">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              In this design, the primary sludge would enter from the top of the reactor and exit from the bottom of
+              the reactor. <br><br>
+              The biochar with the immobilized bacteria would be fixed onto the walls of the reactor using a
+              honeycomb-like scaffold. <br><br>
+              The reactor would have a stirrer that would agitate the sludge and aerate it to promote mass transfer
+              and adsorption onto the biochar. To prevent excess heat from being generated, the reactor would have
+              cooling jackets surrounding it. A temperature gauge would be added to measure the temperature and
+              regulate it to promote the exponential growth of microorganisms. <br><br>
+              A level gauge would be added in order to prevent the overflow of the sludge in the reactor. A pipe at
+              the top would be introduced to recycle the overflow into the tank. The reactor will operate in
+              continuous flow under unsterile conditions.<br><br>
+            </p>
+            <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/stirred-tank-reactor.png"
+              style="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading14">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="true"
+            aria-controls="collapse14">
+            <b><i><u>Design 3 - Batch stirred tank reactor</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse14" class="accordion-collapse collapse show" aria-labelledby="heading14">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              This reactor would be similar to the continuous stirred tank bioreactor, except the sludge would stay in
+              the tank for longer to allow more time for mass transfer. The rpm of the stirrer would be slower, and a
+              sparger would be added to increase aeration. The rest of the elements would remain the same as in Design
+              2. The reactor will be operated in batch mode in unsterile conditions.
+            </p>
+            <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/batch-stirred-tank.png"
+              style="img-fluid" style="scale:0.6;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading15">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 4 - batch packed bed reactor</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse15" class="accordion-collapse collapse show" aria-labelledby="heading15">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              The packed bed reactor would consist of a packed bed with biochar and immobilized bacteria as packing
+              material between two perforated plates. The primary sludge would enter from the top of the reactor and
+              flow to the bottom with the help of gravity. This eliminates the need for a pump to fill the sludge in
+              the reactor. A sparger at the bottom center would aerate the sludge and would promote a vertical
+              circular flow due to Bernoulli's principle. This will help increase mass transfer efficiency. <br><br>
+              The sparger would have a valve to prevent the backflow of sludge into it, and the sparging would begin
+              before the inflow of sludge into the reactor began. The outlet pipe will also have a valve to prevent
+              sludge from leaving the tank before the specified time. The valve in the inlet pipe is to control the
+              flow rate of the sludge entering the tank. The reactor would be fitted with a pressure gauge to measure
+              and maintain the pressure drop across the reactor. The reactor will be operated in batch mode in
+              unsterile conditions.
+            </p>
+            <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/batch-packed-bed-reactor.png"
+              style="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading15">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 5 - fluidized bed</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse15" class="accordion-collapse collapse show" aria-labelledby="heading15">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              This design would consist of a fluidized bed with the packing material. The fluidized bed will have a
+              sparging system with appropriate tubing to control the flow rate of air. This would allow an upward,
+              circular flow of the sludge. This agitation will increase mass transfer efficiency. <br><br>
+              The continuous flow would be due to the movement of the liquid phase (primary sludge) and gaseous phase
+              (air from the sparger). Both of these factors will induce movement of the solid, i.e., the packing
+              material. The reactor will operate in continuous flow under unsterile conditions.
+            </p>
+            <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/fluidised-bed.png" style="img-fluid">
+            <p class="sub-stuff">
+              <u>Packing Material:</u><br><br>
+              The packing material for the packed and fluidized bed is chemically modified biochar with bacteria
+              immobilized on it. The team decided to make the biochar into the shape of a hollow cylinder called a
+              Raschig ring. This type of structure would increase the area of adsorption and improve mass transfer
+              efficiency. The hollow cylinder pipe-like structure would prevent the problem of choking the reactor due
+              to larger particles that may be present in the sludge. While cylindrical pellets are more commonly used
+              and available, we propose the novel idea of a biochar Raschig ring.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="MAIN-STUFF"><u>Build:</u></p>
+    <p class="sub-stuff"><u><i>Reactor</i></u></p>
+    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li>The material of the reactors needs to be non-reactive to the compounds that will be present in the primary
+        sludge that will enter the reactors. In response to this, we had a few options available to us, those being
+        mild steel, stainless steel, glass, etc. Since our model is a lab-scale reactor, we chose to use glass to make
+        the body of the lab-scale reactor. </li>
+      <li>The inlet, outlet, and recycle pipes will be made of PVC. </li>
+      <li>The stirrer would have a slow speed of 50 rpm. </li>
+      <li>We would use generic industrial temperature and pressure gauges for the reactors. </li>
+      <li>The sparger would be a perforated sparger for uniform aeration and would be placed at the bottom of all the
+        reactor designs except for the continuous flow fluidized bed. The fluidized bed will have tube sparging with
+        appropriate tubing to control the airflow for more aeration and, hence, more mass transfer efficiency.</li>
+    </ul>
+    <p class="sub-stuff"><u><i>Packing Material</i></u></p>
+    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li>The packing material would consist of biochar. The biochar will be modified with a 1:1 ratio of biochar to
+        KOH[8]. According to literature, the biochar modified with KOH showed higher adsorption of the target compound
+        TCC compared to other ratios and just plain biochar.</li>
+      <li>The biochar would be made into the shape of a Raschig ring using clay as a binding agent. The dimensions of
+        the raschig ring are in the ratio 1:1 of the diameter to the height, and the inside diameter will be 1cm as
+        shown in the figure below. These ideas were validated by meetings with Dr. Bhat and Dr. Kevin Sowers. </li>
+      <li>The Raschig ring would then be fired at 110°C to 130°C to harden the ring so that it does not dissolve in
+        the primary sludge.</li>
+      <li>The genetically modified bacteria would then be immobilized on the biochar raschig rings.</li>
+      <li> The biochar used will be sourced from a local rice mill by processing rice husk that is produced as waste
+        at the mill. </li>
+    </ul>
+
+    <p class="MAIN-STUFF"><u>Test:</u></p>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading16">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 1- Continuous flow packed-bed reactor</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse16" class="accordion-collapse collapse show" aria-labelledby="heading16">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              This design would allow us to treat a large amount of sludge in less time. The sparger would provide
+              enough aeration for our bacteria to grow optimally, and degradation would occur efficiently. <br><br>
+              However, according to our adsorption and degradation kinetics the minimum contact time required for
+              efficient degradation of our target contaminant TCC would be 2 days. This large amount of time required
+              a longer packed bed would increase our cost of building. Additionally, since it would be a continuous
+              flow chances of choking at the outlet pipe increased.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading17">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 2 - Continuous stirred tank reactor (CSTR)</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse17" class="accordion-collapse collapse show" aria-labelledby="heading17">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              To overcome the issue of a large amount of packing material required we came up with the design of the
+              CSTR. in this reactor we designed a scaffold that would be 3D printed and placed on the wall of the
+              reactor. The purpose of the scaffold was to hold the biochar in place for adsorption of our target
+              contaminant TCC to occur. <br><br>
+              The stirring would increase the mass transfer efficiency and there would be sufficient aeration because
+              of it as well. However, this did not solve the issue we had with the contact time and additionally the
+              regeneration of the adsorbent i.e. the biochar proved to be difficult in this case.
+              According to literature, since the degradation of the compound by the enzyme produced by the bacteria is
+              very slow as shown by the kinetics in the <a href="https://2023.igem.wiki/mit-mahe/model">models</a>
+              page the type of reactor most suitable for slow reactions was a batch process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading18">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 3 - Batch stirred tank reactor</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse18" class="accordion-collapse collapse show" aria-labelledby="heading18">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              This design would allow the sludge to remain in contact with the biochar for the required amount of
+              time. And regeneration of the biochar would not prove to be an issue, however the the cost of this
+              design was more than anticipated, causing us to reject this design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading19">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 4 - batch packed bed reactor</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse19" class="accordion-collapse collapse show" aria-labelledby="heading19">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              This design proved to be the most suited to our requirements. The reactor being a batch process allowed
+              us to maintain the required contact time of 2 days. The sparging allowed aeration and sufficient flow
+              for efficient mass transfer. The inflow of the sludge from the top of the reactor removed the cost of
+              the pump as gravity would help the fluid flow down the column.<br><br>
+              The cost analysis concluded this design to be the cheapest option for us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h4 class="accordion-header" id="heading20">
+          <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="true"
+            aria-controls="collapse12">
+            <b><i><u>Design 5 - fluidized bed</u></i></b>
+          </button>
+        </h4>
+        <div id="collapse20" class="accordion-collapse collapse show" aria-labelledby="heading20">
+          <div class="accordion-body">
+            <p class="sub-stuff">
+              This design proved to be the most suited to our requirements. The reactor being a batch process allowed
+              us to maintain the required contact time of 2 days. The sparging allowed aeration and sufficient flow
+              for efficient mass transfer. The inflow of the sludge from the top of the reactor removed the cost of
+              the pump as gravity would help the fluid flow down the column.<br><br>
+              The cost analysis concluded this design to be the cheapest option for us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="MAIN-STUFF"><u>Learn:</u></p>
+    <p class="sub-stuff">
+      For a lab scale reactor we will use the batch packed bed reactor. The kinetics of enzyme degradation, TCC
+      adsorption onto the biochar and the bacterial growth kinetics have been fitted into the equations for a batch
+      reactor as given in the <a href="https://2023.igem.wiki/mit-mahe/model">models</a> page.<br><br>
+      We learnt that design 1 would not be feasible due to low hydraulic retention time of the primary sludge in the
+      tank, hence we tried design 2. However, through a human practices visit with Dr. Subbulaxmi we learnt that the
+      efficiency of the biochar would be reduced significantly.<br><br>
+      Design 3 significantly improved contact time; however, it would not be enough to compensate for the low
+      absorption efficiency of the biochar after our other meetings with Dr. Murty. <br><br>
+      Design 4 incorporated all the suggestions from Dr. Bhat and Dr. Subbulaxmi and led us to our most ideal design
+      that gave us a high hydraulic retention time of the primary sludge in the tank as well as a high adsorption
+      affinity of the biochar. <br><br>
+      However, we learnt from Dr. Kevin Sowers that this model would only be feasible for a lab scale model. Since at
+      industry level we would be required to treat a larger amount of primary sludge per day we proposed design 5
+      which would have comparable efficiency to design 4 and be able to treat large quantities of sludge due to its
+      larger volume and continuous operation.
+    </p>
+    <hr>
+    <p class="mt-5 MAIN-STUFF">MODULE 4</p>
+
+    <p class="MAIN-STUFF"><u>Design:</u></p>
+    <p class="sub-stuff">
+      Our goal was to design a detection system that would go hand in hand with our bioreactor set-up and was
+      accurate, highly sensitive, and cost-effective. In our design stage, we have explored numerous ideas, highlights
+      of which include:
+    </p>
+    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li><i>Electrochemical sensors</i> - were explored, as they are one of the most prevalent detection systems.
+        However, we found that it would not be feasible to achieve the desired selectivity towards triclocarban.</li>
+      <li><i>Enzyme based sensors</i>- we identified an enzyme from Ochrobactrum sp.TCC-2; but due to the trace levels
+        of TCC found in effluent this option would not be sensitive enough.</li>
+      <li><i>Aptasensors</i>- Aptamers specific for TCC are not available in the literature, due to which, we would be
+        required to isolate and identify one de-novo using SELEX. This is expensive and would not be feasible within
+        our time constraint. </li>
+      <li><i>Nanobody based sensors</i>- three nanobodies which were specific to TCC were identified. We realised that
+        immobilizing the nanobody on the sensor and making required modifications would be expensive and within the
+        given time frame, building a prototype and testing didn’t seem like a viable option.</li>
+      <li><i>Molecularly imprinted polymer based sensors(MIP)</i>- we found an MIP which would detect triclocarban and
+        triclosan combined. Making an MIP specific to triclocarban in the lab would require extensive experimental
+        data and testing. </li>
+      <li><i>Nanomaterial based sensors</i>- Nanomaterial based sensors can detect endocrine disrupting compounds and
+        since TCC is one of them, this drew our attention. However, after thorough literature review we found that
+        there was no nanomaterial isolated specifically for TCC detection. </li>
+    </ul>
+    <a href="https://2023.igem.wiki/mit-mahe/hardware#section3" class="nav-link link-dark">Ideation Page</a>
+    <p class="sub-stuff">
+      Toward the end, we decided to simplify our approach by using Raman Spectroscopy to identify light of a certain
+      wavelength range specific to TCC and design a simplified prototype of an optical detection system using a laser
+      and a photodiode to detect this range of wavelengths.
+    </p>
+    <p class="MAIN-STUFF"><u>Build:</u></p>
+    <p class="sub-stuff">
+      We used the Raman spectroscopy setup in our secondary PI, Kapil Sadani’s laboratory to conduct experiments and
+      isolate the specific peaks for our compound. Using the data from these experiments, we calculated the specific
+      wavelength for the IR filter and photodiode and built a theoretical set-up that can be employed for the
+      detection of TCC.
+    </p>
+    <img src="" style="img-fluid">
+    <p class="sub-stuff" style="text-align:center;"><b><i>Figure: Block Diagram of our set-up</i></b></p>
+    <p class="sub-stuff">
+      This set-up would include a laser of 785 nanometer monochromatic light, two focal lenses, a mirror with a hole
+      to cleanly pass the focused laser, a sample stage (cuvette), an IR filter, a photodiode, and a microcontroller.
+      The sample would have to be manually collected and brought to this set-up.
+    </p>
+    <p class="MAIN-STUFF"><u>Test:</u></p>
+    <p class="sub-stuff">
+      We ran experiments for various samples as follows :
+    </p>
+    <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li>Raman spectroscopic analysis for Triclocarban dissolved in 5% acetone.</li>
+      <li>Surface Enhanced Raman Spectroscopy (SERS) for Triclocarban dissolved in 5% acetone.</li>
+      <li>Lake water sample, that was suspected to have triclocarban dissolved in it, to baseline and isolate the
+        specific peaks for TCC using SERS.</li>
+    </ol>
+    <p class="sub-stuff">
+      From this we found the specific wavelength for our Infrared filter and photodiode.
+    </p>
+    <a href="https://static.igem.wiki/teams/4641/wiki/hardware/h-s-wiki-notebook-docx.pdf">Hardware Notebook</a>
+    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li>
+        Experiment 1: 1, 10, 100 ppm (parts per million) of TCC in 5% acetone (standard)
+        <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/raman-spec-1.png" style="img-fluid"
+          style="scale:0.5;">
+        Figure: Surface Enhanced Raman Spectroscopy of triclocarban dissolved in 5% acetone. (1, 10, 100 ppm)
+      </li>
+      <li>
+        Experiment 2: 1, 10, 100 ppm (parts per million)of TCC in lake water sample
+        <img src="https://static.igem.wiki/teams/4641/wiki/dbtl-growth-curves/raman-spec-2.png" style="img-fluid"
+          style="scale:0.5;" style="img-fluid">
+        Figure: Surface Enhanced Raman Spectroscopy of triclocarban dissolved in lake water. (1, 10, 100 ppm)
+      </li>
+    </ul>
+
+    <p class="MAIN-STUFF"><u>Learn:</u></p>
+    <p class="sub-stuff">
+      From the experimental data, we learned that the unique peaks (unique wavenumber) for Triclocarban is observed at
+      758.3 cm<sup>-1</sup>and 1445.2cm<sup>-1</sup>. Moreover, the second peak observed at 1445.2 cm-1 can be
+      concluded as an overtone of the peak observed at 758.3 cm<sup>-1</sup> as the ratio of the intensities at
+      various concentrations remains constant.
+      <br><br>
+      In the lake water sample, we noticed peaks within the range of 750 and 760 nanometers. We can assume that the
+      lake water sample initially had dissolved triclocarban. After experiments with spiked triclocarban were done, we
+      noticed an amplification in the baseline peaks.
+      <br><br>
+      These preliminary results are indicative of a starting point for proving our proof of concept of a detection
+      system selective and sensitive towards TCC and easily adaptable in all kinds of bioreactor setups.
+    </p>
+    <p class="MAIN-STUFF">Success:</p>
+    <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+      <li><i> Acinetobacter baylyi</i> was identified as the most viable chassis for the incorporation of TccA amidase
+      </li>
+      <li>A successful clone of TccA in pET22b+ was obtained in <i> E.coli DH5alpha </i> and then transformed into <i>
+          E.coli BL21 </i>.</li>
+      <li>We successfully found the wavelength of the IR filter which can be used in our detection system set up to
+        detect TCC in sludge</li>
+      <li>A packed bed batch reactor was found to be the most viable option for a lab scale bioreactor while a
+        fluidised bed reactor was preferred for future implementation. </li>
+    </ul>
+
+    <p class="MAIN-STUFF"><u>References:</u></p>
+    <p class="sub-stuff">
+      [1]Yun H, Liang B, Qiu J, Zhang L, Zhao Y, Jiang J, Wang A. Functional Characterization of a Novel Amidase
+      Involved in Biotransformation of Triclocarban and its Dehalogenated Congeners in Ochrobactrum sp. TCC-2. Environ
+      Sci Technol. 2017 Jan 3;51(1):291-300. <a
+        href="https://doi.org/10.1021/acs.est.6b04885">https://doi.org/10.1021/acs.est.6b04885</a>. Epub 2016 Dec 14.
+      PMID: 27966913.
+      <br><br>
+      [2]Hülter, N., Sørum, V., Borch-Pedersen, K. et al. Costs and benefits of natural transformation in
+      Acinetobacter baylyi . BMC Microbiol 17, 34 (2017). <a
+        href="https://doi.org/10.1186/s12866-017-0953-2">https://doi.org/10.1186/s12866-017-0953-2</a>
+      <br><br>
+      [3]Hongsawat, Parnuch, and Alisa S. Vangnai. “Biodegradation Pathways of Chloroanilines by Acinetobacter Baylyi
+      Strain GFJ2.” Journal of Hazardous Materials, vol. 186, no. 2–3, Elsevier BV, Feb. 2011, pp. 1300–07. <a
+        href="https://doi.org/10.1016/j.jhazmat.2010.12.002.">https://doi.org/10.1016/j.jhazmat.2010.12.002.</a>
+      <br><br>
+      [4] Nazari, L., Sarathy, S., Santoro, D., Ho, D., Ray, M. B., & Xu, C. (2018). Recent advances in energy
+      recovery from wastewater sludge. In Elsevier eBooks (pp. 67–100). <a
+        href="https://doi.org/10.1016/b978-0-08-101029-7.00011-4">https://doi.org/10.1016/b978-0-08-101029-7.00011-4</a>
+      <br><br>
+      [5] Zhu, Y. (2007). Immobilized cell fermentation for production of chemicals and fuels. In Elsevier eBooks (pp.
+      373–396). <a
+        href="https://doi.org/10.1016/b978-044452114-9/50015-3">https://doi.org/10.1016/b978-044452114-9/50015-3</a>
+      <br><br>
+      [6]Wu, C., Zhi, D., Yao, B., Zhou, Y., Yang, Y., & Zhou, Y. (2022). Immobilization of microbes on biochar for
+      water and soil remediation: A review. Environmental Research, 212, 113226. <a
+        href="https://doi.org/10.1016/j.envres.2022.113226">https://doi.org/10.1016/j.envres.2022.113226</a>
+      <br><br>
+      [7] Eggen, T., & Vogelsang, C. (2015). Occurrence and fate of pharmaceuticals and personal care products in
+      wastewater. In Comprehensive Analytical Chemistry (pp. 245–294). <a
+        href="https://doi.org/10.1016/b978-0-444-63299-9.00007-7">https://doi.org/10.1016/b978-0-444-63299-9.00007-7</a>
+    </p>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {% endblock %}
