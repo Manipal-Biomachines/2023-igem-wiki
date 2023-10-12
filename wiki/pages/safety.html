@@ -1,212 +1,338 @@
 {% extends "my-layout.html" %}
 
 {% block sidebar_content %}
- <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
-          <a href="#section1" class="nav-link link-dark" aria-current="page">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-            Prologue
-          </a>
-        </li>
-        <li>
-          <a href="#section2" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-            Lab Safety
-          </a>
-        </li>
-        <li>
-          <a href="#section3" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-            Project Specific Safety
-          </a>
-        </li>
-        <li>
-          <a href="#section4" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-            Safety and Security Session
-          </a>
-        </li>
-        <li>
-          <a href="#section5" class="nav-link link-dark">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-            Dual Use
-          </a>
-        </li>
+<ul class="nav nav-pills flex-column mb-auto">
+  <li class="nav-item">
+    <a href="#section1" class="nav-link link-dark" aria-current="page">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#home" />
+      </svg>
+      Prologue
+    </a>
+  </li>
+  <li>
+    <a href="#section2" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#speedometer2" />
+      </svg>
+      Lab Safety
+    </a>
+  </li>
+  <li>
+    <a href="#section3" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#table" />
+      </svg>
+      Project Specific Safety
+    </a>
+  </li>
+  <li>
+    <a href="#section4" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#grid" />
+      </svg>
+      Safety and Security Session
+    </a>
+  </li>
+  <li>
+    <a href="#section5" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16">
+        <use xlink:href="#people-circle" />
+      </svg>
+      Dual Use
+    </a>
+  </li>
 
-      </ul>
-  {% endblock %}
+</ul>
+{% endblock %}
 
 {% block heading %}Safety{% endblock %}
 
 {% block page_content %}
 <div class="content">
-        <div class="m-5 mb-16">
-            <p class="mt-5 MAIN-STUFF" id="section1">1. Prologue<br></p>
-            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> 
-              The team iGEM MIT-MAHE project gives topmost priority to safety and security, focusing on safeguarding laboratory members, experimentation, and the environment. Our institute's unwavering support has enabled us to fulfil our fundamental responsibility toward biosafety. We have meticulously planned our experiments and upheld proper work ethics in the laboratory to ensure that no harm was inflicted on nature or ourselves. In this regard, we have discussed our planned experiments in detail with our principal investigator, and were performed only upon her approval. This approach ensured transparency and accountability in our efforts to maintain the highest standards of safety and security.
-              </p>
-            <img src="https://static.igem.wiki/teams/4641/wiki/safety/safety-flow-chart.png" class="img-fluid rounded mx-auto d-block mt-4">
-            <p class="mt-5 MAIN-STUFF" id="section2">2. Lab Safety<br></p>
-            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">1. The MIT-MAHE team's wet lab members conduct their experiments in the Department of Biotechnology's Project Lab, a lab/workspace designated with Biosafety Level 2 (BSL-2). Our laboratory and work practices within the lab adhere to the guidelines for biosafety and biosecurity in India as well as the guidelines provided by the Centre of Bioethics, MAHE.<br><br> 
-              2. All members of the wet lab subsystem of our team have received extensive training in safe lab practices from our PI, Dr. Ritu Raval and our advisors before they began working in the lab.<br> 
-              -> We were advised on the risk assessment of the reagents in use, proper identification, management, and safe disposal of biological and chemical hazardous waste and lab consumables as well as the necessary precautions to be taken while working with biological materials.<br> 
-              -> We were also briefed on the working mechanisms of all the equipment and machinery available in the lab and on how to appropriately and safely use them to conduct experiments. They were advised on appropriately using equipment such as the centrifuge, UV-visible spectrophotometer, etc. as well as safe handling of the autoclave and decontamination units.<br>
-              -> We were also made familiar with the location of safety showers, eye wash, first aid kits, fire extinguishers, as well as emergency evacuation routes.<br>  
-              -> We received training sessions from their advisors and PhD scholars Mr Rajesh M. Gowda and Mrs. Atheena PV on working in the biosafety cabinet and precautions to avoid contamination.<br><br> 
-              3. Some practices all members working in the lab strictly follow include:<br>
-              -> Eating and drinking are strictly prohibited in the lab.<br>
-              -> All members have to wear lab coats, protective goggles, and nitrile gloves as necessary whilst working in the lab.<br>
-              -> Proper sterilisation is undertaken before working in the BSL-2 biosafety cabinet.<br>
-              -> All equipment and machinery in the laboratory such as the centrifuge, spectrophotometer, cold storage, autoclave and such, are handled with care and well-maintained. Regular maintenance work is done for them.<br>
-              -> Taking further precautions, the lab is fumigated every 3-4 weeks.<br><br>
-              <b>Use of Harmful Reagents and Procedures:</b><br>
-              Some experimental procedures involved using harmful chemicals and reagents, however, all additional safety measures were taken to prevent any harm.<br><br>
-              <button class="modal-button" onclick="openModal('modal1')">UV light</button>
-              <button class="modal-button" onclick="openModal('modal2')">Gel electrophoresis</button>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal('modal1')">&times;</span>
-                  <p class="mt-3 MAIN-STUFF">UV light</p>
-                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">UV light is used to sterilise all the biological equipment and analyse the gel after electrophoresis. Our team members wear all necessary PPE while working near UV in order to make sure that there's no UV damage caused to them.</p>
-                </div>
-              </div>
-              <div id="modal2" class="modal">
-               <div class="modal-content">
-                  <span class="close" onclick="closeModal('modal2')">&times;</span>
-                  <p class="mt-3 MAIN-STUFF">Gel Electrophoresis</p>
-                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">In the molecular biology experiments, we used certain toxic reagents-<br>
-                    a.TEMED for SDS-PAGE<br>
-                    b.bisacrylamide and acrylamide gel for SDS-PAGE<br>
-                    These were also stored separately and sent to Re Sustainability Limited (RE).<br>
-                    All the lab members understand the risks involved with these chemicals and have followed all the necessary safety measures while working with them.</p>
-                </div>
-              </div>
-              <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-              <button class="modal-button" onclick="openModal('modal3')">Sodium Hydroxide</button>
-              <button class="modal-button" onclick="openModal('modal4')">Antibiotics</button>
-              <div id="modal3" class="modal">
-                <div class="modal-content">
-                   <span class="close" onclick="closeModal('modal3')">&times;</span>
-                   <p class="mt-3 MAIN-STUFF">Sodium Hydroxide</p>
-                   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Sodium hydroxide was used for pH-based growth curves in order to increase the pH of LB broth to wastewater pH in order to study bacterial growth under various pH conditions.</p>
-                 </div>
-               </div>
-               
-               <div id="modal4" class="modal">
-                <div class="modal-content">
-                   <span class="close" onclick="closeModal('modal4')">&times;</span>
-                   <p class="mt-3 MAIN-STUFF">Antibiotics</p>
-                   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> Ampicillin as indicated in the material safety data sheet (MSDS) requires caution due to its hazardous effects at high concentrations. Both acute and chronic exposure to humans via inhalation, ingestion, or contact with eyes can result in harm. Therefore, the team responsible for handling the compound followed strict safety protocols, wore personal protective equipment (PPE), and was equipped with the necessary information to handle spills and acute exposures. This was used for culturing organisms with a pET22b+ vector, but these were ensured to be disposed of safely after the experiment.Additionally, the product was disposed of in accordance with the disposal protocols and state safety regulations.</p>
-                 </div>
-               </div>
-             <br>
-              </p>
-  
-            <p class="mt-3 MAIN-STUFF" id="section3">3. Project Specific Safety<br></p>
-            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">1. As our team is working with Triclocarban and its subsequent breakdown products, 4-chloroaniline and 3,4-dichloroaniline which are hazardous in nature and possible carcinogens, we took extra precautions while working with them by wearing double nitrile gloves, N95 masks, safety goggles and lab coats.<br><br>
-              2. For decontamination and disposal of Triclocarban and other hazardous compounds, we have stored all the equipment used, i.e., pipette tips, tissue paper as well as the solutions containing these chemicals separately to prevent the risk of spillage and exposure to untrained individuals. This will be then sent to Re Sustainability Limited (RE), a KKR-backed company, which is one of Asia's leading providers of comprehensive environment management services for disposal.<br><br>
-              3. The organisms and parts that we are working with are in Risk Group 1. They are non-pathogenic and non-spore forming and all our work is covered by the White List, hence, we aren't conducting any activities against the guidelines provided by the competition.<br><br>
-              4. Pertaining to our project, physicochemical methods of degrading TCC have proved ineffective. Though the introduction of Genetically Modified Organisms (GMOs) is considered risky, if we take appropriate measures, its use can revolutionise bioremediation globally. Keeping safety at utmost importance, our contained bioreactor system would be designed to ensure no interference or interaction of our bacteria with the wastewater treatment environment. Moreover, microbial biocontainment is essential to engineer safe bioremediation strategies. The incorporation of a kill switch (an artificial system that induces cell death) only enhances our project safety and ensures an air-tight implementation.<br><br> 
-              5. For the hardware aspect of our project, we had collected water samples from the nearby lake and ran it through Raman spectrometer in order to discern how the unique peaks of triclocarban would vary in the presence of naturally occurring compounds, we made sure to abide by necessary safety protocols when dealing with natural samples, such as using falcon tubes to collect the lake water as well as wearing gloves while handling these samples.<br><br>
-              6. All the equipment and glassware that we use that have come in contact with the cultures that we're working with are routinely autoclaved (decontamination) and treated with bleach before disposal.<br><br>
-              
-              <b><h3> Meeting with Lynn Ferris, Lab Manager at UNSW, Australia: Sept 1, 2023</h3></b><br><br>
-              <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-              As a lot of our wet lab protocols involved working with toxic chemicals like triclocarban, 3,4-DCA and 4-CA, we were concerned about the safety of our team members as well as others working in the Project Lab. To check the suitability of our safety protocols, our Wet Lab members met Lynn Ferris, Lab Manager from UNSW, Australia. As our lab does not have an official committee to deal with safety and security in the lab, any changes would have to happen on a voluntary basis. 
-              Lynn helped us realise the importance of communicating these risks to the people in the workplace and raising awareness about the same. 
-              <br><br></p>
-              <b><h4>Her suggestions involved:</h4></b>
-              <ol>
-                <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-              1. The use of a fume hood with carbon filter respirators while preparing stock solutions of TCC.<br>
-              2. She approved our use of gloves and safety goggles while working with these chemicals, but also added that we use double gloves if we don't have the required glove thickness.<br> 
-              3. She emphasised the importance of wiping all counters and workspaces with soap and water every evening.<br> 
-              4. She also suggested that all our lab coats should be kept inside the lab on hooks separating them such that they do not touch each other.<br> 
-              5. She also mentioned how important it was to defrost the -20 degrees fridge once in a while and also go through the contents and discard unwanted samples.<br><br>
-            </ol>
-              
-            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Overall, this session with Lynn proved insightful and many of her suggestions have been incorporated by us. This meeting helped us better our lab safety and project-specific safety.
-            </p>  
-            </p>
-              </p>
-              <br>
-           
-            <p class="mt-3 MAIN-STUFF" id="section4">4. Safety and Security Session<br></p>
-            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To equip the second years of MIT Manipal pursuing a B.Tech in Biotechnology with valuable laboratory safety knowledge and hands-on experience, we organised a series of Lab Safety sessions. These sessions took place on the 14th, 18th and 19th of September, 2023, with two half-hour sessions each day, accommodating five students per session to ensure the lab remained spacious and manageable.<br>
-              <br>
-              The primary objective of these sessions was to familiarise them with essential safety protocols and equipment, equipping them with a solid foundation for the upcoming years. The sessions were structured as follows:
-              <br><br>
-              <button class="modal-button" onclick="openModal('modal5')">Introduction to Lab Safety</button>
-              <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-              <button class="modal-button" onclick="openModal('modal6')">Laboratory Tour</button>
-            </p>
-              <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-              <button class="modal-button" onclick="openModal('modal7')">Interactive Sessions</button>
-            </p>
-              <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-              <button class="modal-button" onclick="openModal('modal8')">Autoclaving and Decontamination</button>
-            </p>
-              <div id="modal5" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal('modal5')">&times;</span>
-                  <p class="mt-3 MAIN-STUFF">Introduction to Lab Safety</p>
-                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">We delivered a comprehensive briefing on Good Laboratory Practices (GLP) and Safe Laboratory Practices (SLP) to instil a strong awareness of safety in the lab environment.</p>
-                </div>
-              </div>
-
-              <div id="modal6" class="modal">
-               <div class="modal-content">
-                  <span class="close" onclick="closeModal('modal6')">&times;</span>
-                  <p class="mt-3 MAIN-STUFF">Laboratory Tour</p>
-                  <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Subsequently, we conducted a guided tour of our lab, providing explanations for the various pieces of equipment we utilised. This included demonstrations and explanations of our centrifuges, shaker incubators, -20°C and 4°C refrigerators, fume hood, weighing balance, pH metre, gel electrophoresis and SDS-PAGE setup, as well as the thermocycler..</p>
-                </div>
-              </div>
-              <div id="modal7" class="modal">
-                <div class="modal-content">
-                   <span class="close" onclick="closeModal('modal7')">&times;</span>
-                   <p class="mt-3 MAIN-STUFF">Interactive Sessions</p>
-                   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To maintain engagement and foster hands-on learning, we demonstrated how to work within the Laminar Airflow hood, operate the pH metre, and use the UV spectrophotometer. We also showcased how to visualise gels under the UV Transilluminator. We also emphasised on the importance of appropriate PPE while working in the lab.</p>
-                 </div>
-               </div>
-               <div id="modal8" class="modal">
-                <div class="modal-content">
-                   <span class="close" onclick="closeModal('modal8')">&times;</span>
-                   <p class="mt-3 MAIN-STUFF">Autoclaving and Decontamination</p>
-                   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The final segment of the session centred on the crucial processes of autoclaving and decontamination, emphasising their significance in maintaining lab hygiene and safety.</p>
-                 </div>
-               </div>
-               <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-              The students expressed their gratitude for the informative and engaging sessions, and they enthusiastically embraced the opportunity to familiarise themselves with laboratory safety protocols and equipment. These sessions not only provided them with valuable knowledge but also served as an inspiring introduction to the exciting world of scientific research within our team.
-              </p>
-              </p>
-            <p class="mt-3 MAIN-STUFF" id="section5">5. Dual Use<br></p>
-            <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"><b>What is Dual Use?</b><br><br>
-              Dual Use in the context of science describes the potential of knowledge or technologies to be used by third parties with benevolent and malevolent intentions. (European Commission, 2018)<br><br>
-              <b>What is Dual Use research of concern?</b><br><br>
-              Dual-use research of concern (DURC) describes research that is intended to provide a clear benefit, but which could easily be misapplied to do harm. It usually refers to work in the life sciences, but the principles apply to other fields including engineering and information technology. (World Health Organisation, 2020)<br><br>
-              <b>Why is dual-use research of concern important?</b><br><br>
-              DURC poses a major concern, one such case is in March 2022, a US pharmaceutical company published a paper in Nature Machine Intelligence on AI systems for drug discovery. They aimed to improve drug toxicity prediction but were surprised to be invited to a security conference where they discussed the potential misuse of their models in creating chemical and biological weapons. By refining their models to search for more toxic molecules, they could generate 40,000 lethal molecules in under 6 hours, including VX nerve agent and new molecules predicted to be even more powerful. The researchers admitted to being naive and untrained to think about the potential misuse of their work. Furthermore, advancing technology and the global availability through open access to the internet, also allows sensitive information to spread.<br><br>
-              <b>What can be done?</b><br><br>
-              To avoid such incidents from occurring in the future, we need to make sure that the upcoming scientists are aware of this possibility and have a clear knowledge of how their projects could have a negative effect on the world. We started with the university level by educating the students of Biotechnology (third semester) and making them aware of the importance of dual use. 
-              Furthermore, iGEM is not only about starting a project from scratch. In past years, iGEM teams have produced remarkable concepts and built impressive systems that have positively impacted the world. We maintain that refining these exceptional ideas is not only a way to pay tribute to those projects but also a crucial step towards creating lasting scientific change.<br><br>
-              <b>Introspect with our project.</b><br><br>
-              Degradation of a harmful compound present in wastewater treatment plants, Triclocarban into non-toxic byproducts is the aim of our project. We are using a novel amidase enzyme coded by the TccA gene from <i>Ochrobactrum sp. TCC-2</i>, which degrades TCC to toxic chloroaniline byproducts.<br><br> The aim is to introduce <i>Ochrobactrum sp. TCC-2</i> TccA gene into a chassis which can inherently degrade the toxic chloroaniline byproducts using its natural, existing pathways. We intend to immobilise our genetically modified bacteria onto biochar, which will be introduced into a batch bioreactor. Ideally, the bacteria should remain immobilised on the biochar and die once the carbon source is depleted, but in the event they do not, we plan to include a kill switch. We plan to introduce a toxin-antitoxin kill switch to ensure its biocontainment. We also intend not to use an antibiotic-resistance gene as a selectable marker for our modified bacteria that will be introduced into the bioreactor. <br><br>However, a closer inspection,after we learned about dual use, revealed the potential abuse of our project, if the plasmid is isolated from the biochar and introduced to any chassis that does not have the ability to degrade the byproducts, it could lead to the production of chloroanilines (3,4-dichloroaniline and 4-chloroaniline) which are toxic and pose a potential threat. 
-              Delving deeper into the issue, biochar is a rich-carbon source and will prove to be so not only for our chassis but for a wide range of non-target organisms which could cause serious problems/epidemics due to pathogenicity. 
-              
-              
-               </p>
-            
-            
-        </div>
+  <div class="m-5 mb-16">
+    <p class="mt-5 MAIN-STUFF" id="section1">1. Prologue<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      The team iGEM MIT-MAHE project gives topmost priority to safety and security, focusing on safeguarding laboratory
+      members, experimentation, and the environment. Our institute's unwavering support has enabled us to fulfil our
+      fundamental responsibility toward biosafety. We have meticulously planned our experiments and upheld proper work
+      ethics in the laboratory to ensure that no harm was inflicted on nature or ourselves. In this regard, we have
+      discussed our planned experiments in detail with our principal investigator, and were performed only upon her
+      approval. This approach ensured transparency and accountability in our efforts to maintain the highest standards
+      of safety and security.
+    </p>
+    <img src="https://static.igem.wiki/teams/4641/wiki/safety/safety-flow-chart.png"
+      class="img-fluid rounded mx-auto d-block mt-4">
+    <p class="mt-5 MAIN-STUFF" id="section2">2. Lab Safety<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">1. The MIT-MAHE team's wet lab members conduct their
+      experiments in the Department of Biotechnology's Project Lab, a lab/workspace designated with Biosafety Level 2
+      (BSL-2). Our laboratory and work practices within the lab adhere to the guidelines for biosafety and biosecurity
+      in India as well as the guidelines provided by the Centre of Bioethics, MAHE.<br><br>
+      2. All members of the wet lab subsystem of our team have received extensive training in safe lab practices from
+      our PI, Dr. Ritu Raval and our advisors before they began working in the lab.<br>
+      &#8594; We were advised on the risk assessment of the reagents in use, proper identification, management, and safe
+      disposal of biological and chemical hazardous waste and lab consumables as well as the necessary precautions to be
+      taken while working with biological materials.<br>
+      &#8594; We were also briefed on the working mechanisms of all the equipment and machinery available in the lab and
+      on how to appropriately and safely use them to conduct experiments. They were advised on appropriately using
+      equipment such as the centrifuge, UV-visible spectrophotometer, etc. as well as safe handling of the autoclave and
+      decontamination units.<br>
+      &#8594; We were also made familiar with the location of safety showers, eye wash, first aid kits, fire
+      extinguishers, as well as emergency evacuation routes.<br>
+      &#8594; We received training sessions from their advisors and PhD scholars Mr Rajesh M. Gowda and Mrs. Atheena PV
+      on working in the biosafety cabinet and precautions to avoid contamination.<br><br>
+      3. Some practices all members working in the lab strictly follow include:<br>
+      &#8594; Eating and drinking are strictly prohibited in the lab.<br>
+      &#8594; All members have to wear lab coats, protective goggles, and nitrile gloves as necessary whilst working in
+      the lab.<br>
+      &#8594; Proper sterilisation is undertaken before working in the BSL-2 biosafety cabinet.<br>
+      &#8594; All equipment and machinery in the laboratory such as the centrifuge, spectrophotometer, cold storage,
+      autoclave and such, are handled with care and well-maintained. Regular maintenance work is done for them.<br>
+      &#8594; Taking further precautions, the lab is fumigated every 3-4 weeks.<br><br>
+      <b>Use of Harmful Reagents and Procedures:</b><br>
+      Some experimental procedures involved using harmful chemicals and reagents, however, all additional safety
+      measures were taken to prevent any harm.<br><br>
+      <button class="modal-button" onclick="openModal('modal1')">UV light</button>
+      <button class="modal-button" onclick="openModal('modal2')">Gel electrophoresis</button>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">UV light</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">UV light is used to sterilise all the biological
+          equipment and analyse the gel after electrophoresis. Our team members wear all necessary PPE while working
+          near UV in order to make sure that there's no UV damage caused to them.</p>
       </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">Gel Electrophoresis</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">In the molecular biology experiments, we used
+          certain toxic reagents-<br>
+          a.TEMED for SDS-PAGE<br>
+          b.bisacrylamide and acrylamide gel for SDS-PAGE<br>
+          These were also stored separately and sent to Re Sustainability Limited (RE).<br>
+          All the lab members understand the risks involved with these chemicals and have followed all the necessary
+          safety measures while working with them.</p>
+      </div>
+    </div>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <button class="modal-button" onclick="openModal('modal3')">Sodium Hydroxide</button>
+      <button class="modal-button" onclick="openModal('modal4')">Antibiotics</button>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">Sodium Hydroxide</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Sodium hydroxide was used for pH-based growth
+          curves in order to increase the pH of LB broth to wastewater pH in order to study bacterial growth under
+          various pH conditions.</p>
+      </div>
+    </div>
 
-      <script>
-        function openModal(modalId) {
-          document.getElementById(modalId).style.display = "block";
-        }
-        
-        function closeModal(modalId) {
-          document.getElementById(modalId).style.display = "none";
-        }
-        </script>
-        {% endblock %}
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">Antibiotics</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> Ampicillin as indicated in the material safety
+          data sheet (MSDS) requires caution due to its hazardous effects at high concentrations. Both acute and chronic
+          exposure to humans via inhalation, ingestion, or contact with eyes can result in harm. Therefore, the team
+          responsible for handling the compound followed strict safety protocols, wore personal protective equipment
+          (PPE), and was equipped with the necessary information to handle spills and acute exposures. This was used for
+          culturing organisms with a pET22b+ vector, but these were ensured to be disposed of safely after the
+          experiment.Additionally, the product was disposed of in accordance with the disposal protocols and state
+          safety regulations.</p>
+      </div>
+    </div>
+    <br>
+    </p>
+
+    <p class="mt-3 MAIN-STUFF" id="section3">3. Project Specific Safety<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">1. As our team is working with Triclocarban and its
+      subsequent breakdown products, 4-chloroaniline and 3,4-dichloroaniline which are hazardous in nature and possible
+      carcinogens, we took extra precautions while working with them by wearing double nitrile gloves, N95 masks, safety
+      goggles and lab coats.<br><br>
+      2. For decontamination and disposal of Triclocarban and other hazardous compounds, we have stored all the
+      equipment used, i.e., pipette tips, tissue paper as well as the solutions containing these chemicals separately to
+      prevent the risk of spillage and exposure to untrained individuals. This will be then sent to Re Sustainability
+      Limited (RE), a KKR-backed company, which is one of Asia's leading providers of comprehensive environment
+      management services for disposal.<br><br>
+      3. The organisms and parts that we are working with are in Risk Group 1. They are non-pathogenic and non-spore
+      forming and all our work is covered by the White List, hence, we aren't conducting any activities against the
+      guidelines provided by the competition.<br><br>
+      4. Pertaining to our project, physicochemical methods of degrading TCC have proved ineffective. Though the
+      introduction of Genetically Modified Organisms (GMOs) is considered risky, if we take appropriate measures, its
+      use can revolutionise bioremediation globally. Keeping safety at utmost importance, our contained bioreactor
+      system would be designed to ensure no interference or interaction of our bacteria with the wastewater treatment
+      environment. Moreover, microbial biocontainment is essential to engineer safe bioremediation strategies. The
+      incorporation of a kill switch (an artificial system that induces cell death) only enhances our project safety and
+      ensures an air-tight implementation.<br><br>
+      5. For the hardware aspect of our project, we had collected water samples from the nearby lake and ran it through
+      Raman spectrometer in order to discern how the unique peaks of triclocarban would vary in the presence of
+      naturally occurring compounds, we made sure to abide by necessary safety protocols when dealing with natural
+      samples, such as using falcon tubes to collect the lake water as well as wearing gloves while handling these
+      samples.<br><br>
+      6. All the equipment and glassware that we use that have come in contact with the cultures that we're working with
+      are routinely autoclaved (decontamination) and treated with bleach before disposal.<br><br>
+
+      <b>
+        <h3> Meeting with Lynn Ferris, Lab Manager at UNSW, Australia: Sept 1, 2023</h3>
+      </b><br><br>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      As a lot of our wet lab protocols involved working with toxic chemicals like triclocarban, 3,4-DCA and 4-CA, we
+      were concerned about the safety of our team members as well as others working in the Project Lab. To check the
+      suitability of our safety protocols, our Wet Lab members met Lynn Ferris, Lab Manager from UNSW, Australia. As our
+      lab does not have an official committee to deal with safety and security in the lab, any changes would have to
+      happen on a voluntary basis.
+      Lynn helped us realise the importance of communicating these risks to the people in the workplace and raising
+      awareness about the same.
+      <br><br>
+    </p>
+    <b>
+      <h4>Her suggestions involved:</h4>
+    </b>
+    <ol>
+      <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+        1. The use of a fume hood with carbon filter respirators while preparing stock solutions of TCC.<br>
+        2. She approved our use of gloves and safety goggles while working with these chemicals, but also added that we
+        use double gloves if we don't have the required glove thickness.<br>
+        3. She emphasised the importance of wiping all counters and workspaces with soap and water every evening.<br>
+        4. She also suggested that all our lab coats should be kept inside the lab on hooks separating them such that
+        they do not touch each other.<br>
+        5. She also mentioned how important it was to defrost the -20 degrees fridge once in a while and also go through
+        the contents and discard unwanted samples.<br><br>
+    </ol>
+
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Overall, this session with Lynn proved insightful
+      and many of her suggestions have been incorporated by us. This meeting helped us better our lab safety and
+      project-specific safety.
+    </p>
+    </p>
+    </p>
+    <br>
+
+    <p class="mt-3 MAIN-STUFF" id="section4">4. Safety and Security Session<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To equip the second years of MIT Manipal pursuing a
+      B.Tech in Biotechnology with valuable laboratory safety knowledge and hands-on experience, we organised a series
+      of Lab Safety sessions. These sessions took place on the 14th, 18th and 19th of September, 2023, with two
+      half-hour sessions each day, accommodating five students per session to ensure the lab remained spacious and
+      manageable.<br>
+      <br>
+      The primary objective of these sessions was to familiarise them with essential safety protocols and equipment,
+      equipping them with a solid foundation for the upcoming years. The sessions were structured as follows:
+      <br><br>
+      <button class="modal-button" onclick="openModal('modal5')">Introduction to Lab Safety</button>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <button class="modal-button" onclick="openModal('modal6')">Laboratory Tour</button>
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <button class="modal-button" onclick="openModal('modal7')">Interactive Sessions</button>
+    </p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      <button class="modal-button" onclick="openModal('modal8')">Autoclaving and Decontamination</button>
+    </p>
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">Introduction to Lab Safety</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">We delivered a comprehensive briefing on Good
+          Laboratory Practices (GLP) and Safe Laboratory Practices (SLP) to instil a strong awareness of safety in the
+          lab environment.</p>
+      </div>
+    </div>
+
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">Laboratory Tour</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Subsequently, we conducted a guided tour of our
+          lab, providing explanations for the various pieces of equipment we utilised. This included demonstrations and
+          explanations of our centrifuges, shaker incubators, -20°C and 4°C refrigerators, fume hood, weighing balance,
+          pH metre, gel electrophoresis and SDS-PAGE setup, as well as the thermocycler..</p>
+      </div>
+    </div>
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal7')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">Interactive Sessions</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">To maintain engagement and foster hands-on
+          learning, we demonstrated how to work within the Laminar Airflow hood, operate the pH metre, and use the UV
+          spectrophotometer. We also showcased how to visualise gels under the UV Transilluminator. We also emphasised
+          on the importance of appropriate PPE while working in the lab.</p>
+      </div>
+    </div>
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal8')">&times;</span>
+        <p class="mt-3 MAIN-STUFF">Autoclaving and Decontamination</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The final segment of the session centred on the
+          crucial processes of autoclaving and decontamination, emphasising their significance in maintaining lab
+          hygiene and safety.</p>
+      </div>
+    </div>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+      The students expressed their gratitude for the informative and engaging sessions, and they enthusiastically
+      embraced the opportunity to familiarise themselves with laboratory safety protocols and equipment. These sessions
+      not only provided them with valuable knowledge but also served as an inspiring introduction to the exciting world
+      of scientific research within our team.
+    </p>
+    </p>
+    <p class="mt-3 MAIN-STUFF" id="section5">5. Dual Use<br></p>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"><b>What is Dual Use?</b><br><br>
+      Dual Use in the context of science describes the potential of knowledge or technologies to be used by third
+      parties with benevolent and malevolent intentions. (European Commission, 2018)<br><br>
+      <b>What is Dual Use research of concern?</b><br><br>
+      Dual-use research of concern (DURC) describes research that is intended to provide a clear benefit, but which
+      could easily be misapplied to do harm. It usually refers to work in the life sciences, but the principles apply to
+      other fields including engineering and information technology. (World Health Organisation, 2020)<br><br>
+      <b>Why is dual-use research of concern important?</b><br><br>
+      DURC poses a major concern, one such case is in March 2022, a US pharmaceutical company published a paper in
+      Nature Machine Intelligence on AI systems for drug discovery. They aimed to improve drug toxicity prediction but
+      were surprised to be invited to a security conference where they discussed the potential misuse of their models in
+      creating chemical and biological weapons. By refining their models to search for more toxic molecules, they could
+      generate 40,000 lethal molecules in under 6 hours, including VX nerve agent and new molecules predicted to be even
+      more powerful. The researchers admitted to being naive and untrained to think about the potential misuse of their
+      work. Furthermore, advancing technology and the global availability through open access to the internet, also
+      allows sensitive information to spread.<br><br>
+      <b>What can be done?</b><br><br>
+      To avoid such incidents from occurring in the future, we need to make sure that the upcoming scientists are aware
+      of this possibility and have a clear knowledge of how their projects could have a negative effect on the world. We
+      started with the university level by educating the students of Biotechnology (third semester) and making them
+      aware of the importance of dual use.
+      Furthermore, iGEM is not only about starting a project from scratch. In past years, iGEM teams have produced
+      remarkable concepts and built impressive systems that have positively impacted the world. We maintain that
+      refining these exceptional ideas is not only a way to pay tribute to those projects but also a crucial step
+      towards creating lasting scientific change.<br><br>
+      <b>Introspect with our project.</b><br><br>
+      Degradation of a harmful compound present in wastewater treatment plants, Triclocarban into non-toxic byproducts
+      is the aim of our project. We are using a novel amidase enzyme coded by the TccA gene from <i>Ochrobactrum sp.
+        TCC-2</i>, which degrades TCC to toxic chloroaniline byproducts.<br><br> The aim is to introduce <i>Ochrobactrum
+        sp. TCC-2</i> TccA gene into a chassis which can inherently degrade the toxic chloroaniline byproducts using its
+      natural, existing pathways. We intend to immobilise our genetically modified bacteria onto biochar, which will be
+      introduced into a batch bioreactor. Ideally, the bacteria should remain immobilised on the biochar and die once
+      the carbon source is depleted, but in the event they do not, we plan to include a kill switch. We plan to
+      introduce a toxin-antitoxin kill switch to ensure its biocontainment. We also intend not to use an
+      antibiotic-resistance gene as a selectable marker for our modified bacteria that will be introduced into the
+      bioreactor. <br><br>However, a closer inspection,after we learned about dual use, revealed the potential abuse of
+      our project, if the plasmid is isolated from the biochar and introduced to any chassis that does not have the
+      ability to degrade the byproducts, it could lead to the production of chloroanilines (3,4-dichloroaniline and
+      4-chloroaniline) which are toxic and pose a potential threat.
+      Delving deeper into the issue, biochar is a rich-carbon source and will prove to be so not only for our chassis
+      but for a wide range of non-target organisms which could cause serious problems/epidemics due to pathogenicity.
+
+
+    </p>
+
+
+  </div>
+</div>
+
+<script>
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+  }
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+  }
+</script>
+{% endblock %}
