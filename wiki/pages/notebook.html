@@ -2,12 +2,25 @@
 
 {% block heading %}Notebook{% endblock %}
 
+{% block modal_css %}
+<link href="{{ url_for('static', filename='anika-modal.css') }}" rel='stylesheet'>
+<script>
+  var myModal = document.getElementById('myModal')
+  var myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+  })
+</script>
+{% endblock %}
+
 {% block page_content %}
 
 <div class="content">
   <div class="m-5 mb-16">
     <p class="mt-5 MAIN-STUFF" id="section1">Growth Curve<br></p>
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal1')">WEEK 1</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal1')">WEEK 1</button>
     <div id="modal1" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -269,7 +282,8 @@
             putida</i>.</center>
       </div>
     </div>
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal2')">WEEK 2</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal2')">WEEK 2</button>
     <div id="modal2" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal2')">&times;</span>
@@ -438,7 +452,8 @@
           class="img-fluid rounded mx-auto d-block mt-4">
         <p><b>Result:</b> It was confirmed that the presence of acetonitrile does not affect the growth of
           <i>Pseudomonas putida</i>. The sudden increase in the growth curve may be attributed to either contamination
-          or the utilization of an alternative carbon source(Diauxic growth).</p>
+          or the utilization of an alternative carbon source(Diauxic growth).
+        </p>
 
         <hr>
         <hr>
@@ -723,7 +738,8 @@
 
 
 
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal3')">WEEK 3</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal3')">WEEK 3</button>
     <div id="modal3" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal3')">&times;</span>
@@ -1377,7 +1393,8 @@
 
 
 
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal4')">WEEK 4</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal4')">WEEK 4</button>
     <div id="modal4" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal4')">&times;</span>
@@ -2355,7 +2372,8 @@
 
 
 
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal5')">WEEK 5</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal5')">WEEK 5</button>
     <div id="modal5" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal5')">&times;</span>
@@ -2422,7 +2440,8 @@
             </ol>
             <p>And a negative result was obtained. This indicates that it does not produce organic acid end products, or
               acid end products are enzymatically converted into non-acidic compounds. Thus proving that
-              <i>Acinetobacter baylyi</i> does not ferment glucose.</p>
+              <i>Acinetobacter baylyi</i> does not ferment glucose.
+            </p>
             <img class="modal-image"
               src="https://static.igem.wiki/teams/4641/wiki/notebook-growth-curves/notebook-growth-curves/mrvp-a-baylyi.jpg"
               class="img-fluid rounded mx-auto d-block mt-4">
@@ -2737,7 +2756,8 @@
 
 
 
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal6')">WEEK 6</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal6')">WEEK 6</button>
     <div id="modal6" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal6')">&times;</span>
@@ -3063,7 +3083,8 @@
         <p><b>Results:</b> It is observed that <i>Acinetobacter baylyi</i> is capable of growing in the presence of TCC.
           <i>Acinetobacter baylyi</i> and other gram negative bacteria have efflux pumps to remove toxic substances that
           allow it to survive<a href="#ref1"><sup>1</sup></a>. This might explain why <i>A.baylyi</i> grows in a TCC
-          containing environment.</p>
+          containing environment.
+        </p>
 
 
         <hr>
@@ -3239,7 +3260,9 @@
 
 
 
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal7')">WEEK 7</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;"
+      style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal7')">WEEK 7</button>
     <div id="modal7" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal7')">&times;</span>
@@ -3391,7 +3414,8 @@
         <hr>
       </div>
     </div>
-    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal8')">WEEK 8</button>
+    <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+      onclick="openModal('modal8')">WEEK 8</button>
     <div id="modal8" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal8')">&times;</span>
@@ -3605,7 +3629,8 @@
     <div class="content">
       <div class="m-5 mb-16">
         <p class="mt-5 MAIN-STUFF" id="section1">Cloning and Expression<br></p>
-        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modalone')">WEEK 1</button>
+        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+          onclick="openModal('modalone')">WEEK 1</button>
         <div id="modalone" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modalone')">&times;</span>
@@ -4114,7 +4139,8 @@
             <hr>
           </div>
         </div>
-        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modaltwo')">WEEK 2</button>
+        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+          onclick="openModal('modaltwo')">WEEK 2</button>
         <div id="modaltwo" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modaltwo')">&times;</span>
@@ -4227,7 +4253,8 @@
             <hr>
           </div>
         </div>
-        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modalthree')">WEEK 3</button>
+        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+          onclick="openModal('modalthree')">WEEK 3</button>
         <div id="modalthree" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modalthree')">&times;</span>
@@ -4666,7 +4693,8 @@
 
           </div>
         </div>
-        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modalfour')">WEEK 4</button>
+        <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+          onclick="openModal('modalfour')">WEEK 4</button>
         <div id="modalfour" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeModal('modalfour')">&times;</span>
@@ -5170,7 +5198,8 @@
         <div class="content">
           <div class="m-5 mb-16">
             <p class="mt-5 MAIN-STUFF" id="section1">Detection<br></p>
-            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal11')">WEEK 1</button>
+            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+              onclick="openModal('modal11')">WEEK 1</button>
             <div id="modal11" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal('modal11')">&times;</span>
@@ -5399,7 +5428,8 @@
                   <h2>
               </div>
             </div>
-            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal12')">WEEK 2</button>
+            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+              onclick="openModal('modal12')">WEEK 2</button>
             <div id="modal12" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal('modal12')">&times;</span>
@@ -5831,7 +5861,8 @@
                   <h2>
               </div>
             </div>
-            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal13')">WEEK 3</button>
+            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+              onclick="openModal('modal13')">WEEK 3</button>
             <div id="modal13" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal('modal13')">&times;</span>
@@ -5906,7 +5937,8 @@
 
               </div>
             </div>
-            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button" onclick="openModal('modal14')">WEEK 4</button>
+            <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="modal-button"
+              onclick="openModal('modal14')">WEEK 4</button>
             <div id="modal14" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal('modal14')">&times;</span>
