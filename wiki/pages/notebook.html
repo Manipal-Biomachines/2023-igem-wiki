@@ -1,4 +1,30 @@
 {% extends "my-layout.html" %}
+{% block sidebar_content %}
+<ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="#section1" class="nav-link link-dark" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                  Growth Curves
+                </a>
+              </li>
+              <li>
+                <a href="#section2" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  Cloning and Expression
+                </a>
+              </li>
+              
+              <li>
+                <a href="#section3" class="nav-link link-dark">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                  Detection
+                </a>
+              </li>
+
+            </ul>
+
+{% endblock %}
+
   
 {% block heading %}Notebook{% endblock %}
 
@@ -3363,7 +3389,7 @@
 
                  <div class="content">
                   <div class="m-5 mb-16">
-                    <p class="mt-5 MAIN-STUFF" id="section1">Cloning and Expression<br></p>
+                    <p class="mt-5 MAIN-STUFF" id="section2">Cloning and Expression<br></p>
                     <button  class="modal-button" onclick="openModal('modalone')">WEEK 1</button> 
                       <div id="modalone" class="modal">
                         <div class="modal-content">
@@ -4821,7 +4847,7 @@
  
                   <div class="content">
                    <div class="m-5 mb-16">
-                     <p class="mt-5 MAIN-STUFF" id="section1">Detection<br></p>
+                     <p class="mt-5 MAIN-STUFF" id="section3">Detection<br></p>
                      <button  class="modal-button" onclick="openModal('modal11')">WEEK 1</button> 
                        <div id="modal11" class="modal">
                          <div class="modal-content">
