@@ -88,42 +88,7 @@
 </body>
 
 <!-- Footer -->
-<footer class="text-center text-white" style="background-color: #000000; bottom: 0; width: 100%;">
-  <!-- Grid container -->
-  <div class="container p-2">
-
-    <!-- Section: Social media -->
-    <section class="mb-2">
-
-      <!-- Google -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
-          class="bi bi-envelope"></i></a>
-
-      <!-- Instagram -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
-        href="https://www.instagram.com/manipalbiomachines/" role="button"><i class="bi bi-instagram"></i></a>
-
-      <!-- LinkedIn -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
-        href="https://www.linkedin.com/company/manipal-biomachines/" role="button"><i class="bi bi-linkedin"></i></a>
-
-      <!-- Gitlab -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
-        href="https://gitlab.igem.org/2023/mit-mahe/" role="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gitlab"
-          viewBox="0 0 16 16">
-          <path
-            d="m15.734 6.1-.022-.058L13.534.358a.568.568 0 0 0-.563-.356.583.583 0 0 0-.328.122.582.582 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.673.673 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.046 4.046 0 0 0 1.34-4.668Z" />
-        </svg>
-      </a>
-    </section>
-  </div>
-
-  <!-- Copyright -->
-  <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2023 - Content on this site is licensed under a Creative Commons Attribution 4.0 International license.
-  </div>
-</footer>
+{% include 'my-footer.html' %}
 
 <script src="{{ url_for('static', filename = 'jquery-3.3.1.slim.min.js') }}"></script>
 <script src="{{ url_for('static', filename = 'popper.min.js') }}"></script>
