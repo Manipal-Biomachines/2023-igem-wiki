@@ -1,5 +1,17 @@
 {% extends "my-layout.html" %}
   
+{% block modal_css %}
+       <link href="{{ url_for('static', filename='saurav-modal.css') }}" rel='stylesheet'>
+       <script>
+         var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+       </script>
+{% endblock %}
+
 {% block sidebar_content %}
     <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
@@ -121,6 +133,1345 @@ innovative solutions that align with our values, address real-world needs, and a
 <p class="sub-stuff">Distribution of stakeholders around the world</p>
 <img class="img-fluid rounded mx-auto d-block" style="scale:0.5" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/distribution-of-stakeholders-in-india.png">
 <p class="sub-stuff">Map of India depicting the number of stakeholder interactions across different states</p>
+
+<p class="mt-5"></p>
+
+<ul class="timeline">
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-1">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. S. Raja</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Dept. of Chemical Engineering, Manipal Institute of Technology, Manipal, India</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">06/03/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-2">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Nausha Shetty</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Assistant Professor of Civil Department, Manipal Institute of Technology, Manipal, India</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">06/03/2023</p>
+              </div>
+            </div>
+          </li>
+          
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-3">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1> Mr. Omkar Khade</h1>
+              </div>
+              <div class="timeline-body">
+                <p> Researcher at Institute of Bioinformatics, Bangalore</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">10/05/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-4">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Bobby Paul</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Head of the Department of B.Sc. Biotechnology at Manipal School of Life Sciences, Manipal</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">12/05/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-5">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Shailendra Kumar Tiwari</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Associate Professor at the Department of Electronic and Communication Engineering, MIT Manipa</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">12/05/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-6">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Shreya Parthasarthi, Research Scientist</h1>
+              </div>
+              <div class="timeline-body">
+                <p> <i> Designation: To be kept anonymous </i> </p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">13/05/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-7">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Akshara Gopinath</h1>
+              </div>
+              <div class="timeline-body">
+                <p><i> Designation: To be kept anonymous </i> </p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">11/06/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-8">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Gurunath Ramanathan </h1>
+              </div>
+              <div class="timeline-body">
+                <p>Professor at IIT Kanpur</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">10/06/2023 and 12/06/23</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-9">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Sotiris Dimitriadis</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Instructor for iGEM Thrace</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">15/06/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-10">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Visit to Two Treatment Plants in the Manipal Region</h1>
+              </div>
+              <div class="timeline-body">
+                <p><i>To be kept anonymous </i> </p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">03/07/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-11">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Mr. S.K. Swain</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Owner of Water Treat Supply and Services, Cuttack, Odisha</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">06/07/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-12">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Mr. Rajesh Kanungo</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Managing Director of Reliance Detergents & Disinfectants, Jagatpur, Odisha</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">06/07/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-13">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Mr. Tarini Prasad Barik</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Co-Founder of Nature Conservancy Consultancy Pvt. Ltd., Bhubaneswar, Odisha</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">06/07/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-14">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Visit to Garden Reach Water Works, West Bengal, India</h1>
+              </div>
+              <div class="timeline-body">
+                <p></p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">16/07/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-15">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Ankit Sudhir</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Assistant Professor in Biotechnology at GSFC University, Vadodara, Gujarat</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">13/07/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-16">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Visit to BWSSB Waste Water treatment plant in Bangalore</h1>
+              </div>
+              <div class="timeline-body">
+                <p></p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">25/07/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-17">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Sajan D. George</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Head of the Department of Atomic and Molecular Physics, Manipal Institute of Technology, Manipal</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">25/07/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-18">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Sanjeeb Mohapatra</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Researcher at National Institute of Singapore, Singapore</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">25/07/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-19">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>All India iGEM Meet (AIIM) at IISER Bhopal, India</h1>
+              </div>
+              <div class="timeline-body">
+                <p></p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">28/07/23-30/07/23</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-20">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Mr. Prashant</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Co-Founder and Director of Quadrasystems.net India Pvt. Ltd.</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">01/08/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-21">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr Subbalaxmi Selvaraj </h1>
+              </div>
+              <div class="timeline-body">
+                <p>Assistant Professor-Selection Grade at Department of Biotechnology, Manipal</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">22/08/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-22">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Ms. Lynn Ferris</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Lab Manager at UNSW, Australia</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">01/09/23</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-23">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. V. Ramachandran Murty</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Associate Director-Development, Manipal Institute of Technology, Manipal</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">07/09/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-24">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. M. Ramananda Bhat</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Professor at the Department of Biotechnology, Manipal Institute of Technology, Manipal, India</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">10/09/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-25">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Smart India Hackathon</h1>
+              </div>
+              <div class="timeline-body">
+                <p></p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">15/09/23</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-26">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Mr. S.K. Swain</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Owner of Water Treat & Supply Services, Cuttack, Odisha</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">20/09/23</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-27">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Mike McDonald</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Senior Lecturer and Group Leader at Monash University, Melbourne, Australia</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">21/09/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-28">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Kevin Sowers</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Associate Director at the Institute of Marine and Environmental Technology, Baltimore, Maryland, USA</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">26/09/23</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-29">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Dr. Kamatam Krishnaiah</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Professor at the Department of Chemical Engineering, Indian Institute of Technology, Tirupati</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">30/09/2023</p>
+              </div>
+            </div>
+          </li>
+  
+          <li class="timeline-inverted" data-bs-toggle="modal" data-bs-target="#ihp-modal-30">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1>Olivia Gallup</h1>
+              </div>
+              <div class="timeline-body">
+                <p>DPhil candidate at the University of Oxford</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">04/10/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-bs-toggle="modal" data-bs-target="#ihp-modal-31">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h1> Dr. Mahesha MG</h1>
+              </div>
+              <div class="timeline-body">
+                <p>Associate Professor, Department of Physics, Manipal Institute of Technology</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">05/10/2023 & 08/10/2023</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="clearfix no-float"></li>
+
+      </ul>
+      
+
+      <div class="modal fade" id="ihp-modal-1" tabindex="-1" aria-labelledby="ihp-modal-1Label" aria-hidden="true"
+      style="width: 100%;">
+      <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title reveal-on-scroll" id="ihp-modal-1Label">Dr. S. Raja</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mt-3 sub-stuff"> <i>Discussion</i>:<br>
+During our discussion with Dr. S. Raja, a specialist in emerging pollutant removal from wastewater, he suggested investigating the infiltration process for potential harmful substance release. He advised exploring the Fenton catalyst for degradation, <b>examining TCC solubility</b>, and using LCMS and HPLC for estimation. Our discussion also highlighted the inefficiencies of existing treatment methods in degrading harmful substances, posing environmental risks. Dr. Raja generously shared research papers to enhance our understanding.<br><br>
+              <i>Inference:</i><br>
+              The shared research papers from Dr. Raja helped enrich our knowledge significantly. The discussion with him made us realize the necessity of an idea like ours. We further analyzed the solubility of TCC in water and various other solvents like acetone and acetonitrile based on his suggestion. <br> </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/dr-s-raja.jpg" >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Person-2 -->
+    <div class="modal fade" id="ihp-modal-2" tabindex="-1" aria-labelledby="ihp-modal-2Label" aria-hidden="true"
+      style="width: 100%;">
+      <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title reveal-on-scroll" id="ihp-modal-2Label">Dr. Nausha Shetty</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mt-3 sub-stuff"><i>Discussion:</i><br>
+              We gained valuable insights during our project discussion with Dr. Shetty. As his research centers on addressing environmental challenges, his input was particularly relevant to our work. He recommended visiting our <b>local community's wastewater treatment plants</b> to understand their operational processes better.<br>
+              Dr. Shetty also provided specific advice related to our implementation mechanism. He suggested implementation methods like activated carbon, sequencing batch reactor, and membrane reactor. Further, he mentioned the WHO standards which should be taken into account while designing our project. Additionally, he even offered to arrange industry wastewater samples for our wet lab testing needs.<br>
+              
+              <i>Inference:</i><br>
+              Based on the advice and suggestions given by Dr. Shetty, we designed our implementation process keeping in mind that it doesn't harm the environment. The discussion with him about the <b>types of bioreactors</b> for sludge treatment was also useful in the later stages of the project.
+              </p>
+		<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/dr-nausha-shetty.jpg" >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ihp-modal-3" tabindex="-1" aria-labelledby="ihp-modal-3Label" aria-hidden="true"
+      style="width: 100%;">
+      <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title reveal-on-scroll" id="ihp-modal-3Label">Mr. Omkar Khade</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mt-3 sub-stuff"><i>Discussion:</i><br>
+              During our discussion with Mr. Khade regarding our goal to increase the efficiency of the enzyme to degrade the target, he expressed that we must look beyond enzyme docking and conduct in-vitro studies. For experimental purposes, he advised us to establish a standard curve using samples with known concentrations of Triclocarban (TCC). He outlined a methodology for preparing for the same. It was essential to conduct all experiments in replicates to ensure greater accuracy. To assess the enzyme's impact on these samples, we could extract equal volumes from them at regular intervals. HPLC or LCMS could measure the quantity of products generated or the <b>extent of substrate degradation</b>. Mr. Khade encouraged us to consult the Michaelis–Menten kinetics rate equation and explore relevant research papers.<br><br>
+              
+              <i>Inference:</i><br>
+              Mr. Khade's guidance was instrumental in conducting wet lab studies for TCC detection. We conducted iterative experimentation as suggested and created multiple samples of varying TCC concentrations to create a standard curve using a UV-visible spectrometer. We also used the Michaelis-Menten rate equation to study the <b>degradation kinetics</b> of our bioreactor design later in the project.<br>
+             </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/omkarkhade.jpg" >
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ihp-modal-4" tabindex="-1" aria-labelledby="ihp-modal-4Label" aria-hidden="true"
+  style="width: 100%;">
+  <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title reveal-on-scroll" id="ihp-modal-4Label">Dr. Bobby Paul</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mt-3 sub-stuff">
+          <i>Discussion:</i><br>
+Our meeting with Dr. Paul occurred when we were in the nascent stages of our project, using computational methodologies to improve the amidase enzyme. Dr. Bobby Paul guided us during this phase. He suggested that we study different versions of the TccA amidase enzyme to help create a better one. He also advised us to explore alternative organisms besides <i>Ochrobactrum sp.</i> that might have a more proficient amidase to break down triclocarban (TCC). He introduced us to a software tool called Polyphen, which is adept at introducing mutations into enzymes and predicting their resultant structural conformations. He also encouraged us to learn about enzyme kinetics for our project.<br>
+<i>Inference:</i><br>
+Even though our initial project idea changed, Dr. Paul’s inputs turned out to be instrumental in our ideation stage. We looked into alternative organisms on his suggestion, and that helped us ensure that we had made the right choice.
+
+         </p>
+
+         <img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/dr-bobby-paul.png" >
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="ihp-modal-5" tabindex="-1" aria-labelledby="ihp-modal-5Label" aria-hidden="true"
+style="width: 100%;">
+<div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title reveal-on-scroll" id="ihp-modal-5Label">Dr. Bobby Paul</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p class="mt-3 sub-stuff"><i><i>Discussion:</i><br>
+        Designation:Associate Professor at the Department of Electronic and Communication Engineering, MIT Manipal<br><br>
+
+<b>12/05/2023</b><br><br>
+
+<i>Discussion:</i><br>
+We reached out to Dr. Tiwari, intending to discuss various techniques for detecting triclocarban (TCC). During our conversation, he suggested implementing <b>microcontrollers and paper microfluidics as potential avenues.</b><br>
+Furthermore, he highlighted the significance of delving into TCC's distinctive electrical properties and molecular structure. Such an approach could enhance the sensor's specificity to TCC. Dr. Tiwari also floated the idea of investigating specific chemical reactions triggered by TCC, which could manifest as observable color changes. Harnessing these reactions, he posited, could serve as the foundation for constructing our sensor.<br><br>
+
+<i>Inference:</i><br>
+On Dr. Tiwari’s suggestion, we looked into the color changing properties and chemical reactions triggered  by TCC. However, we could not find any data on it and hence, he helped us <b>rule out colorimetric and electrochemical sensors</b>. After this, we moved on to enzyme-based biosensors to detect TCC<br><br>
+        </p>
+        <img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/dr-shailendra-kumar-tiwari.png" >
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="ihp-modal-6" tabindex="-1" aria-labelledby="ihp-modal-6Label" aria-hidden="true"
+style="width: 100%;">
+<div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title reveal-on-scroll" id="ihp-modal-6Label">Shreya Parthasarthi, Research Scientist</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p class="mt-3 sub-stuff"><i><i>Discussion:</i><br>
+        Our discussion with Ms. Shreya was initiated with a focus on elevating the binding energy of our enzyme and understanding its direct relationship with degradation efficiency. The conversation then shifted towards our goal of enhancing the stability and efficiency of our modified enzyme. Shreya discussed utilizing the Kcat/Km equation and Michaelis-Menten equations for analyzing enzyme efficiency. This process included creating standard curves, detecting TCC levels, and calculating product concentrations. Shreya emphasized the importance of running control samples, performing statistical analysis, and ensuring triplicate runs for reliable results.We also delved into the specifics of testing and analyzing compounds in water samples, mainly focusing on triclocarban (TCC) present at ppb levels.<br><br>
+
+<i>Inference:</i><br>
+We realized from our discussion with Shreya the importance of conducting our experiments step-by-step and generating robust data for subsequent statistical analysis. Following her advice, we also run control samples while carrying out growth curves experiments in the wet lab.<br><br>
+
+        </p>
+  </div>
+</div>
+</div>
+</div>
+
+        <!-- Person-7 -->
+        <div class="modal fade" id="ihp-modal-7" tabindex="-1" aria-labelledby="ihp-modal-7Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-7Label">Akshara Gopinath</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  Akshara Gopinath, an expert in environmental resources management, shared invaluable insights during our discussion. Akshara highlighted the absence of concrete regulations on GMO usage in wastewater treatment plants and recommended exploring European Union (EU) rules as a reference point. She also emphasized the significance of examining health and safety standards, notably the International Finance Corporation (IFC) parameters, for treated water and its suitability for domestic use.<br>
+                  The conversation further delved into the complex aspect of social acceptance concerning GMOs, acknowledging the challenges. Akshara advised us to conduct a thorough analysis encompassing carbon emissions, waste emissions, scalability, and project costs. She underlined that the Pollution Control Board would likely require an environmental impact assessment for our project. To engage with the community, Akshara encouraged us to initiate discussions with NGOs, municipal bodies, and educational institutions to raise awareness and foster the acceptance of GMOs in our project. Given the existing reservations around GMOs, she stressed the importance of transparency in sharing the results of safety testing we undertake to gain public trust.<br><br>
+
+                  <i>Inference:</i><br>
+                  The discussion with her was instrumental in creating awareness about GMOs and <b>environmental regulations</b> among our team members. It allowed us to delve deeper into the topic and get a better understanding of the environmental concerns associated with our project. Hence, we made sure to have a biocontainment strategy, a kill switch as a part of our future implementation.
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-akshara-gopinath.png" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-8 -->
+        <div class="modal fade" id="ihp-modal-8" tabindex="-1" aria-labelledby="ihp-modal-8Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-8Label">Dr. Gurunath Ramanathan</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <b>10/06/2023</b><br><br>
+
+                  <i>Discussion:</i><br>
+                  With Dr. Ramanathan's expertise in enzymology, the interaction with him was instrumental to our project. Not only did he spot <b>inconsistencies in our proposed degradation pathway</b>, which needed a fixture, but he also advised us to survey the toxicity of byproducts formed using the amidase. He mentioned that we should explore the role of metal ions and other cofactors in enzyme catalysis, try to superimpose urease with amidase and find the data for hydrolysis of TCC. He informed us about how metal ions play an essential role in the catalytic activity of an enzyme. Citing and recommending Tinkering With Enzymes by Jermy R Knowles, he stated that the catalytic efficiency of an enzyme interacting with its native substrate cannot be increased. Catalytic efficiency is inherently at its maximum. To understand protein folding better, he suggested we read Richard Dawkins's Blind Watchmaker as well.<br><br>
+
+                  <b>12/06/23</b><br><br>
+
+                  In the subsequent meeting with him, we discussed the material he suggested we go through. We proposed the following methods to improve enzyme efficiency: replacing one amino acid with an isosteric residue of a different function or replacing one amino acid with another of identical functions, resulting in a different structure. Unfortunately, we concluded that it would be difficult to increase the efficiency of the amidase as modification of the residues will harm the enzyme's function. <b>Nature by itself ensures that absolute efficiency is achieved and no product goes wasted, and trying to increase it given our constraints was an unrealistic expectation.</b><br><br>
+
+                  <i>Inference:</i><br>
+                  His insights caused a significant shift in our project approach, where we changed our focus from <b>enzyme modification to a novel biodegradation pathway for TCC</b> such that it breaks down to form non-toxic products that enter the TCA metabolic cycle.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-gurunath-ramanathan.png" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-9 -->
+        <div class="modal fade" id="ihp-modal-9" tabindex="-1" aria-labelledby="ihp-modal-9Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-9Label">Sotiris Dimitriadis</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  Mr. Sotiris suggested incorporating machine learning to optimize the direct evolution process. He advised that we tweak the enzyme sequence through amino acid modification and docking simulations. He stressed the need for in vitro lab techniques and validation of our in-silico results in the wet lab. The possibility of using <b>two enzymes to degrade TCC into non-toxic products like cis muconic acid</b> was first introduced by him, and he considered it to be a better approach than modifying the amidase enzyme to increase its efficiency.<br><br>
+
+                  <i>Inference:</i><br>
+                  Mr Sotiris's suggestion of using two enzymes to degrade TCC made us look into the complete degradation of TCC into non-toxic byproducts using multiple enzymes. <i>Acinetobacter baylyi</i>, <i>Pseudomonas putida</i>, and <i>Pseudomonas fluorescens</i> are the most favorable options to degrade the toxic byproducts of TCC, hence completing our degradation pathway.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-sotiris-dimitriadis.jpg" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-10 -->
+        <div class="modal fade" id="ihp-modal-10" tabindex="-1" aria-labelledby="ihp-modal-10Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-10Label">Visit to Two Treatment Plants in the Manipal Region</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  We visited two wastewater treatment plants located in the Manipal region. These visits were instrumental in gaining practical insights into the treatment processes. The resident engineers generously shared their expertise at the first wastewater treatment plant, which exclusively processed domestic wastewater. They provided us with a comprehensive understanding of the sequential steps involved in water purification. This clarity was precious for us as we intended to target the aeration tank in our project. During our discussion, the engineers emphasized the <b>duration that one cubic meter (1m³) of water</b> typically spends within the aeration tank, shedding light on a critical parameter for our project planning. Notably, the engineers stressed the significance of maintaining a stable bacterial ecosystem within the aeration tank, with around 30% bacteria. <br><br>
+
+                  <i>Inference</i> <br>
+                  The information provided by the engineers prompted us to contemplate the feasibility of using an <b>enzyme vs. an entire bacterium</b> in our proposed solution. This consideration was a crucial turning point in our project design, suggesting a more efficient and precise approach to achieving our goals.
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-11 -->
+        <div class="modal fade" id="ihp-modal-11" tabindex="-1" aria-labelledby="ihp-modal-11Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-11Label">Mr. S.K. Swain</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  Mr. Swain's company manufactures and sets up pretreatment wastewater treatment plants (WWTPs) in Odisha. We discussed our project with him in a regional language (Odia) and gained industrial insights. He explained the differences between pretreatment plants, effluent treatment plants (ETPs), and sludge treatment plants (STPs). He was aware of and open to GMOs in bioremediation but expressed concern regarding their <b>extravagant cost</b>. He highlighted variations in WWTPs for borewell and river water, emphasizing on the <b>absence of aeration tanks</b> in the former. He even suggested implementing our solution in TCC-utilizing companies' ETPs to reduce chemical waste in rivers.<br><br>
+
+                  <i>Inference</i><br>
+                  His guidance opened our eyes to implementing <b>our solution in STPs</b> as the concentration of TCC is higher in the sludge than in the effluent, thus broadening our project's scope.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-mr-s-k-swain-water-treatment-industry-1.png" >
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-mr-s-k-swain-water-treatment-industry-2.png" >
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-mr-s-k-swain-water-treatment-industry-3.png" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-12 -->
+        <div class="modal fade" id="ihp-modal-12" tabindex="-1" aria-labelledby="ihp-modal-12Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-12Label">Mr. Rajesh Kanungo</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  During our meeting with Mr. Rajesh Kanungo, we discussed our project and the possible consequences of TCC (triclocarban) on aquatic life, agriculture, and human health. One key point during our conversation was the use of TCC as an antimicrobial agent. However, Mr. Rajesh mentioned that his company doesn’t use this compound. He explained that incorporating an antimicrobial like TCC into their products would require obtaining a Drug License, which involves an entirely different set of regulatory procedures.<br><br>
+
+                  <i>Inference</i><br>
+                  We had noticed how larger companies have started phasing out the use of TCC. This discussion highlighted that <b>even smaller companies are gradually trying to phase out the use of TCC in their products now</b>. However, there are companies that are still using TCC as an antimicrobial agent. The removal of TCC from the environment is of utmost importance, which proves the relevance of our project.<br>
+
+                </p>
+
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-mr-rajesh-kanungo-reliance-detergents-disinfectants-jagatpur-odisha-1.png" >
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-mr-rajesh-kanungo-reliance-detergents-disinfectants-jagatpur-odisha-2.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-13 -->
+        <div class="modal fade" id="ihp-modal-13" tabindex="-1" aria-labelledby="ihp-modal-13Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-13Label">Mr. Tarini Prasad Barik</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  With his expertise in different types of WWTPs, Mr. Barik provided valuable insights into the design and distinctions of ETPs and STPs. Mr. Barik had not previously encountered information about TCC (triclocarban) but was familiar with the concept of genetically modified organisms (GMOs). One of the critical aspects we discussed was <b>TCC's adverse impact on the efficiency of nitrogen-fixing bacteria in WWTPs that play a major role in ammonia degradation</b>. Our proposed implementation was in the aeration tank of the WWTP. Here, Mr. Barik suggested an alternative approach that we implement our solution in the equalization tank before the aeration tank. This equalization tank is where various pre-treatment processes, including pH maintenance, are addressed. By doing so, we could prevent the harmful effects of TCC on the nitrogen-fixing bacteria in the aeration tank.<br><br>
+                  <i>Inference</i><br>
+                  This meeting with Mr. Barik proved to be highly informative, offering us a fresh perspective on the <b>optimal placement of our solution within WWTPs</b>. On looking further into this, we came up with the idea of implementing our project in our designed bioreactor.<br><br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-mr-tarini-prasad-barik-nature-conservancy-consultancy-pvt-ltd-bhubaneswar-odisha-1.png" >
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-mr-tarini-prasad-barik-nature-conservancy-consultancy-pvt-ltd-bhubaneswar-odisha-2.png" >
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-14 -->
+        <div class="modal fade" id="ihp-modal-14" tabindex="-1" aria-labelledby="ihp-modal-14Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-14Label">Visit to Garden Reach Water Works, West Bengal, India</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  During our visit to Garden Reach Water Works, we were guided by Mr. P.K. Das, an Executive Engineer with expertise in Sewage Treatment Plants (STPs) and Water Treatment Plants (WTPs). Mr. P.K. Das gave us a comprehensive tour of the WWTP, offering valuable insights into its operations. Even though the sewage treatment plant was not operational during our visit, Mr. P.K. Das elaborated on the crucial considerations of its construction. We learned that the sewage treatment plant had a 45 Minimal Liquid Discharge capacity and contained 500 mg/L of dissolved solids. Additionally, we discovered that primary and activated sludge is predominantly composed of water, with content ranging from 97% to 99%.<br><br>
+
+                  <i>Inference</i><br>
+                  This experience opened our minds to the possibility of designing a <b>sludge-based bioreactor and emphasized the importance of tailoring our bioreactor</b> to the specific nature of the sludge or water we intend to treat.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/visit-to-a-garden-reach-water-works-west-bengal-india.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-15 -->
+        <div class="modal fade" id="ihp-modal-15" tabindex="-1" aria-labelledby="ihp-modal-15Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-15Label">Dr. Ankit Sudhir</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  During our meeting with Dr. Sudhir, we discussed managing the <b>metabolic load within engineered metabolic pathways</b>. He highlighted the intricacies of releasing engineered strains and how they can trigger significant environmental and health concerns among the general public. In the context of India, Ankit drew our attention to The Environmental Protection Act, which outlines specific restrictions concerning engineered organisms in the country. Notably, he mentioned that India has recently approved the release of CRISPR-edited plants. Leveraging this genetic engineering method for mutagenesis testing could streamline obtaining <b>permissions from local government authorities</b>. Dr. Ankit concluded our meeting by suggesting <b>re-evaluating our chosen enzymes</b> and exploring superimposable structures that might help reduce the genetic insert load. <br><br>
+
+                  <i>Inference:</i><br>
+                  Dr. Sudhir’s insights contributed to the ongoing efforts to efficiently navigate the complexities of engineered metabolic pathways. His concern regarding the metabolic load on the bacteria got us to explore other options. Hence, we finally decided to move forward with a <b>chassis that can degrade the by-products of TCC degradation using its natural metabolic pathways</b>. This way, we would only need to insert the tccA gene into the chosen chassis, avoiding the issue of high metabolic load.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/meeting-with-dr-ankit-sudhir-assistant-professor-in-biotechnology-at-gsfc-university.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-16 -->
+        <div class="modal fade" id="ihp-modal-16" tabindex="-1" aria-labelledby="ihp-modal-16Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-16Label">Visit to BWSSB Waste Water treatment plant in Bangalore</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  During our visit to the BWSSB Waste Water treatment plant, we explored the three critical phases of wastewater treatment: primary, secondary, and tertiary.<br>
+In the primary phase, they showed us how raw sewage is pre-treated to remove large debris and floating materials. They also showed us that the secondary phase involves bacteria breaking down organic matter, followed by disinfection for non-drinking purposes. Viewing the tertiary treatment phase introduced us to advanced techniques like reverse osmosis (RO) and Sequential Batch Reactor (SBR). We also discussed how the treatment method choice depends on sewage quality and intended use. For example, SBR is excellent at removing pollutants like nitrogen.<br>
+A notable point of discussion was the significant amount of <b>untreated wastewater which is often used for agricultural irrigation</b> in Bangalore. <br>
+
+
+                  <i>Inference:</i><br>
+                  This discussion raised concerns about the environmental impact, especially regarding the <b>presence of antimicrobial substances like triclocarban</b> in the environment. Hence, we realized the further impact of TCC on the environment and the relevance of our project.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/visit-to-bwssb-waste-water-treatment-plant-in-bangalore-1.png" >
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/visit-to-bwssb-waste-water-treatment-plant-in-bangalore-2.png" >
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-17 -->
+        <div class="modal fade" id="ihp-modal-17" tabindex="-1" aria-labelledby="ihp-modal-17Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-17Label">Dr. Sajan D. George</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  Dr. George helped us understand the various possible TCC detection and quantification methods. He mentioned that Raman spectrometry has high specificity compared to other methods. The use of near-infrared (NIR) spectrometry was discussed but soon dropped since it would be unable to detect TCC at ppb levels in the effluent, thus giving a broad range spectrum. He brought to our notice that mass spectrometry would be the most preferred method for quantifying TCC and its daughter compounds. He also pointed out that, in our case, <b>liquid chromatography-mass spectrometry (LC-MS) would work better than gas chromatography-mass spectrometry (GC-MS)</b>, which is better suited for volatile substances.<br><br>
+
+                  <i>Inference</i><br>
+                  The discussion with Dr. George was fruitful in understanding the pros and cons of various methods that could be used for TCC detection. Based on his insights and as suggested by other stakeholders earlier as well, <b>we decided to use LCMS for the quantification of our compounds</b> in the future.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/dr-sajan-d-george-head-of-dept-of-atomic-and-molecular-physics-mit-manipal.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-18 -->
+        <div class="modal fade" id="ihp-modal-18" tabindex="-1" aria-labelledby="ihp-modal-18Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-18Label">Dr. Sanjeeb Mohapatra</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <<i>Discussion:</i><br>
+                  Dr. Mohapatra is an expert working with many emerging pollutants in water. His study was not specific to TCC as it was banned in Singapore and is one of the primitive contaminants. However, this makes it all the more critical for us to solve this problem as a high priority. He explained how hypothesizing <b>the degradation of other compounds along with TCC due to our modified bacteria</b> would add more value to our project, giving it a better global impact. Apart from this, he also mentioned that LCMS would be ideal for TCC quantification in water. He enlightened us about LCMS QTOF (Quadrupole Time of Flight), which would be more suitable for quantifying the daughter compounds 4-CA and 3,4-DCA.<br><br>
+
+                  <i>Inference:</i><br>
+                  His suggestion pushed us to explore the <b>degradation of other anilines, herbicides, and pesticides</b> like linuron and diuron by the same metabolic pathway naturally present in numerous bacterial strains. <br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/dr-sanjeeb-mohapatra-researcher-at-national-institute-of-singapore-singapore.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-19 -->
+        <div class="modal fade" id="ihp-modal-19" tabindex="-1" aria-labelledby="ihp-modal-19Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-19Label">All India iGEM Meet (AIIM) at IISER Bhopal, India</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  The All India iGEM Meet (AIIM) hosted by the iGEM team of IISER Bhopal took place at the end of July. A mock Jamboree presentation was held where all teams presented their projects followed by a poster presentation on the next day. During the presentation, the questions asked by the judges prompted us to think of new aspects of the project and how to improve upon it. Further, the interactions with other teams allowed us to understand and learn from other projects.<br>
+                  The judges were very accepting of the idea of <b>biochar as a matrix</b> but were concerned about the selectivity of the matrix in adsorbing triclocarban. Further, they mentioned that wastewater would contain sufficient carbon sources and that the bacteria may or may not utilize TCC. They also believed that the delivery of our project could be made to be more impactful. <br><br>
+
+                  <i>Inference:</i><br>
+                  The discussion caused us to start looking deeply into the delivery of our project and the work done.  Later, we found that <b><i>Ochrobactrum sp.</i> constitutively expressed tccA</b> in nature. The TCC enters the cell through passive transport, allowing it to utilize it as a carbon source. <br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/all-india-igem-meet-aiim-at-iiser-bhopal-india.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-20 -->
+        <div class="modal fade" id="ihp-modal-20" tabindex="-1" aria-labelledby="ihp-modal-20Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-20Label">Mr. Prashant</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  We conversed with Mr. Prashant regarding our project's commercial aspects. During the discussion, he enquired about the project's advancement  and we presented our conceptual stage supported by relevant literature. Emphasizing the business perspective of our project, he underscored the significance of assessing the market size and <b>determining the potential willingness of buyers to invest in our product</b>. Additionally, he advised us to thoroughly analyze our competitors and consider the existence of more affordable alternatives.Instead of pursuing direct commercial production, Prashant proposed a strategic shift towards licensing our ideation process. This suggestion aims to establish partnerships or collaborations where other entities could use our innovative approach for their applications under a licensing agreement.<br><br>
+
+                  <i>Inference:</i><br>
+                  Mr. Prashant’s insights pushed us to look into the entrepreneurship aspects of our project further. We carried out a <b>cost analysis of our batch bioreactor design</b> later into the project.
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/human-practices-images/mr-prashant.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-21 -->
+        <div class="modal fade" id="ihp-modal-21" tabindex="-1" aria-labelledby="ihp-modal-21Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-21Label">Dr Subbalaxmi Selvaraj</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  Dr. Subbalaxmi has experience in enzyme and fermentation technology. Since biochar is a rich carbon source, she expressed her concerns regarding a biochar-based implementation as the organism would start consuming biochar leading to its quick depletion. She advised us to <b>plot growth curves and fit the data into the Monod equation</b> to combat this. She also suggested a bioreactor design using inert immobilized beads, which are more rigid and offer more resistance to environmental changes. Dr. Subbalaxmi helped us verify the bioreactor modeling equations and mentioned some parameters we should consider while building a bioreactor.<br><br>
+
+                  <i>Inference:</i><br>
+                  Based on her suggestions, we fit the growth curve data from the wet lab to the Monod equation for <b>modeling the bioreactor</b><br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-subbalaxmi-selvaraj-assistant-professor-selection-grade-at-department-of-biotechnology-manipal.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Person-22 -->
+        <div class="modal fade" id="ihp-modal-22" tabindex="-1" aria-labelledby="ihp-modal-22Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-22Label">Ms. Lynn Ferris</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  As many of our wet lab protocols require us to work with the toxic chemicals triclocarban, 4-chloroaniline, and 3,4-dichloroaniline, we wanted to check the suitability of our safety protocols. The wet lab team met Lynn, who explained how raising health and safety issues and talking to people in the workplace regarding safety were necessary.<br>
+                  She suggested using a <b>fume hood with carbon filter respirators</b> while preparing stock solutions of triclocarban. She also approved our existing use of gloves and safety goggles. She also suggested using <b>double gloves</b> if we did not have the required glove thickness. She emphasized the importance of wiping all counters and workspaces with soap and water every evening. She also stated the importance of going through the 4 °C fridge, throwing out all unwanted samples, and defrosting the -20 °C fridge once a month.<br><br>
+
+                  <i>Inference:</i><br>
+                  The session with Lynn was very insightful, and we considered many of her suggestions. Even though they seem like simple lab safety ideas, they have helped us <b>better our lab environment and conduct our experiments more efficiently</b>.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-ms-lynn-ferris.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-23 -->
+        <div class="modal fade" id="ihp-modal-23" tabindex="-1" aria-labelledby="ihp-modal-23Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-23Label">Dr. V. Ramachandran Murty</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  Dr. Ramachandran Murty is helping our team with designing our bioreactor model. He gave us valuable input on how we could design the bioreactor having <b>TCC as a rate-limiting substrate</b> while ignoring other compounds that may be present in the wastewater. Dr. Murty also said that the <b>fouling of the packed bed can be ignored while working on a lab scale</b>. Further, he recommended that we utilize a pair of sequential batch reactors to address the issue of the duration for which the sludge must remain in the reactor. He also advised us to incorporate a sparger to help with sludge aeration, thus supporting the growth of our microbe, which is aerobic.<br>
+
+                  <i>Inference:</i><br>
+                  While doing mathematical calculations, we were concerned about the fouling of the packed bed. However, Dr. Murty’s suggestion that the fouling can be ignored at the lab scale was helpful for us and <b>simplified our mathematical modeling</b>.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-v-ramachandran-murty-associate-director-development-manipal-institute-of-technology-manipal.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-24 -->
+        <div class="modal fade" id="ihp-modal-24" tabindex="-1" aria-labelledby="ihp-modal-24Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-24Label">Dr. M. Ramananda Bhat</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  We designed a 2D diagram of a batch-stirred tank reactor and a batch-packed bed reactor and showed it to Dr. Bhat. He found the idea of a batch-packed bed reactor more feasible and mentioned that if the size of the packing material is small, then <b>choking of the reactor might occur</b>. He suggested having a cheap solvent like <b>hexane to regenerate the packing material</b> as it is affordable and safe for the environment and organisms. It would also vaporize quickly due to its high volatility. He also provided us with a biochar sample made out of <b>locally grown rice husk</b>. It is produced as a waste product by the burning of rice husks to generate energy in rice mills.<br><br>
+
+                  <i>Inference:</i><br>
+                  Based on the suggestion provided by Dr. Bhat, we <b>increased the size of the biochar raschig ring</b> to incorporate the viscosity, density, and particle size of the primary sludge. We also plan on using hexane as a solvent to regenerate the packing material.<br><br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-ramananda-bhat-professor-department-of-biotechnology-at-manipal-institute-of-technology-manipal.png" >
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/biochar.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-25 -->
+        <div class="modal fade" id="ihp-modal-25" tabindex="-1" aria-labelledby="ihp-modal-25Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-25Label">Smart India Hackathon</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  Our team took part in the Smart India Hackathon conducted by our University. One of our main aims in participating in this hackathon is to get more insights from the judges regarding the hardware component of our project. We designed a 2D model of our detector, which consisted of the Raman setup with a photodiode. These samples will also be sent to the Raman-diode setup for detection and quantification. The judges suggested we <b>collect two samples to quantify TCC</b>, one before the primary sludge enters the bioreactor and the other after it leaves the bioreactor. For the detection and quantification of TCC, we would require a Signal Processing Unit (SPU) that could filter the peaks corresponding to other compounds in the wastewater treatment plant (WWTP). <br><br>
+
+                  <i>Inference:</i><br>
+                  Based on the judges’ inputs, we decided to go ahead with a photo-diode based detector. Two samples would be <b>collected manually at the entry point and the exit point two days later</b> to understand the variation in the concentration of TCC.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/smart-india-hackathon.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-26 -->
+        <div class="modal fade" id="ihp-modal-26" tabindex="-1" aria-labelledby="ihp-modal-26Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-26Label">Mr. S.K. Swain</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  After the insightful meeting with Mr. Swain on July 6, we went back to him to get his inputs on our bioreactor design. Being an expert in the design of wastewater treatment plants (WWTP), Mr. Swain confirmed that our proposed physical design of the bioreactor is sound. He gave us a general idea of what <b>materials to use to make the bioreactor</b>, the workings of a WWTP, and the most commonly used parts in the system. He gave us a couple of ideas on how to pick a material for the bioreactor—something that is unreactive, cheap, and readily available. He also gave us a few sample diagrams of WWTPs that he had designed for our reference.<br>
+
+                  <i>Inference:</i><br>
+                  After discussing with him, we got a fair idea about the components of a WWTP and applied that knowledge to carry out the cost analysis of our bioreactor. Hence, we decided that our bioreactor would need to be placed <b>after the aeration tank in the WWTP</b>.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-mr-s-k-swain-owner-of-water-treat-supply-services-cuttack-odisha.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-27 -->
+        <div class="modal fade" id="ihp-modal-27" tabindex="-1" aria-labelledby="ihp-modal-27Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-27Label">Dr. Mike McDonald</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  During our meeting with Dr. Mike, we raised the concern that we could not find specific plasmid vectors for our chassis <i>Acinetobacter baylyi</i>. He approved of our idea of going ahead with pet22b(+) and suggested using high amounts of cells and DNA to increase the chances of the bacteria taking up the plasmid. Since <i>Acinetobacter baylyi</i> has variable transformation rates, he asked us to understand the transformation rate of our strain. If replating is done repeatedly, the phenotype might change, lowering the transformation rates. He advised us to always work directly with glycerol stock, avoid plating it, and work with a single colony. He also suggested using Gibson Assembly for transformation of our bacteria. <br><br>
+
+                  <i>Inference:</i><br>
+                  The insightful discussion with Dr. McDonald helped us finalize our plasmid vector pET22b(+). Further, his suggestions regarding the plating procedure turned out to be of utmost importance.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-mike-mcdonald-senior-lecturer-and-group-leader-at-monash-university-melbourne-australia-1.png" >
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-mike-mcdonald-senior-lecturer-and-group-leader-at-monash-university-melbourne-australia-2.png" >
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-28 -->
+        <div class="modal fade" id="ihp-modal-28" tabindex="-1" aria-labelledby="ihp-modal-28Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-28Label">Dr. Kevin Sowers</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  In our meeting with Dr. Sowers, we discussed the packing material in our bioreactor. We plan on using biochar raschig rings to ensure maximum surface area. On this note, he said that <b.raschig ring structures would require support</b> to handle the mechanical stresses. Hence, a binding agent would be required to maintain the structure of the raschig ring. For example, he mentioned using clay to bind ceramide pellets in one of his projects. He mentioned that we could use PVC for the pipes to transport the sludge in and out of the reactor, and the reactor could be a polypropylene tank.<br>
+
+                  <i>Inference:</i><br>
+                  Learning from Dr. Kevin’s experiences, we plan on using <b>clay as a binding agent</b> for the biochar raschig rings, thus maintaining their structural integrity.<br>
+
+                </p>
+                    <img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-kevin-sowers.png" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-29 -->
+        <div class="modal fade" id="ihp-modal-29" tabindex="-1" aria-labelledby="ihp-modal-29Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-29Label">Dr. Kamatam Krishnaiah</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i> <br>
+                  We had been referring to Dr. Krishnaiah’s NPTEL course on “Chemical Reaction Engineering” [2] to take inspiration for our bioreactor design. It is through this course that we realized the need to pack our biochar as raschig rings in order to increase the surface area and prevent choking. Furthermore, we wanted to get his insights on our project in particular and hence, we requested him for a meeting. After explaining our bioreactor model to Dr Krishnaiah, he found it feasible and gave us some suggestions. He mentioned that a valve should be put on the sparger to <b>prevent the backflow of fluid into the sparger</b> and to start the sparger before the inflow of the fluid to prevent backflow. He suggested we opt for a fluidized bed on an industrial scale as it would have a better flow with less packing material and provide an efficient mass transfer. Further we spoke to him about our raschig ring dimensions and the calculations associated with them, and he approved of our idea and the calculations proposed.<br><br>
+
+                  <i>Inference:</i><br>
+                  We decided to incorporate his insights regarding the sparger into our bioreactor design. Although we plan on carrying out our experiments on a packed bed on a lab scale, we would proceed with <b>a fluidized bed for future industry implementation</b>. Based on his inputs, we assumed our biochar raschig rings to be having a <b>Length/Diameter ratio as 1</b>.<br>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-kamatam-krishnaiah.png" >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-30 -->
+        <div class="modal fade" id="ihp-modal-30" tabindex="-1" aria-labelledby="ihp-modal-30Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-30Label">Olivia Gallup</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i><br>
+                  After the session by Ms. Olivia Gallup on “Computational Methods in Synthetic Biology”, we presented a detailed overview of our project to her and engaged in a comprehensive discussion. This discussion was vital in helping us <b>devise a more feasible approach for controlling our genetic circuit</b>. We discussed the concept of gene knockout in the context of kill switches to create an auxotrophic bacteria using a CRISPR system. This discussion helped us consider the impact of genetic modifications on our system's functionality. A significant focus of our conversation was assessing the availability of <b>computational tools</b> to evaluate the effectiveness of our proposed "kill switch." We were particularly interested in understanding how this switch would affect our genetic components. Olivia provided valuable information on computational tools that could be used to model the genetic circuit and assess the impact of newly introduced genetic components.<br><br>
+
+                  <i>Inference:</i><br>
+                  Based on our discussion with Ms. Olivia, we explored the idea of <b>using a CRISPR system to create an auxotrophic bacteria</b>, thus, serving as a biocontainment strategy within our environmental constraints. We further plan on looking into the computational tools mentioned by her to model the genetic circuits.<br></p>
+
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-olivia-gallup-dphil-candidate-at-the-university-of-oxford.png" >
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person-31 -->
+        <div class="modal fade" id="ihp-modal-31" tabindex="-1" aria-labelledby="ihp-modal-31Label" aria-hidden="true"
+             style="width: 100%;">
+          <div class="modal-dialog modal-fullscreen ihp-lab-modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title reveal-on-scroll" id="ihp-modal-31Label">Dr. Mahesha MG</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="mt-3 sub-stuff">
+
+                  <i>Discussion:</i> <br>
+                  The discussion with Dr. Mahesha mainly revolved around Raman spectroscopy. He suggested varying the power of the Raman spectrometer with the same sample to observe the change in intensity of the Raman signals. Ideally, only the intensity would undergo change. This could be used to mitigate noise in the spectroscopic data. He emphasized that not all molecular vibrations would contribute to the Raman shifts. He advised an <b>intensity vs. concentration</b> calibration graph, where intensity would be plotted on the y-axis and concentration on the x-axis. An infrared (IR) filter to <b>eliminate the infrared range</b> that may act as an interference and explore diode lasers for constructing our sensor was also suggested by him .
+
+                  <i>Inference:</i><br>
+                  Because of the suggestions provided by Dr. Mahesha, we realized that varying the power of the spectrometer with the same sample to reduce noise and creating an intensity vs. concentration calibration graph would make our <b>data more accurate and reliable</b>. Using an IR filter and diode lasers would further ensure <b>the precision of our sensor</b>.<br>
+                </p>
+<img class="img-fluid rounded mx-auto d-block" src="https://static.igem.wiki/teams/4641/wiki/meeting-with-dr-mahesha-mg.jpg" >
+              </div>
+            </div>
+          </div>
+        </div>
 
 <p class="mt-5 MAIN-STUFF" id="#section5">Surveys</p>
 
