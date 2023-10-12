@@ -187,7 +187,7 @@ We modeled the protein production in <i> E.coli </i>. However, in the future, we
     <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-3.png" class="img-fluid rounded mx-auto d-block mt-4">
     <center><b>Fig 3:</b>Ramachandran Plot for the predicted structure of our amidase taken from <b>UniProt</b></center>
     <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig4.png" class="img-fluid rounded mx-auto d-block mt-4">
-    <center><Fig 4:</b>Results generated from the Ramachandran Plot (using <b>AlphaFold</b>)</center>
+    <center><b>Fig 4:</b>Results generated from the Ramachandran Plot (using <b>AlphaFold</b>)</center>
     <br>
     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
     <u><b>SWISS-MODEL</b></u> [7-11]
@@ -196,7 +196,7 @@ We modeled the protein production in <i> E.coli </i>. However, in the future, we
         <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-6.png" class="img-fluid rounded mx-auto d-block mt-4">
         <center><b>Fig 6:</b>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b> generated structure)</center>
         <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-7.png" class="img-fluid rounded mx-auto d-block mt-4">
-        <center><Fig 7:</b>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b>)</center>
+        <center><b>Fig 7:</b>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b>)</center>
             <br> <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
             <u>Conclusion:</u><br>
             We generated a Ramachandran plot for both the structures predicted by <b>AlphaFold</b> and <b>SWISS-MODEL</b>. The <b>AlphaFold</b> structure showed 93.5% residues in the favorable region, whereas the structure predicted using <b>SWISS-MODEL</b> showed 90% residues. Therefore, we chose the same because the <b>AlphaFold</b> predicted structure is more energetically favorable. 
@@ -299,7 +299,8 @@ Results: The binding affinity was -4.7 kcal/mol, and the TCC molecule was bindin
 <center><b>Fig 13:</b> Docking structure in <b>SeamDock</b></center>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-14.png" class="img-fluid rounded mx-auto d-block mt-4"> 
 <center><b>Fig 14:</b>2D visualization of our docked structure in <b>Discovery Studio Visualizer (DSV)</b> [20].</center><br>
-<u><b>Dock of TccA amidase with linuron</b></u>
+    <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+<u><b>Dock of TccA amidase with linuron</b></u></p>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-15.png" class="img-fluid rounded mx-auto d-block mt-4"> 
 <center><b>Fig.15:</b> The docking results of linuron dock with TccA enzyme on  <b>AutoDock</b>  for 9 cycles.</center><br>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
@@ -324,7 +325,7 @@ The catalytic triad has Ser-Ser-Lys. The nitrogen molecule of TCC showed H bond 
     <br>
 A Molecular Dynamics Simulation (MDS) is a computational method used to simulate and study the behavior of atoms and molecules over a period of time. It helps simulate the interactions between atoms or molecules using force fields. Force fields are mathematical models that describe forces acting on the sample to be studied due to factors like van der Waal interactions, hydrogen bonding, electrostatic interactions, etc, over a period of time. It helps record the positions and velocities of every atom or molecule while considering their interactions. MDS is often used to study protein folding, chemical and protein interaction reactions, and material properties. It is a powerful tool and requires significant computational resources. We conducted MDS studies for the TccA amidase and analyzed the results to check the overall stability of the enzyme.
 <br><br>
-<u><b>MDS Results of the docked structure of TccA amidase with TCC</b></u>
+<u><b>MDS Results of the docked structure of TccA amidase with TCC</b></u><br>
 Specifics-
 <ul style="font-family: 'Poppins', sans-serif; font-size: 20px;">
 <li>pH - 7</li>
@@ -349,8 +350,8 @@ Root Mean Square Fluctuation (RMSF) calculates how much each residue fluctuates 
             <i>Pink - residue 200 - 212 residue</i>
             <i>Red - residue 270 to 275 residue</i>
             <b>RMSD</b>
-            <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-19.png" class="img-fluid rounded mx-auto d-block mt-4">
-            <center><b>Fig 19:</b> Root Mean Square Deviation (nm) versus Time (ns) from<b>GROMACS</b> [29-31].</center>
+            <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/rmsd.png" class="img-fluid rounded mx-auto d-block mt-4">
+            <center><b>Fig 19:</b> Root Mean Square Deviation (nm) versus Time (ns) from <b>GROMACS</b> [29-31].</center>
             <br>
             <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
             Root Mean Square Deviation (RMSD) depicts the quality of the prediction over a period of time. It displays the Euclidean distance (the distance between two points in Euclidian space) between predicted values and measured actual values. 
@@ -372,7 +373,7 @@ The overall fluctuations are within 1Å. Hence, all data obtained from further e
     In the <b>Fig.20</b>, the residues in the enzyme are bonding with 330 to 390 hydrogen atoms with fluctuations of 20 to 30 hydrogen atoms. This implies that the conformation of the enzyme after getting docked with TCC does not vary extensively over time. Hence, we can conclude that the docked structure is very stable and can be used for experimentation.
     <br>    
 </p>
-<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-21.png" class="img-fluid rounded mx-auto d-block mt-4"> <center>Time (ps) vs. R<sub>g</sub></center>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-21.png" class="img-fluid rounded mx-auto d-block mt-4"> <center><b>Fig 21:</b> Radius of gyration versus Time (ps) from <b>GROMACS</b></center>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The radius of gyration (RoG)  is used to monitor the structural formation process of a molecule. It represents the compactness of the molecule's structure and is calculated as the average distance between each atom and the molecule's center of mass. </p>
 <br>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-6.png" class="img-fluid rounded mx-auto d-block mt-4">
@@ -525,7 +526,7 @@ The common assumption taken into consideration for determining kinetics is that 
                   where,
                   <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-37.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
                   <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-9.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-                  <center><b>Growth kinetics for <i> Acinetobacter baylyi </i> </b><center><br>
+                  <center><b>Growth kinetics for <i> Acinetobacter baylyi </i> </b></center><br>
                   <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-32.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
                   <center><b>Fig:</b>Specific Growth Rate versus Substrate.</center>
                   <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
