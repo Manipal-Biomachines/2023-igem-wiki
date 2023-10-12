@@ -95,7 +95,7 @@
               <li>Survivability of the bacteria in the pH range of the wastewater and sludge(6.5-8)</li>
               <li>Survivability of the bacteria in the temperature range of the sludge tank of the WWTP(20-37° C)</li>
               <li>Survivability at different TCC concentration ranges present in the sludge(13,000-21,000 ng/ml of TCC or 13-21 ppm of TCC)</li></ul><br><br>
-
+          <p class="sub-stuff">
               Aim: To design experiments to check which of our three chosen bacterial species: <i>Pseudomonas putida, Pseudomonas fluorescens</i>, and <i>Acinetobacter baylyi</i> had the best survivability in wastewater treatment plant conditions
               <br><br>
               As TCC does not uniformly dissolve in small volumes of water, we dissolve TCC in acetonitrile at first and then dilute this mixture in water. To ensure that acetonitrile does not have any adverse effect on the growth of our bacteria, we take acetonitrile-containing media as a condition as well.
@@ -381,25 +381,540 @@
             Gene regulation refers to how a particular gene expression can be controlled. It includes a variety of mechanisms that can be used to increase or decrease the expression or production of specific gene products.
           </p>
 
-          <p class="sub-"></p>
+          <img src="" style="img-fluid">
+          <p class="sub-stuff" style="text-align:center;">
+            <b>Fig 1:</b>TccA Gene Regulation in <i>Escherichia coli</i>
+          </p>
 
+          <p class="MAIN-STUFF"><u>Build:</u></p>
 
+          <p class="sub-stuff">
+            The first step was to build our genetic circuit in <i> E.coli DH5alpha</i>  to study the expression and degradation kinetics of our part.
+            <br><br>
+            We started with amplifying our tccA fragment and performing PCR clean-up. We isolated pET22b+ plasmid and proceeded with the Gibson Assembly to insert the TccA amidase gene.
+            The competent <i>E. Coli E.coli DH5alpha</i> cells were prepared by CaCl<sub>2</sub> method and the cells were transformed.
+          </p>
+          <!--(Insert image:  transformed plate in DH5alpha)-->
+          <img src="" style="img-fluid">
+          <p class="sub-stuff" style="text-align:center;">i(Transformed plate-contains tccA Gibson assembled pET22b+ transformed DH5alpha cells)</p>
+          <p class="sub-stuff">
+            After a confirmatory colony PCR to check the presence of our insert, we transformed the Gibson-assembled plasmid into <i> E.coli BL21 </i> and then we moved towards expression studies.
+          </p>
 
+          <p class="MAIN-STUFF"><u>Test:</u></p>
+          <p class="sub-stuff">
+            <u>Cloning:</u><br>
+            Double digestion was then performed on the isolated plasmid of the transformed cells to confirm the presence of the fragment which was successful. We then went on to expression studies. SDS-PAGE was carried out but distinct bands were not observed. This could have been due to the extended time for destaining.
+          </p>
+          <!--(insert image: SDS gel image)-->
+          <p class="sub-stuff" style="text-align:center;"><i>(SDS gel image- Lane 1,2,7,8 uninduced cells, Lane 3,4,9,10 induced cells and 5,6 ladder)</i></p>
 
+          <p class="sub-stuff">
+            <b><u>Genetic circuit</u></b><br><br>
+            The genetic circuit represents the regulation of TccA gene in <i>E.coli</i>. Our gene, including RBS, is 1562 bps long; assuming that the degradation of mRNA is negligible the time taken to transcribe our gene is 6.25 secs.<br><br>We modeled the protein production in <i> E.coli </i>. However, in the future, we can study and model the protein production rate in our preferred chassis <i>Acinetobacter baylyi.</i>
+          </p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading10">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10"
+                  aria-expanded="true" aria-controls="collapse10">
+                  <b>Modeling the genetic Circuit:</b>
+                </button>
+              </h4>
+              <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10">
+                <div class="accordion-body">
+                  <img src="" style="img-fluid">
+                  <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Explanation</th>
+                      <th>Units</th>
+                    </tr>
+                    <tr>
+                      <td>k<sub>1</sub></td>
+                      <td>Transcription rate of T7 RNA polymerase</td>
+                      <td>bps/sec</td>
+                    </tr>
+                    <tr>
+                      <td>k<sub>2</sub></td>
+                      <td>k<sub>2</sub> is the translation rate of a ribosome in E.coli</td>
+                      <td>AAs/sec</td>
+                    </tr>
+                    <tr>
+                      <td>d<sub>1</sub></td>
+                      <td>Degradation rate of mRNA</td>
+                      <td>bps/sec</td>
+                    </tr>
+                    <tr>
+                      <td>d<sub>2</sub></td>
+                      <td>Degradation rate of protein</td>
+                      <td>AA/sec</td>
+                    </tr>
+                  </table>
+                  <p class="sub-stuff">
+                    Assuming that degradation rate of mRNA is low and almost negligible, d<sub>1</sub> ≈ 0
+                    <br>
+                    Assuming that degradation of protein is low and almost negligible, d<sub>2</sub> ≈ 0
+                    <br><br>
+                    k<sub>1</sub> is  Transcription rate of T7 RNA polymerase = 250 bps/s<br><br>The length of TccA gene, including the RBS and PelB = 1562 bps
+                    <br><br>
+                    k<sub>1</sub> = 1562/250 = 6.25s <br><br>
+                    [mRNA] = k<sub>1</sub> [Gene] - d1[mRNA] [mRNA] = k<sub>1</sub> [Gene]<br>
+                    <b>mRNA = 6.25 [Gene]</b>
+                    <br>
+                    k<sub>2</sub> is the translation rate of a ribosome in <i>E.coli</i>
+                    <br>
+                    Length of the mRNA = 1562 bps
+                    <br>
+                    [Protein] = k<sub>2</sub> [mRNA]- d<sub>2</sub>[Protein]
+                    <br>
+                    [Protein] = k<sub>2</sub>
+                    <br>
+                    Assuming that the translation rate of a ribosome in <i>E.coli</i> is 12. 1 AA/sec,
+                    <br>
+                    Our protein = 515 AA (including RBS and PelB)
+                    <br>
+                    k<sub>2</sub>
+                    <br>
+                    = 42.56 secs
+                    <br>
+                    <b>Protein = 42.56 [mRNA]</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="sub-stuff"><b><u>Design equation based on degradation kinetics</u></b></p>
+          <p class="sub-stuff">The rate expression is related to the rate at which the TccA amidase enzyme from the  <i>Ochrobactrum sp.</i> can degrade TCC. Since our chassis for implementation is <i>Acinetobacter baylyi<i>, which is also gram-negative like <i>Ochrobactrum sp.</i>TCC-2, the rate of transport or the passive diffusion of TCC into the cell is assumed to be similar in both bacteria. The rate of degradation of the TCC inside the cell by the TccA amidase enzyme produced by our chassis will be very similar. The time calculated here for 21 PPM (the highest concentration of TCC found in sludge) will be used to model the bioreactor.</p>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading11">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11"
+                  aria-expanded="true" aria-controls="collapse11">
+                  <b>Study of the design equation</b>
+                </button>
+              </h4>
+              <div id="collapse11" class="accordion-collapse collapse show" aria-labelledby="heading11">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    In this study [1], we have used the values as shown in the tabular column below.
+These values were used to calculate -r<sub>A</sub>  (the rate of reaction with respect to reactant A or in our case TCC) using differential calculation.
+                  </p>
+                  <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+                    <tr>
+                      <th>Time (hours)</th>
+                      <th>CA(concentration of TCC in 𝞵m )</th>
+                      <th>-r<sub>A</sub></th>
+                    </tr>
+                    <tr>
+                      <td>0</td>
+                      <td>31.7</td>
+                      <td>3.667</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>10.8</td>
+                      <td>0.9375</td>
+                    </tr>
+                    <tr>
+                      <td>24</td>
+                      <td>1.3</td>
+                      <td>0.15</td>
+                    </tr>
+                    <tr>
+                      <td>48</td>
+                      <td>0.2</td>
+                      <td>0.014</td>
+                    </tr>
+                    <tr>
+                      <td>72</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                  </table>
+                  <p class="sub-stuff" style="text-align:center;"><i>(Concentration of substrate vs. time)</i></p>
+                  <p class="sub-stuff">
+                    <u>Assuming first order kinetics</u><br>
+                    -r<sub>A</sub>= K(C<sub>A</sub>)<sup>n</sup><br>
+                    ln(-r<sub>A</sub>) = lnK+n (lnC<sub>A</sub>)
+                  </p>
+                  <table border="1" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+                    <tr>
+                      <th>ln (-r<sub>A</sub>)</th>
+                      <th>ln (C<sub>A</sub>)</th>
+                    </tr>
+                    <tr>
+                      <td>3.456</td>
+                      <td>1.299</td>
+                    </tr>
+                    <tr>
+                      <td>2.379</td>
+                      <td>-0.0645</td>
+                    </tr>
+                    <tr>
+                      <td>0.262</td>
+                      <td>-1.897</td>
+                    </tr>
+                    <tr>
+                      <td>-1.609</td>
+                      <td>-4.566</td>
+                    </tr>
+                    <tr>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </table>
+                  <img src="" style="img-fluid">
+                  <p class="sub-stuff">
+                    From the above graph, we know that the following data:<br>
+                    Slope = n = 1.1198 ≈ 1, which implies that it follows first-order kinetics.<br>
+                    Intercept = ln k = -2.5633 <br>
+                    Therefore, k = e<sup>-2.5633</sup><br>
+                    k= 0.082, which is the calculated rate expression. <br>
+                    From the literature, we learned the value of k  [1].<br>
+                    k = 0.112
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="MAIN-STUFF"><u>Learn:</u></p>
+          On comparing our values to the literature, we get that the k values are approximately equal, thus validating our differential calculus method.<br><br>Hence, TccA amidase follows first-order kinetics.<br><br>Future cycles would involve the validation of these kinetics through experimentation.
 
+          <p class="MAIN-STUFF" style="text-align:center;">MODULE 3</p>
+          <p class="MAIN-STUFF"><u>Summary</u></p>
+          <p class="sub-stuff">
+            As mentioned in our <a href="https://2023.igem.wiki/mit-mahe/project-implementation">implementation</a>, we aim to introduce a bioreactor in the wastewater treatment plant to treat the primary sludge and clear it of our target contaminant, Triclocarban (TCC). <br><br>
+From the results of our previous module of the DBTL cycle, Acinetobacter baylyi GFJ2 was the most viable choice for a chassis because it had the best growth in high concentrations of TCC and a good survivability for the widely varying conditions of wastewater treatment plants. Additionally, the bacteria has the natural ability to degrade the toxic byproducts produced by the degradation of TCC into non toxic byproducts (cis-muconic acid) that can be taken by the Krebs cycle [3].
+          </p>
 
+          <p class="MAIN-STUFF"><u>Design:</u></p>
+          <p class="sub-stuff">
+            The team came up with multiple bioreactor designs for the implementation of our project that take into account the degradation kinetics of the enzyme, the growth kinetics of the bacteria, and the adsorption kinetics of TCC onto the packing material.<br><br>
+            We have currently proposed a lab scale bioreactor due to the fact that we need to conduct further optimisation experiments to upscale into a bioreactor that is feasible on an industrial scale.
+          </p>
+          <!--insert image of bioreactor-->
+          <p class="sub-stuff">
+            We wanted to design a sludge based bioreactor where the primary sludge becomes the feed. The primary sludge is almost 97-99% water [4]. We ideated this after a visit to a wastewater treatment plant in West Bengal, India. <br><br>
+            We wanted the bacteria that degraded the TCC to be immobilized within a matrix. Literature suggests that cell immobilised systems are far superior to free cell suspensions as it avoids cell washout and improves reaction rates [5]. <br><br>
+            We found that biochar, a carbon-rich solid product produced from the pyrolysis of biomass residues, was an attractive option for an immobilisation matrix due to its low cost, easy availability and ability to immobilize cells efficiently[6].<br><br>
+          </p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading12">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 1- Continuous flow packed-bed reactor</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse12" class="accordion-collapse collapse show" aria-labelledby="heading12">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    The design of this reactor would be such that the primary sludge would continuously flow through the packed bed over the span of two days. <br><br>
+                    The primary sludge would be pumped from the bottom of the reactor and exited from the top. The reactor top would be perforated to allow airflow, and the reactor would be continuously sparged with air to increase mass transfer and provide oxygen to the microbes for proliferation. <br><br>
+                    The reactor would be fitted with a pressure gauge in order to measure and maintain the pressure drop across the reactor.<br><br>
+                    The reactor will operate in continuous flow under unsterile conditions.<br><br>
+                  </p>
+                  <img src="" style="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading13">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13"
+                  aria-expanded="true" aria-controls="collapse13">
+                  <b><i><u>Design 2 - Continuous stirred tank reactor</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse13" class="accordion-collapse collapse show" aria-labelledby="heading13">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    In this design, the primary sludge would enter from the top of the reactor and exit from the bottom of the reactor. <br><br>
+                    The biochar with the immobilized bacteria would be fixed onto the walls of the reactor using a honeycomb-like scaffold. <br><br>
+                    The reactor would have a stirrer that would agitate the sludge and aerate it to promote mass transfer and adsorption onto the biochar. To prevent excess heat from being generated, the reactor would have cooling jackets surrounding it. A temperature gauge would be added to measure the temperature and regulate it to promote the exponential growth of microorganisms. <br><br>
+                    A level gauge would be added in order to prevent the overflow of the sludge in the reactor. A pipe at the top would be introduced to recycle the overflow into the tank. The reactor will operate in continuous flow under unsterile conditions.<br><br>
+                  </p>
+                  <img src="" style="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading14">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14"
+                  aria-expanded="true" aria-controls="collapse14">
+                  <b><i><u>Design 3 - Batch stirred tank reactor</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse14" class="accordion-collapse collapse show" aria-labelledby="heading14">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    This reactor would be similar to the continuous stirred tank bioreactor, except the sludge would stay in the tank for longer to allow more time for mass transfer. The rpm of the stirrer would be slower, and a sparger would be added to increase aeration. The rest of the elements would remain the same as in Design 2.  The reactor will be operated in batch mode in unsterile conditions.
+                  </p>
+                  <img src="" style="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading15">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 4 - batch packed bed reactor</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse15" class="accordion-collapse collapse show" aria-labelledby="heading15">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    The packed bed reactor would consist of a packed bed with biochar and immobilized bacteria as packing material between two perforated plates. The primary sludge would enter from the top of the reactor and flow to the bottom with the help of gravity. This eliminates the need for a pump to fill the sludge in the reactor. A sparger at the bottom center would aerate the sludge and would promote a vertical circular flow due to Bernoulli's principle. This will help increase mass transfer efficiency. <br><br>
+                    The sparger would have a valve to prevent the backflow of sludge into it, and the sparging would begin before the inflow of sludge into the reactor began. The outlet pipe will also have a valve to prevent sludge from leaving the tank before the specified time. The valve in the inlet pipe is to control the flow rate of the sludge entering the tank. The reactor would be fitted with a pressure gauge to measure and maintain the pressure drop across the reactor. The reactor will be operated in batch mode in unsterile conditions.
+                  </p>
+                  <img src="" style="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading15">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 5 - fluidized bed</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse15" class="accordion-collapse collapse show" aria-labelledby="heading15">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    This design would consist of a fluidized bed with the packing material. The fluidized bed will have a sparging system with appropriate tubing to control the flow rate of air. This would allow an upward, circular flow of the sludge. This agitation will increase mass transfer efficiency. <br><br>
+                    The continuous flow would be due to the movement of the liquid phase (primary sludge) and gaseous phase (air from the sparger). Both of these factors will induce movement of the solid, i.e., the packing material. The reactor will operate in continuous flow under unsterile conditions.
+                  </p>
+                  <img src="" style="img-fluid">
+                  <p class="sub-stuff">
+                    <u>Packing Material:</u><br><br>
+                    The packing material for the packed and fluidized bed is chemically modified biochar with bacteria immobilized on it. The team decided to make the biochar into the shape of a hollow cylinder called a Raschig ring. This type of structure would increase the area of adsorption and improve mass transfer efficiency. The hollow cylinder pipe-like structure would prevent the problem of choking the reactor due to larger particles that may be present in the sludge. While cylindrical pellets are more commonly used and available, we propose the novel idea of a biochar Raschig ring.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="MAIN-STUFF"><u>Build:</u></p>
+          <p class="sub-stuff"><u><i>Reactor</i></u></p>
+          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+            <li>The material of the reactors needs to be non-reactive to the compounds that will be present in the primary sludge that will enter the reactors. In response to this, we had a few options available to us, those being mild steel, stainless steel, glass, etc. Since our model is a lab-scale reactor, we chose to use glass to make the body of the lab-scale reactor. </li>
+            <li>The inlet, outlet, and recycle pipes will be made of PVC. </li>
+            <li>The stirrer would have a slow speed of 50 rpm. </li>
+            <li>We would use generic industrial temperature and pressure gauges for the reactors. </li>
+            <li>The sparger would be a perforated sparger for uniform aeration and would be placed at the bottom of all the reactor designs except for the continuous flow fluidized bed. The fluidized bed will have tube sparging with appropriate tubing to control the airflow for more aeration and, hence, more mass transfer efficiency.</li>
+          </ul>
+          <p class="sub-stuff"><u><i>Packing Material</i></u></p>
+          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+            <li>The packing material would consist of biochar. The biochar will be modified with a 1:1 ratio of biochar to KOH[8]. According to literature, the biochar modified with KOH showed higher adsorption of the target compound TCC compared to other ratios and just plain biochar.</li>
+            <li>The biochar would be made into the shape of a Raschig ring using clay as a binding agent. The dimensions of the raschig ring are in the ratio 1:1 of the diameter to the height, and the inside diameter will be 1cm as shown in the figure below. These ideas were validated by meetings with Dr. Bhat and Dr. Kevin Sowers. </li>
+            <li>The Raschig ring would then be fired at 110°C to 130°C to harden the ring so that it does not dissolve in the primary sludge.</li>
+            <li>The genetically modified bacteria would then be immobilized on the biochar raschig rings.</li>
+            <li> The biochar used will be sourced from a local rice mill by processing rice husk that is produced as waste at the mill. </li>
+          </ul>
 
+          <p class="MAIN-STUFF"><u>Test:</u></p>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading16">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 1- Continuous flow packed-bed reactor</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse16" class="accordion-collapse collapse show" aria-labelledby="heading16">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    This design would allow us to treat a large amount of sludge in less time. The sparger would provide enough aeration for our bacteria to grow optimally, and degradation would occur efficiently. <br><br>
+                    However, according to our adsorption and degradation kinetics the minimum contact time required for efficient degradation of our target contaminant TCC would be 2 days. This large amount of time required a longer packed bed would increase our cost of building. Additionally, since it would be a continuous flow chances of choking at the outlet pipe increased.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading17">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 2 - Continuous stirred tank reactor (CSTR)</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse17" class="accordion-collapse collapse show" aria-labelledby="heading17">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    To overcome the issue of a large amount of packing material required we came up with the design of the CSTR. in this reactor we designed a scaffold that would be 3D printed and placed on the wall of the reactor. The purpose of the scaffold was to hold the biochar in place for adsorption of our target contaminant TCC to occur. <br><br>
+                    The stirring would increase the mass transfer efficiency and there would be sufficient aeration because of it as well. However,  this did not solve the issue we had with the contact time and additionally the regeneration of the adsorbent i.e. the biochar proved to be difficult in this case.
+                    According to literature, since the degradation of the compound by the enzyme produced by the bacteria is very slow as shown by the kinetics in the <a href="https://2023.igem.wiki/mit-mahe/model">models</a> page the type of reactor most suitable for slow reactions was a batch process.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading18">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 3 - Batch stirred tank reactor</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse18" class="accordion-collapse collapse show" aria-labelledby="heading18">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    This design would allow the sludge to remain in contact with the biochar for the required amount of time. And regeneration of the biochar would not prove to be an issue, however the the cost of this design was more than anticipated, causing us to reject this design.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading19">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 4 - batch packed bed reactor</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse19" class="accordion-collapse collapse show" aria-labelledby="heading19">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    This design proved to be the most suited to our requirements. The reactor being a batch process allowed us to maintain the required contact time of 2 days. The sparging allowed aeration and sufficient flow for efficient mass transfer. The inflow of the sludge from the top of the reactor removed the cost of the pump as gravity would help the fluid flow down the column.<br><br>
+                    The cost analysis concluded this design to be the cheapest option for us.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading20">
+                <button style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20"
+                  aria-expanded="true" aria-controls="collapse12">
+                  <b><i><u>Design 5 - fluidized bed</u></i></b>
+                </button>
+              </h4>
+              <div id="collapse20" class="accordion-collapse collapse show" aria-labelledby="heading20">
+                <div class="accordion-body">
+                  <p class="sub-stuff">
+                    This design proved to be the most suited to our requirements. The reactor being a batch process allowed us to maintain the required contact time of 2 days. The sparging allowed aeration and sufficient flow for efficient mass transfer. The inflow of the sludge from the top of the reactor removed the cost of the pump as gravity would help the fluid flow down the column.<br><br>
+                    The cost analysis concluded this design to be the cheapest option for us.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <p class="MAIN-STUFF"><u>Learn:</u></p>
+          <p class="sub-stuff">
+            For a lab scale reactor we will use the batch packed bed reactor. The kinetics of enzyme degradation, TCC adsorption onto the biochar and the bacterial growth kinetics have been fitted into the equations for a batch reactor as given in the <a href="https://2023.igem.wiki/mit-mahe/model">models</a> page.<br><br>
+            We learnt that design 1 would not be feasible due to low hydraulic retention time of the primary sludge in the tank, hence we tried design 2. However, through a human practices visit with Dr. Subbulaxmi we learnt that the efficiency of the biochar would be reduced significantly.<br><br>
+            Design 3 significantly improved contact time; however, it would not be enough to compensate for the low absorption efficiency of the biochar after our other meetings with Dr. Murty. <br><br>
+            Design 4 incorporated all the suggestions from Dr. Bhat and Dr. Subbulaxmi and led us to our most ideal design that gave us a high hydraulic retention time of the primary sludge in the tank as well as a high adsorption affinity of the biochar. <br><br>
+            However, we learnt from Dr. Kevin Sowers that this model would only be feasible for a lab scale model. Since at industry level we would be required to treat a larger amount of primary sludge per day we proposed design 5 which would have comparable efficiency to design 4 and be able to treat large quantities of sludge due to its larger volume and continuous operation.
+          </p>
+
+          <p class="MAIN-STUFF" style="text-align:center;">MODULE 4</p>
+
+          <p class="MAIN-STUFF"><u>Design:</u></p>
+          <p class="sub-stuff">
+            Our goal was to design a detection system that would go hand in hand with our bioreactor set-up and was accurate, highly sensitive, and cost-effective. In our design stage, we have explored numerous ideas, highlights of which include:
+          </p>
+            <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+              <li><i>Electrochemical sensors</i> - were explored, as they are one of the most prevalent detection systems. However, we found that it would not be feasible to achieve the desired selectivity towards triclocarban.</li>
+              <li><i>Enzyme based sensors</i>- we identified an enzyme from Ochrobactrum sp.TCC-2; but due to the trace levels of TCC found in effluent this option would not be sensitive enough.</li>
+              <li><i>Aptasensors</i>- Aptamers specific for TCC are not available in the literature, due to which, we would be required to isolate and identify one de-novo using SELEX. This is expensive and would not be feasible within our time constraint. </li>
+              <li><i>Nanobody based sensors</i>- three nanobodies which were specific to TCC were identified. We realised that immobilizing the nanobody on the sensor and making required modifications would be expensive and within the given time frame, building a prototype and testing didn’t seem like a viable option.</li>
+              <li><i>Molecularly imprinted polymer based sensors(MIP)</i>- we found an MIP which would detect triclocarban and triclosan combined. Making an MIP specific to triclocarban in the lab would require extensive experimental data and testing. </li>
+              <li><i>Nanomaterial based sensors</i>- Nanomaterial based sensors can detect endocrine disrupting compounds and since TCC is one of them, this drew our attention. However, after thorough literature review we found that there was no nanomaterial isolated specifically for TCC detection. </li>
+            </ul>
+          <a href="https://2023.igem.wiki/mit-mahe/hardware#section3" class="nav-link link-dark">Ideation Page</a>
+          <p class="sub-stuff">
+            Toward the end, we decided to simplify our approach by using Raman Spectroscopy to identify light of a certain wavelength range specific to TCC and design a simplified prototype of an optical detection system using a laser and  a photodiode to detect this range of wavelengths.
+          </p>
+          <p class="MAIN-STUFF"><u>Build:</u></p>
+          <p class="sub-stuff">
+            We used the Raman spectroscopy setup in our secondary PI, Kapil Sadani’s laboratory to conduct experiments and isolate the specific peaks for our compound. Using the data from these experiments, we calculated the specific wavelength for the IR filter and photodiode and built a theoretical set-up that can be employed for the detection of TCC.
+          </p>
+          <img src="" style="img-fluid">
+          <p class="sub-stuff" style="text-align:center;"><b><i>Figure: Block Diagram of our set-up</i></b></p>
+          <p class="sub-stuff">
+            This set-up would include a laser of 785 nanometer monochromatic light, two focal lenses, a mirror with a hole to cleanly pass the focused laser, a sample stage (cuvette), an IR filter, a photodiode, and a microcontroller. The sample would have to be manually collected and brought to this set-up.
+          </p>
+          <p class="MAIN-STUFF"><u>Test:</u></p>
+          <p class="sub-stuff">
+            We ran experiments for various samples as follows :
+          </p>
+          <ol style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+            <li>Raman spectroscopic analysis for Triclocarban dissolved in 5% acetone.</li>
+            <li>Surface Enhanced Raman Spectroscopy (SERS) for Triclocarban dissolved in 5% acetone.</li>
+            <li>Lake water sample, that was suspected to have triclocarban dissolved in it, to baseline and isolate the specific peaks for TCC using SERS.</li>
+          </ol>
+          <p class="sub-stuff">
+            From this we found the specific wavelength for our Infrared filter and photodiode.
+          </p>
+          <a href="https://static.igem.wiki/teams/4641/wiki/hardware/h-s-wiki-notebook-docx.pdf">Hardware Notebook</a>
+          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+            <li>
+              Experiment 1: 1, 10, 100 ppm (parts per million) of TCC in 5% acetone (standard)
+              <img src="" style="img-fluid">
+              Figure: Surface Enhanced Raman Spectroscopy of triclocarban dissolved in 5% acetone. (1, 10, 100 ppm)
+            </li>
+            <li>
+              Experiment 2: 1, 10, 100 ppm (parts per million)of TCC in lake water sample
+              <img src="" style="img-fluid">
+              Figure: Surface Enhanced Raman Spectroscopy of triclocarban dissolved in lake water. (1, 10, 100 ppm)
+            </li>
+          </ul>
+
+          <p class="MAIN-STUFF"><u>Learn:</u></p>
+          <p class="sub-stuff">
+            From the experimental data, we learned that the unique peaks (unique wavenumber) for Triclocarban is observed at 758.3 cm<sup>-1</sup>and 1445.2cm<sup>-1</sup>. Moreover, the second peak observed at 1445.2 cm-1 can be concluded as an overtone of the peak observed at 758.3 cm<sup>-1</sup> as the ratio of the intensities at various concentrations remains constant.
+            <br><br>
+            In the lake water sample, we noticed peaks within the range of 750 and 760 nanometers.  We can assume that the lake water sample initially had dissolved triclocarban. After experiments with spiked triclocarban were done, we noticed an amplification in the baseline peaks.
+            <br><br>
+            These preliminary results are indicative of a starting point for proving our proof of concept of a detection system selective and sensitive towards TCC and easily adaptable in all kinds of bioreactor setups.
+          </p>
+          <p class="MAIN-STUFF">Success:</p>
+          <ul style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #666;">
+            <li><i> Acinetobacter baylyi</i> was identified as the most viable chassis for the incorporation of TccA amidase</li>
+            <li>A successful clone of TccA in pET22b+ was obtained in <i> E.coli DH5alpha </i> and then transformed into <i> E.coli BL21 </i>.</li>
+            <li>We successfully found the wavelength of the IR filter which can be used in our detection system set up to detect TCC in sludge</li>
+            <li>A packed bed batch reactor was found to be the most viable option for a lab scale bioreactor while a fluidised bed reactor was preferred for future implementation. </li>
+          </ul>
+
+          <p class="MAIN-STUFF"><u>References:</u></p>
+          <p class="sub-stuff">
+            [1]Yun H, Liang B, Qiu J, Zhang L, Zhao Y, Jiang J, Wang A. Functional Characterization of a Novel Amidase Involved in Biotransformation of Triclocarban and its Dehalogenated Congeners in Ochrobactrum sp. TCC-2. Environ Sci Technol. 2017 Jan 3;51(1):291-300. <a href="https://doi.org/10.1021/acs.est.6b04885">https://doi.org/10.1021/acs.est.6b04885</a>. Epub 2016 Dec 14. PMID: 27966913.
+            <br><br>
+            [2]Hülter, N., Sørum, V., Borch-Pedersen, K. et al. Costs and benefits of natural transformation in Acinetobacter baylyi . BMC Microbiol 17, 34 (2017). <a href="https://doi.org/10.1186/s12866-017-0953-2">https://doi.org/10.1186/s12866-017-0953-2</a>
+            <br><br>
+            [3]Hongsawat, Parnuch, and Alisa S. Vangnai. “Biodegradation Pathways of Chloroanilines by Acinetobacter Baylyi Strain GFJ2.” Journal of Hazardous Materials, vol. 186, no. 2–3, Elsevier BV, Feb. 2011, pp. 1300–07. <a href="https://doi.org/10.1016/j.jhazmat.2010.12.002.">https://doi.org/10.1016/j.jhazmat.2010.12.002.</a>
+            <br><br>
+            [4] Nazari, L., Sarathy, S., Santoro, D., Ho, D., Ray, M. B., & Xu, C. (2018). Recent advances in energy recovery from wastewater sludge. In Elsevier eBooks (pp. 67–100). <a href="https://doi.org/10.1016/b978-0-08-101029-7.00011-4">https://doi.org/10.1016/b978-0-08-101029-7.00011-4</a>
+            <br><br>
+            [5] Zhu, Y. (2007). Immobilized cell fermentation for production of chemicals and fuels. In Elsevier eBooks (pp. 373–396). <a href="https://doi.org/10.1016/b978-044452114-9/50015-3">https://doi.org/10.1016/b978-044452114-9/50015-3</a>
+            <br><br>
+            [6]Wu, C., Zhi, D., Yao, B., Zhou, Y., Yang, Y., & Zhou, Y. (2022). Immobilization of microbes on biochar for water and soil remediation: A review. Environmental Research, 212, 113226. <a href="https://doi.org/10.1016/j.envres.2022.113226">https://doi.org/10.1016/j.envres.2022.113226</a>
+            <br><br>
+            [7] Eggen, T., & Vogelsang, C. (2015). Occurrence and fate of pharmaceuticals and personal care products in wastewater. In Comprehensive Analytical Chemistry (pp. 245–294). <a href="https://doi.org/10.1016/b978-0-444-63299-9.00007-7">https://doi.org/10.1016/b978-0-444-63299-9.00007-7</a>
+          </p>
 
 
 
