@@ -662,6 +662,57 @@ L/D*=1, as it is the optimum ratio for Rashig ring.
 <p class="mt-5 MAIN-STUFF" id="section15">Degradation Kinetics<br></p>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
    <br>
+   <u><b>DESIGN EQUATION BASED ON DEGRADATION KINETICS: </b></u>
+
+The rate expression is related to the rate at which the <i>Ochrobactrum</i> cell can degrade TCC. One of the assumptions that we have taken is that since our chassis is <i>Acinetobacter baylyi<i>, which is also gram-negative like <i>Ochrobactrum sp.</i>TCC-2, the rate of transport or the passive diffusion of TCC into the cell will be similar in both the bacterias and hence the rate of degradation of the TCC inside the cell by our amidase inserted in our chassis will be very similar. The time calculated here for 21 ppm will be used to model the bioreactor.
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+In this study [33], we have used their values, as shown in the tabular column above.
+These values were used to calculate -rA,  (the rate of reaction with respect to reactant A or in our case, TCC) using differential calculation.
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/tab-2.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br><img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br><img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-3.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br><img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br><img src="https://static.igem.wiki/teams/4641/wiki/model-dl/17-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br> Material balance of TCC in constant volume batch packed bed reactor<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/r1.png" class="img-fluid rounded mx-auto d-block mt-4">
+
+<br>Input = Output +Accumulation + Disappearance of TCC by the reaction    —(1)  <br>
+0 = 0 + accumulation + disappearance of TCC by the reaction.<br>
+<br>Material balance is the starting point for designing any reactor; by using the above equation, we can derive the design equation or the performance equation for the batch, fed-batch, and continuous reactors. <br>
+<br>For an ideal batch reactor: <ol>
+<li>Input = Output = 0; during the reaction, since it's an ideal batch reactor, there's no input and output.
+</li><li>Ideality in the batch reactor is defined with respect to the uniform concentration within the reactor. 
+</li><li>Dead zones or dead pockets are the main reasons for the non-ideality in a batch reactor.
+</li></ol><br> <br>In an ideal batch reactor, concentration is uniform throughout the reactor, implying no spatial non-uniformity. 
+Therefore, the entire batch reactor can be treated as a single element, and the material balance can be applied in the whole batch reactor, and the concentration is uniform. In the continuous reactor, one portion of the reactor is taken for material balance, and then it is integrated. 
+A batch reactor is called an unsteady state operation as the concentration of product and substrate varies with time. 
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/tab-4.png" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/19-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br>The above equation is the general design equation for our ideal batch reactor. This equation calculates the time required to degrade TCC in an ideal batch reactor. 
+<br>
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/20-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-21.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+<b>Analytical method <b>:
+  <br>To optimize the method, we decided to do the calculations based on the highest (21 ppm), lowest (10 ppm), and average concentration (15 ppm) of TCC in sludge. We have gone with 90% degradation efficiency in each case.
+ <br> To simplify our calculations, we have assumed that nothing interferes with the degradation of TCC.
+ <br> For varying concentrations (ppm):<br>
+  
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/table-5.png" class="img-fluid rounded mx-auto d-block mt-4">
+<br>
+The time to degrade 90% of the initial TCC concentration is the same in all three cases(20.56 hrs), as it only considers the degradation kinetics and not the biomass needed in each case. To degrade 21 ppm of TCC, the amount of biomass required is much more than 10 ppm of TCC, which is not considered in the pure degradation kinetics but is considered in the growth kinetics. Unlike other models available, the time required for growth has also been considered along with the degradation kinetics.
+<br>The time calculated here for 21 ppm will be used to model the bioreactor.
+<br>This time is quite close to the data in one of the graphs in [33] in this paper. The data presented closely aligns with our assumptions and equations, further validating our model. This study found that  31.7muM (10 ppm) of TCC is degraded to approximately 2.1  muM (0.66 ppm) in 20 hours, achieving an impressive degradation efficiency of 93%. This outcome aligns with our initial assumption of 90% efficiency, reinforcing the accuracy of our calculations.
+
+<br><br>Conclusion:
+<br>After doing all the kinetic calculations, we concluded that the toggling time should be around 2 days for the bacteria to be effectively growing, considering both ideal and real-life conditions. To learn more about our bioreactor design and analysis, refer to our implementation page.
+
+
+
    
 </p>
 </p>
