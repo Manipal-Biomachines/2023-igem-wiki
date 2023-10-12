@@ -21,7 +21,7 @@
               </a>
             </li>
             <li>
-              <a href="#section4" class="nav-link link-dark">
+             <!--<a href="#section4" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
                 Structure Prediction
               </a>
@@ -49,24 +49,24 @@
                 Molecular Dynamic Simulations
               </a>
             </li>
-            <li>
+            <li>  -->
               <a href="#section9" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
                 Growth Modeling
               </a>
             </li>
-            <a href="#section10" class="nav-link link-dark">
+            <!--<a href="#section10" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                 Enzyme Kinetics
               </a>
             </li>
-            <li>
+            <li>-->
               <a href="#section11" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
                 Bioreactor Modeling
               </a>
             </li>
-            <li>
+            <li><!--
               <a href="#section12" class="nav-link link-dark">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
                 Introduction
@@ -95,7 +95,7 @@
                 Conclusion:
               </a>
             </li>
-            <li>
+            <li>-->
 {% endblock %}
 
 {% block heading %}Model{% endblock %}
@@ -298,8 +298,8 @@ Results: The binding affinity was -4.7 kcal/mol, and the TCC molecule was bindin
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-13b.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
 <center><b>Fig 13:</b> Docking structure in <b>SeamDock</b></center>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-14.png" class="img-fluid rounded mx-auto d-block mt-4"> 
-<center><b>Fig 14:</b>2D visualization of our docked structure in <b>Discovery Studio Visualizer (DSV)</b> [20].</center>
-<b>Dock of TccA amidase with linuron</p></b>
+<center><b>Fig 14:</b>2D visualization of our docked structure in <b>Discovery Studio Visualizer (DSV)</b> [20].</center><br>
+<u><b>Dock of TccA amidase with linuron</b></u>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-15.png" class="img-fluid rounded mx-auto d-block mt-4"> 
 <center><b>Fig.15:</b> The docking results of linuron dock with TccA enzyme on  <b>AutoDock</b>  for 9 cycles.</center><br>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
@@ -365,15 +365,15 @@ It reaches a plateau after 7(ns), beyond which it will have a constant fluctuati
 The overall fluctuations are within 1Å. Hence, all data obtained from further experimentation will provide accurate results.
 <br>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-20.png" class="img-fluid rounded mx-auto d-block mt-4">
-<center><b>Fig 20:</b> Number of hydrogen atoms versus Time (ps) from <b>GROMACS</b>.</center>
+<center><b>Fig 20:</b> Number of hydrogen atoms vs. Time (ps) from <b>GROMACS</b>.</center>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-    Hydrogen bonds depict the hydration of the enzyme. It shows the number of hydrogen atoms interacting with the amino acid residues in the enzyme over a period of time. The hydrogen bonds stabilize the transitional residues that occur as time progresses.  Hence, the greater the hydrogen interactions, the more stable the enzyme. Hence, if certain hydrogen interactions are removed, especially from the residues involved in catalysis, there may be a change in the Kcat (catalytic constant) value. The effect the hydrogen bonds have on each residue will need to be tested by conducting experiments. One advantage of MDS over docking studies is in docking, the water molecules are removed for ease of operation. But this step becomes a huge issue for enzymes that actively use the hydrogen bonds from the surrounding water molecules for their catalytic reactions, which would be the case for our amidase enzyme. 
+    Hydrogen bonds depict the hydration of the enzyme. It shows the number of hydrogen atoms interacting with the amino acid residues in the enzyme over a period of time. The hydrogen bonds stabilize the transitional residues that occur as time progresses.  Hence, the greater the hydrogen interactions, the more stable the enzyme. Hence, if certain hydrogen interactions are removed, especially from the residues involved in catalysis, there may be a change in the K<sub>cat</sub> (catalytic constant) value. The effect the hydrogen bonds have on each residue will need to be tested by conducting experiments. One advantage of MDS over docking studies is in docking, the water molecules are removed for ease of operation. But this step becomes a huge issue for enzymes that actively use the hydrogen bonds from the surrounding water molecules for their catalytic reactions, which would be the case for our amidase enzyme. 
     <br><br>
     In the <b>Fig.20</b>, the residues in the enzyme are bonding with 330 to 390 hydrogen atoms with fluctuations of 20 to 30 hydrogen atoms. This implies that the conformation of the enzyme after getting docked with TCC does not vary extensively over time. Hence, we can conclude that the docked structure is very stable and can be used for experimentation.
     <br>    
 </p>
-<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-21.png" class="img-fluid rounded mx-auto d-block mt-4"> 
-The radius of gyration (RoG)  is used to monitor the structural formation process of a molecule. It represents the compactness of the molecule's structure and is calculated as the average distance between each atom and the molecule's center of mass. 
+<img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-21.png" class="img-fluid rounded mx-auto d-block mt-4"> <center>Time (ps) vs. R<sub>g</sub></center>
+<p style="font-family: 'Poppins', sans-serif; font-size: 20px;">The radius of gyration (RoG)  is used to monitor the structural formation process of a molecule. It represents the compactness of the molecule's structure and is calculated as the average distance between each atom and the molecule's center of mass. </p>
 <br>
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-6.png" class="img-fluid rounded mx-auto d-block mt-4">
 <br>
@@ -385,7 +385,7 @@ As shown in <b>Fig 21</b>, the radius of gyration (Rg) fluctuates between 2.15 a
 <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-22.png" class="img-fluid rounded mx-auto d-block mt-4">
 <center><b>Fig 22:</b>Area (nm2) versus Time (ps) from <b>GROMACS</b></center>
 <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-    Solvent Accessible Surface (SAS) is the structure's surface area accessible to a solvent measured over a period of time. The TccA enzyme docked with TCC has an area fluctuating between 180 nm2 and 205 nm2 accessible to the solvent (water). This implies that the enzyme folding is very stable, and this structure can be used for further experiments.
+    Solvent Accessible Surface (SAS) is the structure's surface area accessible to a solvent measured over a period of time. The TccA enzyme docked with TCC has an area fluctuating between 180 nm<sup>2</sup> and 205 nm<sup>2</sup> accessible to the solvent (water). This implies that the enzyme folding is very stable, and this structure can be used for further experiments.
     <br><br>    
 </p>
 
@@ -402,7 +402,7 @@ As shown in <b>Fig 21</b>, the radius of gyration (Rg) fluctuates between 2.15 a
         The next steps for us would be to model the degradation pathway of the toxic by-products of TCC by our amidase. We would then put it inside our chassis and predict the concentration of the by-products as time goes by.
         <br>
         Enzyme kinetics governing the degradation pathway from TCC to nontoxic by-products inside our chassis <i>Acinetobacter baylyi</i>: 
-        
+        <br><br>
         <b>Without product Inhibition</b>
         Assumption taken here is the product formed doesn't have an inhibitory effect on the substrate. Hence the equations are formed without product inhibition. </p>
         <img src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-7.png" class="img-fluid rounded mx-auto d-block mt-4">
