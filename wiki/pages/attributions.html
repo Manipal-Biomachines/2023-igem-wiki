@@ -15,18 +15,18 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='common-waves.css') }}">
   <link href="{{ url_for('static', filename='Font_Montserrat.css') }}" rel='stylesheet'>
   <link href="{{ url_for('static', filename='Font_Poppins.css') }}" rel='stylesheet'>
-
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
-  <title>{% block title %}{% endblock %} | MIT_MAHE - iGEM 2023</title>
+  {% block modal_css %}{% endblock %}
+  <title>{% block title %}Attributions{% endblock %} | MIT_MAHE - iGEM 2023</title>
 </head>
 
 <body style="background: #FFFFFF;">
   <!-- Navbar -->
   {% include 'my-menu.html' %}
 
-  
+  <div class="content-container" style="display:flex;">
+    <!-- No Sidebar -->
+
+    <div class="banner flex-grow-1" style="flex:1">
       <!-- Page Header -->
       <header>
         <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
@@ -38,46 +38,52 @@
       </header>
 
       <!-- Content-->
-      {% block page_content %}
 
-    <div class="content">
-    <div class="m-5 mb-16">
-        <p class="mt-5 MAIN-STUFF" id="section1">Attributions<br></p>
-        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
-	The iGEM team of MIT-MAHE understands the importance of giving credit	where it is due. The attributions page acknowledges the hard work, 		dedication, and creativity of all members of the team. Further, this 	project would not have been possible without the support of our PIs, secondary PIs, mentors, advisors and external contractors.
-<br>
- More detailed descriptions of the team members contributions to the project as well as external attributions can be found in the attribution form below.
+      <div class="content">
+        <div class="m-5 mb-16">
+          <p class="mt-5 MAIN-STUFF" id="section1">Attributions<br></p>
+          <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
+            The iGEM team of MIT-MAHE understands the importance of giving credit where it is due. The attributions page
+            acknowledges the hard work, dedication, and creativity of all members of the team. Further, this project
+            would
+            not have been possible without the support of our PIs, secondary PIs, mentors, advisors and external
+            contractors.
+            <br>
+            More detailed descriptions of the team members contributions to the project as well as external attributions
+            can
+            be found in the attribution form below.
 
-        </p>
+          </p>
 
-        <!--
-  ======================================================================
-  == VERY IMPORTANT                                                   ==
-  ======================================================================
-  LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM
-  WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF
-  NOT MEETING BRONZE MEDAL CRITERION #2
- -->
-<div class="row mt-4">
-  <script type="text/javascript">
-    // Listen to size change and update form height
-    window.addEventListener('message', function (e) {
-      const { type, data } = JSON.parse(e.data);
-      if (type === 'igem-attribution-form') {
-        const element = document.getElementById('igem-attribution-form')
-        element.style.height = data + 50 + 'px'
-      }
-    });
-  </script>
-  <iframe style='width: 100%' id="igem-attribution-form" src="https://attributions.igem.org?team=MIT-MAHE&year=2023">
-  </iframe>
-</div>
-<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+          <!--
+        ======================================================================
+        == VERY IMPORTANT                                                   ==
+        ======================================================================
+        LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM
+        WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF
+        NOT MEETING BRONZE MEDAL CRITERION #2
+       -->
+          <div class="row mt-4">
+            <script type="text/javascript">
+              // Listen to size change and update form height
+              window.addEventListener('message', function (e) {
+                const { type, data } = JSON.parse(e.data);
+                if (type === 'igem-attribution-form') {
+                  const element = document.getElementById('igem-attribution-form')
+                  element.style.height = data + 50 + 'px'
+                }
+              });
+            </script>
+            <iframe style='width: 100%' id="igem-attribution-form"
+              src="https://attributions.igem.org?team=MIT-MAHE&year=2023">
+            </iframe>
+          </div>
+          <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        </div>
+      </div>
+
     </div>
-</div>
-
-      {% endblock %}
-
+  </div>
 
 </body>
 
@@ -119,16 +125,11 @@
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename = 'jquery-3.3.1.slim.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
 <script defer src="{{ url_for('static', filename = 'script.js') }}"></script>
 
 </html>
-
-
