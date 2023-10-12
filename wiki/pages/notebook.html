@@ -1,30 +1,4 @@
 {% extends "my-layout.html" %}
-{% block sidebar_content %}
-<ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="#section1" class="nav-link link-dark" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-                  Growth Curves
-                </a>
-              </li>
-              <li>
-                <a href="#section2" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  Cloning and Expression
-                </a>
-              </li>
-              
-              <li>
-                <a href="#section3" class="nav-link link-dark">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                  Detection
-                </a>
-              </li>
-
-            </ul>
-
-{% endblock %}
-
   
 {% block heading %}Notebook{% endblock %}
 
@@ -1133,12 +1107,12 @@
       <li>
         <p><b>Gram stain test</b>- A Gram staining test was performed on the culture. The cells appeared pink when viewed under the microscope, confirming that they are Gram-negative.</p>
         <img class="modal-image" src="https://static.igem.wiki/teams/4641/wiki/notebook-growth-curves/notebook-growth-curves/microscopic-view-p-fluorescens.jpg" class="img-fluid rounded mx-auto d-block mt-4">
-        <p><i>(Figure: Microscopic view of a bacterial culture - the cells appear as dark pink dots on a lighter pink background at a magnification of 100x)</i></p>
+        <center><p><i>(Figure: Microscopic view of a bacterial culture - the cells appear as dark pink dots on a lighter pink background at a magnification of 100x)</i></p></center>
       </li>
       <li>
         <p><b>Indole spot test</b>- The Indole spot test was performed with the inoculated culture. A piece of Whatman filter paper was placed in a petri dish cover and saturated with Kovács reagent. The paper was then smeared with cell paste from the culture.There was no visible colour change, indicating a negative result. The organism was confirmed to lack the ability to produce tryptophanase.</p>
         <img class="modal-image" src="https://static.igem.wiki/teams/4641/wiki/notebook-growth-curves/notebook-growth-curves/indole-negative-test-p-fluorescens.png" class="img-fluid rounded mx-auto d-block mt-4">
-        <p><i>(Figure: Indole negative test of Pseudomonas fluorescens)</i></p>
+        <center><p><i>(Figure: Indole negative test of Pseudomonas fluorescens)</i></p></center>
       </li>
       <li>
         <p><b>Voges- Proskauer test</b>-  This test was performed and a negative result was obtained. This indicates the absence of non-acidic and neutral compounds being formed as end products following metabolism of glucose.</p>
@@ -1146,12 +1120,12 @@
       <li>
         <p><b>Methyl red test</b>- A Methyl Red Test was performed, and a negative result was obtained. This indicates that it does not produce organic acid end products, or acid end products are enzymatically converted into non-acidic compounds. This indicates that it does not produce organic acid end products, or acid end products are enzymatically converted into non-acidic compounds. Thus proving that <i>Pseudomonas fluorescens</i> does not ferment glucose.</p>
         <img class="modal-image" src="https://static.igem.wiki/teams/4641/wiki/notebook-growth-curves/notebook-growth-curves/negative-mrvp-test-p-fluorescens.png" class="img-fluid rounded mx-auto d-block mt-4">
-        <p><i>(Figure: Two test tubes held up. The first one, labelled VP, has dark yellow liquid in it, indicating a negative result for the Voges Proskauer test. The second, labelled MR, has a light yellow liquid, indicating a negative result for the Methyl Red test)</i></p>
+        <center><p><i>(Figure: Two test tubes held up. The first one, labelled VP, has dark yellow liquid in it, indicating a negative result for the Voges Proskauer test. The second, labelled MR, has a light yellow liquid, indicating a negative result for the Methyl Red test)</i></p></center>
       </li>
       <li>
         <p><b>Catalase Test</b>- <i>Pseudomonas fluorescens</i> has the ability to produce catalase, and a positive catalase test indicates that the organism possesses this characteristic. When performed, we obtained positive results.</p>
         <img class="modal-image" src="https://static.igem.wiki/teams/4641/wiki/notebook-growth-curves/notebook-growth-curves/catalase-positive-test-p-fluorescens.jpg" class="img-fluid rounded mx-auto d-block mt-4">
-        <p><i>(Figure: A slide held up to show the presence of effervescence, confirming the production of catalase.)</i></p>
+        <center><p><i>(Figure: A slide held up to show the presence of effervescence, confirming the production of catalase.)</i></p></center>
       </li>
     </ol>
     <table border="1">
@@ -2244,6 +2218,7 @@
                      <li>The cultures were monitored to observe growth and detect signs of contamination.</li>
                      <li>1 ml of culture from one test tube was transferred into an Eppendorf tube for testing.</li>
                      <li>A heat-sterilized inoculation loop was dipped into the Eppendorf tube containing the culture. A Petri dish containing nutrient broth agar was taken and quadrant streaking was done.</li>
+
                    </ul>
                
                    <hr>
@@ -2567,9 +2542,8 @@
                
                      <hr>
                      <hr>
-               
-
-                   </div>
+           
+                 </div>
                    </div>
 
 
@@ -3062,8 +3036,8 @@
                              <span class="close" onclick="closeModal('modal7')">&times;</span>
                              <h2>Week 7</h2>
                    <hr>
-                   <h2>Experiment 28: Growth curve of <i>A. baylyi</i> at different concentrations of TCC</h2>
-                   <p style="text-align:right">19/09/2023</p>
+                   <h2>Experiment 28: Growth curve of <i>E. coli</i> BL21 with transformed tccA + pET22b+</h2>
+                   <p style="text-align:right">27/09/2023</p>
                    <p><b>Project: CarbanEl</b></p>
                    <p><b>Authors: Wet Lab Team</b></p>
                    <hr>
@@ -3389,7 +3363,7 @@
 
                  <div class="content">
                   <div class="m-5 mb-16">
-                    <p class="mt-5 MAIN-STUFF" id="section2">Cloning and Expression<br></p>
+                    <p class="mt-5 MAIN-STUFF" id="section1">Cloning and Expression<br></p>
                     <button  class="modal-button" onclick="openModal('modalone')">WEEK 1</button> 
                       <div id="modalone" class="modal">
                         <div class="modal-content">
@@ -4847,7 +4821,7 @@
  
                   <div class="content">
                    <div class="m-5 mb-16">
-                     <p class="mt-5 MAIN-STUFF" id="section3">Detection<br></p>
+                     <p class="mt-5 MAIN-STUFF" id="section1">Detection<br></p>
                      <button  class="modal-button" onclick="openModal('modal11')">WEEK 1</button> 
                        <div id="modal11" class="modal">
                          <div class="modal-content">
