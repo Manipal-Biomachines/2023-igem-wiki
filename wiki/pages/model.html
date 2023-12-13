@@ -115,10 +115,10 @@ Along with the modeling of the biological system and in-silico characterization 
     Gene regulation refers to controlling a particular gene expression in a cell. Gene regulation in <b>Fig 1</b> depicts the TCC pathway in the bacteria and the simultaneous expression of the amidase gene using the T7 promoter(BBa_1719005). RBS(shine-dalgarno sequence) and PelB sequence have been integrated into our genetic circuit as part of our plasmid pET22b+ backbone. 
     Modeling gene expression would help us accurately predict the rate at which our desired enzyme is being expressed in a cell under certain conditions and calculate our bacteria's degradation efficiency of triclocarban. 
     <br>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-1.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-    <center><i<b>Fig 1:</b>TccA Gene Regulation in <i>Escherichia coli</i></center>
+    <img style="width: 55%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-1.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+    <figcaption style="text-align:center"><i>TccA Gene Regulation in Escherichia coli</i></figcaption>
     <br>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-1.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <img style="width: 55%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-1.png" class="img-fluid rounded mx-auto d-block mt-4">
     <br>
     <table border="1">
         <tr>
@@ -148,8 +148,8 @@ Along with the modeling of the biological system and in-silico characterization 
           </tr>
     </table>
     <br>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-16.png" class="img-fluid rounded mx-auto d-block mt-4">
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-3.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <img style="width: 70%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-16.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <img style="width: 70%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/eqn-3.png" class="img-fluid rounded mx-auto d-block mt-4">
     <br>
     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
 The genetic circuit represents the regulation of TccA gene in <i>E.coli</i>. In the presence of TCC, the T7 promoter is activated, and the T7 RNA polymerase binds to the promoter and starts the transcription. The transcription rate of T7 RNA polymerase is 250 bps/ sec. Our gene, including RBS, is 1562 bps long; assuming that the degradation of mRNA is negligible the time taken to transcribe our gene is 6.25 secs. 
@@ -182,21 +182,21 @@ We modeled the protein production in <i> E.coli </i>. However, in the future, we
     The catalytic triad comprises a group of three amino acids found in the active sites of some enzymes like hydrolase and transferase. The catalytic triad provides a model for the chemical features and the structural properties of the enzyme, which allows them to facilitate reactions. Through a literature survey, we found the catalytic triad of the amidase family to be Ser-Ser-Lys. To identify exactly which triad (Ser-Ser-Lys) of the amidase family was involved, we used multiple alignments to identify it. In our amidase enzyme, we identified six lysine residues, namely L43, L79, L193, L271, L281, and L471, in the protein structure, of which 4, namely L43, L271, L281, and L471, lie on the surface. Among the remaining two lysines, L193 resulted in the formation of the ser-ser-lys triad; as this particular triad is stretched over 300 amino acids, we decided to rule it out as it is improbable to be involved in the binding. The final lysine was L79, surrounded by four probable serine residues around which it forms a catalytic triad, stretching over 100 amino acids [1]. 
     <br></p>
     <u><b>AlphaFold</b></u> [4,5]
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-2.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-    <center><b>Fig 2:</b> Model which was used for this (predicted by <b>AlphaFold</b>and present in <b>UniProt</b> [6]) </center>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-3.png" class="img-fluid rounded mx-auto d-block mt-4">
-    <center><b>Fig 3:</b>Ramachandran Plot for the predicted structure of our amidase taken from <b>UniProt</b></center>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig4.png" class="img-fluid rounded mx-auto d-block mt-4">
-    <center><b>Fig 4:</b>Results generated from the Ramachandran Plot (using <b>AlphaFold</b>)</center>
+    <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-2.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+    <figcaption style="text-align:center"><i> Model which was used for this (predicted by <b>AlphaFold</b>and present in <b>UniProt</b> [6]) </i></figcaption>
+    <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-3.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <figcaption style="text-align:center"><i>Ramachandran Plot for the predicted structure of our amidase taken from <b>UniProt</b></i></figcaption>
+    <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig4.png" class="img-fluid rounded mx-auto d-block mt-4">
+    <figcaption style="text-align:center"><i>Results generated from the Ramachandran Plot (using <b>AlphaFold</b>)</i></figcaption>
     <br>
     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
     <u><b>SWISS-MODEL</b></u> [7-11]
-        <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-5.png" class="img-fluid rounded mx-auto d-block mt-4">
-        <center><b>Fig 5:</b> Model predicted by <b>SWISS-MODEL</b> (having 35.35% sequence identity with 6-aminohexanoate cyclic dimer hydrolase, PDB id: 2A2Q)</center>
-        <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-6.png" class="img-fluid rounded mx-auto d-block mt-4">
-        <center><b>Fig 6:</b>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b> generated structure)</center>
-        <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-7.png" class="img-fluid rounded mx-auto d-block mt-4">
-        <center><b>Fig 7:</b>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b>)</center>
+        <img style="width: 40%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-5.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <figcaption style="text-align:center"><i> Model predicted by <b>SWISS-MODEL</b> (having 35.35% sequence identity with 6-aminohexanoate cyclic dimer hydrolase, PDB id: 2A2Q)</i></figcaption>
+        <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-6.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <figcaption style="text-align:center"><i>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b> generated structure)</i></figcaption>
+        <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-7.png" class="img-fluid rounded mx-auto d-block mt-4">
+        <figcaption style="text-align:center"><i>Results generated from the Ramachandran Plot (using <b>SWISS-MODEL</b>)</i></figcaption>
             <br> <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
             <u>Conclusion:</u><br>
             We generated a Ramachandran plot for both the structures predicted by <b>AlphaFold</b> and <b>SWISS-MODEL</b>. The <b>AlphaFold</b> structure showed 93.5% residues in the favorable region, whereas the structure predicted using <b>SWISS-MODEL</b> showed 90% residues. Therefore, we chose the same because the <b>AlphaFold</b> predicted structure is more energetically favorable. 
@@ -204,13 +204,13 @@ We modeled the protein production in <i> E.coli </i>. However, in the future, we
             Since the structure of our amidase enzyme isn't well studied, we used software to predict its structure and binding sites. Models predicted by different software like <b>SWISS-MODEL</b> showed 35.6% sequence identity with 6-aminohexanoate cyclic dimer hydrolase. The binding site of all models was predicted using <b>GRASP</b> [12].
             <br>
             <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-8.png" class="img-fluid rounded mx-auto d-block mt-4"> 
-            <center><b>Fig 8:</b> GRASP Results</center>
+            <figcaption style="text-align:center"><i> GRASP Results</i></figcaption>
 </p>
 <br><p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
 <b>GRASP</b> shows the amino acid residues that most probably form the binding pocket of the enzyme, out of which Ser 155 and Ser 179 showed 85% confidence scores showing that it interacts and Lys 79 with 59% confidence score showing it is not actively involved in bond cleavage but does help in stabilizing the interactions. The catalytic triad also shows a very high GC content, which is very common across all of the amidases having this triad. These glycines are also involved in stabilizing the structure. In the Ser-Ser-Lys catalytic triad, the lysine polarizes the serine in the middle, forming one strong hydrogen bond with the nucleophilic serine to activate it. Further, the lysine can stabilize the structure, which is crucial for its orientation inside the active site. 
 <br><br></p>
-<img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-9.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
-<center><b>Fig 9:</b>Multiple Sequence alignment was done with <i>Ochrobactrum sp.</i> TCC-2 and other amidases.</center>
+<img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-9.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+<figcaption style="text-align:center"><i>Multiple Sequence alignment was done with <i>Ochrobactrum sp.</i> TCC-2 and other amidases.</i></figcaption>
 <br><p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
 We used <b>Clustal Omega</b> [13] for multiple sequence alignment of p-nitro acetanilide hydrolase (Accession No. -K9NBS6), 6-aminohexanoate-cyclic-dimer hydrolase (Acc No.-P13397), linuron hydrolase(AEO20132),omega-lactams(BAI44731) and our <i>Ochrobactrum sp.</i> TCC-2 amidase. After aligning our amidase with several other biochemically similar amidases, which also have the Ser-Ser-Lys catalytic triad, it was observed that our predicted triad residues perfectly align with all the other ones. This further validates the hypothesis that the catalytic triad was a major active site involved in the interaction between TCC and TccA amidase.
 <br><br>
@@ -278,13 +278,13 @@ We used <b>Clustal Omega</b> [13] for multiple sequence alignment of p-nitro ace
       </tr> 
     </table>
     <br>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-10.png" class="img-fluid rounded mx-auto d-block mt-4"> 
-    <center><b>Fig:10 </b><b>AutoDock</b> Results.</center>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-11.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
-    <center><b>Fig 11:</b>Docking in <b>AutoDock </b>with grid box</center>
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-12a.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
-    <img style="width: 35%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-12-b.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
-    <center><b>Fig 12: </b>Analysis of Docked Structure in Chimera.</center>
+    <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-10.png" class="img-fluid rounded mx-auto d-block mt-4"> 
+    <figcaption style="text-align:center"><i><b>AutoDock</b> Results.</i></figcaption>
+    <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-11.jpeg" class="img-fluid rounded mx-auto d-block mt-4">
+    <figcaption style="text-align:center"><i>Docking in <b>AutoDock </b>with grid box</i></figcaption>
+    <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-12a.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+    <img style="width: 50%; height: auto;" src="https://static.igem.wiki/teams/4641/wiki/model-dl/fig-12-b.jpeg" class="img-fluid rounded mx-auto d-block mt-4"> 
+    <figcaption style="text-align:center"><i>Analysis of Docked Structure in Chimera.</i></figcaption>
     <br>
     <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">
     A web server <b>SeamDock</b> [16,17] as a confirmatory -
