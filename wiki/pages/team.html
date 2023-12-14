@@ -17,26 +17,13 @@
   <link href="{{ url_for('static', filename='Font_Montserrat.css') }}" rel='stylesheet'>
   <link href="{{ url_for('static', filename='Font_Poppins.css') }}" rel='stylesheet'>
   {% block modal_css %}{% endblock %}
-  <title>{% block title %}Attributions{% endblock %} | MIT_MAHE - iGEM 2023</title>
+  <title>{% block title %}Meet the Team{% endblock %} | MIT_MAHE - iGEM 2023</title>
 </head>
 
 <body style="background: #FFFFFF;">
   <!-- Navbar -->
   {% include 'my-menu.html' %}
 
-  <div class="content-container" style="display:flex;">
-    <!-- No Sidebar -->
-
-    <div class="banner flex-grow-1" style="flex:1">
-      <!-- Page Header -->
-      <header>
-        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-1.svg" />
-        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-2.svg" />
-        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-3.svg" />
-        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-4.svg" />
-        <img src="https://static.igem.wiki/teams/4641/wiki/waves/wave-5.svg" id="shape" />
-        <h1>{% block heading %}Meet the team{% endblock %}</h1>
-      </header>
 
       <!-- Content-->
 
@@ -367,9 +354,6 @@
           </div>
         </div>
       </div>
-
-    </div>
-  </div>
 
 </body>
 
