@@ -22,6 +22,15 @@ html {
   bottom: -2vw;
 }
 
+@font-face {
+  font-family: 'Sunborn';
+  src: url('mit-mahe/static/Sunborn-SansOne.otf') format('otf'),
+}
+
+.banner-head {
+  font-family: 'Sunborn', sans-serif;
+}
+
 .custom-banner {
   position: relative;
   height: 300px; /* Set the height of your banner */
